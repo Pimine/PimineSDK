@@ -28,6 +28,7 @@
 		B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
+		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtensions.swift; sourceTree = "<group>"; };
 		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */,
 				B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */,
 				B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */,
+				B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */,
 				B715F8812475C1FC00BB98CD /* UIViewControllerExtensions.swift in Sources */,
 				B74C207B2475AA960097A513 /* PMesssages.swift in Sources */,
+				B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */,
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
 				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
 				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
