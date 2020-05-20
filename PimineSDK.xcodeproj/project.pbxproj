@@ -122,10 +122,9 @@
 		B74C203A2475901D0097A513 /* PimineSDK */ = {
 			isa = PBXGroup;
 			children = (
+				B74C20772475A9690097A513 /* Support files */,
 				B74C2068247598890097A513 /* Utilities */,
 				B74C206B24759C7A0097A513 /* HandyExtensions */,
-				B74C203B2475901D0097A513 /* PimineSDK.h */,
-				B74C203C2475901D0097A513 /* Info.plist */,
 			);
 			path = PimineSDK;
 			sourceTree = "<group>";
@@ -173,6 +172,15 @@
 				B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B74C20772475A9690097A513 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				B74C203B2475901D0097A513 /* PimineSDK.h */,
+				B74C203C2475901D0097A513 /* Info.plist */,
+			);
+			path = "Support files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,7 +461,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PimineSDK/Info.plist;
+				INFOPLIST_FILE = "PimineSDK/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,7 +491,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = PimineSDK/Info.plist;
+				INFOPLIST_FILE = "PimineSDK/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
