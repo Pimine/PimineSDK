@@ -31,6 +31,10 @@ public extension UIApplication {
         windows.filter(\.isKeyWindow).first
     }
     
+    var safeAreaInsets: UIEdgeInsets {
+        keyWindow?.safeAreaInsets ?? .zero
+    }
+    
     var topViewController: UIViewController? {
         guard let rootViewController = keyWindow?.rootViewController else { return nil }
         return PMUtilities.getTopViewController(base: rootViewController)
