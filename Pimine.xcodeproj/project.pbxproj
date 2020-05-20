@@ -25,6 +25,9 @@
 		B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */; };
 		B74C20792475AA750097A513 /* PMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C20782475AA750097A513 /* PMAlert.swift */; };
 		B74C207B2475AA960097A513 /* PMesssages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C207A2475AA960097A513 /* PMesssages.swift */; };
+		B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
+		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
+		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		B74C20782475AA750097A513 /* PMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAlert.swift; sourceTree = "<group>"; };
 		B74C207A2475AA960097A513 /* PMesssages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMesssages.swift; sourceTree = "<group>"; };
+		B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtensions.swift; sourceTree = "<group>"; };
+		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B715F87C2475C0FF00BB98CD /* SetExtensions.swift */,
+				B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */,
 			);
 			path = SwiftStdLib;
 			sourceTree = "<group>";
@@ -244,11 +251,13 @@
 		B74C206C24759C9B0097A513 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */,
 				B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */,
 				B715F88D2475CDC300BB98CD /* UIControlExtensions.swift */,
 				B715F8862475C62000BB98CD /* UITextViewExtensions.swift */,
 				B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */,
 				B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */,
+				B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -405,13 +414,16 @@
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
 				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
+				B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */,
 				B715F8782475BE8400BB98CD /* UserDefaultsBacked.swift in Sources */,
 				B715F87A2475BF7B00BB98CD /* AnyOptional.swift in Sources */,
 				B715F8852475C41700BB98CD /* PMGeneralError.swift in Sources */,
+				B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */,
 				B715F8812475C1FC00BB98CD /* UIViewControllerExtensions.swift in Sources */,
 				B74C207B2475AA960097A513 /* PMesssages.swift in Sources */,
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
 				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
+				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
 				B715F87D2475C0FF00BB98CD /* SetExtensions.swift in Sources */,
 				B74C20792475AA750097A513 /* PMAlert.swift in Sources */,
 				B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */,
