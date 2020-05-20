@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   # Core
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Sources/Utilities/*.swift', 'Sources/Extensions/**/*.swift'
+    ss.source_files = 'Sources/Utilities/**/*.swift', 'Sources/Extensions/**/*.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'
