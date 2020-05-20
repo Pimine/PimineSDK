@@ -23,10 +23,10 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-protocol AnyOptional {
+public protocol AnyOptional {
     var isNil: Bool { get }
 }
 
 extension Optional: AnyOptional {
-    var isNil: Bool { self == nil }
+    public var isNil: Bool { self == nil }
 }
