@@ -10,6 +10,7 @@
 		B74C203D2475901D0097A513 /* PimineSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* PimineSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; };
 		B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B74C206A24759A470097A513 /* PMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C206924759A470097A513 /* PMUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B74C203B2475901D0097A513 /* PimineSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PimineSDK.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwifterSwift.xcodeproj; path = SwifterSwift/SwifterSwift.xcodeproj; sourceTree = "<group>"; };
+		B74C206924759A470097A513 /* PMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		B74C203A2475901D0097A513 /* PimineSDK */ = {
 			isa = PBXGroup;
 			children = (
+				B74C2068247598890097A513 /* Utilities */,
 				B74C203B2475901D0097A513 /* PimineSDK.h */,
 				B74C203C2475901D0097A513 /* Info.plist */,
 			);
@@ -143,6 +146,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B74C2068247598890097A513 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B74C206924759A470097A513 /* PMUtilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				TargetAttributes = {
 					B74C20372475901D0097A513 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -283,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +425,7 @@
 		B74C20412475901D0097A513 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -429,6 +443,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -437,6 +452,7 @@
 		B74C20422475901D0097A513 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";

@@ -21,7 +21,13 @@ Pod::Spec.new do |s|
 
   # Core
   s.subspec 'Core' do |ss|
+    ss.dependency 'PimineSDK/Utilities'
     ss.dependency 'PimineSDK/HandyExtensions'
+  end
+
+  # Utilities
+  s.subspec 'Utilities' do |ss|
+    ss.source_files = 'PimineSDK/Utilities/*.swift'
   end
 
   # Handy Extensions
