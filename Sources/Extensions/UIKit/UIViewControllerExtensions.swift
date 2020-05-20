@@ -26,3 +26,15 @@
 import UIKit
 
 extension UIViewController: NameDescribable { }
+
+public extension UIViewController {
+    
+    static func loadFromStoryboard<T: UIViewController>(_ storyboardName: String) -> T? {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        guard let viewController = storyboard.instantiateViewController(withIdentifier: T.typeName) as? T else {
+            return nil
+        }
+        viewController.loadViewIfNeeded()
+        return viewController
+    }
+}
