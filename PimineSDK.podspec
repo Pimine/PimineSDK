@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
 
   # Handy Extensions
   s.subspec 'HandyExtensions' do |ss|
+    ss.source_files = 'PimineSDK/HandyExtensions/**/*.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'
