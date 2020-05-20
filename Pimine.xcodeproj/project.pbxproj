@@ -15,6 +15,7 @@
 		B715F8852475C41700BB98CD /* PMGeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8842475C41700BB98CD /* PMGeneralError.swift */; };
 		B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8862475C62000BB98CD /* UITextViewExtensions.swift */; };
 		B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8882475C84A00BB98CD /* ClosureSleeve.swift */; };
+		B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */; };
 		B74C203D2475901D0097A513 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; };
 		B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -99,6 +100,7 @@
 		B715F8842475C41700BB98CD /* PMGeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMGeneralError.swift; sourceTree = "<group>"; };
 		B715F8862475C62000BB98CD /* UITextViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtensions.swift; sourceTree = "<group>"; };
 		B715F8882475C84A00BB98CD /* ClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
+		B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensitions.swift; sourceTree = "<group>"; };
 		B74C20382475901D0097A513 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74C203B2475901D0097A513 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		B74C206C24759C9B0097A513 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */,
 				B715F8862475C62000BB98CD /* UITextViewExtensions.swift */,
 				B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */,
 				B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */,
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */,
+				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
 				B715F8782475BE8400BB98CD /* UserDefaultsBacked.swift in Sources */,
 				B715F87A2475BF7B00BB98CD /* AnyOptional.swift in Sources */,
