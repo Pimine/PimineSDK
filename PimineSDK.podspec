@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'PimineSDK'
+  s.name             = 'Pimine'
   s.version          = '0.2.1'
   s.summary          = 'PimineSDK'
 
