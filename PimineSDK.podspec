@@ -37,6 +37,7 @@ Pod::Spec.new do |s|
     ss.dependency 'SwifterSwift/UIKit'
     ss.dependency 'SwifterSwift/CoreGraphics'
     ss.dependency 'SwifterSwift/CoreAnimation'
+    ss.dependency 'PimineSDK/Utilities'
   end
 
 end
