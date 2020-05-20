@@ -1,0 +1,3 @@
+[submodule "SwifterSwift"]
+	path = SwifterSwift
+	url = https://github.com/SwifterSwift/SwifterSwift.git
