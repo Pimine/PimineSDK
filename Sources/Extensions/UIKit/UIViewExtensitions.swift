@@ -25,6 +25,18 @@
 
 import UIKit
 
+// MARK: - Initializers
+
+public extension UIView {
+    
+    convenience init(backgroundColor: UIColor, frame: CGRect = .zero) {
+        self.init(frame: frame)
+        self.backgroundColor = backgroundColor
+    }
+}
+
+// MARK: - Methods
+
 public extension UIView {
     
     func addBorder(width: CGFloat, color: UIColor) {
