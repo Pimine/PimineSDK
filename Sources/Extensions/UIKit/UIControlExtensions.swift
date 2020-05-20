@@ -1,5 +1,5 @@
 //
-//  UIViewExtensitions.swift
+//  UIControlExtensions.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,21 +25,18 @@
 
 import UIKit
 
-public extension UIView {
+public extension UIControl {
     
-    @objc func onTouchUpInside(_ action: @escaping () -> Void) {
-        isUserInteractionEnabled = true
-        addTapGestureRecognizer(action: action)
+    override func onTouchUpInside(_ action: @escaping () -> Void) {
+        onEvent(.touchUpInside, action: action)
     }
     
-    fileprivate func addTapGestureRecognizer(action: @escaping () -> Void) {
+    func onEvent(_ event: UIControl.Event, action: @escaping () -> Void) {
         let sleeve = ClosureSleeve(action)
         objc_setAssociatedObject(
             self, UUID().uuidString, sleeve,
             objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN
         )
-        let tapGestureRecognizer = UITapGestureRecognizer(target: sleeve, action: #selector(ClosureSleeve.invoke))
-        addGestureRecognizer(tapGestureRecognizer)
+        addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: event)
     }
 }
-
