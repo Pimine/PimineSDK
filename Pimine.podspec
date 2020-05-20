@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 
   s.homepage        = 'https://github.com/Pimine/PimineSDK'
   s.license         = { :type => 'MIT', :file => 'LICENSE' }
-  s.authors         = 'Pimine'
+  s.authors         = { 'Den Andreychuk' => 'denis.andrei4uk@yandex.ua' }
 
   s.source          = {
     :git => 'https://github.com/Pimine/PimineSDK.git',
