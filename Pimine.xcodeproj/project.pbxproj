@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B74C203D2475901D0097A513 /* PimineSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* PimineSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B74C203D2475901D0097A513 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; };
 		B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B74C206A24759A470097A513 /* PMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C206924759A470097A513 /* PMUtilities.swift */; };
@@ -83,14 +83,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B74C20382475901D0097A513 /* PimineSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B74C203B2475901D0097A513 /* PimineSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PimineSDK.h; sourceTree = "<group>"; };
+		B74C20382475901D0097A513 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74C203B2475901D0097A513 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwifterSwift.xcodeproj; path = SwifterSwift/SwifterSwift.xcodeproj; sourceTree = "<group>"; };
 		B74C206924759A470097A513 /* PMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUtilities.swift; sourceTree = "<group>"; };
 		B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		B74C20782475AA750097A513 /* PMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAlert.swift; sourceTree = "<group>"; };
-		B74C207A2475AA960097A513 /* PMesssages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PMesssages.swift; path = ../PMesssages.swift; sourceTree = "<group>"; };
+		B74C207A2475AA960097A513 /* PMesssages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMesssages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */,
-				B74C203A2475901D0097A513 /* PimineSDK */,
+				B74C203A2475901D0097A513 /* Sources */,
 				B74C20392475901D0097A513 /* Products */,
 				B74C205B247590AD0097A513 /* Frameworks */,
 			);
@@ -118,20 +118,19 @@
 		B74C20392475901D0097A513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B74C20382475901D0097A513 /* PimineSDK.framework */,
+				B74C20382475901D0097A513 /* Pimine.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B74C203A2475901D0097A513 /* PimineSDK */ = {
+		B74C203A2475901D0097A513 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				B74C20772475A9690097A513 /* Support files */,
 				B74C2068247598890097A513 /* Utilities */,
-				B74C206B24759C7A0097A513 /* HandyExtensions */,
-				B74C207A2475AA960097A513 /* PMesssages.swift */,
+				B74C206B24759C7A0097A513 /* Extensions */,
 			);
-			path = PimineSDK;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		B74C20442475909F0097A513 /* Products */ = {
@@ -160,16 +159,17 @@
 			children = (
 				B74C20782475AA750097A513 /* PMAlert.swift */,
 				B74C206924759A470097A513 /* PMUtilities.swift */,
+				B74C207A2475AA960097A513 /* PMesssages.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		B74C206B24759C7A0097A513 /* HandyExtensions */ = {
+		B74C206B24759C7A0097A513 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B74C206C24759C9B0097A513 /* UIKit */,
 			);
-			path = HandyExtensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B74C206C24759C9B0097A513 /* UIKit */ = {
@@ -183,7 +183,7 @@
 		B74C20772475A9690097A513 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
-				B74C203B2475901D0097A513 /* PimineSDK.h */,
+				B74C203B2475901D0097A513 /* Pimine.h */,
 				B74C203C2475901D0097A513 /* Info.plist */,
 			);
 			path = "Support files";
@@ -196,16 +196,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74C203D2475901D0097A513 /* PimineSDK.h in Headers */,
+				B74C203D2475901D0097A513 /* Pimine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B74C20372475901D0097A513 /* PimineSDK */ = {
+		B74C20372475901D0097A513 /* Pimine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "PimineSDK" */;
+			buildConfigurationList = B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "Pimine" */;
 			buildPhases = (
 				B74C20332475901D0097A513 /* Headers */,
 				B74C20342475901D0097A513 /* Sources */,
@@ -217,9 +217,9 @@
 			);
 			dependencies = (
 			);
-			name = PimineSDK;
+			name = Pimine;
 			productName = PimineSDK;
-			productReference = B74C20382475901D0097A513 /* PimineSDK.framework */;
+			productReference = B74C20382475901D0097A513 /* Pimine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +237,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */;
+			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,7 +256,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				B74C20372475901D0097A513 /* PimineSDK */,
+				B74C20372475901D0097A513 /* Pimine */,
 			);
 		};
 /* End PBXProject section */
@@ -469,7 +469,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "PimineSDK/Support files/Info.plist";
+				INFOPLIST_FILE = "Sources/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +478,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Pimine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -499,7 +499,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "PimineSDK/Support files/Info.plist";
+				INFOPLIST_FILE = "Sources/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,7 +508,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Pimine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -520,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */ = {
+		B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B74C203E2475901D0097A513 /* Debug */,
@@ -529,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "PimineSDK" */ = {
+		B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "Pimine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B74C20412475901D0097A513 /* Debug */,

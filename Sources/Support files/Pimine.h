@@ -1,5 +1,5 @@
 //
-//  PMAlert.swift
+//  Pimine.h
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,24 +23,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import UIKit
+#import <Foundation/Foundation.h>
 
-public struct PMAlert {
-    
-    static public func show(
-        title: String? = PMesssages.whoops,
-        message: String? = PMesssages.somethingWentWrong,
-        handler: (() -> Void)? = nil) {
-        
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in handler?() }
-        alertController.addAction(okAction)
-        
-        UIApplication.shared.topViewController?.present(alertController, animated: true)
-    }
-    
-    static public func show(title: String? = PMesssages.whoops, error: Error, handler: (() -> Void)? = nil) {
-        show(title: title, message: error.localizedDescription, handler: handler)
-    }
-}
+//! Project version number for Pimine.
+FOUNDATION_EXPORT double PimineVersionNumber;
+
+//! Project version string for Pimine.
+FOUNDATION_EXPORT const unsigned char PimineVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <Pimine/PublicHeader.h>
+
+

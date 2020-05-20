@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PimineSDK.xcodeproj">
+      location = "self:/Users/den/Desktop/Work/PimineSDK/Pimine.xcodeproj">
    </FileRef>
 </Workspace>
