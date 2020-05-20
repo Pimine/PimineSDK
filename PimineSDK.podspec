@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.default_subspec = 'Core'
+  s.source_files = 'PimineSDK/*.swift'
 
   # Core
   s.subspec 'Core' do |ss|
