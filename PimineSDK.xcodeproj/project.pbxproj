@@ -90,7 +90,7 @@
 		B74C206924759A470097A513 /* PMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUtilities.swift; sourceTree = "<group>"; };
 		B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		B74C20782475AA750097A513 /* PMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAlert.swift; sourceTree = "<group>"; };
-		B74C207A2475AA960097A513 /* PMesssages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMesssages.swift; sourceTree = "<group>"; };
+		B74C207A2475AA960097A513 /* PMesssages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PMesssages.swift; path = ../PMesssages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +158,8 @@
 		B74C2068247598890097A513 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B74C206924759A470097A513 /* PMUtilities.swift */,
 				B74C20782475AA750097A513 /* PMAlert.swift */,
+				B74C206924759A470097A513 /* PMUtilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
