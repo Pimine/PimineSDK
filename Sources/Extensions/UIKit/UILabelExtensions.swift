@@ -27,25 +27,25 @@ import UIKit
 
 public extension UILabel {
     
-    func addAttributes(_ attributes: [NSAttributedString.Key: Any], for strings: [String]) {
+    func addAttributes(_ attributes: [NSAttributedString.Key: Any], for substrings: [String]) {
         guard let text = text.nonEmpty, !attributes.isEmpty else { return }
         
         let mutableAttributedText = (attributedText?.mutableCopy() as? NSMutableAttributedString)
             ?? NSMutableAttributedString(string: text)
         
-        for string in strings {
-            let range = (mutableAttributedText.string as NSString).range(of: string)
+        for substring in substrings {
+            let range = (mutableAttributedText.string as NSString).range(of: substring)
             mutableAttributedText.addAttributes(attributes, range: range)
         }
         attributedText = mutableAttributedText
     }
 
-    func highlight(_ strings: [String], with font: UIFont) {
-        addAttributes([.font: font], for: strings)
+    func highlight(_ substrings: [String], with font: UIFont) {
+        addAttributes([.font: font], for: substrings)
     }
     
-    func highlight(_ strings: [String], with color: UIColor) {
-        addAttributes([.foregroundColor: color], for: strings)
+    func highlight(_ substrings: [String], with color: UIColor) {
+        addAttributes([.foregroundColor: color], for: substrings)
     }
 }
 
