@@ -28,10 +28,10 @@ import UIKit
 public extension UILabel {
     
     func addAttributes(_ attributes: [NSAttributedString.Key: Any], for strings: [String]) {
-        guard
-            let mutableAttributedText = attributedText?.mutableCopy() as? NSMutableAttributedString,
-            !attributes.isEmpty
-        else { return }
+        guard let text = text.nonEmpty, !attributes.isEmpty else { return }
+        
+        let mutableAttributedText = (attributedText?.mutableCopy() as? NSMutableAttributedString)
+            ?? NSMutableAttributedString(string: text)
         
         for string in strings {
             let range = (mutableAttributedText.string as NSString).range(of: string)
