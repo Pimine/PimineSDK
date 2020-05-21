@@ -254,9 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */,
+				B715F8862475C62000BB98CD /* UITextViewExtensions.swift */,
 				B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */,
 				B715F88D2475CDC300BB98CD /* UIControlExtensions.swift */,
-				B715F8862475C62000BB98CD /* UITextViewExtensions.swift */,
 				B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */,
 				B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */,
 				B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */,

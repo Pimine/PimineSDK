@@ -34,4 +34,25 @@ public extension UITextView {
         let positiveTopOffset = max(1, heightOffset)
         contentOffset.y = -positiveTopOffset
     }
+    
+    func addAttributes(_ attributes: [NSAttributedString.Key: Any], for substrings: [String]) {
+        guard let text = text.nonEmpty, !attributes.isEmpty else { return }
+        
+        let mutableAttributedText = (attributedText?.mutableCopy() as? NSMutableAttributedString)
+            ?? NSMutableAttributedString(string: text)
+        
+        for substring in substrings {
+            let range = (mutableAttributedText.string as NSString).range(of: substring)
+            mutableAttributedText.addAttributes(attributes, range: range)
+        }
+        attributedText = mutableAttributedText
+    }
+
+    func highlight(_ substrings: [String], with font: UIFont) {
+        addAttributes([.font: font], for: substrings)
+    }
+    
+    func highlight(_ substrings: [String], with color: UIColor) {
+        addAttributes([.foregroundColor: color], for: substrings)
+    }
 }
