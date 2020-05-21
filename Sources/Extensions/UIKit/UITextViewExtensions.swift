@@ -55,4 +55,8 @@ public extension UITextView {
     func highlight(_ substrings: [String], with color: UIColor) {
         addAttributes([.foregroundColor: color], for: substrings)
     }
+    
+    func addLink(_ link: URL, for substring: String) {
+        addAttributes([.link: link], for: [substring])
+    }
 }
