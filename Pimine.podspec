@@ -30,4 +30,9 @@ Pod::Spec.new do |s|
     ss.dependency 'SwifterSwift/CoreAnimation'
   end
 
+  # Math
+  s.subspec 'Math' do |ss|
+  	ss.source_files = 'Sources/Math/*.swift'
+  end
+
 end

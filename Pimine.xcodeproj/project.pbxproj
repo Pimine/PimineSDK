@@ -18,6 +18,7 @@
 		B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */; };
 		B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F88D2475CDC300BB98CD /* UIControlExtensions.swift */; };
 		B715F8912475D5C500BB98CD /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8902475D5C500BB98CD /* BundleExtensions.swift */; };
+		B73B618B24780487003CE4C0 /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
 		B74C203D2475901D0097A513 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; };
 		B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,6 +110,7 @@
 		B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensitions.swift; sourceTree = "<group>"; };
 		B715F88D2475CDC300BB98CD /* UIControlExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtensions.swift; sourceTree = "<group>"; };
 		B715F8902475D5C500BB98CD /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		B73B618A24780487003CE4C0 /* PMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMath.swift; sourceTree = "<group>"; };
 		B74C20382475901D0097A513 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74C203B2475901D0097A513 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +179,14 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		B73B61822478047B003CE4C0 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B73B618A24780487003CE4C0 /* PMath.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
 		B74C202E2475901D0097A513 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		B74C203A2475901D0097A513 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B73B61822478047B003CE4C0 /* Math */,
 				B74C20772475A9690097A513 /* Support files */,
 				B74C2068247598890097A513 /* Utilities */,
 				B74C206B24759C7A0097A513 /* Extensions */,
@@ -417,6 +428,7 @@
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
 				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
+				B73B618B24780487003CE4C0 /* PMath.swift in Sources */,
 				B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */,
 				B715F8782475BE8400BB98CD /* UserDefaultsBacked.swift in Sources */,
 				B715F87A2475BF7B00BB98CD /* AnyOptional.swift in Sources */,
