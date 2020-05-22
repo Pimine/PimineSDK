@@ -28,7 +28,7 @@ import UIKit
 public extension UIApplication {
     
     var keyWindow: UIWindow? {
-        windows.filter(\.isKeyWindow).first
+        windows.filter { $0.isKeyWindow }.first
     }
     
     var safeAreaInsets: UIEdgeInsets {
