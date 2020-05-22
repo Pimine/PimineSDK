@@ -19,6 +19,10 @@
 		B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F88D2475CDC300BB98CD /* UIControlExtensions.swift */; };
 		B715F8912475D5C500BB98CD /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8902475D5C500BB98CD /* BundleExtensions.swift */; };
 		B73B618B24780487003CE4C0 /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
+		B73B61A224784AB4003CE4C0 /* MerchantKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B619524784780003CE4C0 /* MerchantKit.framework */; };
+		B73B61A324784AB4003CE4C0 /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B73B619524784780003CE4C0 /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B73B61AD24784BE5003CE4C0 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73B61AA24784BCB003CE4C0 /* SVProgressHUD.framework */; };
+		B73B61AE24784BE5003CE4C0 /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B73B61AA24784BCB003CE4C0 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B74C203D2475901D0097A513 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = B74C203B2475901D0097A513 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; };
 		B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B74C204E2475909F0097A513 /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -67,6 +71,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 439FA1832309735A00FCCBA3;
 			remoteInfo = "MerchantKitTestsHost-macOS";
+		};
+		B73B61A924784BCB003CE4C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A9D7DD81AB345980039B273;
+			remoteInfo = "SVProgressHUD-Framework";
+		};
+		B73B61AB24784BCB003CE4C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
+			remoteInfo = SVProgressHUD;
 		};
 		B74C204D2475909F0097A513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -126,7 +144,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B73B61AE24784BE5003CE4C0 /* SVProgressHUD.framework in Embed Frameworks */,
 				B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */,
+				B73B61A324784AB4003CE4C0 /* MerchantKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +167,7 @@
 		B715F8902475D5C500BB98CD /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 		B73B618A24780487003CE4C0 /* PMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMath.swift; sourceTree = "<group>"; };
 		B73B618C24784780003CE4C0 /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = merchantkit/MerchantKit.xcodeproj; sourceTree = "<group>"; };
+		B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = SVProgressHUD/SVProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		B74C20382475901D0097A513 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74C203B2475901D0097A513 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +187,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73B61AD24784BE5003CE4C0 /* SVProgressHUD.framework in Frameworks */,
 				B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */,
+				B73B61A224784AB4003CE4C0 /* MerchantKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,9 +258,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B73B61A524784BCB003CE4C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B73B61AA24784BCB003CE4C0 /* SVProgressHUD.framework */,
+				B73B61AC24784BCB003CE4C0 /* libSVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B74C202E2475901D0097A513 = {
 			isa = PBXGroup;
 			children = (
+				B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */,
 				B73B618C24784780003CE4C0 /* MerchantKit.xcodeproj */,
 				B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */,
 				B74C203A2475901D0097A513 /* Sources */,
@@ -399,6 +432,10 @@
 					ProjectRef = B73B618C24784780003CE4C0 /* MerchantKit.xcodeproj */;
 				},
 				{
+					ProductGroup = B73B61A524784BCB003CE4C0 /* Products */;
+					ProjectRef = B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */;
+				},
+				{
 					ProductGroup = B74C20442475909F0097A513 /* Products */;
 					ProjectRef = B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */;
 				},
@@ -444,6 +481,20 @@
 			fileType = wrapper.application;
 			path = "MerchantKitTestsHost-macOS.app";
 			remoteRef = B73B619C24784780003CE4C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B73B61AA24784BCB003CE4C0 /* SVProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SVProgressHUD.framework;
+			remoteRef = B73B61A924784BCB003CE4C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B73B61AC24784BCB003CE4C0 /* libSVProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSVProgressHUD.a;
+			remoteRef = B73B61AB24784BCB003CE4C0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B74C204E2475909F0097A513 /* SwifterSwift.framework */ = {
