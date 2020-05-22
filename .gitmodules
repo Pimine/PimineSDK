@@ -1,3 +1,6 @@
 [submodule "SwifterSwift"]
 	path = SwifterSwift
 	url = https://github.com/SwifterSwift/SwifterSwift.git
+[submodule "merchantkit"]
+	path = merchantkit
+	url = https://github.com/benjaminmayo/merchantkit.git
