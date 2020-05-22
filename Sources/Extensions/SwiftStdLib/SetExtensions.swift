@@ -24,7 +24,7 @@
 //  SOFTWARE.
 
 public extension Set {
-    func setmap<U>(transform: (Element) -> U) -> Set<U> {
+    @inlinable func setmap<U>(transform: (Element) -> U) -> Set<U> {
         Set<U>(self.lazy.map(transform))
     }
 }
