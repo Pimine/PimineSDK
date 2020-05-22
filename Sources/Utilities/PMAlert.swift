@@ -29,8 +29,8 @@ import SwifterSwift
 public struct PMAlert {
     
     static public func show(
-        title: String? = PMesssages.whoops,
-        message: String? = PMesssages.somethingWentWrong,
+        title: String? = "Whoops",
+        message: String? = "Something went wrong.",
         handler: (() -> Void)? = nil) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -39,7 +39,7 @@ public struct PMAlert {
         UIApplication.shared.topViewController?.present(alertController, animated: true)
     }
     
-    static public func show(title: String? = PMesssages.whoops, error: Error, handler: (() -> Void)? = nil) {
+    static public func show(title: String? = "Whoops", error: Error, handler: (() -> Void)? = nil) {
         show(title: title, message: error.localizedDescription, handler: handler)
     }
 }
