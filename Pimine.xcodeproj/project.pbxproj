@@ -32,6 +32,7 @@
 		B75A63A52479411500DBDB36 /* StoreMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A42479411500DBDB36 /* StoreMessages.swift */; };
 		B75A63A7247942AE00DBDB36 /* PMerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A6247942AE00DBDB36 /* PMerchantController.swift */; };
 		B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */; };
+		B75A63AC24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63AB24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift */; };
 		B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
@@ -180,6 +181,7 @@
 		B75A63A42479411500DBDB36 /* StoreMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMessages.swift; sourceTree = "<group>"; };
 		B75A63A6247942AE00DBDB36 /* PMerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMerchantController.swift; sourceTree = "<group>"; };
 		B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInterfaceControllerExtensions.swift; sourceTree = "<group>"; };
+		B75A63AB24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSubscriptionPriceFormatter.swift; sourceTree = "<group>"; };
 		B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtensions.swift; sourceTree = "<group>"; };
 		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				B75A63A82479494300DBDB36 /* Extensions */,
 				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
 				B75A63A6247942AE00DBDB36 /* PMerchantController.swift */,
+				B75A63AB24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */,
 				B75A63A7247942AE00DBDB36 /* PMerchantController.swift in Sources */,
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
+				B75A63AC24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift in Sources */,
 				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
 				B73B618B24780487003CE4C0 /* PMath.swift in Sources */,
