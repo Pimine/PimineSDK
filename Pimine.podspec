@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   #Utilities
   s.subspec 'Utilities' do |ss|
-    ss.source_files = 'Sources/Submodules/Utilities/*.swift', 'Sources/Submodules/HandyExtensions/UIKit/UIApplicationExtensions.swift'
+    ss.source_files = 'Sources/Submodules/Utilities/**/*.swift', 'Sources/Submodules/HandyExtensions/UIKit/UIApplicationExtensions.swift'
   end
 
   #HandyExtensions
