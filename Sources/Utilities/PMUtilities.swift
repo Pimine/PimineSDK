@@ -31,25 +31,3 @@ public func configure<T>(_ value: T, using closure: (inout T) throws -> Void) re
     try closure(&value)
     return value
 }
-
-final public class PMUtilities {
-    
-    static func getTopViewController(base: UIViewController) -> UIViewController {
-        // Navigation controller
-        if
-            let navigationController = base as? UINavigationController,
-            let visibleController = navigationController.visibleViewController {
-            return getTopViewController(base: visibleController)
-        // TabBar controller
-        } else if
-            let tabBarController = base as? UITabBarController,
-            let selectedController = tabBarController.selectedViewController {
-            return getTopViewController(base: selectedController)
-        // Default presented controller
-        } else if let presented = base.presentedViewController {
-            return getTopViewController(base: presented)
-        }
-        return base
-    }
-}
-

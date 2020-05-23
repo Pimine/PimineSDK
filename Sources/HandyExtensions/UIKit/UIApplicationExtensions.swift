@@ -37,6 +37,24 @@ public extension UIApplication {
     
     var topViewController: UIViewController? {
         guard let rootViewController = keyWindow?.rootViewController else { return nil }
-        return PMUtilities.getTopViewController(base: rootViewController)
+        return getTopViewController(base: rootViewController)
+    }
+    
+    func getTopViewController(base: UIViewController) -> UIViewController {
+        // Navigation controller
+        if
+            let navigationController = base as? UINavigationController,
+            let visibleController = navigationController.visibleViewController {
+            return getTopViewController(base: visibleController)
+        // TabBar controller
+        } else if
+            let tabBarController = base as? UITabBarController,
+            let selectedController = tabBarController.selectedViewController {
+            return getTopViewController(base: selectedController)
+        // Default presented controller
+        } else if let presented = base.presentedViewController {
+            return getTopViewController(base: presented)
+        }
+        return base
     }
 }
