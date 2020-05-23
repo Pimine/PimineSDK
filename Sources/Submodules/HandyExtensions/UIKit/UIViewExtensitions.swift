@@ -44,9 +44,11 @@ public extension UIView {
         layer.borderColor = color.cgColor
     }
     
-    @objc func onTouchUpInside(_ action: @escaping () -> Void) {
+    @discardableResult
+    @objc func onTouchUpInside(_ action: @escaping () -> Void) -> Self {
         isUserInteractionEnabled = true
         addTapGestureRecognizer(action: action)
+        return self
     }
     
     fileprivate func addTapGestureRecognizer(action: @escaping () -> Void) {

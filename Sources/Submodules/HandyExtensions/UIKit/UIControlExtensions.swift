@@ -27,16 +27,21 @@ import UIKit
 
 public extension UIControl {
     
-    override func onTouchUpInside(_ action: @escaping () -> Void) {
+    @discardableResult
+    override func onTouchUpInside(_ action: @escaping () -> Void) -> Self {
         onEvent(.touchUpInside, action: action)
+        return self
     }
     
-    func onEvent(_ event: UIControl.Event, action: @escaping () -> Void) {
+    @discardableResult
+    func onEvent(_ event: UIControl.Event, action: @escaping () -> Void) -> Self {
         let sleeve = ClosureSleeve(action)
         objc_setAssociatedObject(
             self, UUID().uuidString, sleeve,
             objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN
         )
         addTarget(sleeve, action: #selector(ClosureSleeve.invoke), for: event)
+        
+        return self
     }
 }
