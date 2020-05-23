@@ -42,6 +42,14 @@ Pod::Spec.new do |s|
     ss.dependency 'SwifterSwift/CoreAnimation'
   end
 
+  # Store
+  s.subspec 'Store' do |ss|
+    ss.source_files = 'Sources/Submodules/Store/*.swift'
+    ss.dependency 'Pimine/Utilities'
+    ss.dependency 'SVProgressHUD'
+    ss.dependency 'MerchantKit'
+  end
+
   # Math
   s.subspec 'Math' do |ss|
   	ss.source_files = 'Sources/Submodules/Math/*.swift'
