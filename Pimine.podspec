@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 
   # Store
   s.subspec 'Store' do |ss|
-    ss.source_files = 'Sources/Submodules/Store/*.swift'
+    ss.source_files = 'Sources/Submodules/Store/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'MerchantKit'

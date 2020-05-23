@@ -31,6 +31,7 @@
 		B74C20792475AA750097A513 /* PMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C20782475AA750097A513 /* PMAlert.swift */; };
 		B75A63A52479411500DBDB36 /* StoreMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A42479411500DBDB36 /* StoreMessages.swift */; };
 		B75A63A7247942AE00DBDB36 /* PMerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A6247942AE00DBDB36 /* PMerchantController.swift */; };
+		B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */; };
 		B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
@@ -178,6 +179,7 @@
 		B74C20782475AA750097A513 /* PMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAlert.swift; sourceTree = "<group>"; };
 		B75A63A42479411500DBDB36 /* StoreMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMessages.swift; sourceTree = "<group>"; };
 		B75A63A6247942AE00DBDB36 /* PMerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMerchantController.swift; sourceTree = "<group>"; };
+		B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInterfaceControllerExtensions.swift; sourceTree = "<group>"; };
 		B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtensions.swift; sourceTree = "<group>"; };
 		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
@@ -396,10 +398,19 @@
 		B75A63A32479410700DBDB36 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				B75A63A82479494300DBDB36 /* Extensions */,
 				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
 				B75A63A6247942AE00DBDB36 /* PMerchantController.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		B75A63A82479494300DBDB36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -617,6 +628,7 @@
 				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
 				B715F87D2475C0FF00BB98CD /* SetExtensions.swift in Sources */,
 				B74C20792475AA750097A513 /* PMAlert.swift in Sources */,
+				B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */,
 				B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */,
 				B715F8912475D5C500BB98CD /* BundleExtensions.swift in Sources */,
 			);
