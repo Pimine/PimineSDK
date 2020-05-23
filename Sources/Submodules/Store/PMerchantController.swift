@@ -58,7 +58,7 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
 
     // MARK: - Public API
     
-    func buy(_ product: Product) {
+    public func buy(_ product: Product) {
         let productState = productInterfaceController.state(for: product)
         
         switch productState {
@@ -75,7 +75,7 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
         }
     }
     
-    func restorePurchases() {
+    public func restorePurchases() {
         SVProgressHUD.show()
         productInterfaceController.restorePurchases()
     }
