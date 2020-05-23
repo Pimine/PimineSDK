@@ -24,7 +24,6 @@
 //  SOFTWARE.
 
 import UIKit
-import SwifterSwift
 
 public struct PMAlert {
     
@@ -34,7 +33,9 @@ public struct PMAlert {
         handler: (() -> Void)? = nil) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alertController.addAction(title: "OK") { (_) in handler?() }
+        
+        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in handler?() }
+        alertController.addAction(okAction)
         
         UIApplication.shared.topViewController?.present(alertController, animated: true)
     }

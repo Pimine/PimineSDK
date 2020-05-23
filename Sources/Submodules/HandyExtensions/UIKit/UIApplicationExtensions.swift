@@ -1,5 +1,5 @@
 //
-//  UILabelExtensions.swift
+//  UIApplicationExtensions.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,27 +25,36 @@
 
 import UIKit
 
-public extension UILabel {
+public extension UIApplication {
     
-    func addAttributes(_ attributes: [NSAttributedString.Key: Any], for substrings: [String]) {
-        guard let text = text.nonEmpty, !attributes.isEmpty else { return }
-        
-        let mutableAttributedText = (attributedText?.mutableCopy() as? NSMutableAttributedString)
-            ?? NSMutableAttributedString(string: text)
-        
-        for substring in substrings {
-            let range = (mutableAttributedText.string as NSString).range(of: substring)
-            mutableAttributedText.addAttributes(attributes, range: range)
+    var keyWindow: UIWindow? {
+        windows.filter { $0.isKeyWindow }.first
+    }
+    
+    var safeAreaInsets: UIEdgeInsets {
+        keyWindow?.safeAreaInsets ?? .zero
+    }
+    
+    var topViewController: UIViewController? {
+        guard let rootViewController = keyWindow?.rootViewController else { return nil }
+        return topViewController(base: rootViewController)
+    }
+    
+    func topViewController(base: UIViewController) -> UIViewController {
+        // Navigation controller
+        if
+            let navigationController = base as? UINavigationController,
+            let visibleController = navigationController.visibleViewController {
+            return topViewController(base: visibleController)
+        // TabBar controller
+        } else if
+            let tabBarController = base as? UITabBarController,
+            let selectedController = tabBarController.selectedViewController {
+            return topViewController(base: selectedController)
+        // Default presented controller
+        } else if let presented = base.presentedViewController {
+            return topViewController(base: presented)
         }
-        attributedText = mutableAttributedText
-    }
-
-    func highlight(_ substrings: [String], with font: UIFont) {
-        addAttributes([.font: font], for: substrings)
-    }
-    
-    func highlight(_ substrings: [String], with color: UIColor) {
-        addAttributes([.foregroundColor: color], for: substrings)
+        return base
     }
 }
-
