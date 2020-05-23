@@ -26,23 +26,7 @@
 import MerchantKit
 import SVProgressHUD
 
-open class PMerchantController: UIViewController, ProductInterfaceControllerDelegate {
-
-    // MARK: - Public properties
-
-    public let productInterfaceController: ProductInterfaceController
-    
-    // MARK: - Initialization
-    
-    public init(merchant: Merchant, products: Set<Product>) {
-        self.productInterfaceController = ProductInterfaceController(products: products, with: merchant)
-        super.init(nibName: nil, bundle: nil)
-        productInterfaceController.delegate = self
-    }
-    
-    required public init?(coder: NSCoder) {
-        fatalError("PMerchantController do not support Storyboards. Please, use init(merchant:products:) instead.")
-    }
+open class PMerchantController: PMPurchasesRestoringController {
     
     // MARK: - View controller lifecycle
     
@@ -75,23 +59,14 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
         }
     }
     
-    open func restorePurchases() {
-        SVProgressHUD.show()
-        productInterfaceController.restorePurchases()
-    }
-    
     // MARK: - ProductInterfaceControllerDelegate
     
-    open func productInterfaceControllerDidChangeFetchingState(_ controller: ProductInterfaceController) {
+    override open func productInterfaceControllerDidChangeFetchingState(_ controller: ProductInterfaceController) {
         guard case let .failed(reason) = controller.fetchingState else { return }
         handleFetchingFailure(reason)
     }
     
-    open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didChangeStatesFor products: Set<Product>) { }
-    
-    open func productInterfaceController(
+    override open func productInterfaceController(
         _ controller: ProductInterfaceController,
         didCommit purchase: Purchase,
         with result: ProductInterfaceController.CommitPurchaseResult
@@ -99,21 +74,6 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
         SVProgressHUD.dismiss()
         guard case let .failure(error) = result else { return }
         handlePurchaseError(error)
-    }
-    
-    open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didRestorePurchasesWith result: ProductInterfaceController.RestorePurchasesResult
-    ) {
-        SVProgressHUD.dismiss()
-        switch result {
-        case .success(let products) where products.count > 0:
-            PMAlert.show(message: StoreMessages.restored)
-        case .success:
-            PMAlert.show(message: StoreMessages.nothingToRestore)
-        case .failure(let error):
-            PMAlert.show(error: error)
-        }
     }
     
     // MARK: - Private methods

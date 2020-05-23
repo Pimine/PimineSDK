@@ -37,6 +37,7 @@
 		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
 		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		B7868A42247967AD00367630 /* PMPurchasesRestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* PMPurchasesRestoringController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +187,7 @@
 		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
+		B7868A41247967AD00367630 /* PMPurchasesRestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPurchasesRestoringController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,9 +403,9 @@
 			isa = PBXGroup;
 			children = (
 				B75A63A82479494300DBDB36 /* Extensions */,
-				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
-				B75A63A6247942AE00DBDB36 /* PMerchantController.swift */,
+				B7868A51247968E400367630 /* Controllers */,
 				B75A63AB24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift */,
+				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -414,6 +416,15 @@
 				B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7868A51247968E400367630 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7868A41247967AD00367630 /* PMPurchasesRestoringController.swift */,
+				B75A63A6247942AE00DBDB36 /* PMerchantController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +626,7 @@
 				B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */,
 				B75A63A7247942AE00DBDB36 /* PMerchantController.swift in Sources */,
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
+				B7868A42247967AD00367630 /* PMPurchasesRestoringController.swift in Sources */,
 				B75A63AC24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift in Sources */,
 				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
