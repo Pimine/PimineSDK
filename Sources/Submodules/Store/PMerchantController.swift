@@ -58,7 +58,7 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
 
     // MARK: - Public API
     
-    public func buy(_ product: Product) {
+    open func buy(_ product: Product) {
         let productState = productInterfaceController.state(for: product)
         
         switch productState {
@@ -75,23 +75,23 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
         }
     }
     
-    public func restorePurchases() {
+    open func restorePurchases() {
         SVProgressHUD.show()
         productInterfaceController.restorePurchases()
     }
     
     // MARK: - ProductInterfaceControllerDelegate
     
-    public func productInterfaceControllerDidChangeFetchingState(_ controller: ProductInterfaceController) {
+    open func productInterfaceControllerDidChangeFetchingState(_ controller: ProductInterfaceController) {
         guard case let .failed(reason) = controller.fetchingState else { return }
         handleFetchingFailure(reason)
     }
     
-    public func productInterfaceController(
+    open func productInterfaceController(
         _ controller: ProductInterfaceController,
         didChangeStatesFor products: Set<Product>) { }
     
-    public func productInterfaceController(
+    open func productInterfaceController(
         _ controller: ProductInterfaceController,
         didCommit purchase: Purchase,
         with result: ProductInterfaceController.CommitPurchaseResult
@@ -101,7 +101,7 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
         handlePurchaseError(error)
     }
     
-    public func productInterfaceController(
+    open func productInterfaceController(
         _ controller: ProductInterfaceController,
         didRestorePurchasesWith result: ProductInterfaceController.RestorePurchasesResult
     ) {
