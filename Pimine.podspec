@@ -21,8 +21,20 @@ Pod::Spec.new do |s|
 
   # Core
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Sources/Utilities/**/*.swift', 'Sources/HandyExtensions/**/*.swift'
+    ss.source_files = 'Sources/Models/**/*.swift'
+    ss.dependency 'Pimine/HandyExtensions'
+    ss.dependency 'Pimine/Utilities'
     ss.dependency 'EasySwiftLayout'
+  end
+
+  #Utilities
+  s.subspec 'Utilities' do |ss|
+    ss.source_files = 'Sources/Submodules/Utilities/*.swift', 'Sources/Submodules/HandyExtensions/UIKit/UIApplicationExtensions.swift'
+  end
+
+  #HandyExtensions
+  s.subspec 'HandyExtensions' do |ss|
+    ss.source_files = 'Sources/Submodules/HandyExtensions/**/.swift', 'Sources/Models/Protocols/NameDescribable.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'
@@ -32,7 +44,7 @@ Pod::Spec.new do |s|
 
   # Math
   s.subspec 'Math' do |ss|
-  	ss.source_files = 'Sources/Math/*.swift'
+  	ss.source_files = 'Sources/Submodules/Math/*.swift'
   end
 
 end
