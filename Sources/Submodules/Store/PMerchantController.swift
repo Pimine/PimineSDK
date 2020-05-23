@@ -129,7 +129,7 @@ open class PMerchantController: UIViewController, ProductInterfaceControllerDele
             PMAlert.show(error: error)
         case .storeKitFailure(let error):
             let errorCode = error.errorCode
-            PMAlert.show(message: "\(StoreMessages.storeCommunicationError) (Error code: \(errorCode)")
+            PMAlert.show(message: "\(StoreMessages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem:
             PMAlert.show(message: StoreMessages.error)
         }
