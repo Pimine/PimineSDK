@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
 
   #HandyExtensions
   s.subspec 'HandyExtensions' do |ss|
-    ss.source_files = 'Sources/Submodules/HandyExtensions/**/.swift', 'Sources/Models/Protocols/NameDescribable.swift'
+    ss.source_files = 'Sources/Submodules/HandyExtensions/**/*.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'

@@ -211,14 +211,6 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
-		B715F8832475C33700BB98CD /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				B715F87E2475C1E700BB98CD /* NameDescribable.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		B715F88F2475D5A500BB98CD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +332,7 @@
 		B74C206C24759C9B0097A513 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				B75A63A224793CD600DBDB36 /* Protocols */,
 				B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */,
 				B715F8862475C62000BB98CD /* UITextViewExtensions.swift */,
 				B715F88B2475C8FE00BB98CD /* UIViewExtensitions.swift */,
@@ -364,7 +357,6 @@
 		B75A638F2479322800DBDB36 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B715F8832475C33700BB98CD /* Protocols */,
 				B715F8842475C41700BB98CD /* PMGeneralError.swift */,
 			);
 			path = Models;
@@ -386,6 +378,14 @@
 				B715F8792475BF7B00BB98CD /* AnyOptional.swift */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		B75A63A224793CD600DBDB36 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B715F87E2475C1E700BB98CD /* NameDescribable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
