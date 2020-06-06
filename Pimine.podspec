@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.0'
 
   s.swift_version   = ['5.1', '5.2']
   s.default_subspec = 'Core'
