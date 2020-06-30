@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/Models/**/*.swift'
     ss.dependency 'Pimine/HandyExtensions'
     ss.dependency 'Pimine/Utilities'
-    ss.dependency 'EasySwiftLayout'
+    ss.dependency 'ScuffedUI'
   end
 
   #Utilities
