@@ -27,6 +27,15 @@ import UIKit
 
 public extension UITabBarController {
     
+    var tabBarHeight: CGFloat {
+        get { tabBar.frame.height }
+        set {
+            let safeHeight = newValue + UIApplication.shared.safeAreaInsets.bottom
+            tabBar.frame.size.height = safeHeight
+            tabBar.frame.origin.y = view.frame.height - safeHeight
+        }
+    }
+    
     func index(of viewController: UIViewController) -> Int? {
         viewControllers?.firstIndex(of: viewController)
     }
