@@ -29,12 +29,10 @@ extension UIViewController: NameDescribable { }
 
 public extension UIViewController {
     
-    static func loadFromStoryboard<T: UIViewController>(_ storyboardName: String) -> T? {
+    static func loadFromStoryboard(_ storyboardName: String) -> Self? {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
-        guard let viewController = storyboard.instantiateViewController(withIdentifier: T.typeName) as? T else {
-            return nil
-        }
-        viewController.loadViewIfNeeded()
+        let viewController = storyboard.instantiateViewController(withIdentifier: typeName) as? Self
+        viewController?.loadViewIfNeeded()
         return viewController
     }
 }
