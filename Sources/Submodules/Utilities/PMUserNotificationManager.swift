@@ -84,12 +84,12 @@ final public class PMUserNotificationManager {
     public static func configure() {
         setupObservers()
         if configuration.requestPermissionsOnLaunch {
-            return requestPermissions()
+            return requestPermission()
         }
         updateNotificationPreferences()
     }
     
-    public static func requestPermissions(result: ((Bool) -> Void)? = nil) {
+    public static func requestPermission(result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.requestAuthorization(options: configuration.authorizationOptions) { (granted, error) in
             if let error = error { PMAlert.show(error: error) }
             self.updateNotificationPreferences(silently: false)
