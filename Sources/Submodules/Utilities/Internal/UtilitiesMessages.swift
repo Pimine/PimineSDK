@@ -1,5 +1,5 @@
 //
-//  PMGeneralError.swift
+//  UtilitiesMessages.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,14 +23,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import UIKit
 
-public struct PMGeneralError: LocalizedError {
+struct UtilitiesMessages {
     
-    public let message: String
-    public var errorDescription: String? { return message }
+    static let whoops = "Whoops"
     
-    public init(message: String) {
-        self.message = message
-    }
+    static let permissionRequired = "We did not receive required permissions to send notifications. You can change your preferences at any time. To do that, you should manually grant permissions for the app from Settings."
 }

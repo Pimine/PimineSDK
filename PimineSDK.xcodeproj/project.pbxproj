@@ -38,6 +38,8 @@
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
 		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
 		B7868A42247967AD00367630 /* PMPurchasesRestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* PMPurchasesRestoringController.swift */; };
+		EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */; };
+		EB4086C924B8CAE700A09084 /* UtilitiesMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,7 +174,7 @@
 		B73B618A24780487003CE4C0 /* PMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMath.swift; sourceTree = "<group>"; };
 		B73B618C24784780003CE4C0 /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = merchantkit/MerchantKit.xcodeproj; sourceTree = "<group>"; };
 		B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = SVProgressHUD/SVProgressHUD.xcodeproj; sourceTree = "<group>"; };
-		B74C20382475901D0097A513 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B74C20382475901D0097A513 /* PimineSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74C203B2475901D0097A513 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		B74C203C2475901D0097A513 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwifterSwift.xcodeproj; path = SwifterSwift/SwifterSwift.xcodeproj; sourceTree = "<group>"; };
@@ -188,6 +190,8 @@
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		B7868A41247967AD00367630 /* PMPurchasesRestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPurchasesRestoringController.swift; sourceTree = "<group>"; };
+		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
+		EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,7 +285,7 @@
 		B74C20392475901D0097A513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B74C20382475901D0097A513 /* Pimine.framework */,
+				B74C20382475901D0097A513 /* PimineSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +328,7 @@
 				B715F8822475C32500BB98CD /* PropertyWrappers */,
 				B74C20782475AA750097A513 /* PMAlert.swift */,
 				B74C206924759A470097A513 /* PMUtilities.swift */,
+				EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 			isa = PBXGroup;
 			children = (
 				B715F8792475BF7B00BB98CD /* AnyOptional.swift */,
+				EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -402,10 +408,10 @@
 		B75A63A32479410700DBDB36 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				EB4086CA24B8CAFA00A09084 /* Internal */,
 				B75A63A82479494300DBDB36 /* Extensions */,
 				B7868A51247968E400367630 /* Controllers */,
 				B75A63AB24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift */,
-				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -427,6 +433,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EB4086CA24B8CAFA00A09084 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				B75A63A42479411500DBDB36 /* StoreMessages.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -441,9 +455,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B74C20372475901D0097A513 /* Pimine */ = {
+		B74C20372475901D0097A513 /* PimineSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "Pimine" */;
+			buildConfigurationList = B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "PimineSDK" */;
 			buildPhases = (
 				B74C20332475901D0097A513 /* Headers */,
 				B74C20342475901D0097A513 /* Sources */,
@@ -455,9 +469,9 @@
 			);
 			dependencies = (
 			);
-			name = Pimine;
+			name = PimineSDK;
 			productName = PimineSDK;
-			productReference = B74C20382475901D0097A513 /* Pimine.framework */;
+			productReference = B74C20382475901D0097A513 /* PimineSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -475,7 +489,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */;
+			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -502,7 +516,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				B74C20372475901D0097A513 /* Pimine */,
+				B74C20372475901D0097A513 /* PimineSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -627,6 +641,7 @@
 				B75A63A7247942AE00DBDB36 /* PMerchantController.swift in Sources */,
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
 				B7868A42247967AD00367630 /* PMPurchasesRestoringController.swift in Sources */,
+				EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */,
 				B75A63AC24794E5B00DBDB36 /* PMSubscriptionPriceFormatter.swift in Sources */,
 				B715F88C2475C8FE00BB98CD /* UIViewExtensitions.swift in Sources */,
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
@@ -642,6 +657,7 @@
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
 				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
 				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
+				EB4086C924B8CAE700A09084 /* UtilitiesMessages.swift in Sources */,
 				B715F87D2475C0FF00BB98CD /* SetExtensions.swift in Sources */,
 				B74C20792475AA750097A513 /* PMAlert.swift in Sources */,
 				B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */,
@@ -835,7 +851,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */ = {
+		B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B74C203E2475901D0097A513 /* Debug */,
@@ -844,7 +860,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "Pimine" */ = {
+		B74C20402475901D0097A513 /* Build configuration list for PBXNativeTarget "PimineSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B74C20412475901D0097A513 /* Debug */,
