@@ -26,7 +26,7 @@
 import UIKit
 import UserNotifications
 
-extension Notification.Name {
+public extension Notification.Name {
     static let userNotificationPreferencesChanged = Notification.Name("userNotificationPreferencesChanged")
 }
 
