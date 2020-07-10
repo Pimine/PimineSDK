@@ -104,7 +104,7 @@ final public class PMUserNotificationManager {
     private static func setupObservers() {
         NotificationCenter.default.addObserver(
             self, selector: #selector(applicationDidBecomeActiveNotification),
-            name: UIApplication.didBecomeActiveNotification, object: nil
+            name: UIApplication.willEnterForegroundNotification, object: nil
         )
     }
     
