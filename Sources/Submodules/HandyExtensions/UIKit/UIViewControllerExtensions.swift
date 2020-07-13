@@ -32,7 +32,6 @@ public extension UIViewController {
     static func loadFromStoryboard(_ storyboardName: String) -> Self? {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: typeName) as? Self
-        viewController?.loadViewIfNeeded()
         return viewController
     }
 }
