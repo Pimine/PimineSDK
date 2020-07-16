@@ -1,5 +1,5 @@
 //
-//  PMPurchasesRestoringController.swift
+//  PurchasesRestoringController.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,60 +23,55 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import MerchantKit
 import SVProgressHUD
 
-open class PMPurchasesRestoringController: UIViewController, ProductInterfaceControllerDelegate {
+extension RevenueCat {
+open class PurchasesRestoringController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
     
-    // MARK: - Public properties
-
-    public let productInterfaceController: ProductInterfaceController
+    // MARK: - Properties
+    
+    public let subscriptionInterfaceController: RevenueCat.SubscriptionInterfaceController
     
     // MARK: - Initialization
     
-    public init(merchant: Merchant, products: Set<Product>) {
-        self.productInterfaceController = ProductInterfaceController(products: products, with: merchant)
+    public init(merchant: RevenueCat.Merchant) {
+        self.subscriptionInterfaceController = RevenueCat.SubscriptionInterfaceController(merchant: merchant)
         super.init(nibName: nil, bundle: nil)
-        productInterfaceController.delegate = self
+        self.subscriptionInterfaceController.delegate = self
     }
     
     required public init?(coder: NSCoder) {
-        fatalError("PMPurchasesRestoringController do not support Storyboards. Please, use init(merchant:products:) instead.")
+        fatalError("PurchasesRestoringController do not support Storyboards. Please, use init(merchant:) instead.")
     }
     
     // MARK: - Public API
     
-    open func restorePurchases() {
+    func restorePurchases() {
         SVProgressHUD.show()
-        productInterfaceController.restorePurchases()
+        subscriptionInterfaceController.restorePurchases()
     }
     
-    // MARK: - ProductInterfaceControllerDelegate
+    // MARK: - RCSubscriptionInterfaceControllerDelegate
     
-    open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didRestorePurchasesWith result: ProductInterfaceController.RestorePurchasesResult
+    public func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
     ) {
         SVProgressHUD.dismiss()
         switch result {
         case .success(let products) where products.count > 0:
-            PMAlert.show(message: StoreMessages.restored)
+            PMAlert.show(message: RevenueCat.Messages.restored)
         case .success:
-            PMAlert.show(message: StoreMessages.nothingToRestore)
+            PMAlert.show(message: RevenueCat.Messages.nothingToRestore)
         case .failure(let error):
             PMAlert.show(error: error)
         }
     }
     
-    open func productInterfaceControllerDidChangeFetchingState(_ controller: ProductInterfaceController) { }
-    
-    open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didChangeStatesFor products: Set<Product>) { }
-    
-    open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didCommit purchase: Purchase,
-        with result: ProductInterfaceController.CommitPurchaseResult
-    ) { }
-}
+    public func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+    ) {
+        
+    }
+}}

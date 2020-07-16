@@ -26,7 +26,8 @@
 import MerchantKit
 import SVProgressHUD
 
-open class PMerchantController: PMPurchasesRestoringController {
+extension LocalStore {
+open class MerchantController: LocalStore.PurchasesRestoringController {
     
     // MARK: - View controller lifecycle
     
@@ -47,13 +48,13 @@ open class PMerchantController: PMPurchasesRestoringController {
         
         switch productState {
         case .unknown:
-            PMAlert.show(message: StoreMessages.unknownProductState)
+            PMAlert.show(message: LocalStore.Messages.unknownProductState)
         case .purchasable(let purchase):
             commitPurchase(purchase)
         case .purchased:
-            PMAlert.show(message: StoreMessages.productPurchased)
+            PMAlert.show(message: LocalStore.Messages.productPurchased)
         case .purchaseUnavailable:
-            PMAlert.show(message: StoreMessages.productNotAvailable)
+            PMAlert.show(message: LocalStore.Messages.productNotAvailable)
         case .purchasing:
             break
         }
@@ -89,9 +90,9 @@ open class PMerchantController: PMPurchasesRestoringController {
             PMAlert.show(error: error)
         case .storeKitFailure(let error):
             let errorCode = error.errorCode
-            PMAlert.show(message: "\(StoreMessages.storeCommunicationError) (Error code: \(errorCode))")
+            PMAlert.show(message: "\(LocalStore.Messages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem:
-            PMAlert.show(message: StoreMessages.error)
+            PMAlert.show(message: LocalStore.Messages.error)
         }
     }
     
@@ -102,17 +103,17 @@ open class PMerchantController: PMPurchasesRestoringController {
         case .networkError(let error):
             PMAlert.show(error: error)
         case .purchaseNotAvailable:
-            PMAlert.show(message: StoreMessages.productNotAvailable)
+            PMAlert.show(message: LocalStore.Messages.productNotAvailable)
         case .paymentNotAllowed:
-            PMAlert.show(message: StoreMessages.cannotMakePayments)
+            PMAlert.show(message: LocalStore.Messages.cannotMakePayments)
         case .paymentInvalid:
-            PMAlert.show(message: StoreMessages.paymentInvalid)
+            PMAlert.show(message: LocalStore.Messages.paymentInvalid)
         case .genericProblem(let error) where error is SKError:
             let errorCode = (error as! SKError).errorCode
-            PMAlert.show(message: "\(StoreMessages.storeCommunicationError) (Error code: \(errorCode)")
+            PMAlert.show(message: "\(LocalStore.Messages.storeCommunicationError) (Error code: \(errorCode)")
         case .genericProblem(let error):
-            PMAlert.show(message: "\(StoreMessages.error) \(error.localizedDescription)")
+            PMAlert.show(message: "\(LocalStore.Messages.error) \(error.localizedDescription)")
         }
     }
-}
+}}
 

@@ -1,5 +1,5 @@
 //
-//  StoreMessages.swift
+//  RCMerchantDelegate.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,29 +23,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-struct StoreMessages {
-    
-    static let error = "There was an error."
-    
-    // MARK: - Messages related to product state
-    
-    static let productPurchased = "You have already bought this product."
-    static let unknownProductState = "Unable to fetch product information."
-    
-    // MARK: - Commit purchase error messages
-    
-    static let productNotAvailable = "The product is not available in the current storefront."
-    
-    static let paymentInvalid = "One of the payment parameters was not recognized by the App Store."
-    static let storeCommunicationError = "There was an error communicating with the iTunes Store."
-    
-    static let notAuthorized = "You are not authorized to make payments."
-    static let purchasesMayBeRestricted = "In-App Purchases may be restricted on your device."
-    static let cannotMakePayments = "\(notAuthorized) \(purchasesMayBeRestricted)"
-    
-    // MARK: - Restore purchases result messages
-    
-    static var restored = "All transactions have been successfully restored."
-    static var nothingToRestore = "There are no transactions that could be restored."
-    
+import Purchases
+
+public protocol RCMerchantDelegate: class {
+    func merchant(_ merchant: RevenueCat.Merchant, didRecieve purchaserInfo: Purchases.PurchaserInfo)
 }
+

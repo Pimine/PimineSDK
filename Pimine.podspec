@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
 
   # Core
   s.subspec 'Core' do |ss|
-    ss.source_files = 'Sources/Models/**/*.swift'
     ss.dependency 'Pimine/HandyExtensions'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'ScuffedUI'
@@ -42,12 +41,20 @@ Pod::Spec.new do |s|
     ss.dependency 'SwifterSwift/CoreAnimation'
   end
 
-  # Store
-  s.subspec 'Store' do |ss|
-    ss.source_files = 'Sources/Submodules/Store/**/*.swift'
+  # LocalStore
+  s.subspec 'LocalStore' do |ss|
+    ss.source_files = 'Sources/Submodules/LocalStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'MerchantKit'
+  end
+
+  # RevenueCatStore
+  s.subspec 'RevenueCatStore' do |ss|
+    ss.source_files = 'Sources/Submodules/RevenueCatStore/**/*.swift'
+    ss.dependency 'Pimine/Utilities'
+    ss.dependency 'SVProgressHUD'
+    ss.dependency 'Purchases'
   end
 
   # Math

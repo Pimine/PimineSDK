@@ -25,12 +25,13 @@
 
 import MerchantKit
 
-final public class PMSubscriptionPriceFormatter {
+extension LocalStore {
+final public class SubscriptionPriceFormatter {
     
     public static func string(
         from metadata: ProductInterfaceController.ProductState.PurchaseMetadata?,
-        phrasingStyle: SubscriptionPriceFormatter.PhrasingStyle = .formal,
-        unitCountStyle: SubscriptionPriceFormatter.UnitCountStyle = .numeric,
+        phrasingStyle: MerchantKit.SubscriptionPriceFormatter.PhrasingStyle = .formal,
+        unitCountStyle: MerchantKit.SubscriptionPriceFormatter.UnitCountStyle = .numeric,
         freePriceReplacementText: String = "",
         locale: Locale = .current
     ) -> String? {
@@ -50,8 +51,8 @@ final public class PMSubscriptionPriceFormatter {
     
     public static func string(
         from purchase: Purchase,
-        phrasingStyle: SubscriptionPriceFormatter.PhrasingStyle = .formal,
-        unitCountStyle: SubscriptionPriceFormatter.UnitCountStyle = .numeric,
+        phrasingStyle: MerchantKit.SubscriptionPriceFormatter.PhrasingStyle = .formal,
+        unitCountStyle: MerchantKit.SubscriptionPriceFormatter.UnitCountStyle = .numeric,
         freePriceReplacementText: String = "",
         locale: Locale = .current
     ) -> String? {
@@ -69,13 +70,13 @@ final public class PMSubscriptionPriceFormatter {
     
     public static func string(
         from price: Price, duration: SubscriptionDuration,
-        phrasingStyle: SubscriptionPriceFormatter.PhrasingStyle = .formal,
-        unitCountStyle: SubscriptionPriceFormatter.UnitCountStyle = .numeric,
+        phrasingStyle: MerchantKit.SubscriptionPriceFormatter.PhrasingStyle = .formal,
+        unitCountStyle: MerchantKit.SubscriptionPriceFormatter.UnitCountStyle = .numeric,
         freePriceReplacementText: String = "",
         locale: Locale = .current
     ) -> String {
         
-        let formatter = SubscriptionPriceFormatter()
+        let formatter = MerchantKit.SubscriptionPriceFormatter()
         formatter.phrasingStyle = phrasingStyle
         formatter.unitCountStyle = unitCountStyle
         formatter.freePriceReplacementText = freePriceReplacementText
@@ -83,4 +84,4 @@ final public class PMSubscriptionPriceFormatter {
         
         return formatter.string(from: price, duration: duration)
     }
-}
+}}

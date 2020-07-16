@@ -7,3 +7,6 @@
 [submodule "SVProgressHUD"]
 	path = SVProgressHUD
 	url = https://github.com/SVProgressHUD/SVProgressHUD.git
+[submodule "purchases-ios"]
+	path = purchases-ios
+	url = https://github.com/RevenueCat/purchases-ios
