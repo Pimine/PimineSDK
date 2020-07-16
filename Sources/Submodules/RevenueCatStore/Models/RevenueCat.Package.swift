@@ -27,5 +27,14 @@ import Foundation
 
 extension RevenueCat {
 public struct Package {
+    
+    // MARK: - Properties
+    
     public let identifier: String
+    
+    // MARK: - Initialization
+    
+    public init(identifier: String) {
+        self.identifier = identifier
+    }
 }}

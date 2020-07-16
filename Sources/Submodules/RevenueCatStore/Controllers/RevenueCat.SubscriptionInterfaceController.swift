@@ -55,7 +55,7 @@ final public class SubscriptionInterfaceController {
                 self.changeFetchingState(to: .failed(.revenueCatError(error)))
             }
             guard let offering = offerings?.current else {
-                let error = PMGeneralError(message: "An error occured when fetching current offering.")
+                let error = PMGeneralError(message: RevenueCat.Messages.cannotFetchOffering)
                 self.changeFetchingState(to: .failed(.genericProblem(error)))
                 return
             }
@@ -67,11 +67,37 @@ final public class SubscriptionInterfaceController {
     public func restorePurchases() {
         Purchases.shared.restoreTransactions { (purchaserInfo, error) in
             if let error = error {
-                self.resolvePurchasesRestoring(with: .failure(error))
+                self.resolveRestoreTask(with: .failure(error))
             }
             guard let purchaserInfo = purchaserInfo else { return }
-            self.resolvePurchasesRestoring(with: .success(purchaserInfo.activeSubscriptions))
+            self.resolveRestoreTask(with: .success(purchaserInfo.activeSubscriptions))
             self.merchant.updatePurchaserInfo()
+        }
+    }
+    
+    public func purchasePackage(_ package: Package) {
+        switch state(for: package) {
+        case .unknown:
+            let error = PMGeneralError(message: RevenueCat.Messages.unknownProductState)
+            resolvePurchaseTask(with: .failure(.genericProblem(error)))
+        case .purchasable(let purchasablePackage):
+            purchasePackage(purchasablePackage)
+        case .packageUnavailable:
+            let error = PMGeneralError(message: RevenueCat.Messages.productNotAvailable)
+            resolvePurchaseTask(with: .failure(.genericProblem(error)))
+        }
+    }
+    
+    // MARK: - Private API
+    
+    private func purchasePackage(_ package: Purchases.Package) {
+        Purchases.shared.purchasePackage(package) { (transaction, purchaserInfo, error, userCanceled) in
+            if userCanceled {
+                self.resolvePurchaseTask(with: .failure(.userCancelled))
+                return
+            }
+            guard let transaction = transaction else { return }
+            self.resolvePurchaseTask(with: .success(transaction))
         }
     }
     
@@ -86,12 +112,28 @@ final public class SubscriptionInterfaceController {
         return .purchasable(package)
     }
     
+    public func price(for package: Package) -> Price? {
+        switch state(for: package) {
+        case .unknown, .packageUnavailable:
+            return nil
+        case .purchasable(let purchasablePackage):
+            let product = purchasablePackage.product
+            let price = product.price
+            let locale = product.priceLocale
+            return Price(price: price, locale: locale)
+        }
+    }
+    
     private func changeFetchingState(to state: FetchingState) {
         delegate?.subscriptionInterfaceController(self, didChangeFetchingStateTo: state)
     }
     
-    private func resolvePurchasesRestoring(with result: RestorePurchasesResult) {
+    private func resolveRestoreTask(with result: RestorePurchasesResult) {
         self.delegate?.subscriptionInterfaceController(self, didRestorePurchasesWith: result)
+    }
+    
+    private func resolvePurchaseTask(with result: CommitPurchaseResult) {
+        self.delegate?.subscriptionInterfaceController(self, didCommitPurchaseWith: result)
     }
 }}
 
@@ -100,6 +142,18 @@ final public class SubscriptionInterfaceController {
 public extension RevenueCat.SubscriptionInterfaceController {
     
     typealias RestorePurchasesResult = Swift.Result<Set<String>, Error>
+    
+    typealias CommitPurchaseResult = Swift.Result<SKPaymentTransaction, CommitPurchaseError>
+}
+
+// MARK: - CommitPurchaseError
+
+public extension RevenueCat.SubscriptionInterfaceController {
+    enum CommitPurchaseError : Error {
+        case userCancelled
+        case genericProblem(Error)
+        case revenueCatError(Error)
+    }
 }
 
 // MARK: - ProductState

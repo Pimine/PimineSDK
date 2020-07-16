@@ -1,5 +1,5 @@
 //
-//  StoreMessages.swift
+//  RevenueCat.MerchantController.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,17 +23,39 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import SVProgressHUD
 
 extension RevenueCat {
-struct Messages {
+open class MerchantController: RestoreController {
     
-    static let error = "There was an error"
+    // MARK: - View controller lifecycle
     
-    static let cannotFetchOffering = "\(error) fetching current offering."
-    static let unknownProductState = "Unable to fetch product information."
-    static let productNotAvailable = "The product is not available in the current storefront."
-    static var restored = "All transactions have been successfully restored."
-    static var nothingToRestore = "There are no transactions that could be restored."
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        subscriptionInterfaceController.fetchOffering()
+    }
     
+    // MARK: - Public API
+    
+    public func purchasePackage(_ package: Package) {
+        SVProgressHUD.show()
+        subscriptionInterfaceController.purchasePackage(package)
+    }
+    
+    // MARK: - RCSubscriptionInterfaceControllerDelegate
+
+    public func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
+    ) {
+        SVProgressHUD.dismiss()
+        guard case let .failure(error) = result else { return }
+        
+        switch error {
+        case .userCancelled:
+            break
+        case .genericProblem(let error), .revenueCatError(let error):
+            PMAlert.show(error: error)
+        }
+    }
 }}

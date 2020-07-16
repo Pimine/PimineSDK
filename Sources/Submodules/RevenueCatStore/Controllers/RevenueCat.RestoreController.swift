@@ -26,7 +26,7 @@
 import SVProgressHUD
 
 extension RevenueCat {
-open class PurchasesRestoringController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
+open class RestoreController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
     
     // MARK: - Properties
     
@@ -41,19 +41,32 @@ open class PurchasesRestoringController: UIViewController, RCSubscriptionInterfa
     }
     
     required public init?(coder: NSCoder) {
-        fatalError("PurchasesRestoringController do not support Storyboards. Please, use init(merchant:) instead.")
+        fatalError("RestoreController do not support Storyboards. Please, use init(merchant:) instead.")
+    }
+    
+    // MARK: - View controller lifecycle
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        SVProgressHUD.dismiss()
     }
     
     // MARK: - Public API
     
-    func restorePurchases() {
+    public func restorePurchases() {
         SVProgressHUD.show()
         subscriptionInterfaceController.restorePurchases()
     }
     
+    // MARK: - Helpers
+    
+    public func price(for package: Package) -> Price? {
+        subscriptionInterfaceController.price(for: package)
+    }
+    
     // MARK: - RCSubscriptionInterfaceControllerDelegate
     
-    public func subscriptionInterfaceController(
+    open func subscriptionInterfaceController(
         _ controller: RevenueCat.SubscriptionInterfaceController,
         didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
     ) {
@@ -66,12 +79,5 @@ open class PurchasesRestoringController: UIViewController, RCSubscriptionInterfa
         case .failure(let error):
             PMAlert.show(error: error)
         }
-    }
-    
-    public func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
-    ) {
-        
     }
 }}

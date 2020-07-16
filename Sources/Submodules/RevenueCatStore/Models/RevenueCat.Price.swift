@@ -1,5 +1,5 @@
 //
-//  StoreMessages.swift
+//  RevenueCat.Price.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -26,14 +26,38 @@
 import Foundation
 
 extension RevenueCat {
-struct Messages {
+public struct Price {
     
-    static let error = "There was an error"
+    // MARK: - Static
     
-    static let cannotFetchOffering = "\(error) fetching current offering."
-    static let unknownProductState = "Unable to fetch product information."
-    static let productNotAvailable = "The product is not available in the current storefront."
-    static var restored = "All transactions have been successfully restored."
-    static var nothingToRestore = "There are no transactions that could be restored."
+    private static let descriptionFormatter = configure(NumberFormatter()) {
+        $0.numberStyle = .currency
+    }
     
+    // MARK: - Properties
+    
+    public let price: NSDecimalNumber
+    public let locale: Locale
+    
+    // MARK: - Initialization
+    
+    public init(price: NSDecimalNumber, locale: Locale) {
+        self.price = price
+        self.locale = locale
+    }
 }}
+
+// MARK: - CustomStringConvertible
+
+extension RevenueCat.Price: CustomStringConvertible {
+    
+    public var description: String {
+        let formatter = RevenueCat.Price.descriptionFormatter
+        guard
+            let price = formatter.string(from: self.price),
+            let currencySymbol = locale.currencySymbol
+        else { return "" }
+        
+        return "\(price) \(currencySymbol)"
+    }
+}
