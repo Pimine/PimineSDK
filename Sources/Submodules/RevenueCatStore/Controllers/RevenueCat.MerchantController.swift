@@ -44,7 +44,7 @@ open class MerchantController: RestoreController {
     
     // MARK: - RCSubscriptionInterfaceControllerDelegate
 
-    public func subscriptionInterfaceController(
+    override open func subscriptionInterfaceController(
         _ controller: RevenueCat.SubscriptionInterfaceController,
         didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
     ) {
