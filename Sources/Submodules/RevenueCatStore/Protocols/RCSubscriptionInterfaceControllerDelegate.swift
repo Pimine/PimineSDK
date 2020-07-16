@@ -42,23 +42,3 @@ public protocol RCSubscriptionInterfaceControllerDelegate: class {
         didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
     )
 }
-
-// MARK: - Default implementation RCSubscriptionInterfaceControllerDelegate
- 
-public extension RCSubscriptionInterfaceControllerDelegate {
-    
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
-    ) { }
-    
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
-    ) { }
-    
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
-    ) { }
-}

@@ -27,6 +27,7 @@ import SVProgressHUD
 
 extension RevenueCat {
 open class RestoreController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
+        
     
     // MARK: - Properties
     
@@ -80,4 +81,14 @@ open class RestoreController: UIViewController, RCSubscriptionInterfaceControlle
             PMAlert.show(error: error)
         }
     }
+    
+    open func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+    ) { }
+    
+    open func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
+    ) { }
 }}
