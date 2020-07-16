@@ -39,7 +39,6 @@
 		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
 		B7868A42247967AD00367630 /* LocalStore.PurchasesRestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* LocalStore.PurchasesRestoringController.swift */; };
 		EB18377324C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */; };
-		EB18377524C075DB0011E404 /* RevenueCat.Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377424C075DB0011E404 /* RevenueCat.Package.swift */; };
 		EB18377724C081EE0011E404 /* RevenueCat.RestoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377624C081EE0011E404 /* RevenueCat.RestoreController.swift */; };
 		EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */; };
 		EB18377B24C084E00011E404 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377A24C084DF0011E404 /* LocalStore.swift */; };
@@ -220,7 +219,6 @@
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		B7868A41247967AD00367630 /* LocalStore.PurchasesRestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.PurchasesRestoringController.swift; sourceTree = "<group>"; };
 		EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSubscriptionInterfaceControllerDelegate.swift; sourceTree = "<group>"; };
-		EB18377424C075DB0011E404 /* RevenueCat.Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Package.swift; sourceTree = "<group>"; };
 		EB18377624C081EE0011E404 /* RevenueCat.RestoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoreController.swift; sourceTree = "<group>"; };
 		EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Messages.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
@@ -496,7 +494,6 @@
 		EB36FCFD24C06DBB00A978D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB18377424C075DB0011E404 /* RevenueCat.Package.swift */,
 				EB36FCF324C0652100A978D6 /* RevenueCat.Merchant.swift */,
 				EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */,
 			);
@@ -794,7 +791,6 @@
 				EB36FCF824C0683300A978D6 /* RevenueCat.swift in Sources */,
 				B74C20792475AA750097A513 /* PMAlert.swift in Sources */,
 				EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */,
-				EB18377524C075DB0011E404 /* RevenueCat.Package.swift in Sources */,
 				B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */,
 				B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */,
 				B715F8912475D5C500BB98CD /* BundleExtensions.swift in Sources */,

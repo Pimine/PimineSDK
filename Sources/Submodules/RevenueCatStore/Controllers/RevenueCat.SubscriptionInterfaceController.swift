@@ -75,8 +75,8 @@ final public class SubscriptionInterfaceController {
         }
     }
     
-    public func purchasePackage(_ package: Package) {
-        switch state(for: package) {
+    public func purchasePackage(type: Purchases.PackageType) {
+        switch packageState(for: type) {
         case .unknown:
             let error = PMGeneralError(message: RevenueCat.Messages.unknownProductState)
             resolvePurchaseTask(with: .failure(.genericProblem(error)))
@@ -103,17 +103,17 @@ final public class SubscriptionInterfaceController {
     
     // MARK: - Helpers
     
-    public func state(for package: Package) -> PackageState {
+    public func packageState(for packageType: Purchases.PackageType) -> PackageState {
         if offering.isNil { return .unknown }
         
-        guard let package = availablePackages.first(where: { $0.identifier == package.identifier }) else {
+        guard let package = availablePackages.first(where: { $0.packageType == packageType }) else {
             return .packageUnavailable
         }
         return .purchasable(package)
     }
     
-    public func price(for package: Package) -> Price? {
-        switch state(for: package) {
+    public func packagePrice(for packageType: Purchases.PackageType) -> Price? {
+        switch packageState(for: packageType) {
         case .unknown, .packageUnavailable:
             return nil
         case .purchasable(let purchasablePackage):

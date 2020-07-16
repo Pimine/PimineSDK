@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+import Purchases
 import SVProgressHUD
 
 extension RevenueCat {
@@ -37,9 +38,9 @@ open class MerchantController: RestoreController {
     
     // MARK: - Public API
     
-    public func purchasePackage(_ package: Package) {
+    public func purchasePackage(type packageType: Purchases.PackageType) {
         SVProgressHUD.show()
-        subscriptionInterfaceController.purchasePackage(package)
+        subscriptionInterfaceController.purchasePackage(type: packageType)
     }
     
     // MARK: - RCSubscriptionInterfaceControllerDelegate
