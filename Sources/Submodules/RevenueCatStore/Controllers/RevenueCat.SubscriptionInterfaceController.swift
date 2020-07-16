@@ -97,7 +97,8 @@ final public class SubscriptionInterfaceController {
                 return
             }
             guard let transaction = transaction else { return }
-            self.resolvePurchaseTask(with: .success(transaction))
+            let result = CommitPurchaseSuccess(translaction: transaction, package: package)
+            self.resolvePurchaseTask(with: .success(result))
         }
     }
     
@@ -137,18 +138,21 @@ final public class SubscriptionInterfaceController {
     }
 }}
 
-// MARK: - Typealias
+// MARK: - RestorePurchases
 
 public extension RevenueCat.SubscriptionInterfaceController {
     
     typealias RestorePurchasesResult = Swift.Result<Set<String>, Error>
-    
-    typealias CommitPurchaseResult = Swift.Result<SKPaymentTransaction, CommitPurchaseError>
 }
 
-// MARK: - CommitPurchaseError
+// MARK: - CommitPurchase
 
 public extension RevenueCat.SubscriptionInterfaceController {
+    
+    typealias CommitPurchaseSuccess = (translaction: SKPaymentTransaction, package: Purchases.Package)
+    
+    typealias CommitPurchaseResult = Swift.Result<CommitPurchaseSuccess, CommitPurchaseError>
+    
     enum CommitPurchaseError : Error {
         case userCancelled
         case genericProblem(Error)
