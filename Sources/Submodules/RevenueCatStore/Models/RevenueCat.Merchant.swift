@@ -32,6 +32,10 @@ final public class Merchant {
     
     public weak var delegate: RCMerchantDelegate?
     
+    // MARK: - Initialization
+    
+    public init() { }
+    
     // MARK: - Setup
     
     public func setup() {
