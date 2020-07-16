@@ -97,7 +97,7 @@ final public class SubscriptionInterfaceController {
                 return
             }
             guard let transaction = transaction else { return }
-            let result = CommitPurchaseSuccess(translaction: transaction, package: package)
+            let result = CommitPurchaseSuccess(transaction: transaction, package: package)
             self.resolvePurchaseTask(with: .success(result))
         }
     }
@@ -149,7 +149,7 @@ public extension RevenueCat.SubscriptionInterfaceController {
 
 public extension RevenueCat.SubscriptionInterfaceController {
     
-    typealias CommitPurchaseSuccess = (translaction: SKPaymentTransaction, package: Purchases.Package)
+    typealias CommitPurchaseSuccess = (transaction: SKPaymentTransaction, package: Purchases.Package)
     
     typealias CommitPurchaseResult = Swift.Result<CommitPurchaseSuccess, CommitPurchaseError>
     
