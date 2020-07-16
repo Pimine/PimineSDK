@@ -28,16 +28,10 @@ import Foundation
 extension RevenueCat {
 public struct Price {
     
-    // MARK: - Static
-    
-    private static let descriptionFormatter = configure(NumberFormatter()) {
-        $0.numberStyle = .currency
-    }
-    
     // MARK: - Properties
     
-    public let price: NSDecimalNumber
-    public let locale: Locale
+    public var price: NSDecimalNumber
+    public var locale: Locale
     
     // MARK: - Initialization
     
@@ -52,12 +46,9 @@ public struct Price {
 extension RevenueCat.Price: CustomStringConvertible {
     
     public var description: String {
-        let formatter = RevenueCat.Price.descriptionFormatter
-        guard
-            let price = formatter.string(from: self.price),
-            let currencySymbol = locale.currencySymbol
-        else { return "" }
-        
-        return "\(price) \(currencySymbol)"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = locale
+        return formatter.string(from: price) ?? ""
     }
 }
