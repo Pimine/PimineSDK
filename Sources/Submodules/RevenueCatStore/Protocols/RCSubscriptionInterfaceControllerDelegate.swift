@@ -37,3 +37,18 @@ public protocol RCSubscriptionInterfaceControllerDelegate: class {
         didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
     )
 }
+
+// MARK: - Default implementation RCSubscriptionInterfaceControllerDelegate
+ 
+public extension RCSubscriptionInterfaceControllerDelegate {
+    
+    func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
+    ) { }
+    
+    func subscriptionInterfaceController(
+        _ controller: RevenueCat.SubscriptionInterfaceController,
+        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+    ) { }
+}
