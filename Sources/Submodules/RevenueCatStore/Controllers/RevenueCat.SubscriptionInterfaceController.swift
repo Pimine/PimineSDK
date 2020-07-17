@@ -99,6 +99,7 @@ final public class SubscriptionInterfaceController {
             guard let transaction = transaction else { return }
             let result = CommitPurchaseSuccess(transaction: transaction, package: package)
             self.resolvePurchaseTask(with: .success(result))
+            self.merchant.updatePurchaserInfo()
         }
     }
     
