@@ -1,5 +1,5 @@
 //
-//  PurchasesRestoringController.swift
+//  RestoringController.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -27,9 +27,8 @@ import Purchases
 import SVProgressHUD
 
 extension RevenueCat {
-open class RestoreController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
+open class RestoringController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
         
-    
     // MARK: - Properties
     
     public let subscriptionInterfaceController: RevenueCat.SubscriptionInterfaceController
@@ -43,7 +42,7 @@ open class RestoreController: UIViewController, RCSubscriptionInterfaceControlle
     }
     
     required public init?(coder: NSCoder) {
-        fatalError("RestoreController do not support Storyboards. Please, use init(merchant:) instead.")
+        fatalError("RestoringController do not support Storyboards. Please, use init(merchant:) instead.")
     }
     
     // MARK: - View controller lifecycle

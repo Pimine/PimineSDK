@@ -27,7 +27,7 @@ import Purchases
 import SVProgressHUD
 
 extension RevenueCat {
-open class MerchantController: RestoreController {
+open class MerchantController: RestoringController {
     
     // MARK: - View controller lifecycle
     

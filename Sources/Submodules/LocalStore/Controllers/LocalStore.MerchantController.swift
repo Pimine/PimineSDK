@@ -27,7 +27,7 @@ import MerchantKit
 import SVProgressHUD
 
 extension LocalStore {
-open class MerchantController: LocalStore.PurchasesRestoringController {
+open class MerchantController: LocalStore.RestoringController {
     
     // MARK: - View controller lifecycle
     

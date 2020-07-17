@@ -27,7 +27,7 @@ import MerchantKit
 import SVProgressHUD
 
 extension LocalStore {
-open class PurchasesRestoringController: UIViewController, ProductInterfaceControllerDelegate {
+open class RestoringController: UIViewController, ProductInterfaceControllerDelegate {
     
     // MARK: - Public properties
 

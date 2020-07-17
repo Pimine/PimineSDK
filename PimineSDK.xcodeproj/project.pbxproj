@@ -37,9 +37,9 @@
 		B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */; };
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
 		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
-		B7868A42247967AD00367630 /* LocalStore.PurchasesRestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* LocalStore.PurchasesRestoringController.swift */; };
+		B7868A42247967AD00367630 /* LocalStore.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */; };
 		EB18377324C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */; };
-		EB18377724C081EE0011E404 /* RevenueCat.RestoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377624C081EE0011E404 /* RevenueCat.RestoreController.swift */; };
+		EB18377724C081EE0011E404 /* RevenueCat.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */; };
 		EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */; };
 		EB18377B24C084E00011E404 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377A24C084DF0011E404 /* LocalStore.swift */; };
 		EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */; };
@@ -217,9 +217,9 @@
 		B768DABB2475E24200FA3B79 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
-		B7868A41247967AD00367630 /* LocalStore.PurchasesRestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.PurchasesRestoringController.swift; sourceTree = "<group>"; };
+		B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.RestoringController.swift; sourceTree = "<group>"; };
 		EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSubscriptionInterfaceControllerDelegate.swift; sourceTree = "<group>"; };
-		EB18377624C081EE0011E404 /* RevenueCat.RestoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoreController.swift; sourceTree = "<group>"; };
+		EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoringController.swift; sourceTree = "<group>"; };
 		EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Messages.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
@@ -464,7 +464,7 @@
 		B7868A51247968E400367630 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B7868A41247967AD00367630 /* LocalStore.PurchasesRestoringController.swift */,
+				B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */,
 				B75A63A6247942AE00DBDB36 /* LocalStore.MerchantController.swift */,
 			);
 			path = Controllers;
@@ -504,7 +504,7 @@
 			isa = PBXGroup;
 			children = (
 				EB36FCF924C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift */,
-				EB18377624C081EE0011E404 /* RevenueCat.RestoreController.swift */,
+				EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */,
 				EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */,
 			);
 			path = Controllers;
@@ -762,7 +762,7 @@
 				B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */,
 				B75A63A7247942AE00DBDB36 /* LocalStore.MerchantController.swift in Sources */,
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
-				B7868A42247967AD00367630 /* LocalStore.PurchasesRestoringController.swift in Sources */,
+				B7868A42247967AD00367630 /* LocalStore.RestoringController.swift in Sources */,
 				EB18377B24C084E00011E404 /* LocalStore.swift in Sources */,
 				EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */,
 				EB36FCF624C067CD00A978D6 /* RCMerchantDelegate.swift in Sources */,
@@ -774,7 +774,7 @@
 				EB36FCF424C0652100A978D6 /* RevenueCat.Merchant.swift in Sources */,
 				EB18377324C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift in Sources */,
 				B715F8782475BE8400BB98CD /* UserDefaultsBacked.swift in Sources */,
-				EB18377724C081EE0011E404 /* RevenueCat.RestoreController.swift in Sources */,
+				EB18377724C081EE0011E404 /* RevenueCat.RestoringController.swift in Sources */,
 				B715F87A2475BF7B00BB98CD /* AnyOptional.swift in Sources */,
 				B715F8852475C41700BB98CD /* PMGeneralError.swift in Sources */,
 				B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */,
