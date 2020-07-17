@@ -32,8 +32,6 @@ final public class SubscriptionInterfaceController {
     
     public weak var delegate: RCSubscriptionInterfaceControllerDelegate?
     
-    public let merchant: RevenueCat.Merchant
-    
     public var offering: Purchases.Offering?
     
     public var availablePackages: [Purchases.Package] {
@@ -42,9 +40,7 @@ final public class SubscriptionInterfaceController {
 
     // MARK: - Initialization
     
-    public init(merchant: RevenueCat.Merchant) {
-        self.merchant = merchant
-    }
+    public init() { }
     
     // MARK: - Public API
     
@@ -71,7 +67,6 @@ final public class SubscriptionInterfaceController {
             }
             guard let purchaserInfo = purchaserInfo else { return }
             self.resolveRestoreTask(with: .success(purchaserInfo.activeSubscriptions))
-            self.merchant.updatePurchaserInfo()
         }
     }
     
@@ -99,7 +94,6 @@ final public class SubscriptionInterfaceController {
             guard let transaction = transaction else { return }
             let result = CommitPurchaseSuccess(transaction: transaction, package: package)
             self.resolvePurchaseTask(with: .success(result))
-            self.merchant.updatePurchaserInfo()
         }
     }
     

@@ -35,8 +35,8 @@ open class RestoringController: UIViewController, RCSubscriptionInterfaceControl
     
     // MARK: - Initialization
     
-    public init(merchant: RevenueCat.Merchant) {
-        self.subscriptionInterfaceController = RevenueCat.SubscriptionInterfaceController(merchant: merchant)
+    public init() {
+        self.subscriptionInterfaceController = RevenueCat.SubscriptionInterfaceController()
         super.init(nibName: nil, bundle: nil)
         self.subscriptionInterfaceController.delegate = self
     }
