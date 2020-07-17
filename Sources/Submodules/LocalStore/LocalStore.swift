@@ -26,4 +26,4 @@
 import Foundation
 
 /// Namespace
-struct LocalStore { }
+public struct LocalStore { }
