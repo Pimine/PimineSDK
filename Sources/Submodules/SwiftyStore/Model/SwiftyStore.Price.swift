@@ -1,5 +1,5 @@
 //
-//  RevenueCat.MerchantController.swift
+//  SwiftyStore.Price.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,40 +23,32 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
-import SVProgressHUD
+import Foundation
 
-extension RevenueCat {
-open class MerchantController: RestoringController {
+extension SwiftyStore {
+public struct Price {
     
-    // MARK: - View controller lifecycle
+    // MARK: - Properties
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        subscriptionInterfaceController.fetchOffering()
-    }
+    public var price: NSDecimalNumber
+    public var locale: Locale
     
-    // MARK: - Public API
+    // MARK: - Initialization
     
-    public func purchasePackage(type packageType: Purchases.PackageType) {
-        SVProgressHUD.show()
-        subscriptionInterfaceController.purchasePackage(type: packageType)
-    }
-    
-    // MARK: - RevenueCatDelegate
-
-    override open func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
-    ) {
-        SVProgressHUD.dismiss()
-        guard case let .failure(error) = result else { return }
-        
-        switch error {
-        case .userCancelled:
-            break
-        case .genericProblem(let error), .revenueCatError(let error):
-            PMAlert.show(error: error)
-        }
+    public init(price: NSDecimalNumber, locale: Locale) {
+        self.price = price
+        self.locale = locale
     }
 }}
+
+// MARK: - CustomStringConvertible
+
+extension SwiftyStore.Price: CustomStringConvertible {
+    
+    public var description: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = locale
+        return formatter.string(from: price) ?? ""
+    }
+}

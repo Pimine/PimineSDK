@@ -27,7 +27,7 @@ import Purchases
 import SVProgressHUD
 
 extension RevenueCat {
-open class RestoringController: UIViewController, RCSubscriptionInterfaceControllerDelegate {
+open class RestoringController: UIViewController, RevenueCatInterfaceDelegate {
         
     // MARK: - Properties
     
@@ -65,7 +65,7 @@ open class RestoringController: UIViewController, RCSubscriptionInterfaceControl
         subscriptionInterfaceController.packagePrice(for: packageType)
     }
     
-    // MARK: - RCSubscriptionInterfaceControllerDelegate
+    // MARK: - RevenueCatDelegate
     
     open func subscriptionInterfaceController(
         _ controller: RevenueCat.SubscriptionInterfaceController,

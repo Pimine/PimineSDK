@@ -30,7 +30,7 @@ final public class SubscriptionInterfaceController {
     
     // MARK: - Public properties
     
-    public weak var delegate: RCSubscriptionInterfaceControllerDelegate?
+    public weak var delegate: RevenueCatInterfaceDelegate?
     
     public var offering: Purchases.Offering?
     

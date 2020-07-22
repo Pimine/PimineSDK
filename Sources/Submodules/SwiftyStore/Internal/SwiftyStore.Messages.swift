@@ -1,5 +1,5 @@
 //
-//  RevenueCat.MerchantController.swift
+//  SwiftyStore.Messages.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,40 +23,27 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
-import SVProgressHUD
+import Foundation
 
-extension RevenueCat {
-open class MerchantController: RestoringController {
+extension SwiftyStore {
+struct Messages {
     
-    // MARK: - View controller lifecycle
+    // MARK: - General
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        subscriptionInterfaceController.fetchOffering()
-    }
+    static let error = "There was an error"
     
-    // MARK: - Public API
+    static let tryAgain = "Please try again"
+    static let contactSupport = "If the problem persists, contact support"
+    static let somethingWentWrong = "Something went wrong. \(tryAgain). \(contactSupport)."
     
-    public func purchasePackage(type packageType: Purchases.PackageType) {
-        SVProgressHUD.show()
-        subscriptionInterfaceController.purchasePackage(type: packageType)
-    }
+    // MARK: - Messages related to receipt verification
     
-    // MARK: - RevenueCatDelegate
+    static let wrongProductType = "\(error). Wrong product type."
+    
+    // MARK: - Messages related to purchases restoring
+    
+    static var restored = "All transactions have been successfully restored."
+    static var nothingToRestore = "There are no transactions that could be restored."
+    static var restoreFailed = "Restore Failed. \(tryAgain). \(contactSupport)."
 
-    override open func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
-    ) {
-        SVProgressHUD.dismiss()
-        guard case let .failure(error) = result else { return }
-        
-        switch error {
-        case .userCancelled:
-            break
-        case .genericProblem(let error), .revenueCatError(let error):
-            PMAlert.show(error: error)
-        }
-    }
 }}

@@ -1,5 +1,5 @@
 //
-//  RevenueCat.MerchantController.swift
+//  SwiftyStore.VerifySubscriptionResult.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,40 +23,19 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
-import SVProgressHUD
+import Foundation
+import SwiftyStoreKit
 
-extension RevenueCat {
-open class MerchantController: RestoringController {
+public extension SwiftyStore {
+enum VerifySubscriptionResult {
+    case purchased(expiryDate: Date, items: [ReceiptItem])
+    case expired(expiryDate: Date, items: [ReceiptItem])
+    case notPurchased
+    case failed(FailureReason)
     
-    // MARK: - View controller lifecycle
-    
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        subscriptionInterfaceController.fetchOffering()
-    }
-    
-    // MARK: - Public API
-    
-    public func purchasePackage(type packageType: Purchases.PackageType) {
-        SVProgressHUD.show()
-        subscriptionInterfaceController.purchasePackage(type: packageType)
-    }
-    
-    // MARK: - RevenueCatDelegate
-
-    override open func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result: RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
-    ) {
-        SVProgressHUD.dismiss()
-        guard case let .failure(error) = result else { return }
-        
-        switch error {
-        case .userCancelled:
-            break
-        case .genericProblem(let error), .revenueCatError(let error):
-            PMAlert.show(error: error)
-        }
+    public enum FailureReason: Error {
+        case generalError(Error)
+        case receiptError(ReceiptError)
     }
 }}
+

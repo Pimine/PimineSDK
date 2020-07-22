@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
     ss.dependency 'ScuffedUI'
   end
 
-  #Utilities
+  # Utilities
   s.subspec 'Utilities' do |ss|
     ss.source_files = 'Sources/Submodules/Utilities/**/*.swift', 'Sources/Submodules/HandyExtensions/UIKit/UIApplicationExtensions.swift'
   end
 
-  #HandyExtensions
+  # HandyExtensions
   s.subspec 'HandyExtensions' do |ss|
     ss.source_files = 'Sources/Submodules/HandyExtensions/**/*.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'

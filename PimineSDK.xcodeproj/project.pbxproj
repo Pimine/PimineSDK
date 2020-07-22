@@ -38,7 +38,12 @@
 		B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */; };
 		B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
 		B7868A42247967AD00367630 /* LocalStore.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */; };
-		EB18377324C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */; };
+		EB0AAD2E24C75A080016E924 /* SwiftyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AAD2D24C75A080016E924 /* SwiftyStore.swift */; };
+		EB0AAD3024C75A590016E924 /* SwiftyStore.Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */; };
+		EB13D8CD24C8788100BE910C /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB13D8BE24C8786B00BE910C /* SwiftyStoreKit.framework */; };
+		EB13D8CE24C8788100BE910C /* SwiftyStoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB13D8BE24C8786B00BE910C /* SwiftyStoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB13D8D024C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */; };
+		EB18377324C072780011E404 /* RevenueCatInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */; };
 		EB18377724C081EE0011E404 /* RevenueCat.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */; };
 		EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */; };
 		EB18377B24C084E00011E404 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377A24C084DF0011E404 /* LocalStore.swift */; };
@@ -50,7 +55,13 @@
 		EB36FCFA24C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36FCF924C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift */; };
 		EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */; };
 		EB4086C924B8CAE700A09084 /* UtilitiesMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */; };
+		EB431C6924C76F5F00E32747 /* SwiftyStore.Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */; };
+		EB431C8824C77D3100E32747 /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
+		EB79179E24C8A52800C50CF3 /* SwiftyStore.Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */; };
+		EB7917B824C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */; };
 		EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */; };
+		EBE9ADDF24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */; };
+		EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +163,62 @@
 			remoteGlobalIDString = 07C50CE71F5EAF6300F46E5A;
 			remoteInfo = "SwifterSwift-macOSTests";
 		};
+		EB13D8BD24C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6502F62D1B985C40004E342D;
+			remoteInfo = SwiftyStoreKit_iOS;
+		};
+		EB13D8BF24C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D74BBB1C24CEC90071AD3E;
+			remoteInfo = SwiftyStoreKit_macOS;
+		};
+		EB13D8C124C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54C0D52C1CF7404500F90BCE;
+			remoteInfo = SwiftyStoreKit_tvOS;
+		};
+		EB13D8C324C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A61BF4DD2481F4970017D9BC;
+			remoteInfo = SwiftyStoreKit_watchOS;
+		};
+		EB13D8C524C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6502F5FE1B985833004E342D;
+			remoteInfo = SwiftyStoreKit_iOSDemo;
+		};
+		EB13D8C724C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4FD3A011C2954C10035CFF3;
+			remoteInfo = SwiftyStoreKit_macOSDemo;
+		};
+		EB13D8C924C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 654287EE1E79F5A000F61800;
+			remoteInfo = SwiftyStoreKit_tvOSDemo;
+		};
+		EB13D8CB24C8786B00BE910C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 658A083E1E2EC5120074A98F;
+			remoteInfo = SwiftyStoreKitTests;
+		};
 		EB36FCED24C063F600A978D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EB36FCE824C063F600A978D6 /* Purchases.xcodeproj */;
@@ -177,6 +244,7 @@
 			files = (
 				B73B61AE24784BE5003CE4C0 /* SVProgressHUD.framework in Embed Frameworks */,
 				EB36FCF224C0640E00A978D6 /* Purchases.framework in Embed Frameworks */,
+				EB13D8CE24C8788100BE910C /* SwiftyStoreKit.framework in Embed Frameworks */,
 				B74C205D247590AD0097A513 /* SwifterSwift.framework in Embed Frameworks */,
 				B73B61A324784AB4003CE4C0 /* MerchantKit.framework in Embed Frameworks */,
 			);
@@ -216,7 +284,11 @@
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.RestoringController.swift; sourceTree = "<group>"; };
-		EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCSubscriptionInterfaceControllerDelegate.swift; sourceTree = "<group>"; };
+		EB0AAD2D24C75A080016E924 /* SwiftyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.swift; sourceTree = "<group>"; };
+		EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Merchant.swift; sourceTree = "<group>"; };
+		EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStoreKit.xcodeproj; path = SwiftyStoreKit/SwiftyStoreKit.xcodeproj; sourceTree = "<group>"; };
+		EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreMerchantDelegate.swift; sourceTree = "<group>"; };
+		EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoringController.swift; sourceTree = "<group>"; };
 		EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Messages.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
@@ -227,7 +299,13 @@
 		EB36FCF924C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.SubscriptionInterfaceController.swift; sourceTree = "<group>"; };
 		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
 		EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesMessages.swift; sourceTree = "<group>"; };
+		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
+		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
+		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
+		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
+		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +315,7 @@
 			files = (
 				B73B61AD24784BE5003CE4C0 /* SVProgressHUD.framework in Frameworks */,
 				EB36FCF124C0640E00A978D6 /* Purchases.framework in Frameworks */,
+				EB13D8CD24C8788100BE910C /* SwiftyStoreKit.framework in Frameworks */,
 				B74C205C247590AD0097A513 /* SwifterSwift.framework in Frameworks */,
 				B73B61A224784AB4003CE4C0 /* MerchantKit.framework in Frameworks */,
 			);
@@ -310,6 +389,7 @@
 		B74C202E2475901D0097A513 = {
 			isa = PBXGroup;
 			children = (
+				EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */,
 				EB36FCE824C063F600A978D6 /* Purchases.xcodeproj */,
 				B73B61A424784BCB003CE4C0 /* SVProgressHUD.xcodeproj */,
 				B73B618C24784780003CE4C0 /* MerchantKit.xcodeproj */,
@@ -411,6 +491,7 @@
 		B75A639E2479326E00DBDB36 /* Submodules */ = {
 			isa = PBXGroup;
 			children = (
+				EB0AAD1C24C759630016E924 /* SwiftyStore */,
 				EB36FCE324C0632700A978D6 /* RevenueCatStore */,
 				B75A63A32479410700DBDB36 /* LocalStore */,
 				B73B61822478047B003CE4C0 /* Math */,
@@ -466,6 +547,33 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EB0AAD1C24C759630016E924 /* SwiftyStore */ = {
+			isa = PBXGroup;
+			children = (
+				EB431C8524C77CEB00E32747 /* Internal */,
+				EBE9ADF824C76C0500F1FDAB /* Protocols */,
+				EB431C8224C7714900E32747 /* Model */,
+				EB431C8624C77CF700E32747 /* Controllers */,
+				EB0AAD2D24C75A080016E924 /* SwiftyStore.swift */,
+			);
+			path = SwiftyStore;
+			sourceTree = "<group>";
+		};
+		EB13D8B324C8786B00BE910C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB13D8BE24C8786B00BE910C /* SwiftyStoreKit.framework */,
+				EB13D8C024C8786B00BE910C /* SwiftyStoreKit.framework */,
+				EB13D8C224C8786B00BE910C /* SwiftyStoreKit.framework */,
+				EB13D8C424C8786B00BE910C /* SwiftyStoreKit.framework */,
+				EB13D8C624C8786B00BE910C /* SwiftyStoreKit_iOSDemo.app */,
+				EB13D8C824C8786B00BE910C /* SwiftyStoreKit_macOSDemo.app */,
+				EB13D8CA24C8786B00BE910C /* SwiftyStoreKit_tvOSDemo.app */,
+				EB13D8CC24C8786B00BE910C /* SwiftyStoreKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EB36FCE324C0632700A978D6 /* RevenueCatStore */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,7 +616,7 @@
 		EB36FCFF24C06DFB00A978D6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				EB18377224C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift */,
+				EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -529,12 +637,48 @@
 			path = Internal;
 			sourceTree = "<group>";
 		};
+		EB431C8224C7714900E32747 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */,
+				EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */,
+				EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB431C8524C77CEB00E32747 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		EB431C8624C77CF700E32747 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */,
+				EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		EB9E05EC24BE145200125BB3 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
 				EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		EBE9ADF824C76C0500F1FDAB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */,
+				EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -612,6 +756,10 @@
 				{
 					ProductGroup = B74C20442475909F0097A513 /* Products */;
 					ProjectRef = B74C20432475909F0097A513 /* SwifterSwift.xcodeproj */;
+				},
+				{
+					ProductGroup = EB13D8B324C8786B00BE910C /* Products */;
+					ProjectRef = EB13D8B224C8786B00BE910C /* SwiftyStoreKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -720,6 +868,62 @@
 			remoteRef = B74C20592475909F0097A513 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		EB13D8BE24C8786B00BE910C /* SwiftyStoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStoreKit.framework;
+			remoteRef = EB13D8BD24C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8C024C8786B00BE910C /* SwiftyStoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStoreKit.framework;
+			remoteRef = EB13D8BF24C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8C224C8786B00BE910C /* SwiftyStoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStoreKit.framework;
+			remoteRef = EB13D8C124C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8C424C8786B00BE910C /* SwiftyStoreKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyStoreKit.framework;
+			remoteRef = EB13D8C324C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8C624C8786B00BE910C /* SwiftyStoreKit_iOSDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftyStoreKit_iOSDemo.app;
+			remoteRef = EB13D8C524C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8C824C8786B00BE910C /* SwiftyStoreKit_macOSDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftyStoreKit_macOSDemo.app;
+			remoteRef = EB13D8C724C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8CA24C8786B00BE910C /* SwiftyStoreKit_tvOSDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftyStoreKit_tvOSDemo.app;
+			remoteRef = EB13D8C924C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB13D8CC24C8786B00BE910C /* SwiftyStoreKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyStoreKitTests.xctest;
+			remoteRef = EB13D8CB24C8786B00BE910C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EB36FCEE24C063F600A978D6 /* Purchases.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -754,8 +958,10 @@
 				EB2604FF24C0AF8F00BDF89F /* RevenueCat.Price.swift in Sources */,
 				EB36FCFA24C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift in Sources */,
 				B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */,
+				EB0AAD2E24C75A080016E924 /* SwiftyStore.swift in Sources */,
 				B75A63A7247942AE00DBDB36 /* LocalStore.MerchantController.swift in Sources */,
 				B715F88E2475CDC300BB98CD /* UIControlExtensions.swift in Sources */,
+				EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */,
 				B7868A42247967AD00367630 /* LocalStore.RestoringController.swift in Sources */,
 				EB18377B24C084E00011E404 /* LocalStore.swift in Sources */,
 				EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */,
@@ -764,24 +970,31 @@
 				B715F87F2475C1E700BB98CD /* NameDescribable.swift in Sources */,
 				B73B618B24780487003CE4C0 /* PMath.swift in Sources */,
 				B768DABC2475E24200FA3B79 /* UILabelExtensions.swift in Sources */,
-				EB18377324C072780011E404 /* RCSubscriptionInterfaceControllerDelegate.swift in Sources */,
+				EB18377324C072780011E404 /* RevenueCatInterfaceDelegate.swift in Sources */,
 				B715F8782475BE8400BB98CD /* UserDefaultsBacked.swift in Sources */,
 				EB18377724C081EE0011E404 /* RevenueCat.RestoringController.swift in Sources */,
 				B715F87A2475BF7B00BB98CD /* AnyOptional.swift in Sources */,
 				B715F8852475C41700BB98CD /* PMGeneralError.swift in Sources */,
+				EBE9ADDF24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift in Sources */,
 				B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */,
+				EB13D8D024C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift in Sources */,
+				EB431C6924C76F5F00E32747 /* SwiftyStore.Product.swift in Sources */,
 				EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */,
+				EB0AAD3024C75A590016E924 /* SwiftyStore.Merchant.swift in Sources */,
 				B715F8812475C1FC00BB98CD /* UIViewControllerExtensions.swift in Sources */,
 				B75A63A52479411500DBDB36 /* LocalStore.Messages.swift in Sources */,
 				B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */,
 				EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */,
+				EB431C8824C77D3100E32747 /* SwiftyStore.Messages.swift in Sources */,
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
 				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
 				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
+				EB79179E24C8A52800C50CF3 /* SwiftyStore.Price.swift in Sources */,
 				EB4086C924B8CAE700A09084 /* UtilitiesMessages.swift in Sources */,
 				B715F87D2475C0FF00BB98CD /* SetExtensions.swift in Sources */,
 				EB36FCF824C0683300A978D6 /* RevenueCat.swift in Sources */,
 				B74C20792475AA750097A513 /* PMAlert.swift in Sources */,
+				EB7917B824C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift in Sources */,
 				EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */,
 				B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */,
 				B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */,

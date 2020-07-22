@@ -10,3 +10,7 @@
 [submodule "purchases-ios"]
 	path = purchases-ios
 	url = https://github.com/RevenueCat/purchases-ios
+[submodule "SwiftyStoreKit"]
+	path = SwiftyStoreKit
+	url = https://github.com/Pimine/SwiftyStoreKit
+	branch = master

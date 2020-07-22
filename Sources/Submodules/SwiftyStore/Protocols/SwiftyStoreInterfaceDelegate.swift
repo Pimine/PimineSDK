@@ -1,5 +1,5 @@
 //
-//  RCSubscriptionInterfaceControllerDelegate.swift
+//  SwiftyStoreInterfaceDelegate.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,34 +23,23 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
+import SwiftyStoreKit
 
-public protocol RCSubscriptionInterfaceControllerDelegate: class {
+public protocol SwiftyStoreInterfaceDelegate: class {
     
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didChangeFetchingStateTo state: SwiftyStore.ProductInterfaceController.FetchingState
     )
     
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didCommitPurchaseWith result:  SwiftyStore.ProductInterfaceController.CommitPurchaseResult
     )
     
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didRestorePurchasesWith result:  SwiftyStore.ProductInterfaceController.RestorePurchasesResult
     )
-}
-
-public extension RCSubscriptionInterfaceControllerDelegate {
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
-    ) { }
     
-    func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
-    ) { }
 }
