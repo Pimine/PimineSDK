@@ -39,12 +39,12 @@ final public class ProductInterfaceController {
     
     // MARK: - Initialization
     
-    public init(productIdentifiers: Set<String>, merchant: SwiftyStore.Merchant) {
+    public init(products: Set<Product>, with merchant: SwiftyStore.Merchant) {
         self.merchant = merchant
-        self.productIdentifiers = productIdentifiers
+        self.productIdentifiers = Set(products.map(\.identifier))
         
-        productIdentifiers.forEach {
-            productStates[$0] = .unknown
+        products.forEach {
+            productStates[$0.identifier] = .unknown
         }
     }
     

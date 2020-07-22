@@ -62,6 +62,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/Submodules/SwiftyStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SwiftyStoreKit'
+    ss.dependency 'SVProgressHUD'
   end
 
   # Math
