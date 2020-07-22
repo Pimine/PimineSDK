@@ -29,7 +29,7 @@ import SwiftyStoreKit
 extension SwiftyStore {
 public final class Merchant {
     
-    weak var delegate: SwiftyStoreMerchantDelegate?
+    public weak var delegate: SwiftyStoreMerchantDelegate?
     
     private(set) var products = [String: Product]()
     
@@ -37,7 +37,7 @@ public final class Merchant {
     
     // MARK: - Setup
     
-    func setup(products: Set<Product>, sharedSecret: String) {
+    public func setup(products: Set<Product>, sharedSecret: String) {
         self.sharedSecret = sharedSecret
         
         products.forEach {
@@ -47,7 +47,7 @@ public final class Merchant {
     
     // MARK: - Purchases verification
     
-    func verifySubscriptions(
+    public func verifySubscriptions(
         _ subscriptions: Set<Product>,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
@@ -77,7 +77,7 @@ public final class Merchant {
         }
     }
     
-    func verifySubscription(
+    public func verifySubscription(
         _ subscription: Product,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
@@ -127,7 +127,7 @@ public final class Merchant {
         in receipt: ReceiptInfo
     ) -> VerifySubscriptionResult {
         let verifySubscriptionResult = SwiftyStoreKit.verifySubscriptions(
-            productIds: subscriptions.setmap(transform: \.identifier),
+            productIds: Set(subscriptions.map(\.identifier)),
             inReceipt: receipt
         )
         

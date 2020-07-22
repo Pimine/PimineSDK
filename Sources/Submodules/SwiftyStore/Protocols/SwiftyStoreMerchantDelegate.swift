@@ -25,7 +25,7 @@
 
 import SwiftyStoreKit
 
-protocol SwiftyStoreMerchantDelegate: class {
+public protocol SwiftyStoreMerchantDelegate: class {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,

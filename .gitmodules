@@ -12,5 +12,4 @@
 	url = https://github.com/RevenueCat/purchases-ios
 [submodule "SwiftyStoreKit"]
 	path = SwiftyStoreKit
-url=https://github.com/bizz84/SwiftyStoreKit
-	branch = master
+	url = https://github.com/bizz84/SwiftyStoreKit

@@ -57,6 +57,13 @@ Pod::Spec.new do |s|
     ss.dependency 'Purchases'
   end
 
+  # SwiftyStore
+  s.subspec 'SwiftyStore' do |ss|
+    ss.source_files = 'Sources/Submodules/SwiftyStore/**/*.swift'
+    ss.dependency 'Pimine/Utilities'
+    ss.dependency 'SwiftyStoreKit'
+  end
+
   # Math
   s.subspec 'Math' do |ss|
   	ss.source_files = 'Sources/Submodules/Math/*.swift'
