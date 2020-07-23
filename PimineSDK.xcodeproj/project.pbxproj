@@ -62,6 +62,7 @@
 		EB7917BA24C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */; };
 		EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */; };
 		EBDBD81B24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */; };
+		EBDBD83524C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */; };
 		EBE9ADDF24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */; };
 		EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -308,6 +309,7 @@
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
+		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -666,6 +668,7 @@
 				EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */,
 				EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */,
 				EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */,
+				EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -994,6 +997,7 @@
 				EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */,
 				EB431C8824C77D3100E32747 /* SwiftyStore.Messages.swift in Sources */,
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
+				EBDBD83524C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift in Sources */,
 				B74C206A24759A470097A513 /* PMUtilities.swift in Sources */,
 				B768DABE2475E37900FA3B79 /* CollectionExtensions.swift in Sources */,
 				EB79179E24C8A52800C50CF3 /* SwiftyStore.Price.swift in Sources */,
