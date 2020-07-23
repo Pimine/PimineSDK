@@ -39,3 +39,20 @@ public protocol SwiftyStoreMerchantDelegate: class {
         with result: VerifyPurchaseResult
     )
 }
+
+// MARK: - Default implementation
+
+public extension SwiftyStoreMerchantDelegate {
+    
+    func merchant(
+        _ merchant: SwiftyStore.Merchant,
+        verifiedSubscriptions: Set<SwiftyStore.Product>,
+        with result: SwiftyStore.VerifySubscriptionResult
+    ) { }
+    
+    func merchant(
+        _ merchant: SwiftyStore.Merchant,
+        verifiedPurchase: String,
+        with result: VerifyPurchaseResult
+    ) { }
+}
