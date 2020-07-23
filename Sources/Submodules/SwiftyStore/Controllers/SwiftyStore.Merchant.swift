@@ -33,17 +33,24 @@ public final class Merchant {
     
     private(set) var products = [String: Product]()
     
-    private var sharedSecret: String!
+    private let sharedSecret: String
+    
+    // MARK: - Initialization
+    
+    public init(sharedSecret: String, delegate: SwiftyStoreMerchantDelegate) {
+        self.sharedSecret = sharedSecret
+        self.delegate = delegate
+    }
     
     // MARK: - Setup
     
-    public func setup(products: Set<Product>, sharedSecret: String) {
-        self.sharedSecret = sharedSecret
-        
+    public func register(_ products: Set<Product>) {
         products.forEach {
             self.products[$0.identifier] = $0
         }
-        
+    }
+    
+    public func setup() {
         setupTransactionObserver()
     }
     
