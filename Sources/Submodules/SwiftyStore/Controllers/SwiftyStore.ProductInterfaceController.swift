@@ -39,9 +39,10 @@ final public class ProductInterfaceController {
     
     // MARK: - Initialization
     
-    public init(products: Set<Product>, with merchant: SwiftyStore.Merchant) {
-        self.merchant = merchant
+    public init(products: Set<Product>, merchant: SwiftyStore.Merchant, delegate: SwiftyStoreInterfaceDelegate) {
         self.productIdentifiers = Set(products.map(\.identifier))
+        self.merchant = merchant
+        self.delegate = delegate
         
         products.forEach {
             productStates[$0.identifier] = .unknown
