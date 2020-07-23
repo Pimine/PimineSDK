@@ -67,6 +67,8 @@ open class MerchantController: RestoringController {
         }
     }
     
+    // MARK: - Helpers
+    
     private func handleReceiptError(_ error: ReceiptError) {
         switch error {
         case .noReceiptData:
@@ -76,5 +78,9 @@ open class MerchantController: RestoringController {
         default:
             PMAlert.show(message: "\(Messages.verificationFailed): \(error.localizedDescription)")
         }
+    }
+    
+    public func price(for product: Product) -> Price? {
+        productInterfaceController.price(for: product)
     }
 }}

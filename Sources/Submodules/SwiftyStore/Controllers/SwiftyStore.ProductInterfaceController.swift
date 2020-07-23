@@ -71,15 +71,6 @@ final public class ProductInterfaceController {
         }
     }
     
-    public func state(for product: Product) -> ProductState {
-        productStates[product.identifier] ?? .unknown
-    }
-    
-    public func price(for product: Product) -> Price? {
-        guard case .purchasable(let price) = state(for: product) else { return nil }
-        return price
-    }
-    
     public func purchaseProduct(_ product: Product) {
         SwiftyStoreKit.purchaseProduct(product.identifier) { (result) in
             switch result {
@@ -133,6 +124,15 @@ final public class ProductInterfaceController {
     }
     
     // MARK: - Helpers
+    
+    public func state(for product: Product) -> ProductState {
+        productStates[product.identifier] ?? .unknown
+    }
+    
+    public func price(for product: Product) -> Price? {
+        guard case .purchasable(let price) = state(for: product) else { return nil }
+        return price
+    }
     
     private func changeFetchingState(to state: FetchingState) {
         delegate?.productInterfaceController(self, didChangeFetchingStateTo: state)
