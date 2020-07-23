@@ -75,6 +75,11 @@ final public class ProductInterfaceController {
         productStates[product.identifier] ?? .unknown
     }
     
+    public func price(for product: Product) -> Price? {
+        guard case .purchasable(let price) = state(for: product) else { return nil }
+        return price
+    }
+    
     public func purchaseProduct(_ product: Product) {
         SwiftyStoreKit.purchaseProduct(product.identifier) { (result) in
             switch result {
