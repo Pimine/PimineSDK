@@ -29,7 +29,7 @@ import StoreKit
 extension SwiftyStore {
 final public class ProductInterfaceController {
     
-    weak var delegate: SwiftyStoreInterfaceDelegate?
+    public weak var delegate: SwiftyStoreInterfaceDelegate?
     
     private let merchant: SwiftyStore.Merchant
     
