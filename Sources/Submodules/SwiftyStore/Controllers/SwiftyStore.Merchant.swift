@@ -44,7 +44,7 @@ public final class Merchant {
     
     // MARK: - Setup
     
-    public func register(_ products: Set<Product>) {
+    public func register<Products: Sequence>(_ products: Products) where Products.Iterator.Element == Product {
         products.forEach {
             self.products[$0.identifier] = $0
         }
