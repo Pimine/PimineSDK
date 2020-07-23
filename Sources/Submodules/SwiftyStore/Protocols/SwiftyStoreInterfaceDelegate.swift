@@ -43,3 +43,23 @@ public protocol SwiftyStoreInterfaceDelegate: class {
     )
     
 }
+
+// MARK: - Default implementation
+
+public extension SwiftyStoreInterfaceDelegate {
+    
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didChangeFetchingStateTo state: SwiftyStore.ProductInterfaceController.FetchingState
+    ) { }
+    
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didCommitPurchaseWith result:  SwiftyStore.ProductInterfaceController.CommitPurchaseResult
+    ) { }
+    
+    func productInterfaceController(
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didRestorePurchasesWith result:  SwiftyStore.ProductInterfaceController.RestorePurchasesResult
+    ) { }
+}
