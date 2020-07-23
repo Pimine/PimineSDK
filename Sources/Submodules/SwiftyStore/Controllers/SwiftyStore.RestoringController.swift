@@ -56,7 +56,7 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     
     open func productInterfaceController(
         _ controller: ProductInterfaceController,
-        didRestorePurchasesWith result: ProductInterfaceController.RestorePurchasesResult
+        didRestorePurchasesWith result: RestorePurchasesResult
     ) {
         SVProgressHUD.dismiss()
         switch result {

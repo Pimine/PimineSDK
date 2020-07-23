@@ -27,13 +27,8 @@ import Foundation
 
 extension SwiftyStore {
 public struct Price {
-    
-    // MARK: - Properties
-    
     public var price: NSDecimalNumber
     public var locale: Locale
-    
-    // MARK: - Initialization
     
     public init(price: NSDecimalNumber, locale: Locale) {
         self.price = price

@@ -1,5 +1,5 @@
 //
-//  SwiftyMerchantDelegate.swift
+//  SwiftyStore.Typealiases.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,39 +25,7 @@
 
 import SwiftyStoreKit
 
-public protocol SwiftyStoreMerchantDelegate: class {
+extension SwiftyStore {
     
-    func merchant(
-        _ merchant: SwiftyStore.Merchant,
-        verifiedSubscriptions: Set<SwiftyStore.Product>,
-        with result: SwiftyStore.VerifySubscriptionResult
-    )
-    
-    func merchant(
-        _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: String,
-        with result: VerifyPurchaseResult
-    )
-    
-    func merchant(
-        _ merchant: SwiftyStore.Merchant,
-        didRestorePurchasesWith result:  SwiftyStore.RestorePurchasesResult
-    )
-}
-
-// MARK: - Default implementation
-
-public extension SwiftyStoreMerchantDelegate {
-    
-    func merchant(
-        _ merchant: SwiftyStore.Merchant,
-        verifiedSubscriptions: Set<SwiftyStore.Product>,
-        with result: SwiftyStore.VerifySubscriptionResult
-    ) { }
-    
-    func merchant(
-        _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: String,
-        with result: VerifyPurchaseResult
-    ) { }
+    public typealias RestorePurchasesResult = Swift.Result<[Purchase], Error>
 }

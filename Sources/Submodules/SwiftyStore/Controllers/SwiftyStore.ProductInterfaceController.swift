@@ -33,9 +33,11 @@ final public class ProductInterfaceController {
     
     private let merchant: SwiftyStore.Merchant
     
+    private var products: [String: Product] = [:]
+    
     private let productIdentifiers: Set<String>
     
-    private var productStates = [String: ProductState]()
+    private var productStates: [String: ProductState] = [:]
     
     // MARK: - Initialization
     
@@ -44,7 +46,8 @@ final public class ProductInterfaceController {
         self.productIdentifiers = Set(products.map(\.identifier))
         
         products.forEach {
-            productStates[$0.identifier] = .unknown
+            self.productStates[$0.identifier] = .unknown
+            self.products[$0.identifier] = $0
         }
     }
     
@@ -89,13 +92,8 @@ final public class ProductInterfaceController {
     }
 
     public func restorePurchases() {
-        SwiftyStoreKit.restorePurchases { (result) in
-            if result.restoreFailedPurchases.count > 0 {
-                let error = PMGeneralError(message: Messages.restoreFailed)
-                self.resolveRestoreTask(with: .failure(error))
-            } else {
-                self.resolveRestoreTask(with: .success(result.restoredPurchases))
-            }
+        merchant.restorePurchases { result in
+            self.resolveRestoreTask(with: result)
         }
     }
     
@@ -139,15 +137,6 @@ final public class ProductInterfaceController {
         delegate?.productInterfaceController(self, didRestorePurchasesWith: result)
     }
 }}
-
-
-
-// MARK: - RestorePurchases
-
-public extension SwiftyStore.ProductInterfaceController {
-
-    typealias RestorePurchasesResult = Swift.Result<[Purchase], Error>
-}
 
 // MARK: - CommitPurchase
 

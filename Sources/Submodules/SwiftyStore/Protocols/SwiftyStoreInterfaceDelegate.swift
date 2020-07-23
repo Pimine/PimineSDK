@@ -39,7 +39,7 @@ public protocol SwiftyStoreInterfaceDelegate: class {
     
     func productInterfaceController(
         _ controller: SwiftyStore.ProductInterfaceController,
-        didRestorePurchasesWith result:  SwiftyStore.ProductInterfaceController.RestorePurchasesResult
+        didRestorePurchasesWith result:  SwiftyStore.RestorePurchasesResult
     )
     
 }
@@ -60,6 +60,6 @@ public extension SwiftyStoreInterfaceDelegate {
     
     func productInterfaceController(
         _ controller: SwiftyStore.ProductInterfaceController,
-        didRestorePurchasesWith result:  SwiftyStore.ProductInterfaceController.RestorePurchasesResult
+        didRestorePurchasesWith result:  SwiftyStore.RestorePurchasesResult
     ) { }
 }

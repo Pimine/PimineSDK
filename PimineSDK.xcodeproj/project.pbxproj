@@ -61,6 +61,7 @@
 		EB7917B824C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */; };
 		EB7917BA24C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */; };
 		EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */; };
+		EBDBD81B24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */; };
 		EBE9ADDF24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */; };
 		EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -306,6 +307,7 @@
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -642,6 +644,7 @@
 		EB431C8224C7714900E32747 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */,
 				EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */,
 				EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */,
 				EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */,
@@ -1003,6 +1006,7 @@
 				B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */,
 				B715F8872475C62000BB98CD /* UITextViewExtensions.swift in Sources */,
 				B715F8912475D5C500BB98CD /* BundleExtensions.swift in Sources */,
+				EBDBD81B24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
