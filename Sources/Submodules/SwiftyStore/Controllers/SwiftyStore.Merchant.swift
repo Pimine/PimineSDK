@@ -43,6 +43,23 @@ public final class Merchant {
         products.forEach {
             self.products[$0.identifier] = $0
         }
+        
+        setupTransactionObserver()
+    }
+    
+    private func setupTransactionObserver() {
+        SwiftyStoreKit.completeTransactions { purchases in
+            for purchase in purchases {
+                guard case .restored = purchase.transaction.transactionState else { return }
+                guard let product = self.products[purchase.productId] else { return }
+                switch product.kind {
+                case .consumable, .nonConsumable:
+                    self.verifyPurchase(product: product)
+                case .subscription:
+                    self.verifySubscription(product)
+                }
+            }
+        }
     }
     
     // MARK: - Purchases verification
