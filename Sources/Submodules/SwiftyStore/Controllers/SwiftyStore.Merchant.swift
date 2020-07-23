@@ -87,7 +87,7 @@ public final class Merchant {
             return completion(result)
         }
         
-        verifyReceipt { (verifyReceiptResult) in
+        verifyReceipt(forceRefresh: forceRefresh) { (verifyReceiptResult) in
             
             switch verifyReceiptResult {
             case .success(let receipt):
@@ -115,7 +115,7 @@ public final class Merchant {
             return completion(result)
         }
         
-        verifyReceipt { (verifyReceiptResult) in
+        verifyReceipt(forceRefresh: forceRefresh) { (verifyReceiptResult) in
             
             switch verifyReceiptResult {
             case .success(let receipt):
