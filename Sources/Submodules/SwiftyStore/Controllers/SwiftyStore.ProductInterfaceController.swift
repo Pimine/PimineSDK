@@ -71,6 +71,10 @@ final public class ProductInterfaceController {
         }
     }
     
+    public func state(for product: Product) -> ProductState {
+        productStates[product.identifier] ?? .unknown
+    }
+    
     public func purchaseProduct(_ product: Product) {
         SwiftyStoreKit.purchaseProduct(product.identifier) { (result) in
             switch result {
