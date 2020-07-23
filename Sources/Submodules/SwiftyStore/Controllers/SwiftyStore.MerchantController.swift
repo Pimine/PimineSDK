@@ -61,7 +61,7 @@ open class MerchantController: RestoringController {
             PMAlert.show(message: Messages.paymentInvalid)
         case .genericProblem(let error) where error is SKError:
             let errorCode = (error as! SKError).errorCode
-            PMAlert.show(message: "\(Messages.storeCommunicationError) (Error code: \(errorCode)")
+            PMAlert.show(message: "\(Messages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem(let error):
             PMAlert.show(message: "\(Messages.error). \(error.localizedDescription)")
         }
