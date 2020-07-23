@@ -107,7 +107,7 @@ final public class ProductInterfaceController {
             merchant.verifySubscription(product) { (verifySubscriptionResult) in
                 switch verifySubscriptionResult {
                 case .purchased:
-                    self.resolvePurchaseTask(with: .success(()))
+                    self.resolvePurchaseTask(with: .success(purchaseDetails))
                 case .expired, .notPurchased:
                     let error = PMGeneralError(message: Messages.somethingWentWrong)
                     self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
@@ -142,7 +142,7 @@ final public class ProductInterfaceController {
 
 public extension SwiftyStore.ProductInterfaceController {
 
-    typealias CommitPurchaseResult = Swift.Result<Void, CommitPurchaseError>
+    typealias CommitPurchaseResult = Swift.Result<PurchaseDetails, CommitPurchaseError>
 
     enum CommitPurchaseError : Error {
         case userCancelled
