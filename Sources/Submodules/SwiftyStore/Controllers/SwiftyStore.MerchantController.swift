@@ -38,6 +38,7 @@ open class MerchantController: RestoringController {
     // MARK: - Public API
     
     public func purchaseProduct(_ product: Product) {
+        SVProgressHUD.show()
         productInterfaceController.purchaseProduct(product)
     }
     
