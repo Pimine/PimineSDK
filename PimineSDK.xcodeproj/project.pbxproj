@@ -57,6 +57,7 @@
 		EB4086C924B8CAE700A09084 /* UtilitiesMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */; };
 		EB431C6924C76F5F00E32747 /* SwiftyStore.Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */; };
 		EB431C8824C77D3100E32747 /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
+		EB4F6B4424D08ABD008F5BA9 /* PMValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */; };
 		EB79179E24C8A52800C50CF3 /* SwiftyStore.Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */; };
 		EB7917B824C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */; };
 		EB7917BA24C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */; };
@@ -304,6 +305,7 @@
 		EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesMessages.swift; sourceTree = "<group>"; };
 		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
 		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
+		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				B715F8842475C41700BB98CD /* PMGeneralError.swift */,
 				B74C206924759A470097A513 /* PMUtilities.swift */,
 				EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */,
+				EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -995,6 +998,7 @@
 				B75A63A52479411500DBDB36 /* LocalStore.Messages.swift in Sources */,
 				B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */,
 				EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */,
+				EB4F6B4424D08ABD008F5BA9 /* PMValidator.swift in Sources */,
 				EB431C8824C77D3100E32747 /* SwiftyStore.Messages.swift in Sources */,
 				B715F8892475C84A00BB98CD /* ClosureSleeve.swift in Sources */,
 				EBDBD83524C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift in Sources */,
