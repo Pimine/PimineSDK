@@ -29,22 +29,22 @@ public struct PMessages {
     
     // MARK: - General
     
-    static let error = "There was an error"
-    static let tryAgain = "Please try again"
-    static let contactSupport = "If the problem persists, contact support"
-    static let somethingWentWrong = "Something went wrong. \(tryAgain). \(contactSupport)."
+    public static let error = "There was an error"
+    public static let tryAgain = "Please try again"
+    public static let contactSupport = "If the problem persists, contact support"
+    public static let somethingWentWrong = "Something went wrong. \(tryAgain). \(contactSupport)."
     
     // MARK: - Store
     
-    static let productPurchased = "You have already bought this product."
-    static let unknownProductState = "We unable to fetch product information."
-    static let paymentInvalid = "One of the payment parameters was not recognized by the App Store."
-    static let productNotAvailable = "The product is not available in the current storefront."
-    static let notAuthorized = "You are not authorized to make payments"
-    static let purchasesMayBeRestricted = "In-App Purchases may be restricted on your device"
-    static let cannotMakePayments = "\(notAuthorized). \(purchasesMayBeRestricted)."
-    static let storeCommunicationError = "There was an error communicating with the iTunes Store."
-    static let restored = "All transactions have been successfully restored."
-    static let nothingToRestore = "There are no transactions that could be restored."
-    static let restorationFailed = "Some products have not been restored. \(tryAgain). \(contactSupport)."
+    public static let productPurchased = "You have already bought this product."
+    public static let unknownProductState = "We unable to fetch product information."
+    public static let paymentInvalid = "One of the payment parameters was not recognized by the App Store."
+    public static let productNotAvailable = "The product is not available in the current storefront."
+    public static let notAuthorized = "You are not authorized to make payments"
+    public static let purchasesMayBeRestricted = "In-App Purchases may be restricted on your device"
+    public static let cannotMakePayments = "\(notAuthorized). \(purchasesMayBeRestricted)."
+    public static let storeCommunicationError = "There was an error communicating with the iTunes Store."
+    public static let restored = "All transactions have been successfully restored."
+    public static let nothingToRestore = "There are no transactions that could be restored."
+    public static let restorationFailed = "Some products have not been restored. \(tryAgain). \(contactSupport)."
 }
