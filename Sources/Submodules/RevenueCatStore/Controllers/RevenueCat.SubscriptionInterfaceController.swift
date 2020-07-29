@@ -51,7 +51,7 @@ final public class SubscriptionInterfaceController {
                 self.changeFetchingState(to: .failed(.revenueCatError(error)))
             }
             guard let offering = offerings?.current else {
-                let error = PMGeneralError(message: RevenueCat.Messages.cannotFetchOffering)
+                let error = PMGeneralError(message: PMessages.somethingWentWrong)
                 self.changeFetchingState(to: .failed(.genericProblem(error)))
                 return
             }
@@ -73,12 +73,12 @@ final public class SubscriptionInterfaceController {
     public func purchasePackage(type: Purchases.PackageType) {
         switch packageState(for: type) {
         case .unknown:
-            let error = PMGeneralError(message: RevenueCat.Messages.unknownProductState)
+            let error = PMGeneralError(message: PMessages.unknownProductState)
             resolvePurchaseTask(with: .failure(.genericProblem(error)))
         case .purchasable(let purchasablePackage):
             purchasePackage(purchasablePackage)
         case .packageUnavailable:
-            let error = PMGeneralError(message: RevenueCat.Messages.productNotAvailable)
+            let error = PMGeneralError(message: PMessages.productNotAvailable)
             resolvePurchaseTask(with: .failure(.genericProblem(error)))
         }
     }

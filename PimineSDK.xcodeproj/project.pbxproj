@@ -29,7 +29,6 @@
 		B74C206A24759A470097A513 /* PMUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C206924759A470097A513 /* PMUtilities.swift */; };
 		B74C206E24759CAB0097A513 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */; };
 		B74C20792475AA750097A513 /* PMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74C20782475AA750097A513 /* PMAlert.swift */; };
-		B75A63A52479411500DBDB36 /* LocalStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A42479411500DBDB36 /* LocalStore.Messages.swift */; };
 		B75A63A7247942AE00DBDB36 /* LocalStore.MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A6247942AE00DBDB36 /* LocalStore.MerchantController.swift */; };
 		B75A63AA2479495900DBDB36 /* ProductInterfaceControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */; };
 		B75A63AC24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A63AB24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift */; };
@@ -45,7 +44,6 @@
 		EB13D8D024C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */; };
 		EB18377324C072780011E404 /* RevenueCatInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */; };
 		EB18377724C081EE0011E404 /* RevenueCat.RestoringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */; };
-		EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */; };
 		EB18377B24C084E00011E404 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377A24C084DF0011E404 /* LocalStore.swift */; };
 		EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */; };
 		EB2604FF24C0AF8F00BDF89F /* RevenueCat.Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */; };
@@ -64,6 +62,7 @@
 		EB9E05FC24BE145E00125BB3 /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */; };
 		EBDBD81B24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */; };
 		EBDBD83524C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */; };
+		EBDE233324D19A8300740059 /* PMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE233224D19A8300740059 /* PMessages.swift */; };
 		EBE9ADDF24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */; };
 		EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -279,7 +278,6 @@
 		B74C206924759A470097A513 /* PMUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUtilities.swift; sourceTree = "<group>"; };
 		B74C206D24759CAB0097A513 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		B74C20782475AA750097A513 /* PMAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAlert.swift; sourceTree = "<group>"; };
-		B75A63A42479411500DBDB36 /* LocalStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.Messages.swift; sourceTree = "<group>"; };
 		B75A63A6247942AE00DBDB36 /* LocalStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.MerchantController.swift; sourceTree = "<group>"; };
 		B75A63A92479495900DBDB36 /* ProductInterfaceControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInterfaceControllerExtensions.swift; sourceTree = "<group>"; };
 		B75A63AB24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.SubscriptionPriceFormatter.swift; sourceTree = "<group>"; };
@@ -294,7 +292,6 @@
 		EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreMerchantDelegate.swift; sourceTree = "<group>"; };
 		EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoringController.swift; sourceTree = "<group>"; };
-		EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Messages.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
 		EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Price.swift; sourceTree = "<group>"; };
@@ -312,6 +309,7 @@
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
 		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
+		EBDE233224D19A8300740059 /* PMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMessages.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -456,6 +454,7 @@
 				B74C206924759A470097A513 /* PMUtilities.swift */,
 				EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */,
 				EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */,
+				EBDE233224D19A8300740059 /* PMessages.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -530,7 +529,6 @@
 		B75A63A32479410700DBDB36 /* LocalStore */ = {
 			isa = PBXGroup;
 			children = (
-				EB4086CA24B8CAFA00A09084 /* Internal */,
 				B75A63A82479494300DBDB36 /* Extensions */,
 				B7868A51247968E400367630 /* Controllers */,
 				B75A63AB24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift */,
@@ -586,7 +584,6 @@
 		EB36FCE324C0632700A978D6 /* RevenueCatStore */ = {
 			isa = PBXGroup;
 			children = (
-				EB36FD0024C06F2D00A978D6 /* Internal */,
 				EB36FCFF24C06DFB00A978D6 /* Protocols */,
 				EB36FCFD24C06DBB00A978D6 /* Models */,
 				EB36FCFE24C06DDA00A978D6 /* Controllers */,
@@ -628,22 +625,6 @@
 				EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		EB36FD0024C06F2D00A978D6 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				EB18377824C084BE0011E404 /* RevenueCat.Messages.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		EB4086CA24B8CAFA00A09084 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				B75A63A42479411500DBDB36 /* LocalStore.Messages.swift */,
-			);
-			path = Internal;
 			sourceTree = "<group>";
 		};
 		EB431C8224C7714900E32747 /* Model */ = {
@@ -976,6 +957,7 @@
 				EBE9ADFA24C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift in Sources */,
 				B7868A42247967AD00367630 /* LocalStore.RestoringController.swift in Sources */,
 				EB18377B24C084E00011E404 /* LocalStore.swift in Sources */,
+				EBDE233324D19A8300740059 /* PMessages.swift in Sources */,
 				EB7917BA24C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift in Sources */,
 				EB4086B924B8C97400A09084 /* PMUserNotificationManager.swift in Sources */,
 				B75A63AC24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift in Sources */,
@@ -992,10 +974,8 @@
 				B768DAB32475DFC700FA3B79 /* UITabBarControllerExtensions.swift in Sources */,
 				EB13D8D024C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift in Sources */,
 				EB431C6924C76F5F00E32747 /* SwiftyStore.Product.swift in Sources */,
-				EB18377924C084BE0011E404 /* RevenueCat.Messages.swift in Sources */,
 				EB0AAD3024C75A590016E924 /* SwiftyStore.Merchant.swift in Sources */,
 				B715F8812475C1FC00BB98CD /* UIViewControllerExtensions.swift in Sources */,
-				B75A63A52479411500DBDB36 /* LocalStore.Messages.swift in Sources */,
 				B768DAC62475E68100FA3B79 /* UIStackViewExtensions.swift in Sources */,
 				EB2604FD24C0AB5700BDF89F /* RevenueCat.MerchantController.swift in Sources */,
 				EB4F6B4424D08ABD008F5BA9 /* PMValidator.swift in Sources */,

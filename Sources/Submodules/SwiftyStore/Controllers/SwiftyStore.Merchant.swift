@@ -82,7 +82,7 @@ public final class Merchant {
             let restorePurchasesResult: RestorePurchasesResult
             
             if result.restoreFailedPurchases.count > 0 {
-                let error = PMGeneralError(message: Messages.restoreFailed)
+                let error = PMGeneralError(message: PMessages.restorationFailed)
                 restorePurchasesResult = .failure(error)
             } else {
                 restorePurchasesResult = .success(result.restoredPurchases)

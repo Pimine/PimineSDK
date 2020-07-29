@@ -109,7 +109,7 @@ final public class ProductInterfaceController {
                 case .purchased:
                     self.resolvePurchaseTask(with: .success(purchaseDetails))
                 case .expired, .notPurchased:
-                    let error = PMGeneralError(message: Messages.somethingWentWrong)
+                    let error = PMGeneralError(message: PMessages.somethingWentWrong)
                     self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
                 case .failed(let reason):
                     switch reason {

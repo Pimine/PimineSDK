@@ -61,9 +61,9 @@ open class RestoringController: UIViewController, ProductInterfaceControllerDele
         SVProgressHUD.dismiss()
         switch result {
         case .success(let products) where products.count > 0:
-            PMAlert.show(message: LocalStore.Messages.restored)
+            PMAlert.show(message: PMessages.restored)
         case .success:
-            PMAlert.show(message: LocalStore.Messages.nothingToRestore)
+            PMAlert.show(message: PMessages.nothingToRestore)
         case .failure(let error):
             PMAlert.show(error: error)
         }

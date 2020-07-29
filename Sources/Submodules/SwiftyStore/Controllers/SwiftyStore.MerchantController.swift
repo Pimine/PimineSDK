@@ -55,16 +55,16 @@ open class MerchantController: RestoringController {
         case .receiptError(let error):
             handleReceiptError(error)
         case .purchaseNotAvailable:
-            PMAlert.show(message: Messages.productNotAvailable)
+            PMAlert.show(message: PMessages.productNotAvailable)
         case .paymentNotAllowed:
-            PMAlert.show(message: Messages.cannotMakePayments)
+            PMAlert.show(message: PMessages.cannotMakePayments)
         case .paymentInvalid:
-            PMAlert.show(message: Messages.paymentInvalid)
+            PMAlert.show(message: PMessages.paymentInvalid)
         case .genericProblem(let error) where error is SKError:
             let errorCode = (error as! SKError).errorCode
-            PMAlert.show(message: "\(Messages.storeCommunicationError) (Error code: \(errorCode))")
+            PMAlert.show(message: "\(PMessages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem(let error):
-            PMAlert.show(message: "\(Messages.error). \(error.localizedDescription)")
+            PMAlert.show(message: "\(PMessages.error). \(error.localizedDescription)")
         }
     }
     
