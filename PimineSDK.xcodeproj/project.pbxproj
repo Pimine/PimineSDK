@@ -294,22 +294,22 @@
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
-		EBABBC2B24E1BC0A00E3AF15 /* HandyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC2B24E1BC0A00E3AF15 /* Pimine-HandyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-HandyExtensions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC2D24E1BC0A00E3AF15 /* PimineExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PimineExtensions.h; sourceTree = "<group>"; };
 		EBABBC2E24E1BC0A00E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABBC5124E1BEE800E3AF15 /* Math.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Math.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC5124E1BEE800E3AF15 /* Pimine-Math.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-Math.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC5324E1BEE800E3AF15 /* Pimine_Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Math.h; sourceTree = "<group>"; };
 		EBABBC5424E1BEE800E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABBC6024E1BF7200E3AF15 /* SwiftyStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC6024E1BF7200E3AF15 /* Pimine-SwiftyStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-SwiftyStore.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC6224E1BF7200E3AF15 /* Pimine_SwiftyStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_SwiftyStore.h; sourceTree = "<group>"; };
 		EBABBC6324E1BF7200E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABBC6E24E1C0DC00E3AF15 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC6E24E1C0DC00E3AF15 /* Pimine-Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-Utilities.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC7024E1C0DC00E3AF15 /* Pimine_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Utilities.h; sourceTree = "<group>"; };
 		EBABBC7124E1C0DC00E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABBC7C24E1C21100E3AF15 /* Pimine_RevenueCatStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_RevenueCatStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC7C24E1C21100E3AF15 /* Pimine-RevenueCatStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-RevenueCatStore.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC7E24E1C21100E3AF15 /* Pimine_RevenueCatStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_RevenueCatStore.h; sourceTree = "<group>"; };
 		EBABBC7F24E1C21100E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABBC8A24E1C29F00E3AF15 /* LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBABBC8A24E1C29F00E3AF15 /* Pimine-LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pimine-LocalStore.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABBC8C24E1C29F00E3AF15 /* LocalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalStore.h; sourceTree = "<group>"; };
 		EBABBC8D24E1C29F00E3AF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
@@ -441,12 +441,12 @@
 		B74C20392475901D0097A513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBABBC2B24E1BC0A00E3AF15 /* HandyExtensions.framework */,
-				EBABBC5124E1BEE800E3AF15 /* Math.framework */,
-				EBABBC6024E1BF7200E3AF15 /* SwiftyStore.framework */,
-				EBABBC6E24E1C0DC00E3AF15 /* Utilities.framework */,
-				EBABBC7C24E1C21100E3AF15 /* Pimine_RevenueCatStore.framework */,
-				EBABBC8A24E1C29F00E3AF15 /* LocalStore.framework */,
+				EBABBC2B24E1BC0A00E3AF15 /* Pimine-HandyExtensions.framework */,
+				EBABBC5124E1BEE800E3AF15 /* Pimine-Math.framework */,
+				EBABBC6024E1BF7200E3AF15 /* Pimine-SwiftyStore.framework */,
+				EBABBC6E24E1C0DC00E3AF15 /* Pimine-Utilities.framework */,
+				EBABBC7C24E1C21100E3AF15 /* Pimine-RevenueCatStore.framework */,
+				EBABBC8A24E1C29F00E3AF15 /* Pimine-LocalStore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -817,7 +817,7 @@
 			);
 			name = "Pimine-HandyExtensions";
 			productName = PimineExtensions;
-			productReference = EBABBC2B24E1BC0A00E3AF15 /* HandyExtensions.framework */;
+			productReference = EBABBC2B24E1BC0A00E3AF15 /* Pimine-HandyExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBABBC5024E1BEE800E3AF15 /* Pimine-Math */ = {
@@ -835,7 +835,7 @@
 			);
 			name = "Pimine-Math";
 			productName = "Pimine-Math";
-			productReference = EBABBC5124E1BEE800E3AF15 /* Math.framework */;
+			productReference = EBABBC5124E1BEE800E3AF15 /* Pimine-Math.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBABBC5F24E1BF7200E3AF15 /* Pimine-SwiftyStore */ = {
@@ -853,7 +853,7 @@
 			);
 			name = "Pimine-SwiftyStore";
 			productName = "Pimine-SwiftyStore";
-			productReference = EBABBC6024E1BF7200E3AF15 /* SwiftyStore.framework */;
+			productReference = EBABBC6024E1BF7200E3AF15 /* Pimine-SwiftyStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBABBC6D24E1C0DC00E3AF15 /* Pimine-Utilities */ = {
@@ -871,7 +871,7 @@
 			);
 			name = "Pimine-Utilities";
 			productName = "Pimine-Utilities";
-			productReference = EBABBC6E24E1C0DC00E3AF15 /* Utilities.framework */;
+			productReference = EBABBC6E24E1C0DC00E3AF15 /* Pimine-Utilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBABBC7B24E1C21100E3AF15 /* Pimine-RevenueCatStore */ = {
@@ -889,7 +889,7 @@
 			);
 			name = "Pimine-RevenueCatStore";
 			productName = "Pimine-RevenueCatStore";
-			productReference = EBABBC7C24E1C21100E3AF15 /* Pimine_RevenueCatStore.framework */;
+			productReference = EBABBC7C24E1C21100E3AF15 /* Pimine-RevenueCatStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBABBC8924E1C29F00E3AF15 /* Pimine-LocalStore */ = {
@@ -907,7 +907,7 @@
 			);
 			name = "Pimine-LocalStore";
 			productName = LocalStore;
-			productReference = EBABBC8A24E1C29F00E3AF15 /* LocalStore.framework */;
+			productReference = EBABBC8A24E1C29F00E3AF15 /* Pimine-LocalStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1448,7 +1448,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
-				PRODUCT_NAME = HandyExtensions;
+				PRODUCT_NAME = "Pimine-HandyExtensions";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1478,7 +1478,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
-				PRODUCT_NAME = HandyExtensions;
+				PRODUCT_NAME = "Pimine-HandyExtensions";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1506,7 +1506,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
-				PRODUCT_NAME = Math;
+				PRODUCT_NAME = "Pimine-Math";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1534,7 +1534,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
-				PRODUCT_NAME = Math;
+				PRODUCT_NAME = "Pimine-Math";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1562,7 +1562,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
-				PRODUCT_NAME = SwiftyStore;
+				PRODUCT_NAME = "Pimine-SwiftyStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1590,7 +1590,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
-				PRODUCT_NAME = SwiftyStore;
+				PRODUCT_NAME = "Pimine-SwiftyStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1618,7 +1618,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilties;
-				PRODUCT_NAME = Utilities;
+				PRODUCT_NAME = "Pimine-Utilities";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1646,7 +1646,7 @@
 				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilties;
-				PRODUCT_NAME = Utilities;
+				PRODUCT_NAME = "Pimine-Utilities";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1672,7 +1672,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "Pimine-RevenueCatStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1698,7 +1698,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "Pimine-RevenueCatStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1724,7 +1724,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
-				PRODUCT_NAME = LocalStore;
+				PRODUCT_NAME = "Pimine-LocalStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1750,7 +1750,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
-				PRODUCT_NAME = LocalStore;
+				PRODUCT_NAME = "Pimine-LocalStore";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
