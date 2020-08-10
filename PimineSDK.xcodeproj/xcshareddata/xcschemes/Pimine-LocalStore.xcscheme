@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EBABBC8924E1C29F00E3AF15"
-               BuildableName = "Pimine-LocalStore.framework"
+               BlueprintIdentifier = "EB8E594624E1CDA30015EA39"
+               BuildableName = "Pimine_LocalStore.framework"
                BlueprintName = "Pimine-LocalStore"
                ReferencedContainer = "container:PimineSDK.xcodeproj">
             </BuildableReference>
@@ -50,8 +50,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EBABBC8924E1C29F00E3AF15"
-            BuildableName = "Pimine-LocalStore.framework"
+            BlueprintIdentifier = "EB8E594624E1CDA30015EA39"
+            BuildableName = "Pimine_LocalStore.framework"
             BlueprintName = "Pimine-LocalStore"
             ReferencedContainer = "container:PimineSDK.xcodeproj">
          </BuildableReference>

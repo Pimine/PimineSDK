@@ -1,5 +1,5 @@
 //
-//  Pimine-Math.h
+//  Pimine_Math.h
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,11 +25,11 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for PimineMath.
-FOUNDATION_EXPORT double PimineMathVersionNumber;
+//! Project version number for Pimine_Math.
+FOUNDATION_EXPORT double Pimine_MathVersionNumber;
 
 //! Project version string for Pimine_Math.
-FOUNDATION_EXPORT const unsigned char PimineMathVersionString[];
+FOUNDATION_EXPORT const unsigned char Pimine_MathVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Pimine_Math/PublicHeader.h>
 

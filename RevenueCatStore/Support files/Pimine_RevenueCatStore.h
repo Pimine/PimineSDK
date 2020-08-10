@@ -25,11 +25,11 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for PimineRevenueCatStore.
-FOUNDATION_EXPORT double PimineRevenueCatStoreVersionNumber;
+//! Project version number for Pimine_RevenueCatStore.
+FOUNDATION_EXPORT double Pimine_RevenueCatStoreVersionNumber;
 
-//! Project version string for PimineRevenueCatStore.
-FOUNDATION_EXPORT const unsigned char PimineRevenueCatStoreVersionString[];
+//! Project version string for Pimine_RevenueCatStore.
+FOUNDATION_EXPORT const unsigned char Pimine_RevenueCatStoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Pimine_RevenueCatStore/PublicHeader.h>
 
