@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
 
   # Utilities
   s.subspec 'Utilities' do |ss|
-    ss.source_files = 'Sources/Submodules/Utilities/**/*.swift', 'Sources/Submodules/HandyExtensions/UIKit/UIApplicationExtensions.swift'
+    ss.source_files = 'Utilities/**/*.swift', 'HandyExtensions/UIKit/UIApplicationExtensions.swift'
   end
 
   # HandyExtensions
   s.subspec 'HandyExtensions' do |ss|
-    ss.source_files = 'Sources/Submodules/HandyExtensions/**/*.swift'
+    ss.source_files = 'HandyExtensions/**/*.swift'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
 
   # LocalStore
   s.subspec 'LocalStore' do |ss|
-    ss.source_files = 'Sources/Submodules/LocalStore/**/*.swift'
+    ss.source_files = 'LocalStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'MerchantKit'
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
 
   # RevenueCatStore
   s.subspec 'RevenueCatStore' do |ss|
-    ss.source_files = 'Sources/Submodules/RevenueCatStore/**/*.swift'
+    ss.source_files = 'RevenueCatStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'Purchases'
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
 
   # SwiftyStore
   s.subspec 'SwiftyStore' do |ss|
-    ss.source_files = 'Sources/Submodules/SwiftyStore/**/*.swift'
+    ss.source_files = 'SwiftyStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SwiftyStoreKit'
     ss.dependency 'SVProgressHUD'
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
 
   # Math
   s.subspec 'Math' do |ss|
-  	ss.source_files = 'Sources/Submodules/Math/*.swift'
+  	ss.source_files = 'Math/*.swift'
   end
 
 end
