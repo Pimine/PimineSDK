@@ -25,11 +25,11 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Pimine_SwiftyStore.
-FOUNDATION_EXPORT double Pimine_SwiftyStoreVersionNumber;
+//! Project version number for PimineSwiftyStore.
+FOUNDATION_EXPORT double PimineSwiftyStoreVersionNumber;
 
-//! Project version string for Pimine_SwiftyStore.
-FOUNDATION_EXPORT const unsigned char Pimine_SwiftyStoreVersionString[];
+//! Project version string for PimineSwiftyStore.
+FOUNDATION_EXPORT const unsigned char PimineSwiftyStoreVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Pimine_SwiftyStore/PublicHeader.h>
 

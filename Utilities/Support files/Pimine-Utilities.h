@@ -1,5 +1,5 @@
 //
-//  PimineExtensions.h
+//  Pimine-Utilities.h
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,12 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for PimineExtensions.
-FOUNDATION_EXPORT double PimineExtensionsVersionNumber;
+//! Project version number for PimineUtilities.
+FOUNDATION_EXPORT double PimineUtilitiesVersionNumber;
 
-//! Project version string for PimineExtensions.
-FOUNDATION_EXPORT const unsigned char PimineExtensionsVersionString[];
+//! Project version string for PimineUtilities.
+FOUNDATION_EXPORT const unsigned char PimineUtilitiesVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <PimineExtensions/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <Pimine_Utilities/PublicHeader.h>
 
 
