@@ -13,3 +13,6 @@
 [submodule "SwiftyStoreKit"]
 	path = Third party/SwiftyStoreKit
 	url = https://github.com/bizz84/SwiftyStoreKit
+[submodule "Third party/purchases-ios"]
+	path = Third party/purchases-ios
+	url = https://github.com/RevenueCat/purchases-ios.git
