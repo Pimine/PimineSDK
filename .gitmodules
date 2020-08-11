@@ -1,15 +1,15 @@
 [submodule "SwifterSwift"]
-	path = SwifterSwift
+	path = Third party/SwifterSwift
 	url = https://github.com/SwifterSwift/SwifterSwift.git
 [submodule "merchantkit"]
-	path = merchantkit
+	path = Third party/merchantkit
 	url = https://github.com/benjaminmayo/merchantkit.git
 [submodule "SVProgressHUD"]
-	path = SVProgressHUD
+	path = Third party/SVProgressHUD
 	url = https://github.com/SVProgressHUD/SVProgressHUD.git
 [submodule "purchases-ios"]
-	path = purchases-ios
+	path = Third party/purchases-ios
 	url = https://github.com/RevenueCat/purchases-ios
 [submodule "SwiftyStoreKit"]
-	path = SwiftyStoreKit
+	path = Third party/SwiftyStoreKit
 	url = https://github.com/bizz84/SwiftyStoreKit
