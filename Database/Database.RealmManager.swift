@@ -27,13 +27,13 @@ import RealmSwift
 
 public extension Database {
     
-    static func save(_ object: Object, update: Realm.UpdatePolicy) {
+    static func save(_ object: Object, update: Realm.UpdatePolicy = .error) {
         try? realm.write {
             realm.add(object, update: update)
         }
     }
 
-    static func save(_ objects: [Object], update: Realm.UpdatePolicy) {
+    static func save(_ objects: [Object], update: Realm.UpdatePolicy = .error) {
         try? realm.write {
             realm.add(objects, update: update)
         }
