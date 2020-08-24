@@ -38,6 +38,10 @@ public extension Database {
             realm.add(objects, update: update)
         }
     }
+    
+    static func delete(_ object: Object) {
+        realm.delete(object)
+    }
 
     static func objects<Element: Object>(_ type: Element.Type) -> Array<Element> {
         Array(realm.objects(type))
