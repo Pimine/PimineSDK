@@ -26,24 +26,23 @@
 import RealmSwift
 
 public extension Database {
-final class RealmManager {
     
     static func save(_ object: Object, update: Realm.UpdatePolicy) {
         try? realm.write {
             realm.add(object, update: update)
         }
     }
-    
+
     static func save(_ objects: [Object], update: Realm.UpdatePolicy) {
         try? realm.write {
             realm.add(objects, update: update)
         }
     }
-    
+
     static func objects<Element: Object>(_ type: Element.Type) -> Array<Element> {
         Array(realm.objects(type))
     }
-    
+
     @discardableResult
     static func hydrate<Element: Object>(_ incoming: Element, excluding excludedProperties: [String] = []) -> Bool {
         guard
@@ -62,4 +61,4 @@ final class RealmManager {
         
         return true
     }
-}}
+}
