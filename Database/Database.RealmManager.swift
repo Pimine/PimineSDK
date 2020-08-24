@@ -40,7 +40,9 @@ public extension Database {
     }
     
     static func delete(_ object: Object) {
-        realm.delete(object)
+        try? realm.write {
+            realm.delete(object)
+        }
     }
 
     static func objects<Element: Object>(_ type: Element.Type) -> Array<Element> {
