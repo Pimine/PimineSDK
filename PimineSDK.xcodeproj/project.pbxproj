@@ -147,6 +147,8 @@
 		EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB8E59DC24E1D1A40015EA39 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB8E59DD24E1D1A40015EA39 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
+		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF8807324E2E51A00FAFAE5 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF8807124E2E51A00FAFAE5 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -439,6 +441,7 @@
 		EBDE233224D19A8300740059 /* PMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMessages.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
+		EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
 		EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF8807124E2E51A00FAFAE5 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		EBF8807224E2E51A00FAFAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -594,6 +597,7 @@
 				B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */,
 				B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */,
 				B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */,
+				EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1426,6 +1430,7 @@
 			files = (
 				EB8E59D424E1D19E0015EA39 /* CollectionExtensions.swift in Sources */,
 				EB8E59D924E1D1A40015EA39 /* UIControlExtensions.swift in Sources */,
+				EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
 				EB8E59D524E1D1A10015EA39 /* NameDescribable.swift in Sources */,
 				EB8E59D024E1D1950015EA39 /* PublisherExtensions.swift in Sources */,
 				EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */,
@@ -1487,6 +1492,7 @@
 				EB18D88C24E30664004ABD6A /* UILabelExtensions.swift in Sources */,
 				EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */,
 				EB18D88624E30654004ABD6A /* PublisherExtensions.swift in Sources */,
+				EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
 				EB18D88224E3064E004ABD6A /* PMUtilities.swift in Sources */,
 				EB18D87D24E30645004ABD6A /* AnyOptional.swift in Sources */,
 				EB18D87924E3063C004ABD6A /* LocalStore.RestoringController.swift in Sources */,
