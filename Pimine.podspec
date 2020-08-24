@@ -70,4 +70,10 @@ Pod::Spec.new do |s|
   	ss.source_files = 'Math/*.swift'
   end
 
+  # Database
+  s.subspec 'Database' do |ss|
+    ss.source_files = 'Database/*.swift'
+    ss.dependency 'RealmSwift'
+  end
+
 end

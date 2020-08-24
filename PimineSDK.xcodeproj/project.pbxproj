@@ -78,6 +78,15 @@
 		EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB18D89224E30665004ABD6A /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EB888EF824F3E22A0093748F /* Pimine_Database.h in Headers */ = {isa = PBXBuildFile; fileRef = EB888EF624F3E22A0093748F /* Pimine_Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB888F0F24F3E2660093748F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; };
+		EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB888F1124F3E2670093748F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; };
+		EB888F1224F3E2670093748F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB888F1924F3E34B0093748F /* Database.RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* Database.RealmManager.swift */; };
+		EB888F1A24F3E34B0093748F /* Database.RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* Database.RealmManager.swift */; };
+		EB888F1D24F3E3760093748F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1B24F3E3760093748F /* Database.swift */; };
+		EB888F1E24F3E37C0093748F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1B24F3E3760093748F /* Database.swift */; };
 		EB8E593C24E1CD1A0015EA39 /* Pimine_Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8E593A24E1CD1A0015EA39 /* Pimine_Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB8E594B24E1CDA30015EA39 /* Pimine_LocalStore.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8E594924E1CDA30015EA39 /* Pimine_LocalStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB8E594F24E1CDB70015EA39 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18377A24C084DF0011E404 /* LocalStore.swift */; };
@@ -369,6 +378,18 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB888F1324F3E2670093748F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB888F1224F3E2670093748F /* Realm.framework in Embed Frameworks */,
+				EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -413,6 +434,13 @@
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
+		EB888EF424F3E22A0093748F /* Pimine_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB888EF624F3E22A0093748F /* Pimine_Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Database.h; sourceTree = "<group>"; };
+		EB888EF724F3E22A0093748F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB888F0D24F3E2660093748F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Third party/RealmSwift.framework"; sourceTree = "<group>"; };
+		EB888F0E24F3E2660093748F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Third party/Realm.framework"; sourceTree = "<group>"; };
+		EB888F1824F3E34B0093748F /* Database.RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.RealmManager.swift; sourceTree = "<group>"; };
+		EB888F1B24F3E3760093748F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E593A24E1CD1A0015EA39 /* Pimine_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Utilities.h; sourceTree = "<group>"; };
 		EB8E593B24E1CD1A0015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -448,6 +476,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EB888EF124F3E22A0093748F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB888F1124F3E2670093748F /* Realm.framework in Frameworks */,
+				EB888F0F24F3E2660093748F /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB8E593524E1CD1A0015EA39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,6 +596,7 @@
 				EB8E593924E1CD1A0015EA39 /* Utilities */,
 				EB8E598724E1CFBD0015EA39 /* HandyExtensions */,
 				EBF8807024E2E51A00FAFAE5 /* Pimine */,
+				EB888EF524F3E22A0093748F /* Database */,
 				B74C20392475901D0097A513 /* Products */,
 				B74C205B247590AD0097A513 /* Frameworks */,
 			);
@@ -574,6 +612,7 @@
 				EB8E597624E1CF390015EA39 /* Pimine_Math.framework */,
 				EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */,
 				EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */,
+				EB888EF424F3E22A0093748F /* Pimine_Database.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -581,6 +620,8 @@
 		B74C205B247590AD0097A513 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB888F0E24F3E2660093748F /* Realm.framework */,
+				EB888F0D24F3E2660093748F /* RealmSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -690,6 +731,25 @@
 				EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB888EF524F3E22A0093748F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				EB888F1424F3E2740093748F /* Support files */,
+				EB888F1B24F3E3760093748F /* Database.swift */,
+				EB888F1824F3E34B0093748F /* Database.RealmManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		EB888F1424F3E2740093748F /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				EB888EF624F3E22A0093748F /* Pimine_Database.h */,
+				EB888EF724F3E22A0093748F /* Info.plist */,
+			);
+			path = "Support files";
 			sourceTree = "<group>";
 		};
 		EB8E593924E1CD1A0015EA39 /* Utilities */ = {
@@ -895,6 +955,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		EB888EEF24F3E22A0093748F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB888EF824F3E22A0093748F /* Pimine_Database.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB8E593324E1CD1A0015EA39 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,6 +1022,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EB888EF324F3E22A0093748F /* Pimine-Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "Pimine-Database" */;
+			buildPhases = (
+				EB888EEF24F3E22A0093748F /* Headers */,
+				EB888EF024F3E22A0093748F /* Sources */,
+				EB888EF124F3E22A0093748F /* Frameworks */,
+				EB888EF224F3E22A0093748F /* Resources */,
+				EB888F1324F3E2670093748F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pimine-Database";
+			productName = "Pimine-Database";
+			productReference = EB888EF424F3E22A0093748F /* Pimine_Database.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EB8E593724E1CD1A0015EA39 /* Pimine-Utilities */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB8E593D24E1CD1A0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-Utilities" */;
@@ -1099,6 +1186,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Pimine;
 				TargetAttributes = {
+					EB888EF324F3E22A0093748F = {
+						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
 					EB8E593724E1CD1A0015EA39 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -1161,6 +1252,7 @@
 				EBF8806E24E2E51A00FAFAE5 /* Pimine */,
 				EB8E597524E1CF390015EA39 /* Pimine-Math */,
 				EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */,
+				EB888EF324F3E22A0093748F /* Pimine-Database */,
 			);
 		};
 /* End PBXProject section */
@@ -1288,6 +1380,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EB888EF224F3E22A0093748F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB8E593624E1CD1A0015EA39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1340,6 +1439,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EB888EF024F3E22A0093748F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB888F1D24F3E3760093748F /* Database.swift in Sources */,
+				EB888F1A24F3E34B0093748F /* Database.RealmManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB8E593424E1CD1A0015EA39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1456,6 +1564,7 @@
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
 				EB18D87F24E30649004ABD6A /* UserDefaultsBacked.swift in Sources */,
 				EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */,
+				EB888F1924F3E34B0093748F /* Database.RealmManager.swift in Sources */,
 				EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */,
 				EB18D88924E3065D004ABD6A /* SetExtensions.swift in Sources */,
 				EB18D87724E30632004ABD6A /* RevenueCat.swift in Sources */,
@@ -1477,6 +1586,7 @@
 				EB18D86F24E3061F004ABD6A /* SwiftyStore.RestoringController.swift in Sources */,
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,
+				EB888F1E24F3E37C0093748F /* Database.swift in Sources */,
 				EB18D88A24E3065D004ABD6A /* CollectionExtensions.swift in Sources */,
 				EB18D89024E30665004ABD6A /* UIApplicationExtensions.swift in Sources */,
 				EB18D87524E3062F004ABD6A /* RevenueCat.RestoringController.swift in Sources */,
@@ -1654,6 +1764,71 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB888EF924F3E22A0093748F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ party",
+					"$(PROJECT_DIR)/Third\\ party",
+				);
+				INFOPLIST_FILE = "Database/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB888EFA24F3E22A0093748F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ party",
+					"$(PROJECT_DIR)/Third\\ party",
+				);
+				INFOPLIST_FILE = "Database/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -2060,6 +2235,15 @@
 			buildConfigurations = (
 				B74C203E2475901D0097A513 /* Debug */,
 				B74C203F2475901D0097A513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "Pimine-Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB888EF924F3E22A0093748F /* Debug */,
+				EB888EFA24F3E22A0093748F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
