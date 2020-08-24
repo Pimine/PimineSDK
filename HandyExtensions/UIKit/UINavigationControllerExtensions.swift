@@ -27,7 +27,7 @@ import UIKit
 
 public extension UINavigationController {
     
-    convenience init(isNavigationBarHidden: Bool) {
+    @objc convenience init(isNavigationBarHidden: Bool) {
         self.init()
         self.isNavigationBarHidden = isNavigationBarHidden
     }
