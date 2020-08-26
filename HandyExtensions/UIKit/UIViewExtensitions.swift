@@ -25,8 +25,6 @@
 
 import UIKit
 
-// MARK: - Initializers
-
 public extension UIView {
     
     convenience init(backgroundColor: UIColor, frame: CGRect = .zero) {
@@ -35,9 +33,17 @@ public extension UIView {
     }
 }
 
-// MARK: - Methods
-
 public extension UIView {
+    
+    /// http://www.openradar.me/25087688
+    var isHiddenInStackView: Bool {
+        get { return isHidden }
+        set {
+            if isHidden != newValue {
+                isHidden = newValue
+            }
+        }
+    }
     
     func addBorder(width: CGFloat, color: UIColor) {
         layer.borderWidth = width
