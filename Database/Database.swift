@@ -25,8 +25,15 @@
 
 import RealmSwift
 
-/// Namespace
 public struct Database {
     
-    public static var realm = try! Realm()
+    // MARK: - Properties
+    
+    public let realm: Realm
+    
+    // MARK: - Initialization
+    
+    public init(realm: Realm?) throws {
+        self.realm = try realm ?? Realm()
+    }
 }

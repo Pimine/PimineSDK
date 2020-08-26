@@ -1,5 +1,5 @@
 //
-//  Database.RealmManager.swift
+//  DatabaseExtensions.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -27,30 +27,30 @@ import RealmSwift
 
 public extension Database {
     
-    static func save(_ object: Object, update: Realm.UpdatePolicy = .error) {
+    func save(_ object: Object, update: Realm.UpdatePolicy = .error) {
         try? realm.write {
             realm.add(object, update: update)
         }
     }
 
-    static func save(_ objects: [Object], update: Realm.UpdatePolicy = .error) {
+    func save(_ objects: [Object], update: Realm.UpdatePolicy = .error) {
         try? realm.write {
             realm.add(objects, update: update)
         }
     }
     
-    static func delete(_ object: Object) {
+    func delete(_ object: Object) {
         try? realm.write {
             realm.delete(object)
         }
     }
 
-    static func objects<Element: Object>(_ type: Element.Type) -> Array<Element> {
+    func objects<Element: Object>(_ type: Element.Type) -> Array<Element> {
         Array(realm.objects(type))
     }
 
     @discardableResult
-    static func hydrate<Element: Object>(_ incoming: Element, excluding excludedProperties: [String] = []) -> Bool {
+    func hydrate<Element: Object>(_ incoming: Element, excluding excludedProperties: [String] = []) -> Bool {
         guard
             let key = Element.primaryKey(),
             let identifier = incoming[key],

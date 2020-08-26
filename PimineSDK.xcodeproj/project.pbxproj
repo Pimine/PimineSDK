@@ -83,8 +83,8 @@
 		EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB888F1124F3E2670093748F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; };
 		EB888F1224F3E2670093748F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB888F1924F3E34B0093748F /* Database.RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* Database.RealmManager.swift */; };
-		EB888F1A24F3E34B0093748F /* Database.RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* Database.RealmManager.swift */; };
+		EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */; };
+		EB888F1A24F3E34B0093748F /* DatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */; };
 		EB888F1D24F3E3760093748F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1B24F3E3760093748F /* Database.swift */; };
 		EB888F1E24F3E37C0093748F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1B24F3E3760093748F /* Database.swift */; };
 		EB8E593C24E1CD1A0015EA39 /* Pimine_Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8E593A24E1CD1A0015EA39 /* Pimine_Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -439,7 +439,7 @@
 		EB888EF724F3E22A0093748F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB888F0D24F3E2660093748F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Third party/RealmSwift.framework"; sourceTree = "<group>"; };
 		EB888F0E24F3E2660093748F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Third party/Realm.framework"; sourceTree = "<group>"; };
-		EB888F1824F3E34B0093748F /* Database.RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.RealmManager.swift; sourceTree = "<group>"; };
+		EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExtensions.swift; sourceTree = "<group>"; };
 		EB888F1B24F3E3760093748F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E593A24E1CD1A0015EA39 /* Pimine_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Utilities.h; sourceTree = "<group>"; };
@@ -738,7 +738,7 @@
 			children = (
 				EB888F1424F3E2740093748F /* Support files */,
 				EB888F1B24F3E3760093748F /* Database.swift */,
-				EB888F1824F3E34B0093748F /* Database.RealmManager.swift */,
+				EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1444,7 +1444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB888F1D24F3E3760093748F /* Database.swift in Sources */,
-				EB888F1A24F3E34B0093748F /* Database.RealmManager.swift in Sources */,
+				EB888F1A24F3E34B0093748F /* DatabaseExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1564,7 +1564,7 @@
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
 				EB18D87F24E30649004ABD6A /* UserDefaultsBacked.swift in Sources */,
 				EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */,
-				EB888F1924F3E34B0093748F /* Database.RealmManager.swift in Sources */,
+				EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */,
 				EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */,
 				EB18D88924E3065D004ABD6A /* SetExtensions.swift in Sources */,
 				EB18D87724E30632004ABD6A /* RevenueCat.swift in Sources */,
