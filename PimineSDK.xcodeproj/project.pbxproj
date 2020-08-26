@@ -78,6 +78,8 @@
 		EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB18D89224E30665004ABD6A /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
+		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB888EF824F3E22A0093748F /* Pimine_Database.h in Headers */ = {isa = PBXBuildFile; fileRef = EB888EF624F3E22A0093748F /* Pimine_Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB888F0F24F3E2660093748F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; };
 		EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -426,6 +428,7 @@
 		EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Price.swift; sourceTree = "<group>"; };
 		EB36FCF724C0683300A978D6 /* RevenueCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.swift; sourceTree = "<group>"; };
 		EB36FCF924C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.SubscriptionInterfaceController.swift; sourceTree = "<group>"; };
+		EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
 		EB4086C824B8CAE700A09084 /* UtilitiesMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesMessages.swift; sourceTree = "<group>"; };
 		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
@@ -639,6 +642,7 @@
 				B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */,
 				B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */,
 				EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */,
+				EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1543,6 +1547,7 @@
 				EB8E59D024E1D1950015EA39 /* PublisherExtensions.swift in Sources */,
 				EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */,
 				EB8E59DA24E1D1A40015EA39 /* UIApplicationExtensions.swift in Sources */,
+				EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
 				EB8E59D724E1D1A40015EA39 /* UITextViewExtensions.swift in Sources */,
 				EB8E59D824E1D1A40015EA39 /* UIViewExtensitions.swift in Sources */,
 				EB8E59D124E1D1980015EA39 /* ClosureSleeve.swift in Sources */,
@@ -1564,6 +1569,7 @@
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
 				EB18D87F24E30649004ABD6A /* UserDefaultsBacked.swift in Sources */,
 				EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */,
+				EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
 				EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */,
 				EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */,
 				EB18D88924E3065D004ABD6A /* SetExtensions.swift in Sources */,
