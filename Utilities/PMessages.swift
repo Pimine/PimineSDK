@@ -29,6 +29,8 @@ public struct PMessages {
     
     // MARK: - General
     
+    public static let info = "Info"
+    public static let whoops = "Whoops"
     public static let error = "There was an error"
     public static let tryAgain = "Please try again"
     public static let contactSupport = "If the problem persists, contact support"
@@ -47,4 +49,12 @@ public struct PMessages {
     public static let restored = "All transactions have been successfully restored."
     public static let nothingToRestore = "There are no transactions that could be restored."
     public static let restorationFailed = "Some products have not been restored. \(tryAgain). \(contactSupport)."
+    
+    // MARK: - Utilities
+    
+    static let noPermissions = "We did not receive required permissions"
+    static let manualPermission = "You can change your preferences at any time. To do that, you should manually grant permissions for the app from Settings"
+    static let notificationPermissionsRequired = "\(noPermissions) to send notifications. \(manualPermission)."
+    static let photoLibraryPermissionsRequired = "\(noPermissions) to access Photo Library. \(manualPermission)."
+    static let cameraLibraryPermissionsRequired = "\(noPermissions) to access Camera. \(manualPermission)."
 }

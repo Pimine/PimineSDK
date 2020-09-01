@@ -140,8 +140,8 @@ final public class PMUserNotificationManager {
     
     private static func setupPermissionsManually() {
         let alert = UIAlertController(
-            title: UtilitiesMessages.whoops,
-            message: UtilitiesMessages.permissionRequired,
+            title: PMessages.whoops,
+            message: PMessages.notificationPermissionsRequired,
             preferredStyle: .alert
         )
         
