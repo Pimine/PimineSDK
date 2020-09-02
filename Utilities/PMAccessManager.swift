@@ -34,7 +34,10 @@ public final class PMAccessManager {
         case photoLibraryPicker
     }
     
-    public static func obtainPermissions(for sourceType: SourceType, then permissionsGranted: @escaping () -> Void) {
+    public static func obtainPermissions(
+        for sourceType: SourceType,
+        then permissionsGranted: @escaping () -> Void = { }
+    ) {
         switch sourceType {
             
         // Photo library
@@ -99,7 +102,7 @@ public final class PMAccessManager {
     }
     
     private static func obtainPermissionsManually(message: String) {
-        let denyAction = UIAlertAction(title: "Don't allow", style: .cancel, handler: nil)
+        let denyAction = UIAlertAction(title: "Later", style: .cancel, handler: nil)
         let openAction = UIAlertAction(title: "Open settings", style: .default) { (_) in
             let settingsURL = URL(string: UIApplication.openSettingsURLString)!
             guard UIApplication.shared.canOpenURL(settingsURL) else { return }
