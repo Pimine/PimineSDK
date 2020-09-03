@@ -158,6 +158,15 @@
 		EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB8E59DC24E1D1A40015EA39 /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB8E59DD24E1D1A40015EA39 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EB92F6F52501359C0007D696 /* Pimine_Concurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = EB92F6F32501359C0007D696 /* Pimine_Concurrency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB92F6FC250136F00007D696 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F6FB250136F00007D696 /* AsyncOperation.swift */; };
+		EB92F6FD250136F00007D696 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F6FB250136F00007D696 /* AsyncOperation.swift */; };
+		EB92F6FF2501392D0007D696 /* AsyncResultOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F6FE2501392D0007D696 /* AsyncResultOperation.swift */; };
+		EB92F7002501392D0007D696 /* AsyncResultOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F6FE2501392D0007D696 /* AsyncResultOperation.swift */; };
+		EB92F70225013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */; };
+		EB92F70325013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */; };
+		EB92F70525013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
+		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF8807324E2E51A00FAFAE5 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF8807124E2E51A00FAFAE5 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -462,6 +471,13 @@
 		EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_HandyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E598824E1CFBD0015EA39 /* Pimine_HandyExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_HandyExtensions.h; sourceTree = "<group>"; };
 		EB8E598924E1CFBD0015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Concurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92F6F32501359C0007D696 /* Pimine_Concurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Concurrency.h; sourceTree = "<group>"; };
+		EB92F6F42501359C0007D696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB92F6FB250136F00007D696 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		EB92F6FE2501392D0007D696 /* AsyncResultOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResultOperation.swift; sourceTree = "<group>"; };
+		EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedAsyncResultOperation.swift; sourceTree = "<group>"; };
+		EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedOperationOutputProviding.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
 		EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Purchases.xcodeproj; path = "Third party/purchases-ios/Purchases.xcodeproj"; sourceTree = "<group>"; };
@@ -536,6 +552,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB92F6EE2501359C0007D696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8806C24E2E51A00FAFAE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,6 +623,7 @@
 				EB8E598724E1CFBD0015EA39 /* HandyExtensions */,
 				EBF8807024E2E51A00FAFAE5 /* Pimine */,
 				EB888EF524F3E22A0093748F /* Database */,
+				EB92F6F22501359C0007D696 /* Concurrency */,
 				B74C20392475901D0097A513 /* Products */,
 				B74C205B247590AD0097A513 /* Frameworks */,
 			);
@@ -616,6 +640,7 @@
 				EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */,
 				EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */,
 				EB888EF424F3E22A0093748F /* Pimine_Database.framework */,
+				EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -885,6 +910,35 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
+		EB92F6F22501359C0007D696 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				EB92F6FA250136B20007D696 /* Operations */,
+				EB92F6F9250135CA0007D696 /* Support files */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		EB92F6F9250135CA0007D696 /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				EB92F6F32501359C0007D696 /* Pimine_Concurrency.h */,
+				EB92F6F42501359C0007D696 /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		EB92F6FA250136B20007D696 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */,
+				EB92F6FB250136F00007D696 /* AsyncOperation.swift */,
+				EB92F6FE2501392D0007D696 /* AsyncResultOperation.swift */,
+				EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		EB9E05EC24BE145200125BB3 /* Combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -1012,6 +1066,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB8E598A24E1CFBD0015EA39 /* Pimine_HandyExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB92F6EC2501359C0007D696 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB92F6F52501359C0007D696 /* Pimine_Concurrency.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1218,24 @@
 			productReference = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EB92F6F02501359C0007D696 /* Pimine-Concurrency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "Pimine-Concurrency" */;
+			buildPhases = (
+				EB92F6EC2501359C0007D696 /* Headers */,
+				EB92F6ED2501359C0007D696 /* Sources */,
+				EB92F6EE2501359C0007D696 /* Frameworks */,
+				EB92F6EF2501359C0007D696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pimine-Concurrency";
+			productName = "Pimine-Concurrency";
+			productReference = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EBF8806E24E2E51A00FAFAE5 /* Pimine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF8808E24E2E51A00FAFAE5 /* Build configuration list for PBXNativeTarget "Pimine" */;
@@ -1212,6 +1292,10 @@
 					EB8E598524E1CFBD0015EA39 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					EB92F6F02501359C0007D696 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
 					EBF8806E24E2E51A00FAFAE5 = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
@@ -1257,6 +1341,7 @@
 				EB8E597524E1CF390015EA39 /* Pimine-Math */,
 				EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */,
 				EB888EF324F3E22A0093748F /* Pimine-Database */,
+				EB92F6F02501359C0007D696 /* Pimine-Concurrency */,
 			);
 		};
 /* End PBXProject section */
@@ -1433,6 +1518,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB92F6EF2501359C0007D696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8806D24E2E51A00FAFAE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1559,6 +1651,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EB92F6ED2501359C0007D696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */,
+				EB92F6FD250136F00007D696 /* AsyncOperation.swift in Sources */,
+				EB92F70325013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */,
+				EB92F7002501392D0007D696 /* AsyncResultOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8806B24E2E51A00FAFAE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1566,6 +1669,7 @@
 				EB18D87624E3062F004ABD6A /* RevenueCat.MerchantController.swift in Sources */,
 				EB18D88324E3064E004ABD6A /* PMUserNotificationManager.swift in Sources */,
 				EB18D88F24E30665004ABD6A /* UIControlExtensions.swift in Sources */,
+				EB92F6FF2501392D0007D696 /* AsyncResultOperation.swift in Sources */,
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
 				EB18D87F24E30649004ABD6A /* UserDefaultsBacked.swift in Sources */,
 				EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */,
@@ -1577,6 +1681,9 @@
 				EB18D87024E3061F004ABD6A /* SwiftyStore.MerchantController.swift in Sources */,
 				EB18D86E24E3061F004ABD6A /* SwiftyStore.ProductInterfaceController.swift in Sources */,
 				EB18D87A24E3063C004ABD6A /* LocalStore.MerchantController.swift in Sources */,
+				EB92F70525013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */,
+				EB92F6FC250136F00007D696 /* AsyncOperation.swift in Sources */,
+				EB92F70225013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */,
 				EB18D86A24E3061B004ABD6A /* SwiftyStore.Product.swift in Sources */,
 				EB18D87824E30638004ABD6A /* ProductInterfaceControllerExtensions.swift in Sources */,
 				EB18D88E24E30665004ABD6A /* UIViewExtensitions.swift in Sources */,
@@ -2174,6 +2281,61 @@
 			};
 			name = Release;
 		};
+		EB92F6F72501359C0007D696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Concurrency/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB92F6F82501359C0007D696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Concurrency/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		EBF8807424E2E51A00FAFAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2304,6 +2466,15 @@
 			buildConfigurations = (
 				EB8E598C24E1CFBD0015EA39 /* Debug */,
 				EB8E598D24E1CFBD0015EA39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "Pimine-Concurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB92F6F72501359C0007D696 /* Debug */,
+				EB92F6F82501359C0007D696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

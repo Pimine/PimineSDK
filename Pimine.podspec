@@ -76,4 +76,9 @@ Pod::Spec.new do |s|
     ss.dependency 'RealmSwift'
   end
 
+  # Concurrency
+  s.subspec 'Concurrency' do |ss|
+  	ss.source_files = 'Concurrency/**/*.swift'
+  end
+
 end
