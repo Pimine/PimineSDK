@@ -1,5 +1,5 @@
 //
-//  UserDefaultsBacked.swift
+//  CodableUserDefaultsBacked.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,39 +23,59 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import UIKit
+import Foundation
 
-@propertyWrapper public class UserDefaultsBacked<Value> {
+@propertyWrapper public class CodableUserDefaultsBacked<Value: Codable>: UserDefaultsBacked<Value> {
     
-    let key: String
-    let defaultValue: Value
-    let storage: UserDefaults
+    // MARK: - Properties
     
-    public var wrappedValue: Value {
+    var encoder: JSONEncoder = JSONEncoder()
+    var decoder: JSONDecoder = JSONDecoder()
+    
+    public override var wrappedValue: Value {
         get {
-            let value = storage.value(forKey: key) as? Value
+            guard let data = storage.value(forKey: key) as? Data else {
+                return defaultValue
+            }
+            let value = try? decoder.decode(Value.self, from: data)
             return value ?? defaultValue
         }
         set {
             if let optional = newValue as? AnyOptional, optional.isNil {
                 storage.removeObject(forKey: key)
             } else {
-                storage.setValue(newValue, forKey: key)
+                guard let data = try? encoder.encode(newValue) else {
+                    print("Failed to encode \(newValue)")
+                    return
+                }
+                storage.setValue(data, forKey: key)
             }
         }
     }
     
-    public init(key: String, defaultValue: Value, storage: UserDefaults = .standard) {
-        self.key = key
-        self.defaultValue = defaultValue
-        self.storage = storage
+    public init(
+        key: String,
+        defaultValue: Value,
+        storage: UserDefaults = .standard,
+        encoder: JSONEncoder,
+        decoder: JSONDecoder
+    ) {
+        super.init(key: key, defaultValue: defaultValue, storage: storage)
+        self.encoder = encoder
+        self.decoder = decoder
     }
 }
 
+
 // MARK: - ExpressibleByNilLiteral
 
-public extension UserDefaultsBacked where Value: ExpressibleByNilLiteral {
-    convenience init(key: String, storage: UserDefaults = .standard) {
-        self.init(key: key, defaultValue: nil, storage: storage)
+public extension CodableUserDefaultsBacked where Value: ExpressibleByNilLiteral {
+    convenience init(
+        key: String,
+        storage: UserDefaults = .standard,
+        encoder: JSONEncoder,
+        decoder: JSONDecoder
+    ) {
+        self.init(key: key, defaultValue: nil, storage: storage, encoder: encoder, decoder: decoder)
     }
 }
