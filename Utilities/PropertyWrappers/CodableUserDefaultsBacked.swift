@@ -73,8 +73,8 @@ public extension CodableUserDefaultsBacked where Value: ExpressibleByNilLiteral 
     convenience init(
         key: String,
         storage: UserDefaults = .standard,
-        encoder: JSONEncoder = JSONDecoder(),
-        decoder: JSONDecoder = JSONEncoder()
+        encoder: JSONEncoder = JSONEncoder(),
+        decoder: JSONDecoder = JSONDecoder()
     ) {
         self.init(key: key, defaultValue: nil, storage: storage, encoder: encoder, decoder: decoder)
     }
