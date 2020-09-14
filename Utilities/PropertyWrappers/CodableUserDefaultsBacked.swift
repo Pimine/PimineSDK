@@ -57,8 +57,8 @@ import Foundation
         key: String,
         defaultValue: Value,
         storage: UserDefaults = .standard,
-        encoder: JSONEncoder,
-        decoder: JSONDecoder
+        encoder: JSONEncoder = JSONEncoder(),
+        decoder: JSONDecoder = JSONDecoder()
     ) {
         super.init(key: key, defaultValue: defaultValue, storage: storage)
         self.encoder = encoder
@@ -73,8 +73,8 @@ public extension CodableUserDefaultsBacked where Value: ExpressibleByNilLiteral 
     convenience init(
         key: String,
         storage: UserDefaults = .standard,
-        encoder: JSONEncoder,
-        decoder: JSONDecoder
+        encoder: JSONEncoder = JSONDecoder(),
+        decoder: JSONDecoder = JSONEncoder()
     ) {
         self.init(key: key, defaultValue: nil, storage: storage, encoder: encoder, decoder: decoder)
     }
