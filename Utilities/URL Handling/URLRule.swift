@@ -29,6 +29,12 @@ public struct URLRule {
     public var requiredHost: String
     public var requiresPathComponents: Bool
     public var evaluate: (Input) throws -> Output
+    
+    public init(requiredHost: String, requiresPathComponents: Bool, evaluate: @escaping (Input) throws -> Output) {
+        self.requiredHost = requiredHost
+        self.requiresPathComponents = requiresPathComponents
+        self.evaluate = evaluate
+    }
 }
 
 // MARK: - Input / Output
