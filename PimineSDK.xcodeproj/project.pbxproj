@@ -177,6 +177,8 @@
 		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
+		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
+		EBF3B88D2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
 		EBF8807324E2E51A00FAFAE5 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF8807124E2E51A00FAFAE5 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -501,6 +503,7 @@
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF8807124E2E51A00FAFAE5 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
 		EBF8807224E2E51A00FAFAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -609,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				B715F8902475D5C500BB98CD /* BundleExtensions.swift */,
+				EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1672,6 +1676,7 @@
 				EB8E59D824E1D1A40015EA39 /* UIViewExtensitions.swift in Sources */,
 				EB8E59D124E1D1980015EA39 /* ClosureSleeve.swift in Sources */,
 				EB8E59D624E1D1A40015EA39 /* UILabelExtensions.swift in Sources */,
+				EBF3B88D2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */,
 				EB8E59D324E1D19E0015EA39 /* SetExtensions.swift in Sources */,
 				EB8E59DD24E1D1A40015EA39 /* UIStackViewExtensions.swift in Sources */,
 				EB8E59DC24E1D1A40015EA39 /* UITabBarControllerExtensions.swift in Sources */,
@@ -1731,6 +1736,7 @@
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,
 				EB888F1E24F3E37C0093748F /* Database.swift in Sources */,
+				EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */,
 				EB18D88A24E3065D004ABD6A /* CollectionExtensions.swift in Sources */,
 				EB18D89024E30665004ABD6A /* UIApplicationExtensions.swift in Sources */,
 				EB18D87524E3062F004ABD6A /* RevenueCat.RestoringController.swift in Sources */,
