@@ -61,7 +61,7 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
         SVProgressHUD.dismiss()
         switch result {
         case .success(let products) where products.count > 0:
-            PMAlert.show(message: PMessages.restored)
+            PMAlert.show(title: PMessages.info, message: PMessages.restored)
         case .success:
             PMAlert.show(message: PMessages.nothingToRestore)
         case .failure(let error):
