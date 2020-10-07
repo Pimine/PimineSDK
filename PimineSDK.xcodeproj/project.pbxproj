@@ -77,6 +77,8 @@
 		EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB18D89224E30665004ABD6A /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
+		EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
 		EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB202FC7250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
@@ -443,6 +445,7 @@
 		EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoringController.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		EB1FE93D252DFD1500B9CD1A /* Imitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imitable.swift; sourceTree = "<group>"; };
 		EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableUserDefaultsBacked.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
 		EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Price.swift; sourceTree = "<group>"; };
@@ -723,6 +726,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EB1FE92B252DFD0000B9CD1A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB1FE93D252DFD1500B9CD1A /* Imitable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EB36FCFD24C06DBB00A978D6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,6 +822,7 @@
 			isa = PBXGroup;
 			children = (
 				B75A63A0247935F000DBDB36 /* Internal */,
+				EB1FE92B252DFD0000B9CD1A /* Protocols */,
 				EB4FFDA325110076001F2A89 /* URL Handling */,
 				B715F8822475C32500BB98CD /* PropertyWrappers */,
 				EB8E594024E1CD340015EA39 /* Support files */,
@@ -1581,6 +1593,7 @@
 				EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
 				EB8E59A524E1D0C00015EA39 /* PMUserNotificationManager.swift in Sources */,
 				EB8E59A924E1D0C70015EA39 /* AnyOptional.swift in Sources */,
+				EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EB8E59A824E1D0C40015EA39 /* UserDefaultsBacked.swift in Sources */,
 				EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */,
 				EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */,
@@ -1733,6 +1746,7 @@
 				EB18D88424E3064E004ABD6A /* PMValidator.swift in Sources */,
 				EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */,
 				EB18D86F24E3061F004ABD6A /* SwiftyStore.RestoringController.swift in Sources */,
+				EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,
 				EB888F1E24F3E37C0093748F /* Database.swift in Sources */,
