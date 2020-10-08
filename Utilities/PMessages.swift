@@ -58,4 +58,5 @@ public struct PMessages {
     public static let photoLibraryPermissionsRequired = "\(noPermissions) to access Photo Library. \(manualPermission)."
     public static let cameraLibraryPermissionsRequired = "\(noPermissions) to access Camera. \(manualPermission)."
     public static let cannotHandleURL = "Received URL cannot be handled."
+    public static let noMatchingURLRules = "No matching rules found."
 }

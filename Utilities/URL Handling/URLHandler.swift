@@ -56,8 +56,7 @@ public struct URLHandler {
             let host = url.host,
             let rules = rules[host]
         else {
-            let error = PMGeneralError(message: PMessages.cannotHandleURL)
-            return result(.failure(error))
+            return result(.failure(.cannotHandleURL))
         }
 
         let input = URLRule.Input(url: url)
@@ -68,6 +67,26 @@ public struct URLHandler {
             }
             guard let output = try? rule.evaluate(input) else { continue }
             return result(.success(output))
+        }
+        return result(.failure(.noMatchingRules))
+    }
+}
+
+// MARK: - URLHandler
+
+public extension URLHandler {
+    
+    enum Error: LocalizedError {
+        case cannotHandleURL
+        case noMatchingRules
+        
+        public var errorDescription: String? {
+            switch self {
+            case .cannotHandleURL:
+                return PMessages.cannotHandleURL
+            case .noMatchingRules:
+                return PMessages.noMatchingURLRules
+            }
         }
     }
 }
