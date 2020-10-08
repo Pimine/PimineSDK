@@ -43,7 +43,7 @@ public extension URLRule {
     struct Input {
         public var url: URL
         public var pathComponents: [String]
-        public var queryItems: [URLQueryItem]
+        public var queryItems: [String: String]
     }
     
     typealias Output =  [String: Any]
@@ -56,12 +56,17 @@ public extension URLRule.Input {
         let queryItems = URLComponents(
             url: url,
             resolvingAgainstBaseURL: false
-        ).flatMap(\.queryItems)
+        ).flatMap(\.queryItems) ?? []
+        
+        var items: [String: String] = [:]
+        for queryItem in queryItems {
+            items[queryItem.name] = queryItem.value
+        }
 
         self.init(
             url: url,
             pathComponents: url.pathComponents,
-            queryItems: queryItems ?? []
+            queryItems: items
         )
     }
 }
