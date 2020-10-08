@@ -46,16 +46,19 @@ public struct URLHandler {
         query.append(url)
     }
     
-    public func evaluate(output: @escaping (URLRule.Output) -> Void) {
+    public func evaluate(output: @escaping (Result<URLRule.Output, Error>) -> Void) {
         query.forEach { handle($0, output: output) }
     }
     
-    public func handle(_ url: URL, output result: @escaping (URLRule.Output) -> Void) {
+    public func handle(_ url: URL, output result: @escaping (Result<URLRule.Output, Error>) -> Void) {
         guard
             url.scheme == scheme,
             let host = url.host,
             let rules = rules[host]
-        else { return }
+        else {
+            let error = PMGeneralError(message: PMessages.cannotHandleURL)
+            return result(.failure(error))
+        }
 
         let input = URLRule.Input(url: url)
 
@@ -64,7 +67,7 @@ public struct URLHandler {
                 guard !input.pathComponents.isEmpty else { continue }
             }
             guard let output = try? rule.evaluate(input) else { continue }
-            return result(output)
+            return result(.success(output))
         }
     }
 }

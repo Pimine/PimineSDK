@@ -52,9 +52,10 @@ public struct PMessages {
     
     // MARK: - Utilities
     
-    static let noPermissions = "We did not receive required permissions"
-    static let manualPermission = "You can change your preferences at any time. To do that, you should manually grant permissions for the app from Settings"
-    static let notificationPermissionsRequired = "\(noPermissions) to send notifications. \(manualPermission)."
-    static let photoLibraryPermissionsRequired = "\(noPermissions) to access Photo Library. \(manualPermission)."
-    static let cameraLibraryPermissionsRequired = "\(noPermissions) to access Camera. \(manualPermission)."
+    public static let noPermissions = "We did not receive required permissions"
+    public static let manualPermission = "You can change your preferences at any time. To do that, you should manually grant permissions for the app from Settings"
+    public static let notificationPermissionsRequired = "\(noPermissions) to send notifications. \(manualPermission)."
+    public static let photoLibraryPermissionsRequired = "\(noPermissions) to access Photo Library. \(manualPermission)."
+    public static let cameraLibraryPermissionsRequired = "\(noPermissions) to access Camera. \(manualPermission)."
+    public static let cannotHandleURL = "Received URL cannot be handled."
 }
