@@ -85,6 +85,8 @@
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
+		EB3EAE43253DCDD400888CC0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; };
+		EB3EAE55253DCDD600888CC0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; };
 		EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
 		EB4FFDB725110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
 		EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
@@ -585,7 +587,9 @@
 				EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */,
 				EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */,
 				EB18D85C24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Frameworks */,
+				EB3EAE43253DCDD400888CC0 /* Realm.framework in Frameworks */,
 				EB18D85424E305EB004ABD6A /* Pimine_Math.framework in Frameworks */,
+				EB3EAE55253DCDD600888CC0 /* RealmSwift.framework in Frameworks */,
 				EB18D86024E305ED004ABD6A /* Pimine_Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2399,6 +2403,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ party",
+					"$(PROJECT_DIR)/Third\\ party",
+				);
 				INFOPLIST_FILE = Pimine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -2429,6 +2438,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Third\\ party",
+					"$(PROJECT_DIR)/Third\\ party",
+				);
 				INFOPLIST_FILE = Pimine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
