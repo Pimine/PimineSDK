@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -85,8 +85,6 @@
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
-		EB3EAE43253DCDD400888CC0 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; };
-		EB3EAE55253DCDD600888CC0 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; };
 		EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
 		EB4FFDB725110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
 		EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
@@ -94,10 +92,6 @@
 		EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB886A1224FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB888EF824F3E22A0093748F /* Pimine_Database.h in Headers */ = {isa = PBXBuildFile; fileRef = EB888EF624F3E22A0093748F /* Pimine_Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB888F0F24F3E2660093748F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; };
-		EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0D24F3E2660093748F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB888F1124F3E2670093748F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; };
-		EB888F1224F3E2670093748F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888F0E24F3E2660093748F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */; };
 		EB888F1A24F3E34B0093748F /* DatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */; };
 		EB888F1D24F3E3760093748F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB888F1B24F3E3760093748F /* Database.swift */; };
@@ -179,6 +173,8 @@
 		EB92F70325013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */; };
 		EB92F70525013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
+		EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB993FFA2587B0F700721C36 /* RealmSwift */; };
+		EB9940172587B15E00721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940162587B15E00721C36 /* RealmSwift */; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
@@ -403,18 +399,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB888F1324F3E2670093748F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EB888F1224F3E2670093748F /* Realm.framework in Embed Frameworks */,
-				EB888F1024F3E2660093748F /* RealmSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -519,8 +503,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB888F1124F3E2670093748F /* Realm.framework in Frameworks */,
-				EB888F0F24F3E2660093748F /* RealmSwift.framework in Frameworks */,
+				EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,11 +568,10 @@
 			files = (
 				EB18D85824E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Frameworks */,
 				EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */,
+				EB9940172587B15E00721C36 /* RealmSwift in Frameworks */,
 				EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */,
 				EB18D85C24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Frameworks */,
-				EB3EAE43253DCDD400888CC0 /* Realm.framework in Frameworks */,
 				EB18D85424E305EB004ABD6A /* Pimine_Math.framework in Frameworks */,
-				EB3EAE55253DCDD600888CC0 /* RealmSwift.framework in Frameworks */,
 				EB18D86024E305ED004ABD6A /* Pimine_Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1140,13 +1122,15 @@
 				EB888EF024F3E22A0093748F /* Sources */,
 				EB888EF124F3E22A0093748F /* Frameworks */,
 				EB888EF224F3E22A0093748F /* Resources */,
-				EB888F1324F3E2670093748F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Pimine-Database";
+			packageProductDependencies = (
+				EB993FFA2587B0F700721C36 /* RealmSwift */,
+			);
 			productName = "Pimine-Database";
 			productReference = EB888EF424F3E22A0093748F /* Pimine_Database.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1301,6 +1285,9 @@
 				EB18D86324E305ED004ABD6A /* PBXTargetDependency */,
 			);
 			name = Pimine;
+			packageProductDependencies = (
+				EB9940162587B15E00721C36 /* RealmSwift */,
+			);
 			productName = Pimine;
 			productReference = EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1355,6 +1342,9 @@
 				Base,
 			);
 			mainGroup = B74C202E2475901D0097A513;
+			packageReferences = (
+				EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = B74C20392475901D0097A513 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -2555,6 +2545,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB993FFA2587B0F700721C36 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		EB9940162587B15E00721C36 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B74C202F2475901D0097A513 /* Project object */;
 }
