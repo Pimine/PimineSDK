@@ -11,8 +11,6 @@
 		EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B024E2F7C7004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
 		EB18D6B124E2F7C7004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D6B224E2F7D0004ABD6A /* Purchases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBED24E2F73C00ED411F /* Purchases.framework */; };
-		EB18D6B324E2F7D0004ABD6A /* Purchases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBED24E2F73C00ED411F /* Purchases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B424E2F7D0004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
 		EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
@@ -174,7 +172,8 @@
 		EB92F70525013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB993FFA2587B0F700721C36 /* RealmSwift */; };
-		EB9940172587B15E00721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940162587B15E00721C36 /* RealmSwift */; };
+		EB9940262587B67F00721C36 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940252587B67F00721C36 /* Purchases */; };
+		EB9940322587B6C600721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940312587B6C600721C36 /* RealmSwift */; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
@@ -259,20 +258,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 439FA1832309735A00FCCBA3;
 			remoteInfo = "MerchantKitTestsHost-macOS";
-		};
-		EBD3DBEC24E2F73C00ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 352629FE1F7C4B9100C04F2C;
-			remoteInfo = Purchases;
-		};
-		EBD3DBEE24E2F73C00ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 35262A1E1F7D77E600C04F2C;
-			remoteInfo = PurchasesTests;
 		};
 		EBD3DBF524E2F74900ED411F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -366,7 +351,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */,
-				EB18D6B324E2F7D0004ABD6A /* Purchases.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +467,6 @@
 		EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedOperationOutputProviding.swift; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
-		EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Purchases.xcodeproj; path = "Third party/purchases-ios/Purchases.xcodeproj"; sourceTree = "<group>"; };
 		EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = "Third party/SVProgressHUD/SVProgressHUD.xcodeproj"; sourceTree = "<group>"; };
 		EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStoreKit.xcodeproj; path = "Third party/SwiftyStoreKit/SwiftyStoreKit.xcodeproj"; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
@@ -528,7 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB18D6B424E2F7D0004ABD6A /* SVProgressHUD.framework in Frameworks */,
-				EB18D6B224E2F7D0004ABD6A /* Purchases.framework in Frameworks */,
+				EB9940262587B67F00721C36 /* Purchases in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +551,7 @@
 			files = (
 				EB18D85824E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Frameworks */,
 				EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */,
-				EB9940172587B15E00721C36 /* RealmSwift in Frameworks */,
+				EB9940322587B6C600721C36 /* RealmSwift in Frameworks */,
 				EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */,
 				EB18D85C24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Frameworks */,
 				EB18D85424E305EB004ABD6A /* Pimine_Math.framework in Frameworks */,
@@ -619,7 +602,6 @@
 			children = (
 				EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */,
 				EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */,
-				EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */,
 				EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */,
 				EB8E597724E1CF390015EA39 /* Math */,
 				EB8E596824E1CEAB0015EA39 /* SwiftyStore */,
@@ -985,15 +967,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBD3DBE824E2F73C00ED411F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBD3DBED24E2F73C00ED411F /* Purchases.framework */,
-				EBD3DBEF24E2F73C00ED411F /* PurchasesTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EBD3DBF124E2F74900ED411F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1187,6 +1160,9 @@
 			dependencies = (
 			);
 			name = "Pimine-RevenueCatStore";
+			packageProductDependencies = (
+				EB9940252587B67F00721C36 /* Purchases */,
+			);
 			productName = "Pimine-RevenueCatStore";
 			productReference = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1286,7 +1262,7 @@
 			);
 			name = Pimine;
 			packageProductDependencies = (
-				EB9940162587B15E00721C36 /* RealmSwift */,
+				EB9940312587B6C600721C36 /* RealmSwift */,
 			);
 			productName = Pimine;
 			productReference = EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */;
@@ -1344,6 +1320,7 @@
 			mainGroup = B74C202E2475901D0097A513;
 			packageReferences = (
 				EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = B74C20392475901D0097A513 /* Products */;
 			projectDirPath = "";
@@ -1351,10 +1328,6 @@
 				{
 					ProductGroup = EBD3DBD624E2F73100ED411F /* Products */;
 					ProjectRef = EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */;
-				},
-				{
-					ProductGroup = EBD3DBE824E2F73C00ED411F /* Products */;
-					ProjectRef = EBD3DBE724E2F73C00ED411F /* Purchases.xcodeproj */;
 				},
 				{
 					ProductGroup = EBD3DBF124E2F74900ED411F /* Products */;
@@ -1414,20 +1387,6 @@
 			fileType = wrapper.application;
 			path = "MerchantKitTestsHost-macOS.app";
 			remoteRef = EBD3DBE524E2F73100ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DBED24E2F73C00ED411F /* Purchases.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Purchases.framework;
-			remoteRef = EBD3DBEC24E2F73C00ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DBEF24E2F73C00ED411F /* PurchasesTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PurchasesTests.xctest;
-			remoteRef = EBD3DBEE24E2F73C00ED411F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */ = {
@@ -2555,6 +2514,14 @@
 				minimumVersion = 10.4.0;
 			};
 		};
+		EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2563,7 +2530,12 @@
 			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
 		};
-		EB9940162587B15E00721C36 /* RealmSwift */ = {
+		EB9940252587B67F00721C36 /* Purchases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = Purchases;
+		};
+		EB9940312587B6C600721C36 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
