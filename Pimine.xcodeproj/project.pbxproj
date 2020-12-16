@@ -1258,7 +1258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */;
+			buildConfigurationList = B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2313,7 +2313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B74C20322475901D0097A513 /* Build configuration list for PBXProject "PimineSDK" */ = {
+		B74C20322475901D0097A513 /* Build configuration list for PBXProject "Pimine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B74C203E2475901D0097A513 /* Debug */,
