@@ -15,8 +15,6 @@
 		EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
 		EB18D6B824E2F7DA004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D6B924E2F7DA004ABD6A /* SwiftyStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DC0524E2F75600ED411F /* SwiftyStoreKit.framework */; };
-		EB18D6BA24E2F7DA004ABD6A /* SwiftyStoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DC0524E2F75600ED411F /* SwiftyStoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; };
 		EB18D84D24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; };
@@ -174,6 +172,7 @@
 		EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB993FFA2587B0F700721C36 /* RealmSwift */; };
 		EB9940262587B67F00721C36 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940252587B67F00721C36 /* Purchases */; };
 		EB9940322587B6C600721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940312587B6C600721C36 /* RealmSwift */; };
+		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
@@ -273,62 +272,6 @@
 			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
 			remoteInfo = SVProgressHUD;
 		};
-		EBD3DC0424E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6502F62D1B985C40004E342D;
-			remoteInfo = SwiftyStoreKit_iOS;
-		};
-		EBD3DC0624E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4D74BBB1C24CEC90071AD3E;
-			remoteInfo = SwiftyStoreKit_macOS;
-		};
-		EBD3DC0824E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 54C0D52C1CF7404500F90BCE;
-			remoteInfo = SwiftyStoreKit_tvOS;
-		};
-		EBD3DC0A24E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A61BF4DD2481F4970017D9BC;
-			remoteInfo = SwiftyStoreKit_watchOS;
-		};
-		EBD3DC0C24E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6502F5FE1B985833004E342D;
-			remoteInfo = SwiftyStoreKit_iOSDemo;
-		};
-		EBD3DC0E24E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C4FD3A011C2954C10035CFF3;
-			remoteInfo = SwiftyStoreKit_macOSDemo;
-		};
-		EBD3DC1024E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 654287EE1E79F5A000F61800;
-			remoteInfo = SwiftyStoreKit_tvOSDemo;
-		};
-		EBD3DC1224E2F75600ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 658A083E1E2EC5120074A98F;
-			remoteInfo = SwiftyStoreKitTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -362,7 +305,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EB18D6B824E2F7DA004ABD6A /* SVProgressHUD.framework in Embed Frameworks */,
-				EB18D6BA24E2F7DA004ABD6A /* SwiftyStoreKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +410,6 @@
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
 		EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = "Third party/SVProgressHUD/SVProgressHUD.xcodeproj"; sourceTree = "<group>"; };
-		EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyStoreKit.xcodeproj; path = "Third party/SwiftyStoreKit/SwiftyStoreKit.xcodeproj"; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
 		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
 		EBDE233224D19A8300740059 /* PMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMessages.swift; sourceTree = "<group>"; };
@@ -520,7 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */,
-				EB18D6B924E2F7DA004ABD6A /* SwiftyStoreKit.framework in Frameworks */,
+				EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +541,6 @@
 		B74C202E2475901D0097A513 = {
 			isa = PBXGroup;
 			children = (
-				EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */,
 				EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */,
 				EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */,
 				EB8E597724E1CF390015EA39 /* Math */,
@@ -976,21 +916,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBD3DBFA24E2F75600ED411F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBD3DC0524E2F75600ED411F /* SwiftyStoreKit.framework */,
-				EBD3DC0724E2F75600ED411F /* SwiftyStoreKit.framework */,
-				EBD3DC0924E2F75600ED411F /* SwiftyStoreKit.framework */,
-				EBD3DC0B24E2F75600ED411F /* SwiftyStoreKit.framework */,
-				EBD3DC0D24E2F75600ED411F /* SwiftyStoreKit_iOSDemo.app */,
-				EBD3DC0F24E2F75600ED411F /* SwiftyStoreKit_macOSDemo.app */,
-				EBD3DC1124E2F75600ED411F /* SwiftyStoreKit_tvOSDemo.app */,
-				EBD3DC1324E2F75600ED411F /* SwiftyStoreKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EBE9ADF824C76C0500F1FDAB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -1182,6 +1107,9 @@
 			dependencies = (
 			);
 			name = "Pimine-SwiftyStore";
+			packageProductDependencies = (
+				EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */,
+			);
 			productName = "Pimine-SwiftyStore";
 			productReference = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1321,6 +1249,7 @@
 			packageReferences = (
 				EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
 			);
 			productRefGroup = B74C20392475901D0097A513 /* Products */;
 			projectDirPath = "";
@@ -1332,10 +1261,6 @@
 				{
 					ProductGroup = EBD3DBF124E2F74900ED411F /* Products */;
 					ProjectRef = EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */;
-				},
-				{
-					ProductGroup = EBD3DBFA24E2F75600ED411F /* Products */;
-					ProjectRef = EBD3DBF924E2F75600ED411F /* SwiftyStoreKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1401,62 +1326,6 @@
 			fileType = archive.ar;
 			path = libSVProgressHUD.a;
 			remoteRef = EBD3DBF724E2F74900ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0524E2F75600ED411F /* SwiftyStoreKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyStoreKit.framework;
-			remoteRef = EBD3DC0424E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0724E2F75600ED411F /* SwiftyStoreKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyStoreKit.framework;
-			remoteRef = EBD3DC0624E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0924E2F75600ED411F /* SwiftyStoreKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyStoreKit.framework;
-			remoteRef = EBD3DC0824E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0B24E2F75600ED411F /* SwiftyStoreKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyStoreKit.framework;
-			remoteRef = EBD3DC0A24E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0D24E2F75600ED411F /* SwiftyStoreKit_iOSDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftyStoreKit_iOSDemo.app;
-			remoteRef = EBD3DC0C24E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC0F24E2F75600ED411F /* SwiftyStoreKit_macOSDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftyStoreKit_macOSDemo.app;
-			remoteRef = EBD3DC0E24E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC1124E2F75600ED411F /* SwiftyStoreKit_tvOSDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = SwiftyStoreKit_tvOSDemo.app;
-			remoteRef = EBD3DC1024E2F75600ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DC1324E2F75600ED411F /* SwiftyStoreKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftyStoreKitTests.xctest;
-			remoteRef = EBD3DC1224E2F75600ED411F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -2522,6 +2391,14 @@
 				minimumVersion = 3.9.1;
 			};
 		};
+		EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.16.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2539,6 +2416,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */;
+			productName = SwiftyStoreKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

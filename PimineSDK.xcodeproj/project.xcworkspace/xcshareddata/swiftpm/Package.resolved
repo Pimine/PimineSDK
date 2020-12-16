@@ -27,6 +27,15 @@
           "revision": "9b2eb9020f97f0930a3f351be95ac320bdf44cf8",
           "version": "10.1.4"
         }
+      },
+      {
+        "package": "SwiftyStoreKit",
+        "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
+        "state": {
+          "branch": null,
+          "revision": "9974acf07b31b6f5bf363d5118dc1bd4fcac6122",
+          "version": "0.16.1"
+        }
       }
     ]
   },
