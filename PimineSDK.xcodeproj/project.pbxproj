@@ -15,18 +15,6 @@
 		EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
 		EB18D6B824E2F7DA004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; };
-		EB18D84D24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; };
-		EB18D85124E305EA004ABD6A /* Pimine_LocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D85424E305EB004ABD6A /* Pimine_Math.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; };
-		EB18D85524E305EB004ABD6A /* Pimine_Math.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D85824E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; };
-		EB18D85924E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D85C24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; };
-		EB18D85D24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D86024E305ED004ABD6A /* Pimine_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; };
-		EB18D86124E305ED004ABD6A /* Pimine_Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D86524E3060D004ABD6A /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
 		EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
 		EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
@@ -171,8 +159,23 @@
 		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB993FFA2587B0F700721C36 /* RealmSwift */; };
 		EB9940262587B67F00721C36 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940252587B67F00721C36 /* Purchases */; };
-		EB9940322587B6C600721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940312587B6C600721C36 /* RealmSwift */; };
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
+		EBE325F8258A655600E43576 /* Pimine_Concurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */; };
+		EBE325F9258A655600E43576 /* Pimine_Concurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE325FC258A655600E43576 /* Pimine_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* Pimine_Database.framework */; };
+		EBE325FD258A655600E43576 /* Pimine_Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* Pimine_Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32600258A655600E43576 /* Pimine_HandyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; };
+		EBE32601258A655600E43576 /* Pimine_HandyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32604258A655600E43576 /* Pimine_LocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; };
+		EBE32605258A655600E43576 /* Pimine_LocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32608258A655600E43576 /* Pimine_Math.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; };
+		EBE32609258A655600E43576 /* Pimine_Math.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE3260C258A655600E43576 /* Pimine_RevenueCatStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; };
+		EBE3260D258A655600E43576 /* Pimine_RevenueCatStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32610258A655600E43576 /* Pimine_SwiftyStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; };
+		EBE32611258A655600E43576 /* Pimine_SwiftyStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32614258A655600E43576 /* Pimine_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; };
+		EBE32615258A655600E43576 /* Pimine_Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
@@ -181,48 +184,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EB18D84E24E305EA004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E598524E1CFBD0015EA39;
-			remoteInfo = "Pimine-HandyExtensions";
-		};
-		EB18D85224E305EA004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E594624E1CDA30015EA39;
-			remoteInfo = "Pimine-LocalStore";
-		};
-		EB18D85624E305EB004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E597524E1CF390015EA39;
-			remoteInfo = "Pimine-Math";
-		};
-		EB18D85A24E305EB004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E595724E1CE180015EA39;
-			remoteInfo = "Pimine-RevenueCatStore";
-		};
-		EB18D85E24E305EC004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E596624E1CEAB0015EA39;
-			remoteInfo = "Pimine-SwiftyStore";
-		};
-		EB18D86224E305ED004ABD6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B74C202F2475901D0097A513 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB8E593724E1CD1A0015EA39;
-			remoteInfo = "Pimine-Utilities";
-		};
 		EBD3DBDD24E2F73100ED411F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */;
@@ -272,6 +233,62 @@
 			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
 			remoteInfo = SVProgressHUD;
 		};
+		EBE325FA258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB92F6F02501359C0007D696;
+			remoteInfo = "Pimine-Concurrency";
+		};
+		EBE325FE258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB888EF324F3E22A0093748F;
+			remoteInfo = "Pimine-Database";
+		};
+		EBE32602258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E598524E1CFBD0015EA39;
+			remoteInfo = "Pimine-HandyExtensions";
+		};
+		EBE32606258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E594624E1CDA30015EA39;
+			remoteInfo = "Pimine-LocalStore";
+		};
+		EBE3260A258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E597524E1CF390015EA39;
+			remoteInfo = "Pimine-Math";
+		};
+		EBE3260E258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E595724E1CE180015EA39;
+			remoteInfo = "Pimine-RevenueCatStore";
+		};
+		EBE32612258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E596624E1CEAB0015EA39;
+			remoteInfo = "Pimine-SwiftyStore";
+		};
+		EBE32616258A655600E43576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E593724E1CD1A0015EA39;
+			remoteInfo = "Pimine-Utilities";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -309,18 +326,20 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB18D86424E305EE004ABD6A /* Embed Frameworks */ = {
+		EBE32618258A655700E43576 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB18D85924E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Embed Frameworks */,
-				EB18D85124E305EA004ABD6A /* Pimine_LocalStore.framework in Embed Frameworks */,
-				EB18D84D24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Embed Frameworks */,
-				EB18D85D24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Embed Frameworks */,
-				EB18D85524E305EB004ABD6A /* Pimine_Math.framework in Embed Frameworks */,
-				EB18D86124E305ED004ABD6A /* Pimine_Utilities.framework in Embed Frameworks */,
+				EBE3260D258A655600E43576 /* Pimine_RevenueCatStore.framework in Embed Frameworks */,
+				EBE32609258A655600E43576 /* Pimine_Math.framework in Embed Frameworks */,
+				EBE32605258A655600E43576 /* Pimine_LocalStore.framework in Embed Frameworks */,
+				EBE32615258A655600E43576 /* Pimine_Utilities.framework in Embed Frameworks */,
+				EBE325F9258A655600E43576 /* Pimine_Concurrency.framework in Embed Frameworks */,
+				EBE32601258A655600E43576 /* Pimine_HandyExtensions.framework in Embed Frameworks */,
+				EBE325FD258A655600E43576 /* Pimine_Database.framework in Embed Frameworks */,
+				EBE32611258A655600E43576 /* Pimine_SwiftyStore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,13 +509,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB18D85824E305EB004ABD6A /* Pimine_RevenueCatStore.framework in Frameworks */,
-				EB18D85024E305EA004ABD6A /* Pimine_LocalStore.framework in Frameworks */,
-				EB9940322587B6C600721C36 /* RealmSwift in Frameworks */,
-				EB18D84C24E305EA004ABD6A /* Pimine_HandyExtensions.framework in Frameworks */,
-				EB18D85C24E305EC004ABD6A /* Pimine_SwiftyStore.framework in Frameworks */,
-				EB18D85424E305EB004ABD6A /* Pimine_Math.framework in Frameworks */,
-				EB18D86024E305ED004ABD6A /* Pimine_Utilities.framework in Frameworks */,
+				EBE3260C258A655600E43576 /* Pimine_RevenueCatStore.framework in Frameworks */,
+				EBE32608258A655600E43576 /* Pimine_Math.framework in Frameworks */,
+				EBE32604258A655600E43576 /* Pimine_LocalStore.framework in Frameworks */,
+				EBE32614258A655600E43576 /* Pimine_Utilities.framework in Frameworks */,
+				EBE325F8258A655600E43576 /* Pimine_Concurrency.framework in Frameworks */,
+				EBE32600258A655600E43576 /* Pimine_HandyExtensions.framework in Frameworks */,
+				EBE325FC258A655600E43576 /* Pimine_Database.framework in Frameworks */,
+				EBE32610258A655600E43576 /* Pimine_SwiftyStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1176,21 +1196,22 @@
 				EBF8806B24E2E51A00FAFAE5 /* Sources */,
 				EBF8806C24E2E51A00FAFAE5 /* Frameworks */,
 				EBF8806D24E2E51A00FAFAE5 /* Resources */,
-				EB18D86424E305EE004ABD6A /* Embed Frameworks */,
+				EBE32618258A655700E43576 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB18D84F24E305EA004ABD6A /* PBXTargetDependency */,
-				EB18D85324E305EA004ABD6A /* PBXTargetDependency */,
-				EB18D85724E305EB004ABD6A /* PBXTargetDependency */,
-				EB18D85B24E305EB004ABD6A /* PBXTargetDependency */,
-				EB18D85F24E305EC004ABD6A /* PBXTargetDependency */,
-				EB18D86324E305ED004ABD6A /* PBXTargetDependency */,
+				EBE325FB258A655600E43576 /* PBXTargetDependency */,
+				EBE325FF258A655600E43576 /* PBXTargetDependency */,
+				EBE32603258A655600E43576 /* PBXTargetDependency */,
+				EBE32607258A655600E43576 /* PBXTargetDependency */,
+				EBE3260B258A655600E43576 /* PBXTargetDependency */,
+				EBE3260F258A655600E43576 /* PBXTargetDependency */,
+				EBE32613258A655600E43576 /* PBXTargetDependency */,
+				EBE32617258A655600E43576 /* PBXTargetDependency */,
 			);
 			name = Pimine;
 			packageProductDependencies = (
-				EB9940312587B6C600721C36 /* RealmSwift */,
 			);
 			productName = Pimine;
 			productReference = EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */;
@@ -1601,35 +1622,45 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EB18D84F24E305EA004ABD6A /* PBXTargetDependency */ = {
+		EBE325FB258A655600E43576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB92F6F02501359C0007D696 /* Pimine-Concurrency */;
+			targetProxy = EBE325FA258A655600E43576 /* PBXContainerItemProxy */;
+		};
+		EBE325FF258A655600E43576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB888EF324F3E22A0093748F /* Pimine-Database */;
+			targetProxy = EBE325FE258A655600E43576 /* PBXContainerItemProxy */;
+		};
+		EBE32603258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */;
-			targetProxy = EB18D84E24E305EA004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE32602258A655600E43576 /* PBXContainerItemProxy */;
 		};
-		EB18D85324E305EA004ABD6A /* PBXTargetDependency */ = {
+		EBE32607258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E594624E1CDA30015EA39 /* Pimine-LocalStore */;
-			targetProxy = EB18D85224E305EA004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE32606258A655600E43576 /* PBXContainerItemProxy */;
 		};
-		EB18D85724E305EB004ABD6A /* PBXTargetDependency */ = {
+		EBE3260B258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E597524E1CF390015EA39 /* Pimine-Math */;
-			targetProxy = EB18D85624E305EB004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE3260A258A655600E43576 /* PBXContainerItemProxy */;
 		};
-		EB18D85B24E305EB004ABD6A /* PBXTargetDependency */ = {
+		EBE3260F258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E595724E1CE180015EA39 /* Pimine-RevenueCatStore */;
-			targetProxy = EB18D85A24E305EB004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE3260E258A655600E43576 /* PBXContainerItemProxy */;
 		};
-		EB18D85F24E305EC004ABD6A /* PBXTargetDependency */ = {
+		EBE32613258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E596624E1CEAB0015EA39 /* Pimine-SwiftyStore */;
-			targetProxy = EB18D85E24E305EC004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE32612258A655600E43576 /* PBXContainerItemProxy */;
 		};
-		EB18D86324E305ED004ABD6A /* PBXTargetDependency */ = {
+		EBE32617258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB8E593724E1CD1A0015EA39 /* Pimine-Utilities */;
-			targetProxy = EB18D86224E305ED004ABD6A /* PBXContainerItemProxy */;
+			targetProxy = EBE32616258A655600E43576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2411,11 +2442,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = Purchases;
-		};
-		EB9940312587B6C600721C36 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
 		};
 		EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */ = {
 			isa = XCSwiftPackageProductDependency;
