@@ -25,15 +25,17 @@
 
 import UIKit
 
-public extension UIView {
-    
-    convenience init(backgroundColor: UIColor, frame: CGRect = .zero) {
-        self.init(frame: frame)
-        self.backgroundColor = backgroundColor
-    }
-}
+// MARK: Protocol conformance
+
+extension UIView: NameDescribable { }
+
+// MARK: - Properties
 
 public extension UIView {
+    
+    static var nib: UINib {
+        UINib(nibName: typeName, bundle: nil)
+    }
     
     /// http://www.openradar.me/25087688
     var isHiddenInStackView: Bool {
@@ -44,6 +46,25 @@ public extension UIView {
             }
         }
     }
+}
+
+// MARK: Initialization
+
+public extension UIView {
+    
+    convenience init(backgroundColor: UIColor, frame: CGRect = .zero) {
+        self.init(frame: frame)
+        self.backgroundColor = backgroundColor
+    }
+    
+    static func loadFromNib() -> Self? {
+        nib.instantiate(withOwner: nil, options: nil).first as? Self
+    }
+}
+
+// MARK: - Methods
+
+public extension UIView {
     
     func addBorder(width: CGFloat, color: UIColor) {
         layer.borderWidth = width

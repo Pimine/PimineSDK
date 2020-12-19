@@ -8,18 +8,27 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
+            name: "Pimine-Utilities",
+            targets: ["Utilities"]
+        ),
+        
+        .library(
             name: "Pimine-Concurrency",
             targets: ["Concurrency"]),
     ],
     dependencies: [],
     targets: [
+        .target(
+            name: "Utilities",
+            path: "Utilities",
+            sources: [
+                "Utilities"
+            ]
+        ),
         
         .target(
             name: "Concurrency",
-            path: "Concurrency",
-            exclude: [
-                "Support files/Info.plist"
-            ]
+            path: "Concurrency"
         )
     ]
 )
