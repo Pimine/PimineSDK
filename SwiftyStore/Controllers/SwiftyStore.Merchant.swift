@@ -95,18 +95,18 @@ public final class Merchant {
     // MARK: - Purchases verification
     
     public func verifySubscriptions(
-        _ subscriptions: Set<Product>,
+        _ products: Set<Product>,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
     ) {
         var result: VerifySubscriptionResult!
         
-        if subscriptions.contains(where: {
+        if products.contains(where: {
             if case .subscription = $0.kind { return false }; return true
         }) {
             let error = PMGeneralError(message: Messages.wrongProductType)
             result = .failed(.generalError(error))
-            self.delegate?.merchant(self, verifiedSubscriptions: subscriptions, with: result)
+            self.delegate?.merchant(self, verifiedSubscriptions: products, with: result)
             return completion(result)
         }
         
@@ -114,27 +114,27 @@ public final class Merchant {
             
             switch verifyReceiptResult {
             case .success(let receipt):
-                result = self.processSubscriptions(subscriptions, in: receipt)
+                result = self.processSubscriptions(products, in: receipt)
             case .error(let error):
                 result = .failed(.receiptError(error))
             }
             
-            self.delegate?.merchant(self, verifiedSubscriptions: subscriptions, with: result)
+            self.delegate?.merchant(self, verifiedSubscriptions: products, with: result)
             return completion(result)
         }
     }
     
     public func verifySubscription(
-        _ subscription: Product,
+        _ product: Product,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
     ) {
         var result: VerifySubscriptionResult!
         
-        guard case .subscription = subscription.kind else {
+        guard case .subscription = product.kind else {
             let error = PMGeneralError(message: Messages.wrongProductType)
             result = .failed(.generalError(error))
-            self.delegate?.merchant(self, verifiedSubscriptions: Set([subscription]), with: result)
+            self.delegate?.merchant(self, verifiedSubscriptions: Set([product]), with: result)
             return completion(result)
         }
         
@@ -142,22 +142,42 @@ public final class Merchant {
             
             switch verifyReceiptResult {
             case .success(let receipt):
-                result = self.processSubscriptions(Set([subscription]), in: receipt)
+                result = self.processSubscriptions(Set([product]), in: receipt)
             case .error(let error):
                 result = .failed(.receiptError(error))
             }
             
-            self.delegate?.merchant(self, verifiedSubscriptions: Set([subscription]), with: result)
+            self.delegate?.merchant(self, verifiedSubscriptions: Set([product]), with: result)
             return completion(result)
         }
     }
     
     func verifyPurchase(
-        product: Product,
+        _ product: Product,
         forceRefresh: Bool = false,
         completion: @escaping (VerifyPurchaseResult) -> Void = { _ in }
     ) {
-        // TODO: - Implement verification for non-consumable, consumable purchases.
+        var result: VerifyPurchaseResult!
+        
+        guard product.kind == .consumable || product.kind == .nonConsumable else {
+            let error = PMGeneralError(message: Messages.wrongProductType)
+            result = .failed(.generalError(error))
+            self.delegate?.merchant(self, verifiedPurchase: product, with: result)
+            return completion(result)
+        }
+        
+        verifyReceipt(forceRefresh: forceRefresh) { (verifyReceiptResult) in
+            
+            switch verifyReceiptResult {
+            case .success(let receipt):
+                result = self.processPurchase(product, in: receipt)
+            case .error(let error):
+                result = .failed(.receiptError(error))
+            }
+            
+            self.delegate?.merchant(self, verifiedPurchase: product, with: result)
+            return completion(result)
+        }
     }
     
     private func verifyReceipt(forceRefresh: Bool = false, result: @escaping (VerifyReceiptResult) -> Void) {
@@ -174,11 +194,11 @@ public final class Merchant {
     }
     
     private func processSubscriptions(
-        _ subscriptions: Set<Product>,
+        _ products: Set<Product>,
         in receipt: ReceiptInfo
     ) -> VerifySubscriptionResult {
         let verifySubscriptionResult = SwiftyStoreKit.verifySubscriptions(
-            productIds: Set(subscriptions.map(\.identifier)),
+            productIds: Set(products.map(\.identifier)),
             inReceipt: receipt
         )
         
@@ -189,6 +209,21 @@ public final class Merchant {
             result = .purchased(expiryDate: expiryDate, items: items)
         case .expired(let expiryDate, let items):
             result = .expired(expiryDate: expiryDate, items: items)
+        case .notPurchased:
+            result = .notPurchased
+        }
+        
+        return result
+    }
+    
+    private func processPurchase(_ product: Product, in receipt: ReceiptInfo) -> VerifyPurchaseResult {
+        let verifyPurchaseResult = SwiftyStoreKit.verifyPurchase(productId: product.identifier, inReceipt: receipt)
+        
+        let result: VerifyPurchaseResult!
+        
+        switch verifyPurchaseResult {
+        case .purchased(let item):
+            result = .purchased(item: item)
         case .notPurchased:
             result = .notPurchased
         }

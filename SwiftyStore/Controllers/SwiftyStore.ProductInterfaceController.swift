@@ -102,7 +102,22 @@ final public class ProductInterfaceController {
     private func verifyPurchase(product: Product, purchaseDetails: PurchaseDetails) {
         switch product.kind {
         case .consumable, .nonConsumable:
-            merchant.verifyPurchase(product: product)
+            merchant.verifyPurchase(product) { (verifyPurchaseResult) in
+                switch verifyPurchaseResult {
+                case .purchased:
+                    self.resolvePurchaseTask(with: .success(purchaseDetails))
+                case .notPurchased:
+                    let error = PMGeneralError(message: PMessages.somethingWentWrong)
+                    self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                case .failed(let reason):
+                    switch reason {
+                    case .generalError(let error):
+                        self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                    case .receiptError(let error):
+                        self.resolvePurchaseTask(with: .failure(.receiptError(error)))
+                    }
+                }
+            }
         case .subscription:
             merchant.verifySubscription(product) { (verifySubscriptionResult) in
                 switch verifySubscriptionResult {

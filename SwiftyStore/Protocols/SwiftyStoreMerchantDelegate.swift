@@ -35,8 +35,8 @@ public protocol SwiftyStoreMerchantDelegate: class {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: String,
-        with result: VerifyPurchaseResult
+        verifiedPurchase: SwiftyStore.Product,
+        with result: SwiftyStore.VerifyPurchaseResult
     )
     
     func merchant(
@@ -57,7 +57,7 @@ public extension SwiftyStoreMerchantDelegate {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: String,
-        with result: VerifyPurchaseResult
+        verifiedPurchase: SwiftyStore.Product,
+        with result: SwiftyStore.VerifyPurchaseResult
     ) { }
 }
