@@ -152,7 +152,7 @@ public final class Merchant {
         }
     }
     
-    func verifyPurchase(
+    public func verifyPurchase(
         _ product: Product,
         forceRefresh: Bool = false,
         completion: @escaping (VerifyPurchaseResult) -> Void = { _ in }
