@@ -62,7 +62,7 @@ public final class Merchant {
                     guard let product = self.products[purchase.productId] else { return }
                     switch product.kind {
                     case .consumable, .nonConsumable:
-                        self.verifyPurchase(product: product)
+                        self.verifyPurchase(product)
                     case .subscription:
                         self.verifySubscription(product)
                     }
