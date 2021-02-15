@@ -8,27 +8,28 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "Pimine-Utilities",
-            targets: ["Utilities"]
+            name: "Pimine-HandyExtensions",
+            targets: ["HandyExtensions"]
         ),
         
         .library(
-            name: "Pimine-Concurrency",
-            targets: ["Concurrency"]),
+            name: "Pimine-Utilities",
+            targets: ["Utilities"]
+        )
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.2.0")
+    ],
     targets: [
         .target(
-            name: "Utilities",
-            path: "Utilities",
-            sources: [
-                "Utilities"
-            ]
+            name: "HandyExtensions",
+            dependencies: ["SwifterSwift"],
+            path: "HandyExtensions"
         ),
         
         .target(
-            name: "Concurrency",
-            path: "Concurrency"
+            name: "Utilities",
+            path: "Utilities"
         )
     ]
 )
