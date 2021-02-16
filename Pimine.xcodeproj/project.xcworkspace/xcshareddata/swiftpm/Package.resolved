@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/RevenueCat/purchases-ios",
         "state": {
           "branch": null,
-          "revision": "4c99b9ecaff307ac9e48bd5f520ea532ebbad570",
-          "version": "3.9.1"
+          "revision": "4c299160274864036f96da3184bbde90d779fc43",
+          "version": "3.10.3"
         }
       },
       {
@@ -15,17 +15,17 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa",
         "state": {
           "branch": null,
-          "revision": "580bb8043a607d8669e185ed33ed77de45c0cdfb",
-          "version": "10.4.0"
+          "revision": "44b9632b22240f0baa4b50964c5722e27094aea0",
+          "version": "10.6.0"
         }
       },
       {
-        "package": "RealmCore",
+        "package": "RealmDatabase",
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "9b2eb9020f97f0930a3f351be95ac320bdf44cf8",
-          "version": "10.1.4"
+          "revision": "6431a4bc6530ec16731ef1c66b379cbef6da01f0",
+          "version": "10.5.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
         "state": {
           "branch": null,
-          "revision": "9974acf07b31b6f5bf363d5118dc1bd4fcac6122",
-          "version": "0.16.1"
+          "revision": "3b54c8eac2840b0cdd576634e83d9ebeb70f847c",
+          "version": "0.16.3"
         }
       }
     ]
