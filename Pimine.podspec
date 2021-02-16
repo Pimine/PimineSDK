@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '12.0'
 
-  s.swift_version   = ['5.1', '5.2']
+  s.swift_version   = ['5.2', '5.3']
   s.default_subspec = 'Core'
 
   # Core
@@ -28,12 +28,13 @@ Pod::Spec.new do |s|
 
   # Utilities
   s.subspec 'Utilities' do |ss|
-    ss.source_files = 'Utilities/**/*.swift', 'HandyExtensions/UIKit/UIApplicationExtensions.swift'
+    ss.source_files = 'Utilities/**/*.swift'
   end
 
   # HandyExtensions
   s.subspec 'HandyExtensions' do |ss|
     ss.source_files = 'HandyExtensions/**/*.swift'
+    ss.dependency 'Pimine/Utilities'
     ss.dependency 'SwifterSwift/SwiftStdlib'
     ss.dependency 'SwifterSwift/Foundation'
     ss.dependency 'SwifterSwift/UIKit'

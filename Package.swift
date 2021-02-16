@@ -23,13 +23,15 @@ let package = Package(
     targets: [
         .target(
             name: "HandyExtensions",
-            dependencies: ["SwifterSwift"],
-            path: "HandyExtensions"
+            dependencies: ["Utilities", "SwifterSwift"],
+            path: "HandyExtensions",
+            exclude: ["Support files/Info.plist"]
         ),
         
         .target(
             name: "Utilities",
-            path: "Utilities"
+            path: "Utilities",
+            exclude: ["Support files/Info.plist"]
         )
     ]
 )
