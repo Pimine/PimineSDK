@@ -1,6 +1,3 @@
-[submodule "SwifterSwift"]
-	path = Third party/SwifterSwift
-	url = https://github.com/SwifterSwift/SwifterSwift.git
 [submodule "merchantkit"]
 	path = Third party/merchantkit
 	url = https://github.com/benjaminmayo/merchantkit.git
