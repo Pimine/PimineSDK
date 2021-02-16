@@ -8,30 +8,137 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "Pimine-HandyExtensions",
-            targets: ["HandyExtensions"]
+            name: "PimineCore",
+            targets: ["Pimine"]
         ),
         
         .library(
-            name: "Pimine-Utilities",
-            targets: ["Utilities"]
+            name: "PimineUtilities",
+            targets: ["PimineUtilities"]
+        ),
+        
+        .library(
+            name: "PimineHandyExtensions",
+            targets: ["PimineHandyExtensions"]
+        ),
+        
+        .library(
+            name: "PimineRevenueCatStore",
+            targets: ["PimineRevenueCatStore"]
+        ),
+        
+        .library(
+            name: "PimineSwiftyStore",
+            targets: ["PimineSwiftyStore"]
+        ),
+        
+        .library(
+            name: "PimineMath",
+            targets: ["PimineMath"]
+        ),
+        
+        .library(
+            name: "PimineDatabase",
+            targets: ["PimineDatabase"]
+        ),
+        
+        .library(
+            name: "PimineConcurrency",
+            targets: ["PimineConcurrency"]
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.2.0")
+        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", .upToNextMajor(from: "5.2.0")),
+        .package(url: "https://github.com/Pimine/EasySwiftLayout.git", .upToNextMajor(from: "1.6.0")),
+        .package(url: "https://github.com/sereivoanyong/SVProgressHUD", .branch("master")),
+        .package(url: "https://github.com/bizz84/SwiftyStoreKit.git", .upToNextMajor(from: "0.16.1")),
+        .package(name: "Purchases", url: "https://github.com/RevenueCat/purchases-ios.git", .upToNextMajor(from: "3.10.3")),
+        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "10.6.0"))
     ],
     targets: [
+        
+        // Core
+        
         .target(
-            name: "HandyExtensions",
-            dependencies: ["Utilities", "SwifterSwift"],
+            name: "Pimine",
+            dependencies: [
+                "PimineHandyExtensions",
+                "PimineUtilities",
+                "EasySwiftLayout"
+            ],
+            path: "Pimine",
+            exclude: ["Info.plist"]
+        ),
+        
+        // Utilities
+        
+        .target(
+            name: "PimineUtilities",
+            path: "Utilities",
+            exclude: ["Support files/Info.plist"]
+        ),
+        
+        // HandyExtensions
+        
+        .target(
+            name: "PimineHandyExtensions",
+            dependencies: [
+                "PimineUtilities",
+                "SwifterSwift"
+            ],
             path: "HandyExtensions",
             exclude: ["Support files/Info.plist"]
         ),
         
+        // RevenueCatStore
+        
         .target(
-            name: "Utilities",
-            path: "Utilities",
+            name: "PimineRevenueCatStore",
+            dependencies: [
+                "PimineUtilities",
+                "SVProgressHUD",
+                "Purchases"
+            ],
+            path: "RevenueCatStore",
             exclude: ["Support files/Info.plist"]
-        )
+        ),
+        
+        // SwiftyStore
+        
+        .target(
+            name: "PimineSwiftyStore",
+            dependencies: [
+                "PimineUtilities",
+                "SVProgressHUD",
+                "SwiftyStoreKit"
+            ],
+            path: "SwiftyStore",
+            exclude: ["Support files/Info.plist"]
+        ),
+        
+        // Math
+        
+        .target(
+            name: "PimineMath",
+            path: "Math",
+            exclude: ["Support files/Info.plist"]
+        ),
+        
+        // Realm Database
+        
+        .target(
+            name: "PimineDatabase",
+            dependencies: ["Realm"],
+            path: "Database",
+            exclude: ["Support files/Info.plist"]
+        ),
+        
+        // Concurrency
+        
+        .target(
+            name: "PimineConcurrency",
+            path: "Concurrency",
+            exclude: ["Support files/Info.plist"]
+        ),
     ]
 )

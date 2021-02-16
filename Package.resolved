@@ -2,12 +2,66 @@
   "object": {
     "pins": [
       {
+        "package": "EasySwiftLayout",
+        "repositoryURL": "https://github.com/Pimine/EasySwiftLayout.git",
+        "state": {
+          "branch": null,
+          "revision": "e3bb4c63c7b56c658167d282241da502ddb37cdd",
+          "version": "1.6.1"
+        }
+      },
+      {
+        "package": "Purchases",
+        "repositoryURL": "https://github.com/RevenueCat/purchases-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "4c299160274864036f96da3184bbde90d779fc43",
+          "version": "3.10.3"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa",
+        "state": {
+          "branch": null,
+          "revision": "44b9632b22240f0baa4b50964c5722e27094aea0",
+          "version": "10.6.0"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "6431a4bc6530ec16731ef1c66b379cbef6da01f0",
+          "version": "10.5.0"
+        }
+      },
+      {
+        "package": "SVProgressHUD",
+        "repositoryURL": "https://github.com/sereivoanyong/SVProgressHUD",
+        "state": {
+          "branch": "master",
+          "revision": "726cb1738d7e41eb23572164c6b007b7b24b9df7",
+          "version": null
+        }
+      },
+      {
         "package": "SwifterSwift",
         "repositoryURL": "https://github.com/SwifterSwift/SwifterSwift.git",
         "state": {
           "branch": null,
           "revision": "dc813f3aa92f904a009fe543b99d5649dce7c134",
           "version": "5.2.0"
+        }
+      },
+      {
+        "package": "SwiftyStoreKit",
+        "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit.git",
+        "state": {
+          "branch": null,
+          "revision": "3b54c8eac2840b0cdd576634e83d9ebeb70f847c",
+          "version": "0.16.3"
         }
       }
     ]
