@@ -26,7 +26,7 @@
 
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     var keyWindow: UIWindow? {
         windows.filter { $0.isKeyWindow }.first
