@@ -49,7 +49,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", .upToNextMajor(from: "5.2.0")),
-        .package(url: "https://github.com/Pimine/EasySwiftLayout.git", .upToNextMajor(from: "1.6.0")),
         .package(url: "https://github.com/sereivoanyong/SVProgressHUD", .branch("master")),
         .package(url: "https://github.com/bizz84/SwiftyStoreKit.git", .upToNextMajor(from: "0.16.1")),
         .package(name: "Purchases", url: "https://github.com/RevenueCat/purchases-ios.git", .upToNextMajor(from: "3.10.3")),
@@ -63,8 +62,7 @@ let package = Package(
             name: "Pimine",
             dependencies: [
                 "PimineHandyExtensions",
-                "PimineUtilities",
-                "EasySwiftLayout"
+                "PimineUtilities"
             ],
             path: "Pimine",
             exclude: ["Info.plist"]
