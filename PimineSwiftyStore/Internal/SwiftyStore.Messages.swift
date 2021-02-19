@@ -24,6 +24,7 @@
 //  SOFTWARE.
 
 import Foundation
+import PimineUtilities
 
 extension SwiftyStore {
 struct Messages {

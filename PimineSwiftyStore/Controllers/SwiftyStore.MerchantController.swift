@@ -26,6 +26,7 @@
 import StoreKit
 import SVProgressHUD
 import SwiftyStoreKit
+import PimineUtilities
 
 extension SwiftyStore {
 open class MerchantController: RestoringController {

@@ -72,7 +72,7 @@ let package = Package(
         
         .target(
             name: "PimineUtilities",
-            path: "Utilities",
+            path: "PimineUtilities",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -84,7 +84,7 @@ let package = Package(
                 "PimineUtilities",
                 "SwifterSwift"
             ],
-            path: "HandyExtensions",
+            path: "PimineHandyExtensions",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -97,7 +97,7 @@ let package = Package(
                 "SVProgressHUD",
                 "Purchases"
             ],
-            path: "RevenueCatStore",
+            path: "PimineRevenueCatStore",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -110,7 +110,7 @@ let package = Package(
                 "SVProgressHUD",
                 "SwiftyStoreKit"
             ],
-            path: "SwiftyStore",
+            path: "PimineSwiftyStore",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -118,7 +118,7 @@ let package = Package(
         
         .target(
             name: "PimineMath",
-            path: "Math",
+            path: "PimineMath",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -126,8 +126,10 @@ let package = Package(
         
         .target(
             name: "PimineDatabase",
-            dependencies: ["Realm"],
-            path: "Database",
+            dependencies: [
+                .product(name: "RealmSwift", package: "Realm")
+            ],
+            path: "PimineDatabase",
             exclude: ["Support files/Info.plist"]
         ),
         
@@ -135,7 +137,7 @@ let package = Package(
         
         .target(
             name: "PimineConcurrency",
-            path: "Concurrency",
+            path: "PimineConcurrency",
             exclude: ["Support files/Info.plist"]
         ),
     ]

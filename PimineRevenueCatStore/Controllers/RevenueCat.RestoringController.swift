@@ -25,6 +25,7 @@
 
 import Purchases
 import SVProgressHUD
+import PimineUtilities
 
 extension RevenueCat {
 open class RestoringController: UIViewController, RevenueCatInterfaceDelegate {

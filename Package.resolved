@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "EasySwiftLayout",
-        "repositoryURL": "https://github.com/Pimine/EasySwiftLayout.git",
-        "state": {
-          "branch": null,
-          "revision": "e3bb4c63c7b56c658167d282241da502ddb37cdd",
-          "version": "1.6.1"
-        }
-      },
-      {
         "package": "Purchases",
         "repositoryURL": "https://github.com/RevenueCat/purchases-ios.git",
         "state": {
