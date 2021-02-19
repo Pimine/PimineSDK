@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB8E594624E1CDA30015EA39"
-               BuildableName = "Pimine_LocalStore.framework"
-               BlueprintName = "Pimine-LocalStore"
+               BuildableName = "PimineLocalStore.framework"
+               BlueprintName = "PimineLocalStore"
                ReferencedContainer = "container:Pimine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB8E594624E1CDA30015EA39"
-            BuildableName = "Pimine_LocalStore.framework"
-            BlueprintName = "Pimine-LocalStore"
+            BuildableName = "PimineLocalStore.framework"
+            BlueprintName = "PimineLocalStore"
             ReferencedContainer = "container:Pimine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB8E598524E1CFBD0015EA39"
-               BuildableName = "Pimine_HandyExtensions.framework"
-               BlueprintName = "Pimine-HandyExtensions"
+               BuildableName = "PimineHandyExtensions.framework"
+               BlueprintName = "PimineHandyExtensions"
                ReferencedContainer = "container:Pimine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB8E598524E1CFBD0015EA39"
-            BuildableName = "Pimine_HandyExtensions.framework"
-            BlueprintName = "Pimine-HandyExtensions"
+            BuildableName = "PimineHandyExtensions.framework"
+            BlueprintName = "PimineHandyExtensions"
             ReferencedContainer = "container:Pimine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

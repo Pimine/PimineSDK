@@ -165,22 +165,22 @@
 		EB9F0A35258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
 		EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
-		EBE325F8258A655600E43576 /* Pimine_Concurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */; };
-		EBE325F9258A655600E43576 /* Pimine_Concurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE325FC258A655600E43576 /* Pimine_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* Pimine_Database.framework */; };
-		EBE325FD258A655600E43576 /* Pimine_Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* Pimine_Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE32600258A655600E43576 /* Pimine_HandyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; };
-		EBE32601258A655600E43576 /* Pimine_HandyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE32604258A655600E43576 /* Pimine_LocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; };
-		EBE32605258A655600E43576 /* Pimine_LocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE32608258A655600E43576 /* Pimine_Math.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; };
-		EBE32609258A655600E43576 /* Pimine_Math.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE3260C258A655600E43576 /* Pimine_RevenueCatStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; };
-		EBE3260D258A655600E43576 /* Pimine_RevenueCatStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE32610258A655600E43576 /* Pimine_SwiftyStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; };
-		EBE32611258A655600E43576 /* Pimine_SwiftyStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EBE32614258A655600E43576 /* Pimine_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; };
-		EBE32615258A655600E43576 /* Pimine_Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; };
+		EBE325F9258A655600E43576 /* PimineConcurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE325FC258A655600E43576 /* PimineDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* PimineDatabase.framework */; };
+		EBE325FD258A655600E43576 /* PimineDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* PimineDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32600258A655600E43576 /* PimineHandyExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* PimineHandyExtensions.framework */; };
+		EBE32601258A655600E43576 /* PimineHandyExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E598624E1CFBD0015EA39 /* PimineHandyExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32604258A655600E43576 /* PimineLocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */; };
+		EBE32605258A655600E43576 /* PimineLocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32608258A655600E43576 /* PimineMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* PimineMath.framework */; };
+		EBE32609258A655600E43576 /* PimineMath.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E597624E1CF390015EA39 /* PimineMath.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE3260C258A655600E43576 /* PimineRevenueCatStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */; };
+		EBE3260D258A655600E43576 /* PimineRevenueCatStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32610258A655600E43576 /* PimineSwiftyStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */; };
+		EBE32611258A655600E43576 /* PimineSwiftyStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE32614258A655600E43576 /* PimineUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; };
+		EBE32615258A655600E43576 /* PimineUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
@@ -337,14 +337,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EBE3260D258A655600E43576 /* Pimine_RevenueCatStore.framework in Embed Frameworks */,
-				EBE32609258A655600E43576 /* Pimine_Math.framework in Embed Frameworks */,
-				EBE32605258A655600E43576 /* Pimine_LocalStore.framework in Embed Frameworks */,
-				EBE32615258A655600E43576 /* Pimine_Utilities.framework in Embed Frameworks */,
-				EBE325F9258A655600E43576 /* Pimine_Concurrency.framework in Embed Frameworks */,
-				EBE32601258A655600E43576 /* Pimine_HandyExtensions.framework in Embed Frameworks */,
-				EBE325FD258A655600E43576 /* Pimine_Database.framework in Embed Frameworks */,
-				EBE32611258A655600E43576 /* Pimine_SwiftyStore.framework in Embed Frameworks */,
+				EBE3260D258A655600E43576 /* PimineRevenueCatStore.framework in Embed Frameworks */,
+				EBE32609258A655600E43576 /* PimineMath.framework in Embed Frameworks */,
+				EBE32605258A655600E43576 /* PimineLocalStore.framework in Embed Frameworks */,
+				EBE32615258A655600E43576 /* PimineUtilities.framework in Embed Frameworks */,
+				EBE325F9258A655600E43576 /* PimineConcurrency.framework in Embed Frameworks */,
+				EBE32601258A655600E43576 /* PimineHandyExtensions.framework in Embed Frameworks */,
+				EBE325FD258A655600E43576 /* PimineDatabase.framework in Embed Frameworks */,
+				EBE32611258A655600E43576 /* PimineSwiftyStore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,32 +400,32 @@
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
 		EB886A1024FE751C00BB21AC /* PMAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAccessManager.swift; sourceTree = "<group>"; };
-		EB888EF424F3E22A0093748F /* Pimine_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB888EF424F3E22A0093748F /* PimineDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB888EF624F3E22A0093748F /* Pimine_Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Database.h; sourceTree = "<group>"; };
 		EB888EF724F3E22A0093748F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB888F0D24F3E2660093748F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Third party/RealmSwift.framework"; sourceTree = "<group>"; };
 		EB888F0E24F3E2660093748F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Third party/Realm.framework"; sourceTree = "<group>"; };
 		EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExtensions.swift; sourceTree = "<group>"; };
 		EB888F1B24F3E3760093748F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E593A24E1CD1A0015EA39 /* Pimine_Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Utilities.h; sourceTree = "<group>"; };
 		EB8E593B24E1CD1A0015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_LocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineLocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E594924E1CDA30015EA39 /* Pimine_LocalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_LocalStore.h; sourceTree = "<group>"; };
 		EB8E594A24E1CDA30015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_RevenueCatStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineRevenueCatStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E595A24E1CE180015EA39 /* Pimine_RevenueCatStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_RevenueCatStore.h; sourceTree = "<group>"; };
 		EB8E595B24E1CE180015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_SwiftyStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineSwiftyStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E596924E1CEAB0015EA39 /* Pimine_SwiftyStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_SwiftyStore.h; sourceTree = "<group>"; };
 		EB8E596A24E1CEAB0015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB8E597624E1CF390015EA39 /* Pimine_Math.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Math.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E597624E1CF390015EA39 /* PimineMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E597824E1CF390015EA39 /* Pimine_Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Math.h; sourceTree = "<group>"; };
 		EB8E597924E1CF390015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_HandyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E598624E1CFBD0015EA39 /* PimineHandyExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineHandyExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E598824E1CFBD0015EA39 /* Pimine_HandyExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_HandyExtensions.h; sourceTree = "<group>"; };
 		EB8E598924E1CFBD0015EA39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine_Concurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92F6F12501359C0007D696 /* PimineConcurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineConcurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92F6F32501359C0007D696 /* Pimine_Concurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine_Concurrency.h; sourceTree = "<group>"; };
 		EB92F6F42501359C0007D696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB92F6FB250136F00007D696 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -517,14 +517,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE3260C258A655600E43576 /* Pimine_RevenueCatStore.framework in Frameworks */,
-				EBE32608258A655600E43576 /* Pimine_Math.framework in Frameworks */,
-				EBE32604258A655600E43576 /* Pimine_LocalStore.framework in Frameworks */,
-				EBE32614258A655600E43576 /* Pimine_Utilities.framework in Frameworks */,
-				EBE325F8258A655600E43576 /* Pimine_Concurrency.framework in Frameworks */,
-				EBE32600258A655600E43576 /* Pimine_HandyExtensions.framework in Frameworks */,
-				EBE325FC258A655600E43576 /* Pimine_Database.framework in Frameworks */,
-				EBE32610258A655600E43576 /* Pimine_SwiftyStore.framework in Frameworks */,
+				EBE3260C258A655600E43576 /* PimineRevenueCatStore.framework in Frameworks */,
+				EBE32608258A655600E43576 /* PimineMath.framework in Frameworks */,
+				EBE32604258A655600E43576 /* PimineLocalStore.framework in Frameworks */,
+				EBE32614258A655600E43576 /* PimineUtilities.framework in Frameworks */,
+				EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */,
+				EBE32600258A655600E43576 /* PimineHandyExtensions.framework in Frameworks */,
+				EBE325FC258A655600E43576 /* PimineDatabase.framework in Frameworks */,
+				EBE32610258A655600E43576 /* PimineSwiftyStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,15 +571,15 @@
 			children = (
 				EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */,
 				EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */,
-				EB8E597724E1CF390015EA39 /* Math */,
-				EB8E596824E1CEAB0015EA39 /* SwiftyStore */,
-				EB8E595924E1CE180015EA39 /* RevenueCatStore */,
-				EB8E594824E1CDA30015EA39 /* LocalStore */,
-				EB8E593924E1CD1A0015EA39 /* Utilities */,
-				EB8E598724E1CFBD0015EA39 /* HandyExtensions */,
+				EB8E597724E1CF390015EA39 /* PimineMath */,
+				EB8E596824E1CEAB0015EA39 /* PimineSwiftyStore */,
+				EB8E595924E1CE180015EA39 /* PimineRevenueCatStore */,
+				EB8E594824E1CDA30015EA39 /* PimineLocalStore */,
+				EB8E593924E1CD1A0015EA39 /* PimineUtilities */,
+				EB8E598724E1CFBD0015EA39 /* PimineHandyExtensions */,
 				EBF8807024E2E51A00FAFAE5 /* Pimine */,
-				EB888EF524F3E22A0093748F /* Database */,
-				EB92F6F22501359C0007D696 /* Concurrency */,
+				EB888EF524F3E22A0093748F /* PimineDatabase */,
+				EB92F6F22501359C0007D696 /* PimineConcurrency */,
 				B74C20392475901D0097A513 /* Products */,
 				B74C205B247590AD0097A513 /* Frameworks */,
 			);
@@ -588,15 +588,15 @@
 		B74C20392475901D0097A513 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */,
-				EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */,
-				EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */,
-				EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */,
-				EB8E597624E1CF390015EA39 /* Pimine_Math.framework */,
-				EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */,
+				EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */,
+				EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */,
+				EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */,
+				EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */,
+				EB8E597624E1CF390015EA39 /* PimineMath.framework */,
+				EB8E598624E1CFBD0015EA39 /* PimineHandyExtensions.framework */,
 				EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */,
-				EB888EF424F3E22A0093748F /* Pimine_Database.framework */,
-				EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */,
+				EB888EF424F3E22A0093748F /* PimineDatabase.framework */,
+				EB92F6F12501359C0007D696 /* PimineConcurrency.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -736,14 +736,14 @@
 			path = "URL Handling";
 			sourceTree = "<group>";
 		};
-		EB888EF524F3E22A0093748F /* Database */ = {
+		EB888EF524F3E22A0093748F /* PimineDatabase */ = {
 			isa = PBXGroup;
 			children = (
 				EB888F1424F3E2740093748F /* Support files */,
 				EB888F1B24F3E3760093748F /* Database.swift */,
 				EB888F1824F3E34B0093748F /* DatabaseExtensions.swift */,
 			);
-			path = Database;
+			path = PimineDatabase;
 			sourceTree = "<group>";
 		};
 		EB888F1424F3E2740093748F /* Support files */ = {
@@ -755,7 +755,7 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E593924E1CD1A0015EA39 /* Utilities */ = {
+		EB8E593924E1CD1A0015EA39 /* PimineUtilities */ = {
 			isa = PBXGroup;
 			children = (
 				B75A63A0247935F000DBDB36 /* Internal */,
@@ -772,7 +772,7 @@
 				EBDE233224D19A8300740059 /* PMessages.swift */,
 				EB886A1024FE751C00BB21AC /* PMAccessManager.swift */,
 			);
-			path = Utilities;
+			path = PimineUtilities;
 			sourceTree = "<group>";
 		};
 		EB8E594024E1CD340015EA39 /* Support files */ = {
@@ -784,7 +784,7 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E594824E1CDA30015EA39 /* LocalStore */ = {
+		EB8E594824E1CDA30015EA39 /* PimineLocalStore */ = {
 			isa = PBXGroup;
 			children = (
 				B75A63A82479494300DBDB36 /* Extensions */,
@@ -793,7 +793,7 @@
 				B75A63AB24794E5B00DBDB36 /* LocalStore.SubscriptionPriceFormatter.swift */,
 				EB18377A24C084DF0011E404 /* LocalStore.swift */,
 			);
-			path = LocalStore;
+			path = PimineLocalStore;
 			sourceTree = "<group>";
 		};
 		EB8E595124E1CDBF0015EA39 /* Support files */ = {
@@ -805,7 +805,7 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E595924E1CE180015EA39 /* RevenueCatStore */ = {
+		EB8E595924E1CE180015EA39 /* PimineRevenueCatStore */ = {
 			isa = PBXGroup;
 			children = (
 				EB36FCFF24C06DFB00A978D6 /* Protocols */,
@@ -814,7 +814,7 @@
 				EB8E596024E1CE510015EA39 /* Support files */,
 				EB36FCF724C0683300A978D6 /* RevenueCat.swift */,
 			);
-			path = RevenueCatStore;
+			path = PimineRevenueCatStore;
 			sourceTree = "<group>";
 		};
 		EB8E596024E1CE510015EA39 /* Support files */ = {
@@ -826,7 +826,7 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E596824E1CEAB0015EA39 /* SwiftyStore */ = {
+		EB8E596824E1CEAB0015EA39 /* PimineSwiftyStore */ = {
 			isa = PBXGroup;
 			children = (
 				EB431C8524C77CEB00E32747 /* Internal */,
@@ -836,7 +836,7 @@
 				EB8E596F24E1CEBD0015EA39 /* Support files */,
 				EB0AAD2D24C75A080016E924 /* SwiftyStore.swift */,
 			);
-			path = SwiftyStore;
+			path = PimineSwiftyStore;
 			sourceTree = "<group>";
 		};
 		EB8E596F24E1CEBD0015EA39 /* Support files */ = {
@@ -848,13 +848,13 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E597724E1CF390015EA39 /* Math */ = {
+		EB8E597724E1CF390015EA39 /* PimineMath */ = {
 			isa = PBXGroup;
 			children = (
 				EB8E597F24E1CF530015EA39 /* Support files */,
 				B73B618A24780487003CE4C0 /* PMath.swift */,
 			);
-			path = Math;
+			path = PimineMath;
 			sourceTree = "<group>";
 		};
 		EB8E597F24E1CF530015EA39 /* Support files */ = {
@@ -866,7 +866,7 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB8E598724E1CFBD0015EA39 /* HandyExtensions */ = {
+		EB8E598724E1CFBD0015EA39 /* PimineHandyExtensions */ = {
 			isa = PBXGroup;
 			children = (
 				EB9E05EC24BE145200125BB3 /* Combine */,
@@ -876,7 +876,7 @@
 				B74C206C24759C9B0097A513 /* UIKit */,
 				EB8E598E24E1CFE60015EA39 /* Support files */,
 			);
-			path = HandyExtensions;
+			path = PimineHandyExtensions;
 			sourceTree = "<group>";
 		};
 		EB8E598E24E1CFE60015EA39 /* Support files */ = {
@@ -888,13 +888,13 @@
 			path = "Support files";
 			sourceTree = "<group>";
 		};
-		EB92F6F22501359C0007D696 /* Concurrency */ = {
+		EB92F6F22501359C0007D696 /* PimineConcurrency */ = {
 			isa = PBXGroup;
 			children = (
 				EB92F6FA250136B20007D696 /* Operations */,
 				EB92F6F9250135CA0007D696 /* Support files */,
 			);
-			path = Concurrency;
+			path = PimineConcurrency;
 			sourceTree = "<group>";
 		};
 		EB92F6F9250135CA0007D696 /* Support files */ = {
@@ -1043,9 +1043,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EB888EF324F3E22A0093748F /* Pimine-Database */ = {
+		EB888EF324F3E22A0093748F /* PimineDatabase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "Pimine-Database" */;
+			buildConfigurationList = EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "PimineDatabase" */;
 			buildPhases = (
 				EB888EEF24F3E22A0093748F /* Headers */,
 				EB888EF024F3E22A0093748F /* Sources */,
@@ -1056,17 +1056,17 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-Database";
+			name = PimineDatabase;
 			packageProductDependencies = (
 				EB993FFA2587B0F700721C36 /* RealmSwift */,
 			);
 			productName = "Pimine-Database";
-			productReference = EB888EF424F3E22A0093748F /* Pimine_Database.framework */;
+			productReference = EB888EF424F3E22A0093748F /* PimineDatabase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E593724E1CD1A0015EA39 /* Pimine-Utilities */ = {
+		EB8E593724E1CD1A0015EA39 /* PimineUtilities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E593D24E1CD1A0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-Utilities" */;
+			buildConfigurationList = EB8E593D24E1CD1A0015EA39 /* Build configuration list for PBXNativeTarget "PimineUtilities" */;
 			buildPhases = (
 				EB8E593324E1CD1A0015EA39 /* Headers */,
 				EB8E593424E1CD1A0015EA39 /* Sources */,
@@ -1077,16 +1077,16 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-Utilities";
+			name = PimineUtilities;
 			packageProductDependencies = (
 			);
 			productName = "Pimine-Utilities";
-			productReference = EB8E593824E1CD1A0015EA39 /* Pimine_Utilities.framework */;
+			productReference = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E594624E1CDA30015EA39 /* Pimine-LocalStore */ = {
+		EB8E594624E1CDA30015EA39 /* PimineLocalStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E594C24E1CDA30015EA39 /* Build configuration list for PBXNativeTarget "Pimine-LocalStore" */;
+			buildConfigurationList = EB8E594C24E1CDA30015EA39 /* Build configuration list for PBXNativeTarget "PimineLocalStore" */;
 			buildPhases = (
 				EB8E594224E1CDA30015EA39 /* Headers */,
 				EB8E594324E1CDA30015EA39 /* Sources */,
@@ -1098,14 +1098,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-LocalStore";
+			name = PimineLocalStore;
 			productName = "Pimine-LocalStore";
-			productReference = EB8E594724E1CDA30015EA39 /* Pimine_LocalStore.framework */;
+			productReference = EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E595724E1CE180015EA39 /* Pimine-RevenueCatStore */ = {
+		EB8E595724E1CE180015EA39 /* PimineRevenueCatStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E595D24E1CE180015EA39 /* Build configuration list for PBXNativeTarget "Pimine-RevenueCatStore" */;
+			buildConfigurationList = EB8E595D24E1CE180015EA39 /* Build configuration list for PBXNativeTarget "PimineRevenueCatStore" */;
 			buildPhases = (
 				EB8E595324E1CE180015EA39 /* Headers */,
 				EB8E595424E1CE180015EA39 /* Sources */,
@@ -1117,17 +1117,17 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-RevenueCatStore";
+			name = PimineRevenueCatStore;
 			packageProductDependencies = (
 				EB9940252587B67F00721C36 /* Purchases */,
 			);
 			productName = "Pimine-RevenueCatStore";
-			productReference = EB8E595824E1CE180015EA39 /* Pimine_RevenueCatStore.framework */;
+			productReference = EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E596624E1CEAB0015EA39 /* Pimine-SwiftyStore */ = {
+		EB8E596624E1CEAB0015EA39 /* PimineSwiftyStore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E596C24E1CEAB0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-SwiftyStore" */;
+			buildConfigurationList = EB8E596C24E1CEAB0015EA39 /* Build configuration list for PBXNativeTarget "PimineSwiftyStore" */;
 			buildPhases = (
 				EB8E596224E1CEAB0015EA39 /* Headers */,
 				EB8E596324E1CEAB0015EA39 /* Sources */,
@@ -1139,17 +1139,17 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-SwiftyStore";
+			name = PimineSwiftyStore;
 			packageProductDependencies = (
 				EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */,
 			);
 			productName = "Pimine-SwiftyStore";
-			productReference = EB8E596724E1CEAB0015EA39 /* Pimine_SwiftyStore.framework */;
+			productReference = EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E597524E1CF390015EA39 /* Pimine-Math */ = {
+		EB8E597524E1CF390015EA39 /* PimineMath */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E597B24E1CF390015EA39 /* Build configuration list for PBXNativeTarget "Pimine-Math" */;
+			buildConfigurationList = EB8E597B24E1CF390015EA39 /* Build configuration list for PBXNativeTarget "PimineMath" */;
 			buildPhases = (
 				EB8E597124E1CF390015EA39 /* Headers */,
 				EB8E597224E1CF390015EA39 /* Sources */,
@@ -1160,14 +1160,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-Math";
+			name = PimineMath;
 			productName = "Pimine-Math";
-			productReference = EB8E597624E1CF390015EA39 /* Pimine_Math.framework */;
+			productReference = EB8E597624E1CF390015EA39 /* PimineMath.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */ = {
+		EB8E598524E1CFBD0015EA39 /* PimineHandyExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8E598B24E1CFBD0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-HandyExtensions" */;
+			buildConfigurationList = EB8E598B24E1CFBD0015EA39 /* Build configuration list for PBXNativeTarget "PimineHandyExtensions" */;
 			buildPhases = (
 				EB8E598124E1CFBD0015EA39 /* Headers */,
 				EB8E598224E1CFBD0015EA39 /* Sources */,
@@ -1178,14 +1178,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-HandyExtensions";
+			name = PimineHandyExtensions;
 			productName = "Pimine-HandyExtensions";
-			productReference = EB8E598624E1CFBD0015EA39 /* Pimine_HandyExtensions.framework */;
+			productReference = EB8E598624E1CFBD0015EA39 /* PimineHandyExtensions.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EB92F6F02501359C0007D696 /* Pimine-Concurrency */ = {
+		EB92F6F02501359C0007D696 /* PimineConcurrency */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "Pimine-Concurrency" */;
+			buildConfigurationList = EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "PimineConcurrency" */;
 			buildPhases = (
 				EB92F6EC2501359C0007D696 /* Headers */,
 				EB92F6ED2501359C0007D696 /* Sources */,
@@ -1196,9 +1196,9 @@
 			);
 			dependencies = (
 			);
-			name = "Pimine-Concurrency";
+			name = PimineConcurrency;
 			productName = "Pimine-Concurrency";
-			productReference = EB92F6F12501359C0007D696 /* Pimine_Concurrency.framework */;
+			productReference = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EBF8806E24E2E51A00FAFAE5 /* Pimine */ = {
@@ -1299,15 +1299,15 @@
 			);
 			projectRoot = "";
 			targets = (
-				EB8E593724E1CD1A0015EA39 /* Pimine-Utilities */,
-				EB8E594624E1CDA30015EA39 /* Pimine-LocalStore */,
-				EB8E595724E1CE180015EA39 /* Pimine-RevenueCatStore */,
-				EB8E596624E1CEAB0015EA39 /* Pimine-SwiftyStore */,
+				EB8E593724E1CD1A0015EA39 /* PimineUtilities */,
+				EB8E594624E1CDA30015EA39 /* PimineLocalStore */,
+				EB8E595724E1CE180015EA39 /* PimineRevenueCatStore */,
+				EB8E596624E1CEAB0015EA39 /* PimineSwiftyStore */,
 				EBF8806E24E2E51A00FAFAE5 /* Pimine */,
-				EB8E597524E1CF390015EA39 /* Pimine-Math */,
-				EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */,
-				EB888EF324F3E22A0093748F /* Pimine-Database */,
-				EB92F6F02501359C0007D696 /* Pimine-Concurrency */,
+				EB8E597524E1CF390015EA39 /* PimineMath */,
+				EB8E598524E1CFBD0015EA39 /* PimineHandyExtensions */,
+				EB888EF324F3E22A0093748F /* PimineDatabase */,
+				EB92F6F02501359C0007D696 /* PimineConcurrency */,
 			);
 		};
 /* End PBXProject section */
@@ -1642,42 +1642,42 @@
 /* Begin PBXTargetDependency section */
 		EBE325FB258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB92F6F02501359C0007D696 /* Pimine-Concurrency */;
+			target = EB92F6F02501359C0007D696 /* PimineConcurrency */;
 			targetProxy = EBE325FA258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE325FF258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB888EF324F3E22A0093748F /* Pimine-Database */;
+			target = EB888EF324F3E22A0093748F /* PimineDatabase */;
 			targetProxy = EBE325FE258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE32603258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E598524E1CFBD0015EA39 /* Pimine-HandyExtensions */;
+			target = EB8E598524E1CFBD0015EA39 /* PimineHandyExtensions */;
 			targetProxy = EBE32602258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE32607258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E594624E1CDA30015EA39 /* Pimine-LocalStore */;
+			target = EB8E594624E1CDA30015EA39 /* PimineLocalStore */;
 			targetProxy = EBE32606258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE3260B258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E597524E1CF390015EA39 /* Pimine-Math */;
+			target = EB8E597524E1CF390015EA39 /* PimineMath */;
 			targetProxy = EBE3260A258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE3260F258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E595724E1CE180015EA39 /* Pimine-RevenueCatStore */;
+			target = EB8E595724E1CE180015EA39 /* PimineRevenueCatStore */;
 			targetProxy = EBE3260E258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE32613258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E596624E1CEAB0015EA39 /* Pimine-SwiftyStore */;
+			target = EB8E596624E1CEAB0015EA39 /* PimineSwiftyStore */;
 			targetProxy = EBE32612258A655600E43576 /* PBXContainerItemProxy */;
 		};
 		EBE32617258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB8E593724E1CD1A0015EA39 /* Pimine-Utilities */;
+			target = EB8E593724E1CD1A0015EA39 /* PimineUtilities */;
 			targetProxy = EBE32616258A655600E43576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1808,6 +1808,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F79SZ7VU87;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1818,7 +1819,7 @@
 					"$(PROJECT_DIR)/Third\\ party",
 					"$(PROJECT_DIR)/Third\\ party",
 				);
-				INFOPLIST_FILE = "Database/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineDatabase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1826,6 +1827,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1841,6 +1843,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F79SZ7VU87;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1851,7 +1854,7 @@
 					"$(PROJECT_DIR)/Third\\ party",
 					"$(PROJECT_DIR)/Third\\ party",
 				);
-				INFOPLIST_FILE = "Database/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineDatabase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1859,6 +1862,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1878,7 +1882,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Utilities/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineUtilities/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1886,7 +1890,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1906,7 +1910,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Utilities/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineUtilities/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1914,7 +1918,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1934,7 +1938,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "LocalStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineLocalStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1942,7 +1946,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1962,7 +1966,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "LocalStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineLocalStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1970,7 +1974,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1990,7 +1994,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "RevenueCatStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineRevenueCatStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1998,7 +2002,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2018,7 +2022,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "RevenueCatStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineRevenueCatStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2026,7 +2030,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2046,7 +2050,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "SwiftyStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineSwiftyStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2054,7 +2058,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2074,7 +2078,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "SwiftyStore/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineSwiftyStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2082,7 +2086,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2102,7 +2106,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Math/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineMath/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2110,7 +2114,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2130,7 +2134,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Math/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineMath/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2138,7 +2142,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2158,7 +2162,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "HandyExtensions/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineHandyExtensions/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2166,7 +2170,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2186,7 +2190,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "HandyExtensions/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineHandyExtensions/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2194,7 +2198,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2209,12 +2213,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F79SZ7VU87;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Concurrency/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineConcurrency/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2222,6 +2227,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2237,12 +2243,13 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F79SZ7VU87;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Concurrency/Support files/Info.plist";
+				INFOPLIST_FILE = "PimineConcurrency/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2250,6 +2257,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2283,7 +2291,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2318,7 +2326,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2340,7 +2348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "Pimine-Database" */ = {
+		EB888F0C24F3E22A0093748F /* Build configuration list for PBXNativeTarget "PimineDatabase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB888EF924F3E22A0093748F /* Debug */,
@@ -2349,7 +2357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E593D24E1CD1A0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-Utilities" */ = {
+		EB8E593D24E1CD1A0015EA39 /* Build configuration list for PBXNativeTarget "PimineUtilities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E593E24E1CD1A0015EA39 /* Debug */,
@@ -2358,7 +2366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E594C24E1CDA30015EA39 /* Build configuration list for PBXNativeTarget "Pimine-LocalStore" */ = {
+		EB8E594C24E1CDA30015EA39 /* Build configuration list for PBXNativeTarget "PimineLocalStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E594D24E1CDA30015EA39 /* Debug */,
@@ -2367,7 +2375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E595D24E1CE180015EA39 /* Build configuration list for PBXNativeTarget "Pimine-RevenueCatStore" */ = {
+		EB8E595D24E1CE180015EA39 /* Build configuration list for PBXNativeTarget "PimineRevenueCatStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E595E24E1CE180015EA39 /* Debug */,
@@ -2376,7 +2384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E596C24E1CEAB0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-SwiftyStore" */ = {
+		EB8E596C24E1CEAB0015EA39 /* Build configuration list for PBXNativeTarget "PimineSwiftyStore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E596D24E1CEAB0015EA39 /* Debug */,
@@ -2385,7 +2393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E597B24E1CF390015EA39 /* Build configuration list for PBXNativeTarget "Pimine-Math" */ = {
+		EB8E597B24E1CF390015EA39 /* Build configuration list for PBXNativeTarget "PimineMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E597C24E1CF390015EA39 /* Debug */,
@@ -2394,7 +2402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8E598B24E1CFBD0015EA39 /* Build configuration list for PBXNativeTarget "Pimine-HandyExtensions" */ = {
+		EB8E598B24E1CFBD0015EA39 /* Build configuration list for PBXNativeTarget "PimineHandyExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8E598C24E1CFBD0015EA39 /* Debug */,
@@ -2403,7 +2411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "Pimine-Concurrency" */ = {
+		EB92F6F62501359C0007D696 /* Build configuration list for PBXNativeTarget "PimineConcurrency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB92F6F72501359C0007D696 /* Debug */,

@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name            = 'Pimine'
-  s.version         = '0.4.1'
+  s.version         = '0.5.1'
   s.summary         = 'PimineSDK'
 
-  s.description     = 'Internal SDK'
+  s.description     = 'SDK to speed up common routines and remove code duplication.'
 
   s.homepage        = 'https://github.com/Pimine/PimineSDK'
   s.license         = { :type => 'MIT', :file => 'LICENSE' }
@@ -28,18 +28,12 @@ Pod::Spec.new do |s|
 
   # Utilities
   s.subspec 'Utilities' do |ss|
-    ss.source_files = 'Utilities/**/*.swift'
+    ss.dependency 'PimineUtilities'
   end
 
   # HandyExtensions
   s.subspec 'HandyExtensions' do |ss|
-    ss.source_files = 'HandyExtensions/**/*.swift'
-    ss.dependency 'Pimine/Utilities'
-    ss.dependency 'SwifterSwift/SwiftStdlib'
-    ss.dependency 'SwifterSwift/Foundation'
-    ss.dependency 'SwifterSwift/UIKit'
-    ss.dependency 'SwifterSwift/CoreGraphics'
-    ss.dependency 'SwifterSwift/CoreAnimation'
+    ss.dependency 'PimineHandyExtensions'
   end
 
   # LocalStore
