@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PimineSDK",
+    name: "Pimine",
     platforms: [.iOS(.v13)],
     products: [
         .library(
