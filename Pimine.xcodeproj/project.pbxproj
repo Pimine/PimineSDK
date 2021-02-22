@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB18BA8025E3F9520046A3B6 /* Reorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */; };
+		EB18BA8125E3F9520046A3B6 /* Reorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */; };
+		EB18BA8825E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
+		EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
 		EB18D6A124E2F79D004ABD6A /* MerchantKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; };
 		EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D6B024E2F7C7004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
@@ -381,6 +385,8 @@
 		EB18377224C072780011E404 /* RevenueCatInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCatInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EB18377624C081EE0011E404 /* RevenueCat.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.RestoringController.swift; sourceTree = "<group>"; };
 		EB18377A24C084DF0011E404 /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reorderable.swift; sourceTree = "<group>"; };
+		EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		EB1FE93D252DFD1500B9CD1A /* Imitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imitable.swift; sourceTree = "<group>"; };
 		EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableUserDefaultsBacked.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
@@ -552,8 +558,10 @@
 		B715F88F2475D5A500BB98CD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				EB18BA6D25E3F8C30046A3B6 /* Protocols */,
 				B715F8902475D5C500BB98CD /* BundleExtensions.swift */,
 				EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */,
+				EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -660,6 +668,14 @@
 				B75A63A6247942AE00DBDB36 /* LocalStore.MerchantController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB18BA6D25E3F8C30046A3B6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		EB1FE92B252DFD0000B9CD1A /* Protocols */ = {
@@ -869,8 +885,8 @@
 		EB8E598724E1CFBD0015EA39 /* PimineHandyExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				EB9E05EC24BE145200125BB3 /* Combine */,
 				B73B61E224792F32003CE4C0 /* Internal */,
+				EB9E05EC24BE145200125BB3 /* Combine */,
 				B715F88F2475D5A500BB98CD /* Foundation */,
 				B715F87B2475C0E600BB98CD /* SwiftStdLib */,
 				B74C206C24759C9B0097A513 /* UIKit */,
@@ -1543,7 +1559,9 @@
 				EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */,
 				EB8E59DA24E1D1A40015EA39 /* UIApplicationExtensions.swift in Sources */,
 				EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
+				EB18BA8125E3F9520046A3B6 /* Reorderable.swift in Sources */,
 				EB8E59D724E1D1A40015EA39 /* UITextViewExtensions.swift in Sources */,
+				EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */,
 				EB8E59D824E1D1A40015EA39 /* UIViewExtensitions.swift in Sources */,
 				EB8E59D124E1D1980015EA39 /* ClosureSleeve.swift in Sources */,
 				EB8E59D624E1D1A40015EA39 /* UILabelExtensions.swift in Sources */,
@@ -1595,6 +1613,7 @@
 				EB202FC7250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */,
 				EB18D88E24E30665004ABD6A /* UIViewExtensitions.swift in Sources */,
 				EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */,
+				EB18BA8025E3F9520046A3B6 /* Reorderable.swift in Sources */,
 				EB18D88B24E30661004ABD6A /* NameDescribable.swift in Sources */,
 				EB18D88D24E30665004ABD6A /* UITextViewExtensions.swift in Sources */,
 				EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
@@ -1618,6 +1637,7 @@
 				EB18D88524E3064E004ABD6A /* PMessages.swift in Sources */,
 				EB4CA2C625DBD4C000789841 /* UtilitiesExtensions.swift in Sources */,
 				EB9F0A35258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */,
+				EB18BA8825E3FA010046A3B6 /* ArrayExtensions.swift in Sources */,
 				EB18D88824E30659004ABD6A /* BundleExtensions.swift in Sources */,
 				EB18D87224E3062A004ABD6A /* RevenueCatInterfaceDelegate.swift in Sources */,
 				EB18D87124E30623004ABD6A /* SwiftyStore.swift in Sources */,
