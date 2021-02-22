@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   # LocalStore
   s.subspec 'LocalStore' do |ss|
-    ss.source_files = 'LocalStore/**/*.swift'
+    ss.source_files = 'PimineLocalStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'MerchantKit'
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
 
   # RevenueCatStore
   s.subspec 'RevenueCatStore' do |ss|
-    ss.source_files = 'RevenueCatStore/**/*.swift'
+    ss.source_files = 'PimineRevenueCatStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SVProgressHUD'
     ss.dependency 'Purchases'
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
 
   # SwiftyStore
   s.subspec 'SwiftyStore' do |ss|
-    ss.source_files = 'SwiftyStore/**/*.swift'
+    ss.source_files = 'PimineSwiftyStore/**/*.swift'
     ss.dependency 'Pimine/Utilities'
     ss.dependency 'SwiftyStoreKit'
     ss.dependency 'SVProgressHUD'
@@ -62,18 +62,18 @@ Pod::Spec.new do |s|
 
   # Math
   s.subspec 'Math' do |ss|
-  	ss.source_files = 'Math/*.swift'
+  	ss.source_files = 'PimineMath/*.swift'
   end
 
   # Database
   s.subspec 'Database' do |ss|
-    ss.source_files = 'Database/*.swift'
+    ss.source_files = 'PimineDatabase/*.swift'
     ss.dependency 'RealmSwift'
   end
 
   # Concurrency
   s.subspec 'Concurrency' do |ss|
-  	ss.source_files = 'Concurrency/**/*.swift'
+  	ss.source_files = 'PimineConcurrency/**/*.swift'
   end
 
 end
