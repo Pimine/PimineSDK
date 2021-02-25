@@ -165,6 +165,10 @@
 		EB92F70625013DCE0007D696 /* ChainedOperationOutputProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */; };
 		EB993FFB2587B0F700721C36 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB993FFA2587B0F700721C36 /* RealmSwift */; };
 		EB9940262587B67F00721C36 /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = EB9940252587B67F00721C36 /* Purchases */; };
+		EB9A2C9425E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */; };
+		EB9A2C9525E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */; };
+		EB9A2CA325E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */; };
+		EB9A2CA425E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */; };
 		EB9F0A34258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
 		EB9F0A35258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
@@ -438,6 +442,8 @@
 		EB92F6FE2501392D0007D696 /* AsyncResultOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResultOperation.swift; sourceTree = "<group>"; };
 		EB92F70125013ADB0007D696 /* ChainedAsyncResultOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedAsyncResultOperation.swift; sourceTree = "<group>"; };
 		EB92F70425013DCE0007D696 /* ChainedOperationOutputProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainedOperationOutputProviding.swift; sourceTree = "<group>"; };
+		EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingContainer+AnyCollection.swift"; sourceTree = "<group>"; };
+		EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EncodingContainer+AnyCollection.swift"; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifyPurchaseResult.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
@@ -562,6 +568,8 @@
 				B715F8902475D5C500BB98CD /* BundleExtensions.swift */,
 				EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */,
 				EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */,
+				EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */,
+				EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1562,8 +1570,10 @@
 				EB18BA8125E3F9520046A3B6 /* Reorderable.swift in Sources */,
 				EB8E59D724E1D1A40015EA39 /* UITextViewExtensions.swift in Sources */,
 				EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */,
+				EB9A2C9525E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */,
 				EB8E59D824E1D1A40015EA39 /* UIViewExtensitions.swift in Sources */,
 				EB8E59D124E1D1980015EA39 /* ClosureSleeve.swift in Sources */,
+				EB9A2CA425E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */,
 				EB8E59D624E1D1A40015EA39 /* UILabelExtensions.swift in Sources */,
 				EBF3B88D2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */,
 				EB8E59D324E1D19E0015EA39 /* SetExtensions.swift in Sources */,
@@ -1613,6 +1623,7 @@
 				EB202FC7250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */,
 				EB18D88E24E30665004ABD6A /* UIViewExtensitions.swift in Sources */,
 				EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */,
+				EB9A2CA325E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */,
 				EB18BA8025E3F9520046A3B6 /* Reorderable.swift in Sources */,
 				EB18D88B24E30661004ABD6A /* NameDescribable.swift in Sources */,
 				EB18D88D24E30665004ABD6A /* UITextViewExtensions.swift in Sources */,
@@ -1624,6 +1635,7 @@
 				EB18D88424E3064E004ABD6A /* PMValidator.swift in Sources */,
 				EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */,
 				EB18D86F24E3061F004ABD6A /* SwiftyStore.RestoringController.swift in Sources */,
+				EB9A2C9425E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */,
 				EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,
