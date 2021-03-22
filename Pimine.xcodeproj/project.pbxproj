@@ -191,6 +191,8 @@
 		EBE32615258A655600E43576 /* PimineUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
 		EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */; };
+		EBF0334E2608BD68000CD0EF /* PMCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */; };
+		EBF0335B2608BE19000CD0EF /* PMCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */; };
 		EBF3B88C2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
 		EBF3B88D2518A0D100BD2B42 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */; };
 		EBF8807324E2E51A00FAFAE5 /* Pimine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF8807124E2E51A00FAFAE5 /* Pimine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -455,6 +457,7 @@
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMCoordinator.swift; sourceTree = "<group>"; };
 		EBF3B88B2518A0D100BD2B42 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pimine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF8807124E2E51A00FAFAE5 /* Pimine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pimine.h; sourceTree = "<group>"; };
@@ -795,6 +798,7 @@
 				EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */,
 				EBDE233224D19A8300740059 /* PMessages.swift */,
 				EB886A1024FE751C00BB21AC /* PMAccessManager.swift */,
+				EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */,
 			);
 			path = PimineUtilities;
 			sourceTree = "<group>";
@@ -1483,6 +1487,7 @@
 				EB8E59A224E1D0C00015EA39 /* PMAlert.swift in Sources */,
 				EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */,
 				EB8E59A624E1D0C00015EA39 /* PMValidator.swift in Sources */,
+				EBF0334E2608BD68000CD0EF /* PMCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1600,6 +1605,7 @@
 			files = (
 				EB18D87624E3062F004ABD6A /* RevenueCat.MerchantController.swift in Sources */,
 				EB18D88324E3064E004ABD6A /* PMUserNotificationManager.swift in Sources */,
+				EBF0335B2608BE19000CD0EF /* PMCoordinator.swift in Sources */,
 				EB18D88F24E30665004ABD6A /* UIControlExtensions.swift in Sources */,
 				EB92F6FF2501392D0007D696 /* AsyncResultOperation.swift in Sources */,
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
