@@ -25,37 +25,37 @@
 
 import UIKit
 
-class PMCoordinator: NSObject {
+open class PMCoordinator: NSObject {
     
     // MARK: Properties
     
-    let rootViewController: UINavigationController
+    public let rootViewController: UINavigationController
 
     private(set) var childCoordinators: [PMCoordinator] = []
     
     // MARK: Initialization
     
-    init(rootViewController: UINavigationController) {
+    public init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
     }
     
     // MARK: Flow
 
-    func start() {
+    public func start() {
         preconditionFailure("This method needs to be overriden by concrete subclass.")
     }
 
-    func finish() {
+    public func finish() {
         preconditionFailure("This method needs to be overriden by concrete subclass.")
     }
     
     // MARK: Dependancies
 
-    func addChildCoordinator(_ coordinator: PMCoordinator) {
+    public func addChildCoordinator(_ coordinator: PMCoordinator) {
         childCoordinators.append(coordinator)
     }
 
-    func removeChildCoordinator(_ coordinator: PMCoordinator) {
+    public func removeChildCoordinator(_ coordinator: PMCoordinator) {
         if let index = childCoordinators.firstIndex(of: coordinator) {
             childCoordinators.remove(at: index)
         } else {
@@ -63,18 +63,18 @@ class PMCoordinator: NSObject {
         }
     }
 
-    func removeAllChildCoordinatorsWith<T>(type: T.Type) {
+    public func removeAllChildCoordinatorsWith<T>(type: T.Type) {
         childCoordinators = childCoordinators.filter { $0 is T  == false }
     }
 
-    func removeAllChildCoordinators() {
+    public func removeAllChildCoordinators() {
         childCoordinators.removeAll()
     }
 }
 
 // MARK: - Equatable
 
-extension PMCoordinator {
+public extension PMCoordinator {
     
     static func == (lhs: PMCoordinator, rhs: PMCoordinator) -> Bool {
         return lhs === rhs
