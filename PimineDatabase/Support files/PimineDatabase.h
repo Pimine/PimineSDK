@@ -1,5 +1,5 @@
 //
-//  Pimine_LocalStore.h
+//  Pimine_Database.h
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,12 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Pimine_LocalStore.
-FOUNDATION_EXPORT double Pimine_LocalStoreVersionNumber;
+//! Project version number for PimineDatabase.
+FOUNDATION_EXPORT double PimineDatabaseVersionNumber;
 
-//! Project version string for Pimine_LocalStore.
-FOUNDATION_EXPORT const unsigned char Pimine_LocalStoreVersionString[];
+//! Project version string for Pimine_Database.
+FOUNDATION_EXPORT const unsigned char PimineDatabaseVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Pimine_LocalStore/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <PimineDatabase/PublicHeader.h>
 
 

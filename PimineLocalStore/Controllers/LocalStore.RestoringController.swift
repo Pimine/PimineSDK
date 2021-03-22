@@ -25,6 +25,7 @@
 
 import MerchantKit
 import SVProgressHUD
+import PimineUtilities
 
 extension LocalStore {
 open class RestoringController: UIViewController, ProductInterfaceControllerDelegate {

@@ -25,12 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Pimine_Math.
-FOUNDATION_EXPORT double Pimine_MathVersionNumber;
+//! Project version number for PimineMath.
+FOUNDATION_EXPORT double PimineMathVersionNumber;
 
 //! Project version string for Pimine_Math.
 FOUNDATION_EXPORT const unsigned char Pimine_MathVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Pimine_Math/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <PimineMath/PublicHeader.h>
 
 

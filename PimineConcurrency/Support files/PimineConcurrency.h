@@ -1,5 +1,5 @@
 //
-//  Pimine_SwiftyStore.h
+//  Pimine_Concurrency.h
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,12 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Pimine_SwiftyStore.
-FOUNDATION_EXPORT double Pimine_SwiftyStoreVersionNumber;
+//! Project version number for PimineConcurrency.
+FOUNDATION_EXPORT double PimineConcurrencyVersionNumber;
 
-//! Project version string for Pimine_SwiftyStore.
-FOUNDATION_EXPORT const unsigned char Pimine_SwiftyStoreVersionString[];
+//! Project version string for Pimine_Concurrency.
+FOUNDATION_EXPORT const unsigned char PimineConcurrencyVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Pimine_SwiftyStore/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <PimineConcurrency/PublicHeader.h>
 
 

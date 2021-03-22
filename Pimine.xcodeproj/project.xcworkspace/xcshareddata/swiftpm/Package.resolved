@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/RevenueCat/purchases-ios",
         "state": {
           "branch": null,
-          "revision": "4c299160274864036f96da3184bbde90d779fc43",
-          "version": "3.10.3"
+          "revision": "ce76602e23bba7ec34e06b9901e6454f42d38320",
+          "version": "3.10.6"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/realm/realm-cocoa",
         "state": {
           "branch": null,
-          "revision": "44b9632b22240f0baa4b50964c5722e27094aea0",
-          "version": "10.6.0"
+          "revision": "ae8e646590396dfc13c1abbf8aa2e48c43766dce",
+          "version": "10.7.2"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "6431a4bc6530ec16731ef1c66b379cbef6da01f0",
-          "version": "10.5.0"
+          "revision": "bab46acdca91c417a0d4849b8f4992a3c17e29a5",
+          "version": "10.5.5"
         }
       },
       {
