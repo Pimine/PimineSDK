@@ -41,11 +41,11 @@ open class PMCoordinator: NSObject {
     
     // MARK: Flow
 
-    public func start() {
+    open func start() {
         preconditionFailure("This method needs to be overriden by concrete subclass.")
     }
 
-    public func finish() {
+    open func finish() {
         preconditionFailure("This method needs to be overriden by concrete subclass.")
     }
     
