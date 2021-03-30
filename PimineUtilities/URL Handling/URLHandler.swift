@@ -31,7 +31,6 @@ public struct URLHandler {
     
     private let scheme: String
     private let rules: [String : [URLRule]]
-    private var query: [URL] = []
 
     // MARK: - Initialization
     
@@ -42,21 +41,15 @@ public struct URLHandler {
     
     // MARK: - Methods
     
-    public mutating func query(_ url: URL) {
-        query.append(url)
-    }
-    
-    public func evaluate(output: @escaping (Result<URLRule.Output, Error>) -> Void) {
-        query.forEach { handle($0, output: output) }
-    }
-    
-    public func handle(_ url: URL, output result: @escaping (Result<URLRule.Output, Error>) -> Void) {
+    public func handle(_ url: URL, result: @escaping (Result<Void, Error>) -> Void) {
+        guard url.scheme == scheme else {
+            return result(.failure(.wrongScheme))
+        }
         guard
-            url.scheme == scheme,
             let host = url.host,
             let rules = rules[host]
         else {
-            return result(.failure(.cannotHandleURL))
+            return result(.failure(.noRules))
         }
 
         let input = URLRule.Input(url: url)
@@ -65,10 +58,20 @@ public struct URLHandler {
             if rule.requiresPathComponents {
                 guard !input.pathComponents.isEmpty else { continue }
             }
+            
             guard let output = try? rule.evaluate(input) else { continue }
-            return result(.success(output))
+            
+            output.fulfill { sink in
+                switch sink {
+                case .success:
+                    return result(.success(()))
+                case .failure(let error):
+                    return result(.failure(.appLinkError(error)))
+                }
+            }
+            return
         }
-        return result(.failure(.noMatchingRules))
+        return result(.failure(.noEvaluatedRules))
     }
 }
 
@@ -76,17 +79,10 @@ public struct URLHandler {
 
 public extension URLHandler {
     
-    enum Error: LocalizedError {
-        case cannotHandleURL
-        case noMatchingRules
-        
-        public var errorDescription: String? {
-            switch self {
-            case .cannotHandleURL:
-                return PMessages.cannotHandleURL
-            case .noMatchingRules:
-                return PMessages.noMatchingURLRules
-            }
-        }
+    enum Error: Swift.Error {
+        case wrongScheme
+        case noRules
+        case appLinkError(Swift.Error)
+        case noEvaluatedRules
     }
 }

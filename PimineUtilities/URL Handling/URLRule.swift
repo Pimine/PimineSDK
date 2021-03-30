@@ -46,7 +46,7 @@ public extension URLRule {
         public var queryItems: [String: String]
     }
     
-    typealias Output =  [String: Any]
+    typealias Output = URLAppLink
 
     struct MismatchError: Error {}
 }

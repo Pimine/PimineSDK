@@ -73,6 +73,7 @@
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
+		EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB487C4A261332FC00D7EDEF /* URLAppLink.swift */; };
 		EB4CA2B725DBD4BE00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C425DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C525DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
@@ -404,6 +405,7 @@
 		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
 		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
 		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
+		EB487C4A261332FC00D7EDEF /* URLAppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLAppLink.swift; sourceTree = "<group>"; };
 		EB4CA32D25DC115E00789841 /* Pimine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pimine.swift; sourceTree = "<group>"; };
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB4FFDB525110087001F2A89 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
@@ -759,6 +761,7 @@
 			children = (
 				EB4FFDB525110087001F2A89 /* URLHandler.swift */,
 				EB4FFDB8251100A9001F2A89 /* URLRule.swift */,
+				EB487C4A261332FC00D7EDEF /* URLAppLink.swift */,
 			);
 			path = "URL Handling";
 			sourceTree = "<group>";
@@ -1472,6 +1475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */,
 				EB8E59A724E1D0C00015EA39 /* PMessages.swift in Sources */,
 				EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */,
 				EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
