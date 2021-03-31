@@ -69,6 +69,7 @@
 		EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
 		EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB202FC7250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
+		EB25EB372614BA3E0026CC7E /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */; };
 		EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
@@ -396,6 +397,7 @@
 		EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		EB1FE93D252DFD1500B9CD1A /* Imitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imitable.swift; sourceTree = "<group>"; };
 		EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableUserDefaultsBacked.swift; sourceTree = "<group>"; };
+		EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
 		EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Price.swift; sourceTree = "<group>"; };
 		EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
@@ -575,6 +577,7 @@
 				EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */,
 				EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */,
 				EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */,
+				EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1568,6 +1571,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB4CA2CC25DBD4C100789841 /* UtilitiesExtensions.swift in Sources */,
+				EB25EB372614BA3E0026CC7E /* EncodableExtensions.swift in Sources */,
 				EB8E59D424E1D19E0015EA39 /* CollectionExtensions.swift in Sources */,
 				EB8E59D924E1D1A40015EA39 /* UIControlExtensions.swift in Sources */,
 				EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
