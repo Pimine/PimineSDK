@@ -26,5 +26,5 @@
 import Foundation
 
 public protocol URLAppLink {
-    func fulfill(result: ((Result<Void, Error>) -> Void)?)
+    func fulfill(result: @escaping (Result<Void, Error>) -> Void)
 }
