@@ -30,10 +30,10 @@
       },
       {
         "package": "SVProgressHUD",
-        "repositoryURL": "https://github.com/sereivoanyong/SVProgressHUD",
+        "repositoryURL": "https://github.com/Pimine/SVProgressHUD",
         "state": {
           "branch": "master",
-          "revision": "726cb1738d7e41eb23572164c6b007b7b24b9df7",
+          "revision": "c645c4f118f674f2d201e08a31434299314663b8",
           "version": null
         }
       },

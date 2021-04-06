@@ -13,12 +13,6 @@
 		EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
 		EB18D6A124E2F79D004ABD6A /* MerchantKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; };
 		EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D6B024E2F7C7004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
-		EB18D6B124E2F7C7004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D6B424E2F7D0004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
-		EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; };
-		EB18D6B824E2F7DA004ABD6A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D86524E3060D004ABD6A /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
 		EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
 		EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
@@ -173,6 +167,11 @@
 		EB9A2CA425E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */; };
 		EB9F0A34258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
 		EB9F0A35258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
+		EBC6BC03261C8CE4005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */; };
+		EBC6BC05261C8CED005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC04261C8CED005C47F0 /* SVProgressHUD */; };
+		EBC6BC07261C8D13005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC06261C8D13005C47F0 /* SVProgressHUD */; };
+		EBC6BC08261C8D2E005C47F0 /* URLAppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB487C4A261332FC00D7EDEF /* URLAppLink.swift */; };
+		EBC6BC0C261C8F0A005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC0B261C8F0A005C47F0 /* SVProgressHUD */; };
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
 		EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; };
@@ -235,20 +234,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 439FA1832309735A00FCCBA3;
 			remoteInfo = "MerchantKitTestsHost-macOS";
-		};
-		EBD3DBF524E2F74900ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4A9D7DD81AB345980039B273;
-			remoteInfo = "SVProgressHUD-Framework";
-		};
-		EBD3DBF724E2F74900ED411F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65F021FC15C857EF0030BBEF;
-			remoteInfo = SVProgressHUD;
 		};
 		EBE325FA258A655600E43576 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -315,7 +300,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB18D6B124E2F7C7004ABD6A /* SVProgressHUD.framework in Embed Frameworks */,
 				EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -327,7 +311,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB18D6B524E2F7D0004ABD6A /* SVProgressHUD.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +321,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EB18D6B824E2F7DA004ABD6A /* SVProgressHUD.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +435,6 @@
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifyPurchaseResult.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
-		EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SVProgressHUD.xcodeproj; path = "Third party/SVProgressHUD/SVProgressHUD.xcodeproj"; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
 		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
 		EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExtensions.swift; sourceTree = "<group>"; };
@@ -488,7 +469,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB18D6B024E2F7C7004ABD6A /* SVProgressHUD.framework in Frameworks */,
+				EBC6BC03261C8CE4005C47F0 /* SVProgressHUD in Frameworks */,
 				EB18D6A124E2F79D004ABD6A /* MerchantKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,7 +478,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB18D6B424E2F7D0004ABD6A /* SVProgressHUD.framework in Frameworks */,
+				EBC6BC05261C8CED005C47F0 /* SVProgressHUD in Frameworks */,
 				EB9940262587B67F00721C36 /* Purchases in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +487,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB18D6B724E2F7DA004ABD6A /* SVProgressHUD.framework in Frameworks */,
+				EBC6BC07261C8D13005C47F0 /* SVProgressHUD in Frameworks */,
 				EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +520,7 @@
 				EBE3260C258A655600E43576 /* PimineRevenueCatStore.framework in Frameworks */,
 				EBE32608258A655600E43576 /* PimineMath.framework in Frameworks */,
 				EBE32604258A655600E43576 /* PimineLocalStore.framework in Frameworks */,
+				EBC6BC0C261C8F0A005C47F0 /* SVProgressHUD in Frameworks */,
 				EBE32614258A655600E43576 /* PimineUtilities.framework in Frameworks */,
 				EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */,
 				EBE32600258A655600E43576 /* PimineHandyExtensions.framework in Frameworks */,
@@ -593,7 +575,6 @@
 		B74C202E2475901D0097A513 = {
 			isa = PBXGroup;
 			children = (
-				EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */,
 				EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */,
 				EB8E597724E1CF390015EA39 /* PimineMath */,
 				EB8E596824E1CEAB0015EA39 /* PimineSwiftyStore */,
@@ -971,15 +952,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBD3DBF124E2F74900ED411F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */,
-				EBD3DBF824E2F74900ED411F /* libSVProgressHUD.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EBE9ADF824C76C0500F1FDAB /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -1133,6 +1105,9 @@
 			dependencies = (
 			);
 			name = PimineLocalStore;
+			packageProductDependencies = (
+				EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */,
+			);
 			productName = "Pimine-LocalStore";
 			productReference = EB8E594724E1CDA30015EA39 /* PimineLocalStore.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1154,6 +1129,7 @@
 			name = PimineRevenueCatStore;
 			packageProductDependencies = (
 				EB9940252587B67F00721C36 /* Purchases */,
+				EBC6BC04261C8CED005C47F0 /* SVProgressHUD */,
 			);
 			productName = "Pimine-RevenueCatStore";
 			productReference = EB8E595824E1CE180015EA39 /* PimineRevenueCatStore.framework */;
@@ -1176,6 +1152,7 @@
 			name = PimineSwiftyStore;
 			packageProductDependencies = (
 				EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */,
+				EBC6BC06261C8D13005C47F0 /* SVProgressHUD */,
 			);
 			productName = "Pimine-SwiftyStore";
 			productReference = EB8E596724E1CEAB0015EA39 /* PimineSwiftyStore.framework */;
@@ -1259,6 +1236,7 @@
 			);
 			name = Pimine;
 			packageProductDependencies = (
+				EBC6BC0B261C8F0A005C47F0 /* SVProgressHUD */,
 			);
 			productName = Pimine;
 			productReference = EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */;
@@ -1318,6 +1296,7 @@
 				EB993FF92587B0F700721C36 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 				EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
+				EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
 			);
 			productRefGroup = B74C20392475901D0097A513 /* Products */;
 			projectDirPath = "";
@@ -1325,10 +1304,6 @@
 				{
 					ProductGroup = EBD3DBD624E2F73100ED411F /* Products */;
 					ProjectRef = EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */;
-				},
-				{
-					ProductGroup = EBD3DBF124E2F74900ED411F /* Products */;
-					ProjectRef = EBD3DBF024E2F74900ED411F /* SVProgressHUD.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1380,20 +1355,6 @@
 			fileType = wrapper.application;
 			path = "MerchantKitTestsHost-macOS.app";
 			remoteRef = EBD3DBE524E2F73100ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DBF624E2F74900ED411F /* SVProgressHUD.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SVProgressHUD.framework;
-			remoteRef = EBD3DBF524E2F74900ED411F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EBD3DBF824E2F74900ED411F /* libSVProgressHUD.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSVProgressHUD.a;
-			remoteRef = EBD3DBF724E2F74900ED411F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1650,6 +1611,7 @@
 				EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */,
 				EB18D86F24E3061F004ABD6A /* SwiftyStore.RestoringController.swift in Sources */,
 				EB9A2C9425E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */,
+				EBC6BC08261C8D2E005C47F0 /* URLAppLink.swift in Sources */,
 				EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,
@@ -1856,7 +1818,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1891,7 +1853,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2261,7 +2223,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2291,7 +2253,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2320,7 +2282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2338,6 +2300,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.6;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2355,7 +2318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2373,6 +2336,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.6;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2494,6 +2458,14 @@
 				minimumVersion = 3.9.1;
 			};
 		};
+		EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pimine/SVProgressHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bizz84/SwiftyStoreKit";
@@ -2514,6 +2486,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = Purchases;
+		};
+		EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
+		EBC6BC04261C8CED005C47F0 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
+		EBC6BC06261C8D13005C47F0 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
+		};
+		EBC6BC0B261C8F0A005C47F0 /* SVProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */;
+			productName = SVProgressHUD;
 		};
 		EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */ = {
 			isa = XCSwiftPackageProductDependency;

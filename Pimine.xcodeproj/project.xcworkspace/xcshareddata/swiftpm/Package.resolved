@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "SVProgressHUD",
+        "repositoryURL": "https://github.com/Pimine/SVProgressHUD",
+        "state": {
+          "branch": "master",
+          "revision": "c645c4f118f674f2d201e08a31434299314663b8",
+          "version": null
+        }
+      },
+      {
         "package": "SwiftyStoreKit",
         "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
         "state": {

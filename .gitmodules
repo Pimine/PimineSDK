@@ -1,9 +1,6 @@
 [submodule "merchantkit"]
 	path = Third party/merchantkit
 	url = https://github.com/benjaminmayo/merchantkit.git
-[submodule "SVProgressHUD"]
-	path = Third party/SVProgressHUD
-	url = https://github.com/SVProgressHUD/SVProgressHUD.git
 [submodule "Third party/purchases-ios"]
 	path = Third party/purchases-ios
 	url = https://github.com/RevenueCat/purchases-ios.git
