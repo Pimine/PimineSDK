@@ -123,10 +123,10 @@ private extension KeyedDecodingContainer {
                 dictionary[key.stringValue] = bool
             } else if let string = try? decode(String.self, forKey: key) {
                 dictionary[key.stringValue] = string
-            } else if let int = try? decode(Int.self, forKey: key) {
-                dictionary[key.stringValue] = int
             } else if let double = try? decode(Double.self, forKey: key) {
                 dictionary[key.stringValue] = double
+            } else if let int = try? decode(Int.self, forKey: key) {
+                dictionary[key.stringValue] = int
             } else if let dict = try? decode([String: Any].self, forKey: key) {
                 dictionary[key.stringValue] = dict
             } else if let array = try? decode([Any].self, forKey: key) {
@@ -143,12 +143,12 @@ private extension UnkeyedDecodingContainer {
         while !isAtEnd {
             if try decodeNil() {
                 elements.append(NSNull())
+            } else if let double = try? decode(Double.self) {
+                elements.append(double)
             } else if let int = try? decode(Int.self) {
                 elements.append(int)
             } else if let bool = try? decode(Bool.self) {
                 elements.append(bool)
-            } else if let double = try? decode(Double.self) {
-                elements.append(double)
             } else if let string = try? decode(String.self) {
                 elements.append(string)
             } else if let values = try? nestedContainer(keyedBy: AnyCodingKey.self),
