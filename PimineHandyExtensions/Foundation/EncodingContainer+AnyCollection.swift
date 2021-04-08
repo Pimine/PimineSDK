@@ -88,12 +88,12 @@ private extension KeyedEncodingContainer where K == AnyCodingKey {
                 try encodeNil(forKey: key)
             case let string as String:
                 try encode(string, forKey: key)
-            case let double as Double:
-                try encode(double, forKey: key)
             case let int as Int:
                 try encode(int, forKey: key)
             case let bool as Bool:
                 try encode(bool, forKey: key)
+            case let double as Double:
+                try encode(double, forKey: key)
             case let dict as [String: Any]:
                 try encode(dict, forKey: key)
             case let array as [Any]:
@@ -119,12 +119,12 @@ private extension UnkeyedEncodingContainer {
                 try encodeNil()
             case let string as String:
                 try encode(string)
-            case let double as Double:
-                try encode(double)
             case let int as Int:
                 try encode(int)
             case let bool as Bool:
                 try encode(bool)
+            case let double as Double:
+                try encode(double)
             case let dict as [String: Any]:
                 try encode(dict)
             case let array as [Any]:
