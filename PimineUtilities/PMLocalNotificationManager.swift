@@ -25,7 +25,7 @@
 
 import NotificationCenter
 
-public final class LocalPushNotificationScheduler {
+public final class PMLocalNotificationManager {
     
     public struct Time: Codable {
         public let hour: Int
@@ -38,6 +38,7 @@ public final class LocalPushNotificationScheduler {
         public let title: String
         public let body: String
         public let time: Time
+        public let userInfo: [String: String]
     }
     
     public struct Schedule: Codable {
@@ -65,6 +66,7 @@ public final class LocalPushNotificationScheduler {
             let content = UNMutableNotificationContent()
             content.title = notification.title
             content.body = notification.body
+            content.userInfo = notification.userInfo
             
             let time = notification.time
             var fireComponents = DateComponents()
