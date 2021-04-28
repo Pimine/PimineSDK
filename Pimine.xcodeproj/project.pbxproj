@@ -79,6 +79,7 @@
 		EB4FFDB725110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
 		EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
 		EB4FFDBA251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
+		EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */; };
 		EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB886A1224FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB888EF824F3E22A0093748F /* PimineDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = EB888EF624F3E22A0093748F /* PimineDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -394,6 +395,7 @@
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB4FFDB525110087001F2A89 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
 		EB4FFDB8251100A9001F2A89 /* URLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRule.swift; sourceTree = "<group>"; };
+		EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLocalNotificationManager.swift; sourceTree = "<group>"; };
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
@@ -786,6 +788,7 @@
 				EBDE233224D19A8300740059 /* PMessages.swift */,
 				EB886A1024FE751C00BB21AC /* PMAccessManager.swift */,
 				EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */,
+				EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */,
 			);
 			path = PimineUtilities;
 			sourceTree = "<group>";
@@ -1441,6 +1444,7 @@
 			files = (
 				EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */,
 				EB8E59A724E1D0C00015EA39 /* PMessages.swift in Sources */,
+				EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */,
 				EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */,
 				EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
 				EB8E59A524E1D0C00015EA39 /* PMUserNotificationManager.swift in Sources */,
