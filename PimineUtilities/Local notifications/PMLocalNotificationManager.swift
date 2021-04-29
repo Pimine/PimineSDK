@@ -41,14 +41,14 @@ public final class PMLocalNotificationManager {
     }
     
     public static func scheduleNotifications(
-        _ schedule: PMLocalNotificationSchedule,
+        _ notifications: [PMLocalNotification],
         repeats: Bool,
         result: @escaping (Result<Void, Error>) -> Void
     ) {
         let worker = DispatchGroup()
         var requestError: Error?
         
-        for notification in schedule.notifications {
+        for notification in notifications {
             worker.enter()
             
             let content = UNMutableNotificationContent()

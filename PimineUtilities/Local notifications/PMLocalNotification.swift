@@ -57,16 +57,3 @@ public struct PMLocalNotification: Codable {
         self.userInfo = userInfo
     }
 }
-
-public struct PMLocalNotificationSchedule: Codable {
-    
-    // MARK: Properties
-    
-    public let notifications: [PMLocalNotification]
-    
-    // MARK: Initialization
-    
-    public init(notifications: [PMLocalNotification]) {
-        self.notifications = notifications
-    }
-}
