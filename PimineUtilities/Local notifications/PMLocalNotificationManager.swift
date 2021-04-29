@@ -27,36 +27,24 @@ import NotificationCenter
 
 public final class PMLocalNotificationManager {
     
-    public struct Time: Codable {
-        public let hour: Int
-        public let minutes: Int
-        public let seconds: Int
-        public let weekday: Int
-    }
-    
-    public struct Notification: Codable {
-        public let title: String
-        public let body: String
-        public let time: Time
-        public let userInfo: [String: String]
-    }
-    
-    public struct Schedule: Codable {
-        public let notifications: [Notification]
-    }
-    
     // MARK: Properties
     
-    private static var pendingNotificationRequestIdentifiers: [String] = []
+    public private(set) static var pendingNotificationRequestIdentifiers: [String] = []
     
     private static let notificationCenter = UNUserNotificationCenter.current()
     
     // MARK: Methods
     
-    public static func scheduleNotifications( _ schedule: Schedule, repeats: Bool, result: @escaping (Result<Void, Error>) -> Void) {
+    public static func cancelPendingNotificationRequests() {
         notificationCenter.removePendingNotificationRequests(withIdentifiers: pendingNotificationRequestIdentifiers)
-        pendingNotificationRequestIdentifiers = []
-        
+        pendingNotificationRequestIdentifiers.removeAll()
+    }
+    
+    public static func scheduleNotifications(
+        _ schedule: PMLocalNotificationSchedule,
+        repeats: Bool,
+        result: @escaping (Result<Void, Error>) -> Void
+    ) {
         let worker = DispatchGroup()
         var requestError: Error?
         

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB06924B263ADC890004FBEC /* PMLocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB06924A263ADC890004FBEC /* PMLocalNotification.swift */; };
 		EB18BA8025E3F9520046A3B6 /* Reorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */; };
 		EB18BA8125E3F9520046A3B6 /* Reorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */; };
 		EB18BA8825E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
@@ -370,6 +371,7 @@
 		B768DABD2475E37900FA3B79 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
 		B7868A41247967AD00367630 /* LocalStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.RestoringController.swift; sourceTree = "<group>"; };
+		EB06924A263ADC890004FBEC /* PMLocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLocalNotification.swift; sourceTree = "<group>"; };
 		EB0AAD2D24C75A080016E924 /* SwiftyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.swift; sourceTree = "<group>"; };
 		EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Merchant.swift; sourceTree = "<group>"; };
 		EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreMerchantDelegate.swift; sourceTree = "<group>"; };
@@ -669,6 +671,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EB069244263ADC740004FBEC /* Local notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EB06924A263ADC890004FBEC /* PMLocalNotification.swift */,
+				EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */,
+			);
+			path = "Local notifications";
+			sourceTree = "<group>";
+		};
 		EB18BA6D25E3F8C30046A3B6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,6 +785,7 @@
 		EB8E593924E1CD1A0015EA39 /* PimineUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				EB069244263ADC740004FBEC /* Local notifications */,
 				B75A63A0247935F000DBDB36 /* Internal */,
 				EB1FE92B252DFD0000B9CD1A /* Protocols */,
 				EB4FFDA325110076001F2A89 /* URL Handling */,
@@ -788,7 +800,6 @@
 				EBDE233224D19A8300740059 /* PMessages.swift */,
 				EB886A1024FE751C00BB21AC /* PMAccessManager.swift */,
 				EBF0334D2608BD68000CD0EF /* PMCoordinator.swift */,
-				EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */,
 			);
 			path = PimineUtilities;
 			sourceTree = "<group>";
@@ -1443,6 +1454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */,
+				EB06924B263ADC890004FBEC /* PMLocalNotification.swift in Sources */,
 				EB8E59A724E1D0C00015EA39 /* PMessages.swift in Sources */,
 				EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */,
 				EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */,
