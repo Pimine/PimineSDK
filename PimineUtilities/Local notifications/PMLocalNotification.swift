@@ -24,36 +24,79 @@
 //  SOFTWARE.
 
 import Foundation
+import NotificationCenter
 
-public struct PMLocalNotification: Codable {
-    
-    public struct Time: Codable {
-        public let hour: Int
-        public let minutes: Int
-        public let seconds: Int
-        public let weekday: Int
-        
-        public init(hour: Int, minutes: Int, seconds: Int, weekday: Int) {
-            self.hour = hour
-            self.minutes = minutes
-            self.seconds = seconds
-            self.weekday = weekday
-        }
-    }
+public struct PMLocalNotificationContent: Codable {
     
     // MARK: Properties
     
     public let title: String
     public let body: String
-    public let time: Time
     public let userInfo: [String: String]
     
     // MARK: Initialization
     
-    public init(title: String, body: String, time: Time, userInfo: [String: String]) {
+    public init(title: String, body: String, userInfo: [String: String]) {
         self.title = title
         self.body = body
-        self.time = time
         self.userInfo = userInfo
+    }
+}
+
+public protocol PMLocalNotificationTrigger: Decodable {
+    var repeats: Bool { get }
+    var notificationTrigger: UNNotificationTrigger { get }
+}
+
+public struct PMLocalNotificationCalendarTrigger: PMLocalNotificationTrigger {
+    public let dateComponents: DateComponents
+    public let repeats: Bool
+    
+    public var notificationTrigger: UNNotificationTrigger {
+        UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: repeats)
+    }
+}
+
+public struct PMLocalNotificationTimeIntervalTrigger: PMLocalNotificationTrigger {
+    public let timeInterval: TimeInterval
+    public let repeats: Bool
+    
+    public var notificationTrigger: UNNotificationTrigger {
+        UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: repeats)
+    }
+}
+
+public struct PMLocalNotification: Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        case type
+        case content
+        case trigger
+    }
+    
+    enum NotificationType: String, Decodable {
+        case timeInterval
+        case calendar
+    }
+
+    // MARK: Properties
+    
+    public let content: PMLocalNotificationContent
+    public let trigger: PMLocalNotificationTrigger
+    
+    // MARK: Initialization
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let type = try container.decode(NotificationType.self, forKey: .type)
+        self.content = try container.decode(PMLocalNotificationContent.self, forKey: .content)
+        
+        switch type {
+        case .calendar:
+            self.trigger = try container.decode(PMLocalNotificationCalendarTrigger.self, forKey: .trigger)
+        case .timeInterval:
+            self.trigger = try container.decode(PMLocalNotificationTimeIntervalTrigger.self, forKey: .trigger)
+        }
+        
     }
 }

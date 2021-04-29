@@ -27,9 +27,14 @@ import NotificationCenter
 
 public final class PMLocalNotificationManager {
     
+    struct Keys {
+        static let pendingNotificationRequestIdentifiers = "pendingNotificationRequestIdentifiers"
+    }
+    
     // MARK: Properties
     
-    public private(set) static var pendingNotificationRequestIdentifiers: [String] = []
+    @UserDefaultsBacked(key: Keys.pendingNotificationRequestIdentifiers, defaultValue: [])
+    public private(set) static var pendingNotificationRequestIdentifiers: [String]
     
     private static let notificationCenter = UNUserNotificationCenter.current()
     
@@ -52,21 +57,17 @@ public final class PMLocalNotificationManager {
             worker.enter()
             
             let content = UNMutableNotificationContent()
-            content.title = notification.title
-            content.body = notification.body
-            content.userInfo = notification.userInfo
+            content.title = notification.content.title
+            content.body = notification.content.body
+            content.userInfo = notification.content.userInfo
+            content.sound = .default
             
-            let time = notification.time
-            var fireComponents = DateComponents()
-            fireComponents.hour = time.hour
-            fireComponents.minute = time.minutes
-            fireComponents.second = time.seconds
-            fireComponents.weekday = time.weekday
+            let trigger = notification.trigger.notificationTrigger
             
-            let trigger = UNCalendarNotificationTrigger(dateMatching: fireComponents, repeats: repeats)
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             let identifier = UUID().uuidString
             pendingNotificationRequestIdentifiers.append(identifier)
+            
+            let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
             notificationCenter.add(request) { error in
                 if let error = error {
                     requestError = error
