@@ -47,7 +47,6 @@ public final class PMLocalNotificationManager {
     
     public static func scheduleNotifications(
         _ notifications: [PMLocalNotification],
-        repeats: Bool,
         result: @escaping (Result<Void, Error>) -> Void
     ) {
         let worker = DispatchGroup()
