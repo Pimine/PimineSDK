@@ -69,7 +69,6 @@
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
-		EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB487C4A261332FC00D7EDEF /* URLAppLink.swift */; };
 		EB4CA2B725DBD4BE00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C425DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C525DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
@@ -172,10 +171,12 @@
 		EBC6BC03261C8CE4005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */; };
 		EBC6BC05261C8CED005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC04261C8CED005C47F0 /* SVProgressHUD */; };
 		EBC6BC07261C8D13005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC06261C8D13005C47F0 /* SVProgressHUD */; };
-		EBC6BC08261C8D2E005C47F0 /* URLAppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB487C4A261332FC00D7EDEF /* URLAppLink.swift */; };
 		EBC6BC0C261C8F0A005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC0B261C8F0A005C47F0 /* SVProgressHUD */; };
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
 		EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
+		EBDE7018263C33B30049BF45 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7017263C33B30049BF45 /* Executable.swift */; };
+		EBDE7020263C3B8A0049BF45 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */; };
+		EBDE7022263C3F530049BF45 /* NotificationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7021263C3F530049BF45 /* NotificationRule.swift */; };
 		EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; };
 		EBE325F9258A655600E43576 /* PimineConcurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBE325FC258A655600E43576 /* PimineDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* PimineDatabase.framework */; };
@@ -392,7 +393,6 @@
 		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
 		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
 		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
-		EB487C4A261332FC00D7EDEF /* URLAppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLAppLink.swift; sourceTree = "<group>"; };
 		EB4CA32D25DC115E00789841 /* Pimine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pimine.swift; sourceTree = "<group>"; };
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB4FFDB525110087001F2A89 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
@@ -443,6 +443,9 @@
 		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
 		EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExtensions.swift; sourceTree = "<group>"; };
 		EBDE233224D19A8300740059 /* PMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMessages.swift; sourceTree = "<group>"; };
+		EBDE7017263C33B30049BF45 /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
+		EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		EBDE7021263C3F530049BF45 /* NotificationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRule.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
@@ -692,6 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				EB1FE93D252DFD1500B9CD1A /* Imitable.swift */,
+				EBDE7017263C33B30049BF45 /* Executable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -753,14 +757,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		EB4FFDA325110076001F2A89 /* URL Handling */ = {
+		EB4FFDA325110076001F2A89 /* URL Handler */ = {
 			isa = PBXGroup;
 			children = (
 				EB4FFDB525110087001F2A89 /* URLHandler.swift */,
 				EB4FFDB8251100A9001F2A89 /* URLRule.swift */,
-				EB487C4A261332FC00D7EDEF /* URLAppLink.swift */,
 			);
-			path = "URL Handling";
+			path = "URL Handler";
 			sourceTree = "<group>";
 		};
 		EB888EF524F3E22A0093748F /* PimineDatabase */ = {
@@ -785,10 +788,11 @@
 		EB8E593924E1CD1A0015EA39 /* PimineUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				EB069244263ADC740004FBEC /* Local notifications */,
 				B75A63A0247935F000DBDB36 /* Internal */,
+				EB069244263ADC740004FBEC /* Local notifications */,
+				EBDE701E263C3A660049BF45 /* Notification Handler */,
+				EB4FFDA325110076001F2A89 /* URL Handler */,
 				EB1FE92B252DFD0000B9CD1A /* Protocols */,
-				EB4FFDA325110076001F2A89 /* URL Handling */,
 				B715F8822475C32500BB98CD /* PropertyWrappers */,
 				EB8E594024E1CD340015EA39 /* Support files */,
 				EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */,
@@ -964,6 +968,15 @@
 				EBD3DBE624E2F73100ED411F /* MerchantKitTestsHost-macOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDE701E263C3A660049BF45 /* Notification Handler */ = {
+			isa = PBXGroup;
+			children = (
+				EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */,
+				EBDE7021263C3F530049BF45 /* NotificationRule.swift */,
+			);
+			path = "Notification Handler";
 			sourceTree = "<group>";
 		};
 		EBE9ADF824C76C0500F1FDAB /* Protocols */ = {
@@ -1453,7 +1466,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB487C4B261332FC00D7EDEF /* URLAppLink.swift in Sources */,
 				EB06924B263ADC890004FBEC /* PMLocalNotification.swift in Sources */,
 				EB8E59A724E1D0C00015EA39 /* PMessages.swift in Sources */,
 				EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */,
@@ -1461,13 +1473,16 @@
 				EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
 				EB8E59A524E1D0C00015EA39 /* PMUserNotificationManager.swift in Sources */,
 				EB8E59A924E1D0C70015EA39 /* AnyOptional.swift in Sources */,
+				EBDE7022263C3F530049BF45 /* NotificationRule.swift in Sources */,
 				EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */,
+				EBDE7018263C33B30049BF45 /* Executable.swift in Sources */,
 				EB8E59A824E1D0C40015EA39 /* UserDefaultsBacked.swift in Sources */,
 				EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */,
 				EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */,
 				EB8E59A324E1D0C00015EA39 /* PMGeneralError.swift in Sources */,
 				EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */,
 				EB8E59A424E1D0C00015EA39 /* PMUtilities.swift in Sources */,
+				EBDE7020263C3B8A0049BF45 /* NotificationHandler.swift in Sources */,
 				EB8E59A224E1D0C00015EA39 /* PMAlert.swift in Sources */,
 				EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */,
 				EB8E59A624E1D0C00015EA39 /* PMValidator.swift in Sources */,
@@ -1627,7 +1642,6 @@
 				EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */,
 				EB18D86F24E3061F004ABD6A /* SwiftyStore.RestoringController.swift in Sources */,
 				EB9A2C9425E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift in Sources */,
-				EBC6BC08261C8D2E005C47F0 /* URLAppLink.swift in Sources */,
 				EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EB18D86524E3060D004ABD6A /* PMath.swift in Sources */,
 				EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */,

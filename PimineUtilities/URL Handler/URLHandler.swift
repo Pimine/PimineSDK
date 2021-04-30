@@ -61,12 +61,12 @@ public struct URLHandler {
             
             guard let output = try? rule.evaluate(input) else { continue }
             
-            output.fulfill { sink in
+            output.execute { sink in
                 switch sink {
                 case .success:
                     return result(.success(()))
                 case .failure(let error):
-                    return result(.failure(.appLinkError(error)))
+                    return result(.failure(.executionError(error)))
                 }
             }
             return
@@ -82,7 +82,7 @@ public extension URLHandler {
     enum Error: Swift.Error {
         case wrongScheme
         case noRules
-        case appLinkError(Swift.Error)
+        case executionError(Swift.Error)
         case noEvaluatedRules
     }
 }

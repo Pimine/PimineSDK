@@ -26,9 +26,9 @@
 import Foundation
 
 public struct URLRule {
-    public var requiredHost: String
-    public var requiresPathComponents: Bool
-    public var evaluate: (Input) throws -> Output
+    public let requiredHost: String
+    public let requiresPathComponents: Bool
+    public let evaluate: (Input) throws -> Output
     
     public init(requiredHost: String, requiresPathComponents: Bool, evaluate: @escaping (Input) throws -> Output) {
         self.requiredHost = requiredHost
@@ -41,12 +41,12 @@ public struct URLRule {
 
 public extension URLRule {
     struct Input {
-        public var url: URL
-        public var pathComponents: [String]
-        public var queryItems: [String: String]
+        public let url: URL
+        public let pathComponents: [String]
+        public let queryItems: [String: String]
     }
     
-    typealias Output = URLAppLink
+    typealias Output = Executable
 
     struct MismatchError: Error {}
 }

@@ -1,5 +1,5 @@
 //
-//  URLAppLink.swift
+//  Executable.swift
 //  https://github.com/Pimine/Pimine
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,6 +25,6 @@
 
 import Foundation
 
-public protocol URLAppLink {
-    func fulfill(result: @escaping (Result<Void, Error>) -> Void)
+public protocol Executable {
+    func execute(result: @escaping (Result<Void, Error>) -> Void)
 }
