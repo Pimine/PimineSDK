@@ -47,7 +47,7 @@ public final class PMLocalNotificationManager {
     
     public static func scheduleNotifications(
         _ notifications: [PMLocalNotification],
-        result: @escaping (Result<Void, Error>) -> Void
+        result: ((Result<Void, Error>) -> Void)? = nil
     ) {
         let worker = DispatchGroup()
         var requestError: Error?
@@ -77,8 +77,8 @@ public final class PMLocalNotificationManager {
         
         worker.notify(queue: .main) {
             requestError.isNil ?
-                result(.success(())) :
-                result(.failure(requestError!))
+                result?(.success(())) :
+                result?(.failure(requestError!))
         }
     }
 }
