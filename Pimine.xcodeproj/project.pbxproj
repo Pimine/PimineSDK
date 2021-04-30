@@ -75,10 +75,10 @@
 		EB4CA2C625DBD4C000789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2CC25DBD4C100789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA32E25DC115E00789841 /* Pimine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CA32D25DC115E00789841 /* Pimine.swift */; };
-		EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
-		EB4FFDB725110087001F2A89 /* URLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* URLHandler.swift */; };
-		EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
-		EB4FFDBA251100A9001F2A89 /* URLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* URLRule.swift */; };
+		EB4FFDB625110087001F2A89 /* PMURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* PMURLHandler.swift */; };
+		EB4FFDB725110087001F2A89 /* PMURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* PMURLHandler.swift */; };
+		EB4FFDB9251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
+		EB4FFDBA251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
 		EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */; };
 		EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB886A1224FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
@@ -175,8 +175,8 @@
 		EBD20CC6258A49DF00F25F26 /* SwiftyStoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBD20CC5258A49DF00F25F26 /* SwiftyStoreKit */; };
 		EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EBDE7018263C33B30049BF45 /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7017263C33B30049BF45 /* Executable.swift */; };
-		EBDE7020263C3B8A0049BF45 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */; };
-		EBDE7022263C3F530049BF45 /* NotificationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7021263C3F530049BF45 /* NotificationRule.swift */; };
+		EBDE7020263C3B8A0049BF45 /* PMNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE701F263C3B8A0049BF45 /* PMNotificationHandler.swift */; };
+		EBDE7022263C3F530049BF45 /* PMNotificationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7021263C3F530049BF45 /* PMNotificationRule.swift */; };
 		EBE325F8258A655600E43576 /* PimineConcurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; };
 		EBE325F9258A655600E43576 /* PimineConcurrency.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBE325FC258A655600E43576 /* PimineDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB888EF424F3E22A0093748F /* PimineDatabase.framework */; };
@@ -395,8 +395,8 @@
 		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
 		EB4CA32D25DC115E00789841 /* Pimine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pimine.swift; sourceTree = "<group>"; };
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
-		EB4FFDB525110087001F2A89 /* URLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHandler.swift; sourceTree = "<group>"; };
-		EB4FFDB8251100A9001F2A89 /* URLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRule.swift; sourceTree = "<group>"; };
+		EB4FFDB525110087001F2A89 /* PMURLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLHandler.swift; sourceTree = "<group>"; };
+		EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLRule.swift; sourceTree = "<group>"; };
 		EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLocalNotificationManager.swift; sourceTree = "<group>"; };
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
@@ -444,8 +444,8 @@
 		EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExtensions.swift; sourceTree = "<group>"; };
 		EBDE233224D19A8300740059 /* PMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMessages.swift; sourceTree = "<group>"; };
 		EBDE7017263C33B30049BF45 /* Executable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executable.swift; sourceTree = "<group>"; };
-		EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
-		EBDE7021263C3F530049BF45 /* NotificationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRule.swift; sourceTree = "<group>"; };
+		EBDE701F263C3B8A0049BF45 /* PMNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMNotificationHandler.swift; sourceTree = "<group>"; };
+		EBDE7021263C3F530049BF45 /* PMNotificationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMNotificationRule.swift; sourceTree = "<group>"; };
 		EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.ProductInterfaceController.swift; sourceTree = "<group>"; };
 		EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreInterfaceDelegate.swift; sourceTree = "<group>"; };
 		EBEA9E2824F3C3DA00241B3B /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
@@ -760,8 +760,8 @@
 		EB4FFDA325110076001F2A89 /* URL Handler */ = {
 			isa = PBXGroup;
 			children = (
-				EB4FFDB525110087001F2A89 /* URLHandler.swift */,
-				EB4FFDB8251100A9001F2A89 /* URLRule.swift */,
+				EB4FFDB525110087001F2A89 /* PMURLHandler.swift */,
+				EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */,
 			);
 			path = "URL Handler";
 			sourceTree = "<group>";
@@ -973,8 +973,8 @@
 		EBDE701E263C3A660049BF45 /* Notification Handler */ = {
 			isa = PBXGroup;
 			children = (
-				EBDE701F263C3B8A0049BF45 /* NotificationHandler.swift */,
-				EBDE7021263C3F530049BF45 /* NotificationRule.swift */,
+				EBDE701F263C3B8A0049BF45 /* PMNotificationHandler.swift */,
+				EBDE7021263C3F530049BF45 /* PMNotificationRule.swift */,
 			);
 			path = "Notification Handler";
 			sourceTree = "<group>";
@@ -1469,20 +1469,20 @@
 				EB06924B263ADC890004FBEC /* PMLocalNotification.swift in Sources */,
 				EB8E59A724E1D0C00015EA39 /* PMessages.swift in Sources */,
 				EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */,
-				EB4FFDB9251100A9001F2A89 /* URLRule.swift in Sources */,
+				EB4FFDB9251100A9001F2A89 /* PMURLRule.swift in Sources */,
 				EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */,
 				EB8E59A524E1D0C00015EA39 /* PMUserNotificationManager.swift in Sources */,
 				EB8E59A924E1D0C70015EA39 /* AnyOptional.swift in Sources */,
-				EBDE7022263C3F530049BF45 /* NotificationRule.swift in Sources */,
+				EBDE7022263C3F530049BF45 /* PMNotificationRule.swift in Sources */,
 				EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */,
 				EBDE7018263C33B30049BF45 /* Executable.swift in Sources */,
 				EB8E59A824E1D0C40015EA39 /* UserDefaultsBacked.swift in Sources */,
 				EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */,
-				EB4FFDB625110087001F2A89 /* URLHandler.swift in Sources */,
+				EB4FFDB625110087001F2A89 /* PMURLHandler.swift in Sources */,
 				EB8E59A324E1D0C00015EA39 /* PMGeneralError.swift in Sources */,
 				EBDCAED025DAEA330091D26D /* UtilitiesExtensions.swift in Sources */,
 				EB8E59A424E1D0C00015EA39 /* PMUtilities.swift in Sources */,
-				EBDE7020263C3B8A0049BF45 /* NotificationHandler.swift in Sources */,
+				EBDE7020263C3B8A0049BF45 /* PMNotificationHandler.swift in Sources */,
 				EB8E59A224E1D0C00015EA39 /* PMAlert.swift in Sources */,
 				EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */,
 				EB8E59A624E1D0C00015EA39 /* PMValidator.swift in Sources */,
@@ -1610,7 +1610,7 @@
 				EB92F6FF2501392D0007D696 /* AsyncResultOperation.swift in Sources */,
 				EB18D88024E3064D004ABD6A /* PMAlert.swift in Sources */,
 				EB18D87F24E30649004ABD6A /* UserDefaultsBacked.swift in Sources */,
-				EB4FFDBA251100A9001F2A89 /* URLRule.swift in Sources */,
+				EB4FFDBA251100A9001F2A89 /* PMURLRule.swift in Sources */,
 				EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */,
 				EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
 				EB4CA32E25DC115E00789841 /* Pimine.swift in Sources */,
@@ -1666,7 +1666,7 @@
 				EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */,
 				EB18D88624E30654004ABD6A /* PublisherExtensions.swift in Sources */,
 				EBEA9E2924F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
-				EB4FFDB725110087001F2A89 /* URLHandler.swift in Sources */,
+				EB4FFDB725110087001F2A89 /* PMURLHandler.swift in Sources */,
 				EB18D88224E3064E004ABD6A /* PMUtilities.swift in Sources */,
 				EB18D87D24E30645004ABD6A /* AnyOptional.swift in Sources */,
 				EB18D87924E3063C004ABD6A /* LocalStore.RestoringController.swift in Sources */,

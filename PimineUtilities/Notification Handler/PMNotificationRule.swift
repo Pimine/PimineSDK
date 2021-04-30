@@ -1,9 +1,9 @@
 //
-//  URLRule.swift
-//  https://github.com/Pimine/PimineSDK
+//  PMNotificationRule.swift
+//  https://github.com/Pimine/Pimine
 //
 //  This code is distributed under the terms and conditions of the MIT license.
-//  Copyright (c) 2020 Pimine
+//  Copyright (c) 2021 Pimine
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,48 +25,20 @@
 
 import Foundation
 
-public struct URLRule {
-    public let requiredHost: String
-    public let requiresPathComponents: Bool
+public struct PMNotificationRule {
+    public let type: String
     public let evaluate: (Input) throws -> Output
     
-    public init(requiredHost: String, requiresPathComponents: Bool, evaluate: @escaping (Input) throws -> Output) {
-        self.requiredHost = requiredHost
-        self.requiresPathComponents = requiresPathComponents
+    public init(type: String, evaluate: @escaping (Input) throws -> Output) {
+        self.type = type
         self.evaluate = evaluate
     }
 }
 
 // MARK: - Input / Output
 
-public extension URLRule {
-    struct Input {
-        public let url: URL
-        public let pathComponents: [String]
-        public let queryItems: [String: String]
-    }
+public extension PMNotificationRule {
     
+    typealias Input = [AnyHashable: Any]
     typealias Output = Executable
-
-    struct MismatchError: Error {}
-}
-
-public extension URLRule.Input {
-    init(url: URL) {
-        let queryItems = URLComponents(
-            url: url,
-            resolvingAgainstBaseURL: false
-        ).flatMap(\.queryItems) ?? []
-        
-        var items: [String: String] = [:]
-        for queryItem in queryItems {
-            items[queryItem.name] = queryItem.value
-        }
-
-        self.init(
-            url: url,
-            pathComponents: url.pathComponents,
-            queryItems: items
-        )
-    }
 }

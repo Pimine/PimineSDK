@@ -1,9 +1,9 @@
 //
-//  URLHandler.swift
-//  https://github.com/Pimine/PimineSDK
+//  PMNotificationHandler.swift
+//  https://github.com/Pimine/Pimine
 //
 //  This code is distributed under the terms and conditions of the MIT license.
-//  Copyright (c) 2020 Pimine
+//  Copyright (c) 2021 Pimine
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,41 +25,30 @@
 
 import Foundation
 
-public struct URLHandler {
+public struct PMNotificationHandler {
     
-    // MARK: - Properties
+    // MARK: Properties
     
-    private let scheme: String
-    private let rules: [String : [URLRule]]
-
-    // MARK: - Initialization
+    private let rules: [String: [PMNotificationRule]]
     
-    public init(scheme: String, rules: [URLRule]) {
-        self.scheme = scheme
-        self.rules = Dictionary(grouping: rules) { $0.requiredHost }
+    // MARK: Initialization
+    
+    public init(rules: [PMNotificationRule]) {
+        self.rules = Dictionary(grouping: rules) { $0.type }
     }
     
-    // MARK: - Methods
+    // MARK: Methods
     
-    public func handle(_ url: URL, result: @escaping (Result<Void, Error>) -> Void) {
-        guard url.scheme == scheme else {
-            return result(.failure(.wrongScheme))
-        }
+    public func handle(_ userInfo: [AnyHashable: Any], result: @escaping (Result<Void, Error>) -> Void) {
         guard
-            let host = url.host,
-            let rules = rules[host]
+            let type = userInfo["type"] as? String,
+            let rules = rules[type]
         else {
             return result(.failure(.noRules))
         }
-
-        let input = URLRule.Input(url: url)
-
+        
         for rule in rules {
-            if rule.requiresPathComponents {
-                guard !input.pathComponents.isEmpty else { continue }
-            }
-            
-            guard let output = try? rule.evaluate(input) else { continue }
+            guard let output = try? rule.evaluate(userInfo) else { continue }
             
             output.execute { sink in
                 switch sink {
@@ -75,12 +64,11 @@ public struct URLHandler {
     }
 }
 
-// MARK: - URLHandler
+// MARK: - Error
 
-public extension URLHandler {
+public extension PMNotificationHandler {
     
     enum Error: Swift.Error {
-        case wrongScheme
         case noRules
         case executionError(Swift.Error)
         case noEvaluatedRules
