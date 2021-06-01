@@ -69,6 +69,8 @@
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
+		EB4906C026664CE6004B6755 /* PimineUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; platformFilter = ios; };
+		EB4906C126664CE6004B6755 /* PimineUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB4CA2B725DBD4BE00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C425DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2C525DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
@@ -208,6 +210,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EB4906C226664CE6004B6755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B74C202F2475901D0097A513 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E593724E1CD1A0015EA39;
+			remoteInfo = PimineUtilities;
+		};
 		EBD3DBDD24E2F73100ED411F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */;
@@ -329,6 +338,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4906C426664CE6004B6755 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB4906C126664CE6004B6755 /* PimineUtilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +554,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB4906C026664CE6004B6755 /* PimineUtilities.framework in Frameworks */,
 				EBBBF8CE266633CA004FC94F /* FirebaseFirestore in Frameworks */,
 				EBBBF8D0266633CA004FC94F /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
@@ -1303,10 +1324,12 @@
 				EBBBF8BD266632A0004FC94F /* Sources */,
 				EBBBF8BE266632A0004FC94F /* Frameworks */,
 				EBBBF8BF266632A0004FC94F /* Resources */,
+				EB4906C426664CE6004B6755 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB4906C326664CE6004B6755 /* PBXTargetDependency */,
 			);
 			name = PimineFirebase;
 			packageProductDependencies = (
@@ -1778,6 +1801,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EB4906C326664CE6004B6755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = EB8E593724E1CD1A0015EA39 /* PimineUtilities */;
+			targetProxy = EB4906C226664CE6004B6755 /* PBXContainerItemProxy */;
+		};
 		EBE325FB258A655600E43576 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EB92F6F02501359C0007D696 /* PimineConcurrency */;
