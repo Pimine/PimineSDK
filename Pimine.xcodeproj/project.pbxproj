@@ -168,6 +168,11 @@
 		EB9A2CA425E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */; };
 		EB9F0A34258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
 		EB9F0A35258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */; };
+		EBBBF8C5266632A0004FC94F /* PimineFirebase.h in Headers */ = {isa = PBXBuildFile; fileRef = EBBBF8C3266632A0004FC94F /* PimineFirebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBBBF8CB266632F2004FC94F /* PMFirebaseUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBF8CA266632F2004FC94F /* PMFirebaseUtilities.swift */; };
+		EBBBF8CE266633CA004FC94F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EBBBF8CD266633CA004FC94F /* FirebaseFirestore */; };
+		EBBBF8D0266633CA004FC94F /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = EBBBF8CF266633CA004FC94F /* FirebaseFirestoreSwift-Beta */; };
+		EBBBF8D926663837004FC94F /* DocumentReferenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBF8D826663837004FC94F /* DocumentReferenceExtensions.swift */; };
 		EBC6BC03261C8CE4005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */; };
 		EBC6BC05261C8CED005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC04261C8CED005C47F0 /* SVProgressHUD */; };
 		EBC6BC07261C8D13005C47F0 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EBC6BC06261C8D13005C47F0 /* SVProgressHUD */; };
@@ -438,6 +443,11 @@
 		EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EncodingContainer+AnyCollection.swift"; sourceTree = "<group>"; };
 		EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
 		EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifyPurchaseResult.swift; sourceTree = "<group>"; };
+		EBBBF8C1266632A0004FC94F /* PimineFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PimineFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBBF8C3266632A0004FC94F /* PimineFirebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PimineFirebase.h; sourceTree = "<group>"; };
+		EBBBF8C4266632A0004FC94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBBF8CA266632F2004FC94F /* PMFirebaseUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMFirebaseUtilities.swift; sourceTree = "<group>"; };
+		EBBBF8D826663837004FC94F /* DocumentReferenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentReferenceExtensions.swift; sourceTree = "<group>"; };
 		EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MerchantKit.xcodeproj; path = "Third party/merchantkit/MerchantKit.xcodeproj"; sourceTree = "<group>"; };
 		EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Typealiases.swift; sourceTree = "<group>"; };
 		EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantController.swift; sourceTree = "<group>"; };
@@ -520,6 +530,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBBBF8BE266632A0004FC94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBBF8CE266633CA004FC94F /* FirebaseFirestore in Frameworks */,
+				EBBBF8D0266633CA004FC94F /* FirebaseFirestoreSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBF8806C24E2E51A00FAFAE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -584,6 +603,7 @@
 			children = (
 				EBD3DBD524E2F73100ED411F /* MerchantKit.xcodeproj */,
 				EB8E597724E1CF390015EA39 /* PimineMath */,
+				EBBBF8C2266632A0004FC94F /* PimineFirebase */,
 				EB8E596824E1CEAB0015EA39 /* PimineSwiftyStore */,
 				EB8E595924E1CE180015EA39 /* PimineRevenueCatStore */,
 				EB8E594824E1CDA30015EA39 /* PimineLocalStore */,
@@ -609,6 +629,7 @@
 				EBF8806F24E2E51A00FAFAE5 /* Pimine.framework */,
 				EB888EF424F3E22A0093748F /* PimineDatabase.framework */,
 				EB92F6F12501359C0007D696 /* PimineConcurrency.framework */,
+				EBBBF8C1266632A0004FC94F /* PimineFirebase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -958,6 +979,33 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		EBBBF8C2266632A0004FC94F /* PimineFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBF8D2266637F3004FC94F /* Extensions */,
+				EBBBF8C9266632AF004FC94F /* Support files */,
+				EBBBF8CA266632F2004FC94F /* PMFirebaseUtilities.swift */,
+			);
+			path = PimineFirebase;
+			sourceTree = "<group>";
+		};
+		EBBBF8C9266632AF004FC94F /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBF8C3266632A0004FC94F /* PimineFirebase.h */,
+				EBBBF8C4266632A0004FC94F /* Info.plist */,
+			);
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		EBBBF8D2266637F3004FC94F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBBBF8D826663837004FC94F /* DocumentReferenceExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EBD3DBD624E2F73100ED411F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1062,6 +1110,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB92F6F52501359C0007D696 /* PimineConcurrency.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBBF8BC266632A0004FC94F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBBF8C5266632A0004FC94F /* PimineFirebase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,6 +1295,28 @@
 			productReference = EB92F6F12501359C0007D696 /* PimineConcurrency.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EBBBF8C0266632A0004FC94F /* PimineFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBBF8C6266632A0004FC94F /* Build configuration list for PBXNativeTarget "PimineFirebase" */;
+			buildPhases = (
+				EBBBF8BC266632A0004FC94F /* Headers */,
+				EBBBF8BD266632A0004FC94F /* Sources */,
+				EBBBF8BE266632A0004FC94F /* Frameworks */,
+				EBBBF8BF266632A0004FC94F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PimineFirebase;
+			packageProductDependencies = (
+				EBBBF8CD266633CA004FC94F /* FirebaseFirestore */,
+				EBBBF8CF266633CA004FC94F /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = PimineFirebase;
+			productReference = EBBBF8C1266632A0004FC94F /* PimineFirebase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		EBF8806E24E2E51A00FAFAE5 /* Pimine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF8808E24E2E51A00FAFAE5 /* Build configuration list for PBXNativeTarget "Pimine" */;
@@ -1304,6 +1382,10 @@
 						CreatedOnToolsVersion = 11.7;
 						LastSwiftMigration = 1170;
 					};
+					EBBBF8C0266632A0004FC94F = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
 					EBF8806E24E2E51A00FAFAE5 = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
@@ -1324,6 +1406,7 @@
 				EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 				EBD20CC4258A49DF00F25F26 /* XCRemoteSwiftPackageReference "SwiftyStoreKit" */,
 				EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */,
+				EBBBF8CC266633CA004FC94F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B74C20392475901D0097A513 /* Products */;
 			projectDirPath = "";
@@ -1344,6 +1427,7 @@
 				EB8E598524E1CFBD0015EA39 /* PimineHandyExtensions */,
 				EB888EF324F3E22A0093748F /* PimineDatabase */,
 				EB92F6F02501359C0007D696 /* PimineConcurrency */,
+				EBBBF8C0266632A0004FC94F /* PimineFirebase */,
 			);
 		};
 /* End PBXProject section */
@@ -1437,6 +1521,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EB92F6EF2501359C0007D696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBBF8BF266632A0004FC94F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1596,6 +1687,15 @@
 				EB92F6FD250136F00007D696 /* AsyncOperation.swift in Sources */,
 				EB92F70325013ADB0007D696 /* ChainedAsyncResultOperation.swift in Sources */,
 				EB92F7002501392D0007D696 /* AsyncResultOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBBF8BD266632A0004FC94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBBF8D926663837004FC94F /* DocumentReferenceExtensions.swift in Sources */,
+				EBBBF8CB266632F2004FC94F /* PMFirebaseUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2305,6 +2405,61 @@
 			};
 			name = Release;
 		};
+		EBBBF8C7266632A0004FC94F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "PimineFirebase/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBBBF8C8266632A0004FC94F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F79SZ7VU87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "PimineFirebase/Support files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EBF8807424E2E51A00FAFAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2460,6 +2615,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		EBBBF8C6266632A0004FC94F /* Build configuration list for PBXNativeTarget "PimineFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBBF8C7266632A0004FC94F /* Debug */,
+				EBBBF8C8266632A0004FC94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBF8808E24E2E51A00FAFAE5 /* Build configuration list for PBXNativeTarget "Pimine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2486,6 +2650,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.9.1;
+			};
+		};
+		EBBBF8CC266633CA004FC94F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 		EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {
@@ -2516,6 +2688,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB99401D2587B65700721C36 /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = Purchases;
+		};
+		EBBBF8CD266633CA004FC94F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBBBF8CC266633CA004FC94F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EBBBF8CF266633CA004FC94F /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBBBF8CC266633CA004FC94F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
 		};
 		EBC6BC02261C8CE4005C47F0 /* SVProgressHUD */ = {
 			isa = XCSwiftPackageProductDependency;

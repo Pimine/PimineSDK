@@ -45,6 +45,11 @@ let package = Package(
         .library(
             name: "PimineConcurrency",
             targets: ["PimineConcurrency"]
+        ),
+        
+        .library(
+            name: "PimineFirebase",
+            targets: ["PimineFirebase"]
         )
     ],
     dependencies: [
@@ -52,7 +57,8 @@ let package = Package(
         .package(url: "https://github.com/Pimine/SVProgressHUD", .branch("master")),
         .package(url: "https://github.com/bizz84/SwiftyStoreKit.git", .upToNextMajor(from: "0.16.1")),
         .package(name: "Purchases", url: "https://github.com/RevenueCat/purchases-ios.git", .upToNextMajor(from: "3.10.3")),
-        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "10.6.0"))
+        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "10.6.0")),
+        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "8.0.0"))
     ],
     targets: [
         
@@ -140,5 +146,19 @@ let package = Package(
             path: "PimineConcurrency",
             exclude: ["Support files/Info.plist"]
         ),
+        
+        // Firebase
+        
+        .target(
+            name: "PimineFirebase",
+            dependencies: [
+                "PimineUtilities",
+                .product(name: "FirebaseFirestore", package: "Firebase"),
+                .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase")
+            ],
+            path: "PimineFirebase",
+            exclude: ["Support files/Info.plist"]
+        ),
+        
     ]
 )
