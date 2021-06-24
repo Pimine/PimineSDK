@@ -31,6 +31,7 @@ public extension UIApplication {
         keyWindow?.safeAreaInsets ?? .zero
     }
     
+    @available(iOS 13.0, *)
     var currentScene: UIWindowScene? {
         connectedScenes.first { $0.activationState == .foregroundActive } as? UIWindowScene
     }
