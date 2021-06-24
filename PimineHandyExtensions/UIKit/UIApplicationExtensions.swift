@@ -30,4 +30,8 @@ public extension UIApplication {
     var safeAreaInsets: UIEdgeInsets {
         keyWindow?.safeAreaInsets ?? .zero
     }
+    
+    var currentScene: UIWindowScene? {
+        connectedScenes.first { $0.activationState == .foregroundActive } as? UIWindowScene
+    }
 }
