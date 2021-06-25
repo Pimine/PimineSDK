@@ -82,6 +82,7 @@
 		EB4FFDB9251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
 		EB4FFDBA251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
 		EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */; };
+		EB76712E2686217600A595FE /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76712D2686217600A595FE /* KeyedDecodingContainerExtensions.swift */; };
 		EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB886A1224FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
 		EB888EF824F3E22A0093748F /* PimineDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = EB888EF624F3E22A0093748F /* PimineDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -423,6 +424,7 @@
 		EB4FFDB525110087001F2A89 /* PMURLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLHandler.swift; sourceTree = "<group>"; };
 		EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLRule.swift; sourceTree = "<group>"; };
 		EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLocalNotificationManager.swift; sourceTree = "<group>"; };
+		EB76712D2686217600A595FE /* KeyedDecodingContainerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerExtensions.swift; sourceTree = "<group>"; };
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
 		EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.VerifySubscriptionResult.swift; sourceTree = "<group>"; };
 		EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringController.swift; sourceTree = "<group>"; };
@@ -607,6 +609,7 @@
 				EB9A2C9325E7C9F900BCBCA9 /* DecodingContainer+AnyCollection.swift */,
 				EB9A2CA225E7CA2400BCBCA9 /* EncodingContainer+AnyCollection.swift */,
 				EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */,
+				EB76712D2686217600A595FE /* KeyedDecodingContainerExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -1679,6 +1682,7 @@
 				EB4CA2CC25DBD4C100789841 /* UtilitiesExtensions.swift in Sources */,
 				EB25EB372614BA3E0026CC7E /* EncodableExtensions.swift in Sources */,
 				EB8E59D424E1D19E0015EA39 /* CollectionExtensions.swift in Sources */,
+				EB76712E2686217600A595FE /* KeyedDecodingContainerExtensions.swift in Sources */,
 				EB8E59D924E1D1A40015EA39 /* UIControlExtensions.swift in Sources */,
 				EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
 				EB8E59D524E1D1A10015EA39 /* NameDescribable.swift in Sources */,
