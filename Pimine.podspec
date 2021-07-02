@@ -40,6 +40,7 @@ Pod::Spec.new do |s|
   s.subspec 'Firestore' do |ss|
     ss.source_files = 'PimineFirebase/**/*.swift'
     ss.dependency 'Firebase/Firestore'
+    ss.dependency 'FirebaseFirestoreSwift'
     ss.dependency 'PimineUtilities'
   end
 
