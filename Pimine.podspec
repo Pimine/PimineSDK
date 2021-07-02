@@ -36,6 +36,13 @@ Pod::Spec.new do |s|
     ss.dependency 'PimineHandyExtensions'
   end
 
+  # Firestore
+  s.subspec 'Firestore' do |ss|
+    ss.source_files = 'PimineFirebase/**/*.swift'
+    ss.dependency 'Firebase/Firestore'
+    ss.dependency 'PimineUtilities'
+  end
+
   # LocalStore
   s.subspec 'LocalStore' do |ss|
     ss.source_files = 'PimineLocalStore/**/*.swift'
