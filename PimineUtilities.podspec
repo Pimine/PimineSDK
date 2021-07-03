@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = 'PimineUtilities'
-  s.version         = '0.6.0'
+  s.version         = '0.7.0'
   s.summary         = 'PimineSDK'
 
   s.homepage        = 'https://github.com/Pimine/PimineSDK'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
   
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '12.1'
 
   s.swift_version   = ['5.2', '5.3']
   s.default_subspec = 'Core'
