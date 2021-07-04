@@ -75,6 +75,7 @@ Pod::Spec.new do |s|
   # Database
   s.subspec 'Database' do |ss|
     ss.source_files = 'PimineDatabase/*.swift'
+    ss.dependency 'Realm'
     ss.dependency 'RealmSwift'
   end
 
