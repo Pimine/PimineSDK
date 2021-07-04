@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = 'Pimine'
-  s.version         = '0.7.0'
+  s.version         = '0.7.1'
   s.summary         = 'PimineSDK'
 
   s.description     = 'SDK to speed up common routines and remove code duplication.'
