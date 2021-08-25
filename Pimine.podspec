@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = 'Pimine'
-  s.version         = '0.7.2'
+  s.version         = '0.7.3'
   s.summary         = 'PimineSDK'
 
   s.description     = 'SDK to speed up common routines and remove code duplication.'
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   # Firestore
   s.subspec 'Firestore' do |ss|
     ss.source_files = 'PimineFirebase/**/*.swift'
-    ss.dependency 'FirebaseFirestoreSwift', '~> 8.3.0-beta'
+    ss.dependency 'FirebaseFirestoreSwift', '~> 8.6.0-beta'
     ss.dependency 'PimineUtilities'
   end
 
