@@ -37,7 +37,7 @@ public final class PMFirebaseUtilities {
     private static func _fetchReferences(
         in data: Parameters,
         for keys: [String],
-        mapReferences: [String: String] = [:],
+        map mappedKeys: [String: String] = [:],
         recursive: Bool = true,
         on rootQueue: DispatchQueue = .global(qos: .userInteractive),
         result: @escaping (Result<Parameters, Error>) -> Void
@@ -50,7 +50,15 @@ public final class PMFirebaseUtilities {
         
         for key in keys {
             let value = data[key]
-            let key = mapReferences[key] ?? key
+            let key = mappedKeys[key] ?? key
+            let lowerLayerMappedKeys: [String: String] = Dictionary(
+                uniqueKeysWithValues: mappedKeys.compactMap { (k, v) in
+                    let keySegments = k.split(separator: ".")
+                    return (keySegments[0] == key && keySegments.count > 1) ?
+                        (keySegments.dropFirst().joined(separator: "."), v) :
+                        nil
+                }
+            )
             
             switch value {
             case let reference as DocumentReference:
@@ -72,7 +80,7 @@ public final class PMFirebaseUtilities {
                             dispatchGroup.leave()
                             return
                         }
-                        _fetchReferences(in: data,  on: rootQueue) { result in
+                        _fetchReferences(in: data, map: lowerLayerMappedKeys, on: rootQueue) { result in
                             switch result {
                             case .success(let data):
                                 resolvedData[key] = data
@@ -108,7 +116,7 @@ public final class PMFirebaseUtilities {
                                 localDispatchGroup.leave()
                                 return
                             }
-                            _fetchReferences(in: data,  on: rootQueue) { result in
+                            _fetchReferences(in: data, map: lowerLayerMappedKeys, on: rootQueue) { result in
                                 switch result {
                                 case .success(let data):
                                     localResult[index] = data
@@ -127,7 +135,7 @@ public final class PMFirebaseUtilities {
             case let parameters as Parameters:
                 dispatchGroup.enter()
                 
-                _fetchReferences(in: parameters,  on: rootQueue) { result in
+                _fetchReferences(in: parameters, map: lowerLayerMappedKeys, on: rootQueue) { result in
                     switch result {
                     case .success(let data):
                         resolvedData[key] = data
@@ -144,7 +152,7 @@ public final class PMFirebaseUtilities {
 
                 for (index, parameters) in parameters.enumerated() {
                     localDispatchGroup.enter()
-                    _fetchReferences(in: parameters,  on: rootQueue) { result in
+                    _fetchReferences(in: parameters, map: lowerLayerMappedKeys, on: rootQueue) { result in
                         switch result {
                         case .success(let data):
                             localResult[index] = data
@@ -170,17 +178,17 @@ public final class PMFirebaseUtilities {
     
     private static func _fetchReferences(
         in data: [String: Any],
-        excludingKeys: [String] = [],
-        mapReferences: [String: String] = [:],
+        exclude excludedKeys: [String] = [],
+        map mappedKeys: [String: String] = [:],
         recursive: Bool = true,
         on rootQueue: DispatchQueue,
         result: @escaping (Swift.Result<[String: Any], Error>) -> Void
     ) {
-        let keys = Array(data.keys).filter { !excludingKeys.contains($0) }
+        let keys = Array(data.keys).filter { !excludedKeys.contains($0) }
         _fetchReferences(
             in: data,
             for: keys,
-            mapReferences: mapReferences,
+            map: mappedKeys,
             recursive: recursive,
             on: rootQueue,
             result: result
@@ -192,8 +200,8 @@ public final class PMFirebaseUtilities {
     
     public static func fetchReferences(
         in data: [String: Any],
-        excludingKeys: [String] = [],
-        mapReferences: [String: String] = [:],
+        exclude excludedKeys: [String] = [],
+        map mappedKeys: [String: String] = [:],
         recursive: Bool = true,
         on rootQueue: DispatchQueue = DispatchQueue(label: "com.pimine.Firebase.rootQueue"),
         result: @escaping (Swift.Result<[String: Any], Error>) -> Void
@@ -201,8 +209,8 @@ public final class PMFirebaseUtilities {
         rootQueue.async {
             _fetchReferences(
                 in: data,
-                excludingKeys: excludingKeys,
-                mapReferences: mapReferences,
+                exclude: excludedKeys,
+                map: mappedKeys,
                 recursive: recursive,
                 on: rootQueue,
                 result: result
