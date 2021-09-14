@@ -23,7 +23,19 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import SwiftyStoreKit
 
 /// Namespace
-public struct SwiftyStore { }
+public struct SwiftyStore {
+    
+    public typealias CommitPurchaseResult = Swift.Result<PurchaseDetails, CommitPurchaseError>
+
+    public enum CommitPurchaseError : Error {
+        case userCancelled
+        case receiptError(ReceiptError)
+        case purchaseNotAvailable
+        case paymentNotAllowed
+        case paymentInvalid
+        case genericProblem(Swift.Error)
+    }
+}

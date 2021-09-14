@@ -156,29 +156,13 @@ final public class ProductInterfaceController {
     
     private func resolvePurchaseTask(with result: CommitPurchaseResult) {
         delegate?.productInterfaceController(self, didCommitPurchaseWith: result)
+        merchant.didCommitPurchase(result: result)
     }
     
     private func resolveRestoreTask(with result: RestorePurchasesResult) {
         delegate?.productInterfaceController(self, didRestorePurchasesWith: result)
     }
 }}
-
-// MARK: - CommitPurchase
-
-public extension SwiftyStore.ProductInterfaceController {
-
-    typealias CommitPurchaseResult = Swift.Result<PurchaseDetails, CommitPurchaseError>
-
-    enum CommitPurchaseError : Error {
-        case userCancelled
-        case receiptError(ReceiptError)
-        case purchaseNotAvailable
-        case paymentNotAllowed
-        case paymentInvalid
-        case genericProblem(Swift.Error)
-    }
-}
-
 
 // MARK: - ProductState
 

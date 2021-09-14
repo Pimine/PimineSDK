@@ -92,39 +92,40 @@ public final class Merchant {
         }
     }
     
-    // MARK: - Purchases verification
+    // MARK: - Purchases
     
-    public func verifySubscriptions(
-        _ products: Set<Product>,
+    func didCommitPurchase(result: SwiftyStore.CommitPurchaseResult) {
+        delegate?.merchant(self, didCommitPurchaseWith: result)
+    }
+    
+    public func verifySubscriptionStatus(
+        inside subscriptionGroup: Set<Product>,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
     ) {
         var result: VerifySubscriptionResult!
         
-        if products.contains(where: {
-            if case .subscription = $0.kind { return false }; return true
-        }) {
+        if subscriptionGroup.contains(where: { $0.kind != .subscription }) {
             let error = PMGeneralError(message: Messages.wrongProductType)
             result = .failed(.generalError(error))
-            self.delegate?.merchant(self, verifiedSubscriptions: products, with: result)
+            delegate?.merchant(self, didVerifySubscriptionStatusInside: subscriptionGroup, with: result)
             return completion(result)
         }
         
         verifyReceipt(forceRefresh: forceRefresh) { (verifyReceiptResult) in
-            
             switch verifyReceiptResult {
             case .success(let receipt):
-                result = self.processSubscriptions(products, in: receipt)
+                result = self.processSubscriptions(subscriptionGroup, in: receipt)
             case .error(let error):
                 result = .failed(.receiptError(error))
             }
             
-            self.delegate?.merchant(self, verifiedSubscriptions: products, with: result)
+            self.delegate?.merchant(self, didVerifySubscriptionStatusInside: subscriptionGroup, with: result)
             return completion(result)
         }
     }
     
-    public func verifySubscription(
+    func verifySubscription(
         _ product: Product,
         forceRefresh: Bool = false,
         completion: @escaping (VerifySubscriptionResult) -> Void = { _ in }
@@ -134,7 +135,7 @@ public final class Merchant {
         guard case .subscription = product.kind else {
             let error = PMGeneralError(message: Messages.wrongProductType)
             result = .failed(.generalError(error))
-            self.delegate?.merchant(self, verifiedSubscriptions: Set([product]), with: result)
+            delegate?.merchant(self, didVerifySubscriptionStatusInside: Set([product]), with: result)
             return completion(result)
         }
         
@@ -147,7 +148,7 @@ public final class Merchant {
                 result = .failed(.receiptError(error))
             }
             
-            self.delegate?.merchant(self, verifiedSubscriptions: Set([product]), with: result)
+            self.delegate?.merchant(self, didVerifySubscriptionStatusInside: Set([product]), with: result)
             return completion(result)
         }
     }
@@ -162,12 +163,11 @@ public final class Merchant {
         guard product.kind == .consumable || product.kind == .nonConsumable else {
             let error = PMGeneralError(message: Messages.wrongProductType)
             result = .failed(.generalError(error))
-            self.delegate?.merchant(self, verifiedPurchase: product, with: result)
+            delegate?.merchant(self, didVerifyPurchaseOf: product, with: result)
             return completion(result)
         }
         
         verifyReceipt(forceRefresh: forceRefresh) { (verifyReceiptResult) in
-            
             switch verifyReceiptResult {
             case .success(let receipt):
                 result = self.processPurchase(product, in: receipt)
@@ -175,7 +175,7 @@ public final class Merchant {
                 result = .failed(.receiptError(error))
             }
             
-            self.delegate?.merchant(self, verifiedPurchase: product, with: result)
+            self.delegate?.merchant(self, didVerifyPurchaseOf: product, with: result)
             return completion(result)
         }
     }

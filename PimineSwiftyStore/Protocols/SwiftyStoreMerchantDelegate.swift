@@ -25,23 +25,28 @@
 
 import SwiftyStoreKit
 
-public protocol SwiftyStoreMerchantDelegate: class {
+public protocol SwiftyStoreMerchantDelegate: AnyObject {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedSubscriptions: Set<SwiftyStore.Product>,
+        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+    )
+    
+    func merchant(
+        _ merchant: SwiftyStore.Merchant,
+        didVerifySubscriptionStatusInside subscriptionGroup: Set<SwiftyStore.Product>,
         with result: SwiftyStore.VerifySubscriptionResult
     )
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: SwiftyStore.Product,
+        didVerifyPurchaseOf product: SwiftyStore.Product,
         with result: SwiftyStore.VerifyPurchaseResult
     )
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        didRestorePurchasesWith result:  SwiftyStore.RestorePurchasesResult
+        didRestorePurchasesWith result: SwiftyStore.RestorePurchasesResult
     )
 }
 
@@ -51,13 +56,18 @@ public extension SwiftyStoreMerchantDelegate {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedSubscriptions: Set<SwiftyStore.Product>,
+        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+    ) { }
+    
+    func merchant(
+        _ merchant: SwiftyStore.Merchant,
+        didVerifySubscriptionStatusInside subscriptionGroup: Set<SwiftyStore.Product>,
         with result: SwiftyStore.VerifySubscriptionResult
     ) { }
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        verifiedPurchase: SwiftyStore.Product,
+        didVerifyPurchaseOf product: SwiftyStore.Product,
         with result: SwiftyStore.VerifyPurchaseResult
     ) { }
 }
