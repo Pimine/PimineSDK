@@ -29,7 +29,7 @@ protocol PMCoordinatorDelegate: AnyObject {
     func didFinish(from coordinator: PMCoordinator)
 }
 
-open class PMCoordinator: NSObject, CoordinatorDelegate {
+open class PMCoordinator: NSObject, PMCoordinatorDelegate {
     
     // MARK: Properties
     
