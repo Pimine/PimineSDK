@@ -2,30 +2,30 @@
   "object": {
     "pins": [
       {
-        "package": "abseil-cpp-SwiftPM",
+        "package": "abseil",
         "repositoryURL": "https://github.com/firebase/abseil-cpp-SwiftPM.git",
         "state": {
           "branch": null,
-          "revision": "ff5f5f0a3d3266836b9d722bb73cabdf7057482e",
-          "version": "0.20200225.3"
+          "revision": "fffc3c2729be5747390ad02d5100291a0d9ad26a",
+          "version": "0.20200225.4"
         }
       },
       {
-        "package": "boringssl-SwiftPM",
+        "package": "BoringSSL-GRPC",
         "repositoryURL": "https://github.com/firebase/boringssl-SwiftPM.git",
         "state": {
           "branch": null,
-          "revision": "15889fadef7078dfa1392b0e2b08f3d0e9797104",
-          "version": "0.7.1"
+          "revision": "734a8247442fde37df4364c21f6a0085b6a36728",
+          "version": "0.7.2"
         }
       },
       {
-        "package": "firebase-ios-sdk",
+        "package": "Firebase",
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk",
         "state": {
           "branch": null,
-          "revision": "f2b8de559b084a56f65bff79f4e736b46d0dafd3",
-          "version": "8.0.0"
+          "revision": "2f972249c520cbf87ac8856f176ebc994cb1c9a6",
+          "version": "8.7.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
         "state": {
           "branch": null,
-          "revision": "48fcea0c0a74fc89131696aa995043eaa971ccb1",
-          "version": "8.0.0"
+          "revision": "4901bde146b0269da35470d261f741f0e910d8df",
+          "version": "8.7.0"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/google/GoogleDataTransport.git",
         "state": {
           "branch": null,
-          "revision": "369716b8d7518a530ce3c3a251436d72546debd8",
-          "version": "8.4.0"
+          "revision": "7fb27ea49414b9c5483503cd06baa821c8654d1e",
+          "version": "9.1.1"
         }
       },
       {
@@ -51,12 +51,12 @@
         "repositoryURL": "https://github.com/google/GoogleUtilities.git",
         "state": {
           "branch": null,
-          "revision": "58359415d4ea29ebdc8fa5b41ce96c434d76d901",
-          "version": "7.4.1"
+          "revision": "616fac2626b6b2d1424d79a6f786b4e2ed1cfb49",
+          "version": "7.5.2"
         }
       },
       {
-        "package": "grpc-SwiftPM",
+        "package": "gRPC",
         "repositoryURL": "https://github.com/firebase/grpc-SwiftPM.git",
         "state": {
           "branch": null,
@@ -65,12 +65,12 @@
         }
       },
       {
-        "package": "gtm-session-fetcher",
+        "package": "GTMSessionFetcher",
         "repositoryURL": "https://github.com/google/gtm-session-fetcher.git",
         "state": {
           "branch": null,
-          "revision": "91ed3d188eb95705fef3c249453b81f32dc557d1",
-          "version": "1.5.0"
+          "revision": "bc6a19702ac76ac4e488b68148710eb815f9bc56",
+          "version": "1.7.0"
         }
       },
       {
@@ -92,39 +92,39 @@
         }
       },
       {
-        "package": "promises",
+        "package": "Promises",
         "repositoryURL": "https://github.com/google/promises.git",
         "state": {
           "branch": null,
-          "revision": "afa9a1ace74e116848d4f743599ab83e584ff8cb",
-          "version": "1.2.12"
+          "revision": "611337c330350c9c1823ad6d671e7f936af5ee13",
+          "version": "2.0.0"
         }
       },
       {
-        "package": "purchases-ios",
+        "package": "Purchases",
         "repositoryURL": "https://github.com/RevenueCat/purchases-ios",
         "state": {
           "branch": null,
-          "revision": "429f0aef8246d039fbad2fd9443ec3e7ca00585b",
-          "version": "3.11.0"
+          "revision": "b7e38906f3290f19b2396dd5665b13d05c8e672a",
+          "version": "3.12.4"
         }
       },
       {
-        "package": "realm-cocoa",
+        "package": "Realm",
         "repositoryURL": "https://github.com/realm/realm-cocoa",
         "state": {
           "branch": null,
-          "revision": "239a6a383af5d4b445626a95aa6356925e6acf22",
-          "version": "10.7.4"
+          "revision": "c619512ed75937ed3425df9343dc592f39bd8a43",
+          "version": "10.15.0"
         }
       },
       {
-        "package": "realm-core",
+        "package": "RealmDatabase",
         "repositoryURL": "https://github.com/realm/realm-core",
         "state": {
           "branch": null,
-          "revision": "28ed052d10d2245542b4fbdc71d388febb1e9bc4",
-          "version": "10.6.0"
+          "revision": "23f60515a00f076a9e3f2dc672fe1ae07601ee90",
+          "version": "11.4.1"
         }
       },
       {
@@ -137,7 +137,7 @@
         }
       },
       {
-        "package": "swift-protobuf",
+        "package": "SwiftProtobuf",
         "repositoryURL": "https://github.com/apple/swift-protobuf.git",
         "state": {
           "branch": null,
