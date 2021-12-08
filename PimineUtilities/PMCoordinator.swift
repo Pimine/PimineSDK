@@ -25,9 +25,15 @@
 
 import UIKit
 
-open class PMCoordinator: NSObject {
+protocol PMCoordinatorDelegate: AnyObject {
+    func didFinish(from coordinator: PMCoordinator)
+}
+
+open class PMCoordinator: NSObject, CoordinatorDelegate {
     
     // MARK: Properties
+    
+    weak var delegate: PMCoordinatorDelegate?
     
     public let rootViewController: UINavigationController
 
@@ -35,8 +41,10 @@ open class PMCoordinator: NSObject {
     
     // MARK: Initialization
     
-    public init(rootViewController: UINavigationController) {
+    public init(rootViewController: UINavigationController, autoStartFlow: Bool) {
         self.rootViewController = rootViewController
+        super.init()
+        if autoStartFlow { start() }
     }
     
     // MARK: Flow
@@ -46,13 +54,14 @@ open class PMCoordinator: NSObject {
     }
 
     open func finish() {
-        preconditionFailure("This method needs to be overriden by concrete subclass.")
+        delegate?.didFinish(from: self)
     }
     
     // MARK: Dependancies
 
     public func addChildCoordinator(_ coordinator: PMCoordinator) {
         childCoordinators.append(coordinator)
+        coordinator.delegate = self
     }
 
     public func removeChildCoordinator(_ coordinator: PMCoordinator) {
@@ -64,11 +73,15 @@ open class PMCoordinator: NSObject {
     }
 
     public func removeAllChildCoordinatorsWith<T>(type: T.Type) {
-        childCoordinators = childCoordinators.filter { $0 is T  == false }
+        childCoordinators = childCoordinators.filter { $0 is T == false }
     }
 
     public func removeAllChildCoordinators() {
         childCoordinators.removeAll()
+    }
+    
+    func didFinish(from coordinator: PMCoordinator) {
+        removeChildCoordinator(coordinator)
     }
 }
 
@@ -77,7 +90,6 @@ open class PMCoordinator: NSObject {
 public extension PMCoordinator {
     
     static func == (lhs: PMCoordinator, rhs: PMCoordinator) -> Bool {
-        return lhs === rhs
+        lhs === rhs
     }
-    
 }
