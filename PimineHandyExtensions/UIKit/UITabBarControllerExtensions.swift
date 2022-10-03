@@ -27,6 +27,7 @@ import UIKit
 
 public extension UITabBarController {
     
+    @available(iOSApplicationExtension, unavailable)
     var tabBarHeight: CGFloat {
         get { tabBar.frame.height }
         set {

@@ -26,10 +26,12 @@
 import UIKit
 import UserNotifications
 
+@available(iOSApplicationExtension, unavailable)
 public extension Notification.Name {
     static let userNotificationPreferencesChanged = Notification.Name("userNotificationPreferencesChanged")
 }
 
+@available(iOSApplicationExtension, unavailable)
 final public class PMUserNotificationManager {
     
     struct Keys {

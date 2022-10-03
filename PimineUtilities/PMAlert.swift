@@ -25,6 +25,7 @@
 
 import UIKit
 
+@available(iOSApplicationExtension, unavailable)
 public struct PMAlert {
     
     static public func show(

@@ -26,6 +26,7 @@
 import Photos
 import UIKit
 
+@available(iOSApplicationExtension, unavailable)
 public final class PMAccessManager {
     
     public enum SourceType {
