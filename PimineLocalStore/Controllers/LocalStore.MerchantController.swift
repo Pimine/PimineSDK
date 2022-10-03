@@ -26,6 +26,7 @@
 import MerchantKit
 import SVProgressHUD
 import PimineUtilities
+import StoreKit
 
 extension LocalStore {
 open class MerchantController: LocalStore.RestoringController {
@@ -44,7 +45,7 @@ open class MerchantController: LocalStore.RestoringController {
 
     // MARK: - Public API
     
-    open func buy(_ product: Product) {
+    open func buy(_ product: MerchantKit.Product) {
         let productState = productInterfaceController.state(for: product)
         
         switch productState {
@@ -94,6 +95,8 @@ open class MerchantController: LocalStore.RestoringController {
             PMAlert.show(message: "\(PMessages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem:
             PMAlert.show(message: PMessages.somethingWentWrong)
+        case .userNotAllowedToMakePurchases:
+            PMAlert.show(message: PMessages.cannotMakePayments)
         }
     }
     

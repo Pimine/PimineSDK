@@ -13,7 +13,6 @@
 		EB18BA8125E3F9520046A3B6 /* Reorderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA7F25E3F9520046A3B6 /* Reorderable.swift */; };
 		EB18BA8825E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
 		EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
-		EB18D6A124E2F79D004ABD6A /* MerchantKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; };
 		EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D86524E3060D004ABD6A /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
 		EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
@@ -61,6 +60,7 @@
 		EB18D89124E30665004ABD6A /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F8802475C1FC00BB98CD /* UIViewControllerExtensions.swift */; };
 		EB18D89224E30665004ABD6A /* UITabBarControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAB22475DFC700FA3B79 /* UITabBarControllerExtensions.swift */; };
 		EB18D89324E30666004ABD6A /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768DAC52475E68100FA3B79 /* UIStackViewExtensions.swift */; };
+		EB194CD028EB080400F84CAB /* MerchantKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; };
 		EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
 		EB1FE93F252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
 		EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
@@ -510,8 +510,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB194CD028EB080400F84CAB /* MerchantKit.framework in Frameworks */,
 				EBC6BC03261C8CE4005C47F0 /* SVProgressHUD in Frameworks */,
-				EB18D6A124E2F79D004ABD6A /* MerchantKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2004,7 +2004,7 @@
 				);
 				INFOPLIST_FILE = "PimineDatabase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2039,7 +2039,7 @@
 				);
 				INFOPLIST_FILE = "PimineDatabase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2067,7 +2067,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineUtilities/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2095,7 +2095,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineUtilities/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2123,7 +2123,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineLocalStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2151,7 +2151,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineLocalStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2179,7 +2179,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineRevenueCatStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2207,7 +2207,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineRevenueCatStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2235,7 +2235,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineSwiftyStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2263,7 +2263,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineSwiftyStore/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2291,7 +2291,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineMath/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2319,7 +2319,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineMath/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2347,7 +2347,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineHandyExtensions/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2375,7 +2375,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineHandyExtensions/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2404,7 +2404,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineConcurrency/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2434,7 +2434,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineConcurrency/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2464,7 +2464,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineFirebase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2495,7 +2495,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "PimineFirebase/Support files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2529,7 +2529,7 @@
 				);
 				INFOPLIST_FILE = Pimine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2565,7 +2565,7 @@
 				);
 				INFOPLIST_FILE = Pimine/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2708,7 +2708,7 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
+				minimumVersion = 9.0.0;
 			};
 		};
 		EBC6BBFF261C8CBC005C47F0 /* XCRemoteSwiftPackageReference "SVProgressHUD" */ = {

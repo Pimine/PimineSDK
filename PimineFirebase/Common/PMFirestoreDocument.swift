@@ -24,7 +24,6 @@
 //  SOFTWARE.
 
 import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 public struct PMFirestoreDocument<T: Codable & Hashable>: Codable, Hashable {
     
