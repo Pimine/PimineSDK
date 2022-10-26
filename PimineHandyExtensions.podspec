@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = 'PimineHandyExtensions'
-  s.version         = '0.7.1'
+  s.version         = '0.9.0'
   s.summary         = 'PimineSDK'
 
   s.homepage        = 'https://github.com/Pimine/PimineSDK'

@@ -66,6 +66,7 @@
 		EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB202FC7250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB25EB372614BA3E0026CC7E /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */; };
+		EB2BB943290983BA0018394A /* Executable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE7017263C33B30049BF45 /* Executable.swift */; };
 		EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB361C43250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
@@ -1801,6 +1802,7 @@
 				EB18D87B24E30641004ABD6A /* LocalStore.SubscriptionPriceFormatter.swift in Sources */,
 				EB18D87324E3062C004ABD6A /* RevenueCat.Price.swift in Sources */,
 				EB886A1224FE751C00BB21AC /* PMAccessManager.swift in Sources */,
+				EB2BB943290983BA0018394A /* Executable.swift in Sources */,
 				EB18D88C24E30664004ABD6A /* UILabelExtensions.swift in Sources */,
 				EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */,
 				EB18D88624E30654004ABD6A /* PublisherExtensions.swift in Sources */,
@@ -2010,7 +2012,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2045,7 +2047,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Database;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2073,7 +2075,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2101,7 +2103,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2129,7 +2131,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2157,7 +2159,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2185,7 +2187,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2213,7 +2215,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.RevenueCatStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2241,7 +2243,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2269,7 +2271,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.SwiftyStore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2297,7 +2299,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2325,7 +2327,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Math;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2353,7 +2355,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2381,7 +2383,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.HandyExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2410,7 +2412,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2440,7 +2442,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.Concurrency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2470,7 +2472,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2501,7 +2503,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2535,7 +2537,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2571,7 +2573,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8;
+				MARKETING_VERSION = 0.9;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.PimineSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
