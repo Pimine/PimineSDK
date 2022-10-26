@@ -95,8 +95,6 @@ open class MerchantController: LocalStore.RestoringController {
             PMAlert.show(message: "\(PMessages.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem:
             PMAlert.show(message: PMessages.somethingWentWrong)
-        case .userNotAllowedToMakePurchases:
-            PMAlert.show(message: PMessages.cannotMakePayments)
         }
     }
     
