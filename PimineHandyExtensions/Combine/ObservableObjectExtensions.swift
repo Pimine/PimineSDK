@@ -3,7 +3,7 @@
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
-//  Copyright (c) 2020 Pimine
+//  Copyright (c) 2022 Pimine
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -25,24 +25,13 @@
 
 import Combine
 
-public extension Publisher where Failure == Never {
-    
-    func assign<Root: AnyObject>(
-        to keyPath: ReferenceWritableKeyPath<Root,
-        Output>, on root: Root
-    ) -> AnyCancellable {
-        sink { [weak root] in
-            root?[keyPath: keyPath] = $0
-        }
-    }
+public extension ObservableObject {
     
     func propagateWeakly<InputObservableObject>(
         to inputObservableObject: InputObservableObject
     ) -> AnyCancellable where
         InputObservableObject: ObservableObject,
         InputObservableObject.ObjectWillChangePublisher == ObservableObjectPublisher {
-        sink { [weak inputObservableObject] _ in
-            inputObservableObject?.objectWillChange.send()
-        }
+        objectWillChange.propagateWeakly(to: inputObservableObject)
     }
 }

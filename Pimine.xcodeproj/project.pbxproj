@@ -83,6 +83,8 @@
 		EB4FFDB725110087001F2A89 /* PMURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* PMURLHandler.swift */; };
 		EB4FFDB9251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
 		EB4FFDBA251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
+		EB5C0F76291280EC00A5FD52 /* ObservableObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C0F75291280EC00A5FD52 /* ObservableObjectExtensions.swift */; };
+		EB5C0F77291280EC00A5FD52 /* ObservableObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C0F75291280EC00A5FD52 /* ObservableObjectExtensions.swift */; };
 		EB7331502639AD50005C2771 /* PMLocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */; };
 		EB76712E2686217600A595FE /* KeyedDecodingContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76712D2686217600A595FE /* KeyedDecodingContainerExtensions.swift */; };
 		EB886A1124FE751C00BB21AC /* PMAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB886A1024FE751C00BB21AC /* PMAccessManager.swift */; };
@@ -426,6 +428,7 @@
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB4FFDB525110087001F2A89 /* PMURLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLHandler.swift; sourceTree = "<group>"; };
 		EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLRule.swift; sourceTree = "<group>"; };
+		EB5C0F75291280EC00A5FD52 /* ObservableObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectExtensions.swift; sourceTree = "<group>"; };
 		EB73314F2639AD50005C2771 /* PMLocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMLocalNotificationManager.swift; sourceTree = "<group>"; };
 		EB76712D2686217600A595FE /* KeyedDecodingContainerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerExtensions.swift; sourceTree = "<group>"; };
 		EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Price.swift; sourceTree = "<group>"; };
@@ -1010,6 +1013,7 @@
 			isa = PBXGroup;
 			children = (
 				EB9E05FB24BE145E00125BB3 /* PublisherExtensions.swift */,
+				EB5C0F75291280EC00A5FD52 /* ObservableObjectExtensions.swift */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -1699,6 +1703,7 @@
 				EBEA9E2A24F3C3DA00241B3B /* UINavigationControllerExtensions.swift in Sources */,
 				EB8E59D524E1D1A10015EA39 /* NameDescribable.swift in Sources */,
 				EB8E59D024E1D1950015EA39 /* PublisherExtensions.swift in Sources */,
+				EB5C0F77291280EC00A5FD52 /* ObservableObjectExtensions.swift in Sources */,
 				EB8E59DB24E1D1A40015EA39 /* UIViewControllerExtensions.swift in Sources */,
 				EB8E59DA24E1D1A40015EA39 /* UIApplicationExtensions.swift in Sources */,
 				EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
@@ -1755,6 +1760,7 @@
 				EB3E205F24F6DE4D00782480 /* UITableViewExtensions.swift in Sources */,
 				EB4CA32E25DC115E00789841 /* Pimine.swift in Sources */,
 				EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */,
+				EB5C0F76291280EC00A5FD52 /* ObservableObjectExtensions.swift in Sources */,
 				EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */,
 				EB18D88924E3065D004ABD6A /* SetExtensions.swift in Sources */,
 				EB18D87724E30632004ABD6A /* RevenueCat.swift in Sources */,
