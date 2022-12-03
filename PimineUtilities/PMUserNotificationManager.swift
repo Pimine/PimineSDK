@@ -91,10 +91,10 @@ final public class PMUserNotificationManager {
         updateNotificationPreferences()
     }
     
-    public static func requestPermission(result: ((Bool) -> Void)? = nil) {
+    public static func requestPermission(silently: Bool = false, result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.requestAuthorization(options: configuration.authorizationOptions) { (granted, error) in
             if let error = error { PMAlert.show(error: error) }
-            self.updateNotificationPreferences(silently: false)
+            self.updateNotificationPreferences(silently: silently)
             DispatchQueue.main.async {
                 result?(granted)
             }
