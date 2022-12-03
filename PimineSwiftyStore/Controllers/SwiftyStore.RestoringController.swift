@@ -33,11 +33,17 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     // MARK: - Properties
     
     public let productInterfaceController: SwiftyStore.ProductInterfaceController
+    public let messageProvider: SwiftyStoreMessageProvider
     
     // MARK: - Initialization
     
-    public init(products: Set<Product>, with merchant: Merchant) {
+    public init(
+        products: Set<Product>, with
+        merchant: Merchant,
+        messageProvider: SwiftyStoreMessageProvider = DefaultMessageProvider()
+    ) {
         self.productInterfaceController = ProductInterfaceController(products: products, with: merchant)
+        self.messageProvider = messageProvider
         super.init(nibName: nil, bundle: nil)
         productInterfaceController.delegate = self
     }
@@ -62,9 +68,9 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
         SVProgressHUD.dismiss()
         switch result {
         case .success(let products) where products.count > 0:
-            PMAlert.show(title: PMessages.info, message: PMessages.restored)
+            PMAlert.show(title: messageProvider.info, message: messageProvider.restored)
         case .success:
-            PMAlert.show(message: PMessages.nothingToRestore)
+            PMAlert.show(message: messageProvider.nothingToRestore)
         case .failure(let error):
             PMAlert.show(error: error)
         }

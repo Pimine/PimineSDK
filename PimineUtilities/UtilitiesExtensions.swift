@@ -56,3 +56,6 @@ public extension UIApplication {
     }
 }
 
+extension String: LocalizedError {
+    public var errorDescription: String? { self }
+}

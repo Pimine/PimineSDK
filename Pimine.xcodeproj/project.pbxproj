@@ -15,7 +15,6 @@
 		EB18BA8925E3FA010046A3B6 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB18BA8725E3FA010046A3B6 /* ArrayExtensions.swift */; };
 		EB18D6A224E2F79D004ABD6A /* MerchantKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBD3DBDE24E2F73100ED411F /* MerchantKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EB18D86524E3060D004ABD6A /* PMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B618A24780487003CE4C0 /* PMath.swift */; };
-		EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
 		EB18D86724E30616004ABD6A /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 		EB18D86824E30616004ABD6A /* SwiftyStoreMerchantDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */; };
 		EB18D86924E3061B004ABD6A /* SwiftyStore.Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */; };
@@ -79,6 +78,8 @@
 		EB4CA2C625DBD4C000789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA2CC25DBD4C100789841 /* UtilitiesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCAECF25DAEA330091D26D /* UtilitiesExtensions.swift */; };
 		EB4CA32E25DC115E00789841 /* Pimine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CA32D25DC115E00789841 /* Pimine.swift */; };
+		EB4DA45D293B9416008F83EC /* SwiftyStoreMessageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4DA45C293B9416008F83EC /* SwiftyStoreMessageProvider.swift */; };
+		EB4DA46F293B9AF7008F83EC /* SwiftyStore.DefaultMessageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4DA46E293B9AF7008F83EC /* SwiftyStore.DefaultMessageProvider.swift */; };
 		EB4FFDB625110087001F2A89 /* PMURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* PMURLHandler.swift */; };
 		EB4FFDB725110087001F2A89 /* PMURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB525110087001F2A89 /* PMURLHandler.swift */; };
 		EB4FFDB9251100A9001F2A89 /* PMURLRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */; };
@@ -114,7 +115,6 @@
 		EB8E59AC24E1D0E00015EA39 /* PMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE233224D19A8300740059 /* PMessages.swift */; };
 		EB8E59AD24E1D0E10015EA39 /* PMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE233224D19A8300740059 /* PMessages.swift */; };
 		EB8E59AE24E1D0E10015EA39 /* PMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE233224D19A8300740059 /* PMessages.swift */; };
-		EB8E59AF24E1D1030015EA39 /* SwiftyStore.Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */; };
 		EB8E59B024E1D1070015EA39 /* SwiftyStoreInterfaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */; };
 		EB8E59B124E1D1070015EA39 /* SwiftyStoreMerchantDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */; };
 		EB8E59B224E1D10C0015EA39 /* SwiftyStore.Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBD81A24C9D1840009F9D5 /* SwiftyStore.Typealiases.swift */; };
@@ -337,16 +337,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB18D6BB24E2F7DA004ABD6A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EB4906C426664CE6004B6755 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,8 +413,9 @@
 		EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		EB4086B824B8C97400A09084 /* PMUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUserNotificationManager.swift; sourceTree = "<group>"; };
 		EB431C6824C76F5F00E32747 /* SwiftyStore.Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Product.swift; sourceTree = "<group>"; };
-		EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.Messages.swift; sourceTree = "<group>"; };
 		EB4CA32D25DC115E00789841 /* Pimine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pimine.swift; sourceTree = "<group>"; };
+		EB4DA45C293B9416008F83EC /* SwiftyStoreMessageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStoreMessageProvider.swift; sourceTree = "<group>"; };
+		EB4DA46E293B9AF7008F83EC /* SwiftyStore.DefaultMessageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.DefaultMessageProvider.swift; sourceTree = "<group>"; };
 		EB4F6B4324D08ABD008F5BA9 /* PMValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMValidator.swift; sourceTree = "<group>"; };
 		EB4FFDB525110087001F2A89 /* PMURLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLHandler.swift; sourceTree = "<group>"; };
 		EB4FFDB8251100A9001F2A89 /* PMURLRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMURLRule.swift; sourceTree = "<group>"; };
@@ -793,16 +784,9 @@
 				EB79179D24C8A52800C50CF3 /* SwiftyStore.Price.swift */,
 				EB7917B724C8C4A800C50CF3 /* SwiftyStore.VerifySubscriptionResult.swift */,
 				EB9F0A33258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift */,
+				EB4DA46E293B9AF7008F83EC /* SwiftyStore.DefaultMessageProvider.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		EB431C8524C77CEB00E32747 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				EB431C8724C77D3100E32747 /* SwiftyStore.Messages.swift */,
-			);
-			path = Internal;
 			sourceTree = "<group>";
 		};
 		EB431C8624C77CF700E32747 /* Controllers */ = {
@@ -921,7 +905,6 @@
 		EB8E596824E1CEAB0015EA39 /* PimineSwiftyStore */ = {
 			isa = PBXGroup;
 			children = (
-				EB431C8524C77CEB00E32747 /* Internal */,
 				EBE9ADF824C76C0500F1FDAB /* Protocols */,
 				EB431C8224C7714900E32747 /* Model */,
 				EB431C8624C77CF700E32747 /* Controllers */,
@@ -1072,6 +1055,7 @@
 			children = (
 				EBE9ADF924C76C4A00F1FDAB /* SwiftyStoreInterfaceDelegate.swift */,
 				EB13D8CF24C883EA00BE910C /* SwiftyStoreMerchantDelegate.swift */,
+				EB4DA45C293B9416008F83EC /* SwiftyStoreMessageProvider.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1266,7 +1250,6 @@
 				EB8E596324E1CEAB0015EA39 /* Sources */,
 				EB8E596424E1CEAB0015EA39 /* Frameworks */,
 				EB8E596524E1CEAB0015EA39 /* Resources */,
-				EB18D6BB24E2F7DA004ABD6A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1665,7 +1648,6 @@
 				EB8E59B124E1D1070015EA39 /* SwiftyStoreMerchantDelegate.swift in Sources */,
 				EB4CA2C525DBD4BF00789841 /* UtilitiesExtensions.swift in Sources */,
 				EB8E59BD24E1D1240015EA39 /* PMAlert.swift in Sources */,
-				EB8E59AF24E1D1030015EA39 /* SwiftyStore.Messages.swift in Sources */,
 				EB8E59B924E1D1160015EA39 /* SwiftyStore.MerchantController.swift in Sources */,
 				EB8E59C324E1D14B0015EA39 /* PMGeneralError.swift in Sources */,
 				EB8E59B724E1D1160015EA39 /* SwiftyStore.ProductInterfaceController.swift in Sources */,
@@ -1679,6 +1661,8 @@
 				EB8E59B424E1D10C0015EA39 /* SwiftyStore.Price.swift in Sources */,
 				EB8E59BA24E1D1190015EA39 /* SwiftyStore.swift in Sources */,
 				EB8E59B024E1D1070015EA39 /* SwiftyStoreInterfaceDelegate.swift in Sources */,
+				EB4DA46F293B9AF7008F83EC /* SwiftyStore.DefaultMessageProvider.swift in Sources */,
+				EB4DA45D293B9416008F83EC /* SwiftyStoreMessageProvider.swift in Sources */,
 				EB8E59B524E1D10C0015EA39 /* SwiftyStore.VerifySubscriptionResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1761,7 +1745,6 @@
 				EB4CA32E25DC115E00789841 /* Pimine.swift in Sources */,
 				EB888F1924F3E34B0093748F /* DatabaseExtensions.swift in Sources */,
 				EB5C0F76291280EC00A5FD52 /* ObservableObjectExtensions.swift in Sources */,
-				EB18D86624E30612004ABD6A /* SwiftyStore.Messages.swift in Sources */,
 				EB18D88924E3065D004ABD6A /* SetExtensions.swift in Sources */,
 				EB18D87724E30632004ABD6A /* RevenueCat.swift in Sources */,
 				EB18D87024E3061F004ABD6A /* SwiftyStore.MerchantController.swift in Sources */,

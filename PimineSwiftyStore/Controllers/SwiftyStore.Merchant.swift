@@ -34,11 +34,17 @@ public final class Merchant {
     private(set) var products = [String: Product]()
     
     private let sharedSecret: String
+    private let messageProvider: SwiftyStoreMessageProvider
     
     // MARK: - Initialization
     
-    public init(sharedSecret: String, delegate: SwiftyStoreMerchantDelegate) {
+    public init(
+        sharedSecret: String,
+        delegate: SwiftyStoreMerchantDelegate,
+        messageProvider: SwiftyStoreMessageProvider = DefaultMessageProvider()
+    ) {
         self.sharedSecret = sharedSecret
+        self.messageProvider = messageProvider
         self.delegate = delegate
     }
     
@@ -82,7 +88,7 @@ public final class Merchant {
             let restorePurchasesResult: RestorePurchasesResult
             
             if result.restoreFailedPurchases.count > 0 {
-                let error = PMGeneralError(message: PMessages.restorationFailed)
+                let error = self.messageProvider.restorationFailed
                 restorePurchasesResult = .failure(error)
             } else {
                 restorePurchasesResult = .success(result.restoredPurchases)
@@ -106,7 +112,7 @@ public final class Merchant {
         var result: VerifySubscriptionResult!
         
         if subscriptionGroup.contains(where: { $0.kind != .subscription }) {
-            let error = PMGeneralError(message: Messages.wrongProductType)
+            let error = messageProvider.wrongProductType
             result = .failed(.generalError(error))
             delegate?.merchant(self, didVerifySubscriptionStatusInside: subscriptionGroup, with: result)
             return completion(result)
@@ -133,7 +139,7 @@ public final class Merchant {
         var result: VerifySubscriptionResult!
         
         guard case .subscription = product.kind else {
-            let error = PMGeneralError(message: Messages.wrongProductType)
+            let error = messageProvider.wrongProductType
             result = .failed(.generalError(error))
             delegate?.merchant(self, didVerifySubscriptionStatusInside: Set([product]), with: result)
             return completion(result)
@@ -161,7 +167,7 @@ public final class Merchant {
         var result: VerifyPurchaseResult!
         
         guard product.kind == .consumable || product.kind == .nonConsumable else {
-            let error = PMGeneralError(message: Messages.wrongProductType)
+            let error = messageProvider.wrongProductType
             result = .failed(.generalError(error))
             delegate?.merchant(self, didVerifyPurchaseOf: product, with: result)
             return completion(result)

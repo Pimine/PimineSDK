@@ -1,9 +1,9 @@
 //
-//  SwiftyStore.Messages.swift
+//  SwiftyStoreMessageProvider.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
-//  Copyright (c) 2020 Pimine
+//  Copyright (c) 2022 Pimine
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,14 +24,26 @@
 //  SOFTWARE.
 
 import Foundation
-import PimineUtilities
 
-extension SwiftyStore {
-struct Messages {
-
-    static let verificationFailed = "Receipt verification failed"
-    static let wrongProductType = "\(verificationFailed). Wrong product type."
-    static let verificationNetworkProblem = "Network error while verifying receipt"
-    static let noReceiptData = "\(verificationFailed). No receipt data. \(PMessages.tryAgain)."
-
-}}
+public protocol SwiftyStoreMessageProvider {
+    var verificationFailed: String { get }
+    var wrongProductType: String { get }
+    var verificationNetworkProblem: String { get }
+    var noReceiptData: String { get }
+    
+    var productPurchased: String { get }
+    var unknownProductState: String { get }
+    var paymentInvalid: String { get }
+    var productNotAvailable: String { get }
+    var notAuthorized: String { get }
+    var purchasesMayBeRestricted: String { get }
+    var cannotMakePayments: String { get }
+    var storeCommunicationError: String { get }
+    var restored: String { get }
+    var nothingToRestore: String { get }
+    var restorationFailed: String { get }
+    
+    var error: String { get }
+    var info: String { get }
+    var somethingWentWrong: String { get }
+}

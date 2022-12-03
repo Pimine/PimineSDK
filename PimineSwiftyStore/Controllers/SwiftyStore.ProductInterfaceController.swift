@@ -40,11 +40,18 @@ final public class ProductInterfaceController {
     
     private var productStates: [String: ProductState] = [:]
     
+    private let messageProvider: SwiftyStoreMessageProvider
+    
     // MARK: - Initialization
     
-    public init(products: Set<Product>, with merchant: SwiftyStore.Merchant) {
+    public init(
+        products: Set<Product>,
+        with merchant: SwiftyStore.Merchant,
+        messageProvider: SwiftyStoreMessageProvider = DefaultMessageProvider()
+    ) {
         self.merchant = merchant
         self.productIdentifiers = Set(products.map(\.identifier))
+        self.messageProvider = messageProvider
         
         products.forEach {
             self.productStates[$0.identifier] = .unknown
@@ -108,7 +115,7 @@ final public class ProductInterfaceController {
                 case .purchased:
                     self.resolvePurchaseTask(with: .success(purchaseDetails))
                 case .notPurchased:
-                    let error = PMGeneralError(message: PMessages.somethingWentWrong)
+                    let error = self.messageProvider.somethingWentWrong
                     self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
                 case .failed(let reason):
                     switch reason {
@@ -125,7 +132,7 @@ final public class ProductInterfaceController {
                 case .purchased:
                     self.resolvePurchaseTask(with: .success(purchaseDetails))
                 case .expired, .notPurchased:
-                    let error = PMGeneralError(message: PMessages.somethingWentWrong)
+                    let error = self.messageProvider.somethingWentWrong
                     self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
                 case .failed(let reason):
                     switch reason {

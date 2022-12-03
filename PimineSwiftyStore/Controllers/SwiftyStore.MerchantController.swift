@@ -56,16 +56,16 @@ open class MerchantController: RestoringController {
         case .receiptError(let error):
             handleReceiptError(error)
         case .purchaseNotAvailable:
-            PMAlert.show(message: PMessages.productNotAvailable)
+            PMAlert.show(message: messageProvider.productNotAvailable)
         case .paymentNotAllowed:
-            PMAlert.show(message: PMessages.cannotMakePayments)
+            PMAlert.show(message: messageProvider.cannotMakePayments)
         case .paymentInvalid:
-            PMAlert.show(message: PMessages.paymentInvalid)
+            PMAlert.show(message: messageProvider.paymentInvalid)
         case .genericProblem(let error) where error is SKError:
             let errorCode = (error as! SKError).errorCode
-            PMAlert.show(message: "\(PMessages.storeCommunicationError) (Error code: \(errorCode))")
+            PMAlert.show(message: "\(messageProvider.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem(let error):
-            PMAlert.show(message: "\(PMessages.error). \(error.localizedDescription)")
+            PMAlert.show(message: "\(messageProvider.error). \(error.localizedDescription)")
         }
     }
     
@@ -74,11 +74,11 @@ open class MerchantController: RestoringController {
     private func handleReceiptError(_ error: ReceiptError) {
         switch error {
         case .noReceiptData:
-            PMAlert.show(message: Messages.noReceiptData)
+            PMAlert.show(message: messageProvider.noReceiptData)
         case .networkError(error: let error):
-            PMAlert.show(message: "\(Messages.verificationNetworkProblem): \(error.localizedDescription)")
+            PMAlert.show(message: "\(messageProvider.verificationNetworkProblem): \(error.localizedDescription)")
         default:
-            PMAlert.show(message: "\(Messages.verificationFailed): \(error.localizedDescription)")
+            PMAlert.show(message: "\(messageProvider.verificationFailed): \(error.localizedDescription)")
         }
     }
     
