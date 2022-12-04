@@ -55,6 +55,11 @@ public struct PMLocalNotificationCalendarTrigger: PMLocalNotificationTrigger {
     public var notificationTrigger: UNNotificationTrigger {
         UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: repeats)
     }
+    
+    public init(dateComponents: DateComponents, repeats: Bool) {
+        self.dateComponents = dateComponents
+        self.repeats = repeats
+    }
 }
 
 public struct PMLocalNotificationTimeIntervalTrigger: PMLocalNotificationTrigger {
@@ -63,6 +68,11 @@ public struct PMLocalNotificationTimeIntervalTrigger: PMLocalNotificationTrigger
     
     public var notificationTrigger: UNNotificationTrigger {
         UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: repeats)
+    }
+    
+    public init(timeInterval: TimeInterval, repeats: Bool) {
+        self.timeInterval = timeInterval
+        self.repeats = repeats
     }
 }
 
@@ -85,6 +95,11 @@ public struct PMLocalNotification: Decodable {
     public let trigger: PMLocalNotificationTrigger
     
     // MARK: Initialization
+    
+    public init(content: PMLocalNotificationContent, trigger: PMLocalNotificationTrigger) {
+        self.content = content
+        self.trigger = trigger
+    }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
