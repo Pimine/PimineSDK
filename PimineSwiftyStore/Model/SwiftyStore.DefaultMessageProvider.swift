@@ -29,77 +29,24 @@ import PimineUtilities
 extension SwiftyStore {
     public struct DefaultMessageProvider: SwiftyStoreMessageProvider {
         
-        public var verificationFailed: String {
-            "Receipt verification failed"
-        }
-        
-        public var wrongProductType: String {
-            "\(verificationFailed). Wrong product type."
-        }
-        
-        public var verificationNetworkProblem: String {
-            "Network error while verifying receipt"
-        }
-        
-        public var noReceiptData: String {
-            "\(verificationFailed). No receipt data. \(PMessages.tryAgain)."
-        }
-        
-        public var productPurchased: String {
-            PMessages.productPurchased
-        }
-        
-        public var unknownProductState: String {
-            PMessages.unknownProductState
-        }
-        
-        public var paymentInvalid: String {
-            PMessages.paymentInvalid
-        }
-        
-        public var productNotAvailable: String {
-            PMessages.productNotAvailable
-        }
-        
-        public var notAuthorized: String {
-            PMessages.notAuthorized
-        }
-        
-        public var purchasesMayBeRestricted: String {
-            PMessages.purchasesMayBeRestricted
-        }
-        
-        public var cannotMakePayments: String {
-            PMessages.cannotMakePayments
-        }
-        
-        public var storeCommunicationError: String {
-            PMessages.storeCommunicationError
-        }
-        
-        public var restored: String {
-            PMessages.restored
-        }
-        
-        public var nothingToRestore: String {
-            PMessages.nothingToRestore
-        }
-        
-        public var restorationFailed: String {
-            PMessages.restorationFailed
-        }
-        
-        public var error: String {
-            PMessages.error
-        }
-        
-        public var info: String {
-            PMessages.info
-        }
-        
-        public var somethingWentWrong: String {
-            PMessages.somethingWentWrong
-        }
+        public var verificationFailed = "Receipt verification failed"
+        public var wrongProductType = "Receipt verification failed. Wrong product type."
+        public var verificationNetworkProblem = "Network error while verifying receipt"
+        public var noReceiptData = "Receipt verification failed. No receipt data. \(PMessages.tryAgain)."
+        public var productPurchased = PMessages.productPurchased
+        public var unknownProductState = PMessages.unknownProductState
+        public var paymentInvalid = PMessages.paymentInvalid
+        public var productNotAvailable = PMessages.productNotAvailable
+        public var notAuthorized = PMessages.notAuthorized
+        public var purchasesMayBeRestricted = PMessages.purchasesMayBeRestricted
+        public var cannotMakePayments = PMessages.cannotMakePayments
+        public var storeCommunicationError = PMessages.storeCommunicationError
+        public var restored = PMessages.restored
+        public var nothingToRestore = PMessages.nothingToRestore
+        public var restorationFailed = PMessages.restorationFailed
+        public var error = PMessages.error
+        public var info = PMessages.info
+        public var somethingWentWrong = PMessages.somethingWentWrong
         
         public init() { }
     }
