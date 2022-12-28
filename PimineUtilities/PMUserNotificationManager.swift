@@ -63,9 +63,7 @@ final public class PMUserNotificationManager {
     
     // MARK: - Public properties
     
-    public static var configuration = Configuration(authorizationOptions: [.alert, .badge, .sound]) {
-        didSet { configure() }
-    }
+    public static var configuration = Configuration(authorizationOptions: [.alert, .badge, .sound])
     
     @UserDefaultsBacked(key: Keys.inAppEnabled, defaultValue: true, storage: storage)
     public static var inAppEnabled: Bool {
@@ -85,13 +83,12 @@ final public class PMUserNotificationManager {
     
     public static func configure() {
         setupObservers()
-        if configuration.requestPermissionsOnLaunch {
-            return requestPermission()
-        }
-        updateNotificationPreferences()
+        configuration.requestPermissionsOnLaunch ?
+            requestPermission() :
+            updateNotificationPreferences()
     }
     
-    public static func requestPermission(silently: Bool = false, result: ((Bool) -> Void)? = nil) {
+    public static func requestPermission(silently: Bool = true, result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.requestAuthorization(options: configuration.authorizationOptions) { (granted, error) in
             if let error = error { PMAlert.show(error: error) }
             self.updateNotificationPreferences(silently: silently) {
