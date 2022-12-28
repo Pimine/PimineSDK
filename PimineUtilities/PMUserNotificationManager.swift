@@ -128,7 +128,7 @@ final public class PMUserNotificationManager {
                 case .denied:
                     self.permissionGranted = false
                     UIApplication.shared.unregisterForRemoteNotifications()
-                    guard !silently else { return }
+                    guard !silently else { break }
                     setupPermissionsManually()
                 case .notDetermined:
                     self.permissionGranted = false
