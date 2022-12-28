@@ -42,16 +42,16 @@ final public class PMUserNotificationManager {
     public struct Configuration {
         let authorizationOptions: UNAuthorizationOptions
         let allowRemoteNotifications: Bool
-        let requestPermissionsOnLaunch: Bool
+        let deferredFirstPermissionRequest: Bool
         
         public init(
             authorizationOptions: UNAuthorizationOptions,
             allowRemoteNotifications: Bool = true,
-            requestPermissionsOnLaunch: Bool = false) {
+            deferredFirstPermissionRequest: Bool = false) {
             
             self.authorizationOptions = authorizationOptions
             self.allowRemoteNotifications = allowRemoteNotifications
-            self.requestPermissionsOnLaunch = requestPermissionsOnLaunch
+            self.deferredFirstPermissionRequest = deferredFirstPermissionRequest
         }
     }
     
@@ -81,19 +81,26 @@ final public class PMUserNotificationManager {
     
     // MARK: - Public methods
     
-    public static func configure() {
+    public static func configure(silently: Bool = true, completion: (() -> Void)? = nil) {
         setupObservers()
-        configuration.requestPermissionsOnLaunch ?
-            requestPermission() :
-            updateNotificationPreferences()
+        
+        if configuration.deferredFirstPermissionRequest {
+            userNotificationCenter.getNotificationSettings { settings in
+                guard case .notDetermined = settings.authorizationStatus else {
+                    requestPermission(silently: silently) { _ in completion?() }
+                    return
+                }
+                updateNotificationPreferences(silently: silently) { _ in completion?() }
+            }
+        } else {
+            requestPermission(silently: silently) { _ in completion?() }
+        }
     }
     
     public static func requestPermission(silently: Bool = true, result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.requestAuthorization(options: configuration.authorizationOptions) { (granted, error) in
             if let error = error { PMAlert.show(error: error) }
-            self.updateNotificationPreferences(silently: silently) {
-                result?(granted)
-            }
+            self.updateNotificationPreferences(silently: silently, result: result)
         }
     }
     
@@ -110,7 +117,7 @@ final public class PMUserNotificationManager {
         updateNotificationPreferences()
     }
     
-    private static func updateNotificationPreferences(silently: Bool = true, completion: (() -> Void)? = nil) {
+    private static func updateNotificationPreferences(silently: Bool = true, result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.getNotificationSettings { (settings) in
             DispatchQueue.main.async {
                 switch settings.authorizationStatus {
@@ -130,11 +137,11 @@ final public class PMUserNotificationManager {
                 case .notDetermined:
                     self.permissionGranted = false
                 case .ephemeral:
-                    break
+                    fatalError("Not supported yet")
                 @unknown default:
                     break
                 }
-                completion?()
+                result?(permissionGranted)
             }
         }
     }
