@@ -34,7 +34,8 @@ public protocol SwiftyStoreInterfaceDelegate: AnyObject {
     
     func productInterfaceController(
         _ controller: SwiftyStore.ProductInterfaceController,
-        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result:  SwiftyStore.CommitPurchaseResult
     )
     
     func productInterfaceController(
@@ -55,7 +56,8 @@ public extension SwiftyStoreInterfaceDelegate {
     
     func productInterfaceController(
         _ controller: SwiftyStore.ProductInterfaceController,
-        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result:  SwiftyStore.CommitPurchaseResult
     ) { }
     
     func productInterfaceController(

@@ -100,8 +100,8 @@ public final class Merchant {
     
     // MARK: - Purchases
     
-    func didCommitPurchase(result: SwiftyStore.CommitPurchaseResult) {
-        delegate?.merchant(self, didCommitPurchaseWith: result)
+    func didCommitPurchase(of product: Product, with result: SwiftyStore.CommitPurchaseResult) {
+        delegate?.merchant(self, didCommitPurchaseOf: product, with: result)
     }
     
     public func verifySubscriptionStatus(

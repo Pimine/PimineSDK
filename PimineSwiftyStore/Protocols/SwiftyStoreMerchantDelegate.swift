@@ -29,7 +29,8 @@ public protocol SwiftyStoreMerchantDelegate: AnyObject {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result: SwiftyStore.CommitPurchaseResult
     )
     
     func merchant(
@@ -56,7 +57,8 @@ public extension SwiftyStoreMerchantDelegate {
     
     func merchant(
         _ merchant: SwiftyStore.Merchant,
-        didCommitPurchaseWith result:  SwiftyStore.CommitPurchaseResult
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result: SwiftyStore.CommitPurchaseResult
     ) { }
     
     func merchant(

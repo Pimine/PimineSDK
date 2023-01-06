@@ -87,13 +87,13 @@ final public class ProductInterfaceController {
             case .error(let error):
                 switch error {
                 case SKError.paymentCancelled:
-                    self.resolvePurchaseTask(with: .failure(.userCancelled))
+                    self.resolvePurchaseTask(of: product, with: .failure(.userCancelled))
                 case SKError.storeProductNotAvailable:
-                    self.resolvePurchaseTask(with: .failure(.purchaseNotAvailable))
+                    self.resolvePurchaseTask(of: product, with: .failure(.purchaseNotAvailable))
                 case SKError.paymentNotAllowed:
-                    self.resolvePurchaseTask(with: .failure(.paymentNotAllowed))
+                    self.resolvePurchaseTask(of: product, with: .failure(.paymentNotAllowed))
                 default:
-                    self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                    self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
                 }
             }
         }
@@ -113,16 +113,16 @@ final public class ProductInterfaceController {
             merchant.verifyPurchase(product) { (verifyPurchaseResult) in
                 switch verifyPurchaseResult {
                 case .purchased:
-                    self.resolvePurchaseTask(with: .success(purchaseDetails))
+                    self.resolvePurchaseTask(of: product, with: .success(purchaseDetails))
                 case .notPurchased:
                     let error = self.messageProvider.somethingWentWrong
-                    self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                    self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
                 case .failed(let reason):
                     switch reason {
                     case .generalError(let error):
-                        self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                        self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
                     case .receiptError(let error):
-                        self.resolvePurchaseTask(with: .failure(.receiptError(error)))
+                        self.resolvePurchaseTask(of: product, with: .failure(.receiptError(error)))
                     }
                 }
             }
@@ -130,16 +130,16 @@ final public class ProductInterfaceController {
             merchant.verifySubscription(product) { (verifySubscriptionResult) in
                 switch verifySubscriptionResult {
                 case .purchased:
-                    self.resolvePurchaseTask(with: .success(purchaseDetails))
+                    self.resolvePurchaseTask(of: product, with: .success(purchaseDetails))
                 case .expired, .notPurchased:
                     let error = self.messageProvider.somethingWentWrong
-                    self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                    self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
                 case .failed(let reason):
                     switch reason {
                     case .generalError(let error):
-                        self.resolvePurchaseTask(with: .failure(.genericProblem(error)))
+                        self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
                     case .receiptError(let error):
-                        self.resolvePurchaseTask(with: .failure(.receiptError(error)))
+                        self.resolvePurchaseTask(of: product, with: .failure(.receiptError(error)))
                     }
                 }
             }
@@ -161,9 +161,9 @@ final public class ProductInterfaceController {
         delegate?.productInterfaceController(self, didChangeFetchingStateTo: state)
     }
     
-    private func resolvePurchaseTask(with result: CommitPurchaseResult) {
-        delegate?.productInterfaceController(self, didCommitPurchaseWith: result)
-        merchant.didCommitPurchase(result: result)
+    private func resolvePurchaseTask(of product: Product, with result: CommitPurchaseResult) {
+        delegate?.productInterfaceController(self, didCommitPurchaseOf: product, with: result)
+        merchant.didCommitPurchase(of: product, with: result)
     }
     
     private func resolveRestoreTask(with result: RestorePurchasesResult) {
