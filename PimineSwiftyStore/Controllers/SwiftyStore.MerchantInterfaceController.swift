@@ -7,6 +7,10 @@ open class MerchantInterfaceController: RestoringInterfaceController {
     
     // MARK: - Public API
     
+    open func fetchDataIfNecessary() {
+        productInterfaceController.fetchDataIfNecessary()
+    }
+    
     open func purchaseProduct(_ product: Product) {
         SVProgressHUD.show()
         productInterfaceController.purchaseProduct(product)
