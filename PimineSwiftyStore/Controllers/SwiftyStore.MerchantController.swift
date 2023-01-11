@@ -51,19 +51,22 @@ open class MerchantController: RestoringController {
         guard case let .failure(error) = result else { return }
         
         switch error {
-        case .userCancelled:
-            break
+        case .storeKitError(let skError):
+            switch skError.code {
+            case .paymentCancelled:
+                break
+            case .storeProductNotAvailable:
+                PMAlert.show(message: messageProvider.productNotAvailable)
+            case .paymentNotAllowed:
+                PMAlert.show(message: messageProvider.cannotMakePayments)
+            case .paymentInvalid:
+                PMAlert.show(message: messageProvider.paymentInvalid)
+            default:
+                let errorCode = skError.errorCode
+                PMAlert.show(message: "\(messageProvider.storeCommunicationError) (Error code: \(errorCode))")
+            }
         case .receiptError(let error):
             handleReceiptError(error)
-        case .purchaseNotAvailable:
-            PMAlert.show(message: messageProvider.productNotAvailable)
-        case .paymentNotAllowed:
-            PMAlert.show(message: messageProvider.cannotMakePayments)
-        case .paymentInvalid:
-            PMAlert.show(message: messageProvider.paymentInvalid)
-        case .genericProblem(let error) where error is SKError:
-            let errorCode = (error as! SKError).errorCode
-            PMAlert.show(message: "\(messageProvider.storeCommunicationError) (Error code: \(errorCode))")
         case .genericProblem(let error):
             PMAlert.show(message: "\(messageProvider.error). \(error.localizedDescription)")
         }

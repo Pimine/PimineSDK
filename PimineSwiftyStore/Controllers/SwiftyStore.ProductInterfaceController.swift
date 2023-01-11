@@ -80,21 +80,12 @@ final public class ProductInterfaceController {
     }
     
     public func purchaseProduct(_ product: Product) {
-        SwiftyStoreKit.purchaseProduct(product.identifier) { (result) in
+        SwiftyStoreKit.purchaseProduct(product.identifier) { result in
             switch result {
             case .success(let purchaseDetails):
                 self.verifyPurchase(product: product, purchaseDetails: purchaseDetails)
             case .error(let error):
-                switch error {
-                case SKError.paymentCancelled:
-                    self.resolvePurchaseTask(of: product, with: .failure(.userCancelled))
-                case SKError.storeProductNotAvailable:
-                    self.resolvePurchaseTask(of: product, with: .failure(.purchaseNotAvailable))
-                case SKError.paymentNotAllowed:
-                    self.resolvePurchaseTask(of: product, with: .failure(.paymentNotAllowed))
-                default:
-                    self.resolvePurchaseTask(of: product, with: .failure(.genericProblem(error)))
-                }
+                self.resolvePurchaseTask(of: product, with: .failure(.storeKitError(error)))
             }
         }
     }
