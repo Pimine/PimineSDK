@@ -82,7 +82,8 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     ) { }
     
     open func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didCommitPurchaseWith result: CommitPurchaseResult
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result: SwiftyStore.CommitPurchaseResult
     ) { }
 }}

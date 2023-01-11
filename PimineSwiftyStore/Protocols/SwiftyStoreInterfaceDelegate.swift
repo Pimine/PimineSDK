@@ -42,7 +42,6 @@ public protocol SwiftyStoreInterfaceDelegate: AnyObject {
         _ controller: SwiftyStore.ProductInterfaceController,
         didRestorePurchasesWith result:  SwiftyStore.RestorePurchasesResult
     )
-    
 }
 
 // MARK: - Default implementation

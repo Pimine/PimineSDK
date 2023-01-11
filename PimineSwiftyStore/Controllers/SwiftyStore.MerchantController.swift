@@ -44,8 +44,9 @@ open class MerchantController: RestoringController {
     }
     
     open override func productInterfaceController(
-        _ controller: ProductInterfaceController,
-        didCommitPurchaseWith result: CommitPurchaseResult
+        _ controller: SwiftyStore.ProductInterfaceController,
+        didCommitPurchaseOf product: SwiftyStore.Product,
+        with result: SwiftyStore.CommitPurchaseResult
     ) {
         SVProgressHUD.dismiss()
         guard case let .failure(error) = result else { return }
