@@ -36,10 +36,10 @@ extension SwiftyStore {
         public var productPurchased = PMessages.productPurchased
         public var unknownProductState = PMessages.unknownProductState
         public var paymentInvalid = PMessages.paymentInvalid
-        public var productNotAvailable = PMessages.productNotAvailable
+        public var storeProductNotAvailable = PMessages.productNotAvailable
         public var notAuthorized = PMessages.notAuthorized
         public var purchasesMayBeRestricted = PMessages.purchasesMayBeRestricted
-        public var cannotMakePayments = PMessages.cannotMakePayments
+        public var paymentNotAllowed = PMessages.cannotMakePayments
         public var storeCommunicationError = PMessages.storeCommunicationError
         public var restored = PMessages.restored
         public var nothingToRestore = PMessages.nothingToRestore

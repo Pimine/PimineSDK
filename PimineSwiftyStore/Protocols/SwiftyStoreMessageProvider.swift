@@ -34,10 +34,10 @@ public protocol SwiftyStoreMessageProvider {
     var productPurchased: String { get }
     var unknownProductState: String { get }
     var paymentInvalid: String { get }
-    var productNotAvailable: String { get }
+    var storeProductNotAvailable: String { get }
     var notAuthorized: String { get }
     var purchasesMayBeRestricted: String { get }
-    var cannotMakePayments: String { get }
+    var paymentNotAllowed: String { get }
     var storeCommunicationError: String { get }
     var restored: String { get }
     var nothingToRestore: String { get }

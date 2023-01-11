@@ -57,9 +57,9 @@ open class MerchantController: RestoringController {
             case .paymentCancelled:
                 break
             case .storeProductNotAvailable:
-                PMAlert.show(message: messageProvider.productNotAvailable)
+                PMAlert.show(message: messageProvider.storeProductNotAvailable)
             case .paymentNotAllowed:
-                PMAlert.show(message: messageProvider.cannotMakePayments)
+                PMAlert.show(message: messageProvider.paymentNotAllowed)
             case .paymentInvalid:
                 PMAlert.show(message: messageProvider.paymentInvalid)
             default:
