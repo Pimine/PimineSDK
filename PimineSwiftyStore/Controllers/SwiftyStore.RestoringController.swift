@@ -32,8 +32,11 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     
     // MARK: - Properties
     
-    public let productInterfaceController: SwiftyStore.ProductInterfaceController
-    public let messageProvider: SwiftyStoreMessageProvider
+    private let restoringInterfaceController: SwiftyStore.RestoringInterfaceController
+    
+    public var messageProvider: SwiftyStoreMessageProvider {
+        restoringInterfaceController.messageProvider
+    }
     
     // MARK: - Initialization
     
@@ -42,10 +45,13 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
         merchant: Merchant,
         messageProvider: SwiftyStoreMessageProvider = DefaultMessageProvider()
     ) {
-        self.productInterfaceController = ProductInterfaceController(products: products, with: merchant)
-        self.messageProvider = messageProvider
+        self.restoringInterfaceController = RestoringInterfaceController(
+            products: products,
+            with: merchant,
+            messageProvider: messageProvider
+        )
         super.init(nibName: nil, bundle: nil)
-        productInterfaceController.delegate = self
+        self.restoringInterfaceController.delegate = self
     }
     
     required public init?(coder: NSCoder) {
@@ -55,8 +61,7 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     // MARK: - Public API
     
     open func restorePurchases() {
-        SVProgressHUD.show()
-        productInterfaceController.restorePurchases()
+        restoringInterfaceController.restorePurchases()
     }
     
     // MARK: - SwiftyStoreInterfaceDelegate
@@ -64,17 +69,7 @@ open class RestoringController: UIViewController, SwiftyStoreInterfaceDelegate {
     open func productInterfaceController(
         _ controller: ProductInterfaceController,
         didRestorePurchasesWith result: RestorePurchasesResult
-    ) {
-        SVProgressHUD.dismiss()
-        switch result {
-        case .success(let products) where products.count > 0:
-            PMAlert.show(title: messageProvider.info, message: messageProvider.restored)
-        case .success:
-            PMAlert.show(message: messageProvider.nothingToRestore)
-        case .failure(let error):
-            PMAlert.show(error: error)
-        }
-    }
+    ) { }
     
     open func productInterfaceController(
         _ controller: ProductInterfaceController,

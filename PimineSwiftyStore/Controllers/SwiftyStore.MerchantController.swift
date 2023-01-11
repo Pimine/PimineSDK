@@ -31,16 +31,31 @@ import PimineUtilities
 extension SwiftyStore {
 open class MerchantController: RestoringController {
     
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        productInterfaceController.fetchDataIfNecessary()
+    // MARK: - Properties
+    
+    public let merchantInterfaceController: SwiftyStore.MerchantInterfaceController
+    
+    // MARK: - Initialization
+    
+    public override init(
+        products: Set<Product>, with
+        merchant: Merchant,
+        messageProvider: SwiftyStoreMessageProvider = DefaultMessageProvider()
+    ) {
+        self.merchantInterfaceController = MerchantInterfaceController(products: products, with: merchant, messageProvider: messageProvider)
+        super.init(products: products, with: merchant, messageProvider: messageProvider)
+        self.merchantInterfaceController.delegate = self
+    }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("MerchantController do not support Storyboards. Please, use init(merchant:products:) instead.")
     }
     
     // MARK: - Public API
     
     open func purchaseProduct(_ product: Product) {
         SVProgressHUD.show()
-        productInterfaceController.purchaseProduct(product)
+        merchantInterfaceController.purchaseProduct(product)
     }
     
     open override func productInterfaceController(
@@ -87,6 +102,6 @@ open class MerchantController: RestoringController {
     }
     
     public func price(for product: Product) -> Price? {
-        productInterfaceController.price(for: product)
+        merchantInterfaceController.price(for: product)
     }
 }}

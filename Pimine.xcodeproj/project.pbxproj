@@ -16,6 +16,8 @@
 		EB1FE93E252DFD1500B9CD1A /* Imitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1FE93D252DFD1500B9CD1A /* Imitable.swift */; };
 		EB202FC6250F9E0600422975 /* CodableUserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB202FC5250F9E0600422975 /* CodableUserDefaultsBacked.swift */; };
 		EB25EB372614BA3E0026CC7E /* EncodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */; };
+		EB30C968296F0593007EBDA9 /* SwiftyStore.RestoringInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C967296F0593007EBDA9 /* SwiftyStore.RestoringInterfaceController.swift */; };
+		EB30C96F296F0808007EBDA9 /* SwiftyStore.MerchantInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C96E296F0808007EBDA9 /* SwiftyStore.MerchantInterfaceController.swift */; };
 		EB361C42250F6DCF008166AF /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */; };
 		EB3E206024F6DE4D00782480 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3E205E24F6DE4D00782480 /* UITableViewExtensions.swift */; };
 		EB4906C026664CE6004B6755 /* PimineUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E593824E1CD1A0015EA39 /* PimineUtilities.framework */; platformFilter = ios; };
@@ -240,6 +242,8 @@
 		EB25EB362614BA3E0026CC7E /* EncodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtensions.swift; sourceTree = "<group>"; };
 		EB2604FC24C0AB5700BDF89F /* RevenueCat.MerchantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.MerchantController.swift; sourceTree = "<group>"; };
 		EB2604FE24C0AF8F00BDF89F /* RevenueCat.Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.Price.swift; sourceTree = "<group>"; };
+		EB30C967296F0593007EBDA9 /* SwiftyStore.RestoringInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.RestoringInterfaceController.swift; sourceTree = "<group>"; };
+		EB30C96E296F0808007EBDA9 /* SwiftyStore.MerchantInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyStore.MerchantInterfaceController.swift; sourceTree = "<group>"; };
 		EB361C41250F6DCF008166AF /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
 		EB36FCF724C0683300A978D6 /* RevenueCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.swift; sourceTree = "<group>"; };
 		EB36FCF924C06D5300A978D6 /* RevenueCat.SubscriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueCat.SubscriptionInterfaceController.swift; sourceTree = "<group>"; };
@@ -609,6 +613,8 @@
 			children = (
 				EB0AAD2F24C75A590016E924 /* SwiftyStore.Merchant.swift */,
 				EBE9ADDE24C76BDB00F1FDAB /* SwiftyStore.ProductInterfaceController.swift */,
+				EB30C967296F0593007EBDA9 /* SwiftyStore.RestoringInterfaceController.swift */,
+				EB30C96E296F0808007EBDA9 /* SwiftyStore.MerchantInterfaceController.swift */,
 				EB7917B924C8D6BB00C50CF3 /* SwiftyStore.RestoringController.swift */,
 				EBDBD83424C9DEB60009F9D5 /* SwiftyStore.MerchantController.swift */,
 			);
@@ -1410,6 +1416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB30C96F296F0808007EBDA9 /* SwiftyStore.MerchantInterfaceController.swift in Sources */,
 				EB8E59B124E1D1070015EA39 /* SwiftyStoreMerchantDelegate.swift in Sources */,
 				EB8E59B924E1D1160015EA39 /* SwiftyStore.MerchantController.swift in Sources */,
 				EB8E59B724E1D1160015EA39 /* SwiftyStore.ProductInterfaceController.swift in Sources */,
@@ -1417,6 +1424,7 @@
 				EB8E59B624E1D1160015EA39 /* SwiftyStore.Merchant.swift in Sources */,
 				EB8E59B824E1D1160015EA39 /* SwiftyStore.RestoringController.swift in Sources */,
 				EB9F0A34258E5BC900F4BA2D /* SwiftyStore.VerifyPurchaseResult.swift in Sources */,
+				EB30C968296F0593007EBDA9 /* SwiftyStore.RestoringInterfaceController.swift in Sources */,
 				EB8E59B224E1D10C0015EA39 /* SwiftyStore.Typealiases.swift in Sources */,
 				EB8E59B424E1D10C0015EA39 /* SwiftyStore.Price.swift in Sources */,
 				EB8E59BA24E1D1190015EA39 /* SwiftyStore.swift in Sources */,
