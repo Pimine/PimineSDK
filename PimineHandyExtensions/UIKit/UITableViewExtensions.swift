@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(!os(watchOS))
 import UIKit
 
 public extension UITableView {
@@ -38,3 +39,5 @@ public extension UITableView {
         return headerViews
     }
 }
+
+#endif

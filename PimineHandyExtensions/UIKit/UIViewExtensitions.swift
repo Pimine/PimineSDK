@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(!os(watchOS))
 import UIKit
 
 // MARK: Protocol conformance
@@ -89,3 +90,4 @@ public extension UIView {
     }
 }
 
+#endif
