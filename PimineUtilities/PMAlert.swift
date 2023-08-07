@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if !os(watchOS)
 import UIKit
 
 @available(iOSApplicationExtension, unavailable)
@@ -45,3 +46,5 @@ public struct PMAlert {
         show(title: title, message: error.localizedDescription, handler: handler)
     }
 }
+
+#endif

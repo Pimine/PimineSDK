@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   }
   
   s.ios.deployment_target = '13.0'
+  s.watchos.deployment_target = '10.0'
 
   s.swift_version   = ['5.2', '5.3']
   s.default_subspec = 'Core'

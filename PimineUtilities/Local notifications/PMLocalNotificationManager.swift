@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(canImport(NotificationCenter))
 import NotificationCenter
 
 public final class PMLocalNotificationManager {
@@ -83,3 +84,4 @@ public final class PMLocalNotificationManager {
     }
 }
 
+#endif

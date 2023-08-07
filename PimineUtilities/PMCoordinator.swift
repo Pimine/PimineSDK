@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(!os(watchOS))
 import UIKit
 
 protocol PMCoordinatorDelegate: AnyObject {
@@ -93,3 +94,5 @@ public extension PMCoordinator {
         lhs === rhs
     }
 }
+
+#endif

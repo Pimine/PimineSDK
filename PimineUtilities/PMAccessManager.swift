@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(canImport(Photos))
 import Photos
 import UIKit
 
@@ -122,3 +123,4 @@ public final class PMAccessManager {
         UIApplication.shared.topViewController?.present(alert, animated: true)
     }
 }
+#endif

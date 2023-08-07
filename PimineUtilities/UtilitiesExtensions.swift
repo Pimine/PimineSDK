@@ -25,6 +25,7 @@
 
 import UIKit
 
+#if(!os(watchOS))
 public extension UIApplication {
     
     var keyWindow: UIWindow? {
@@ -54,6 +55,8 @@ public extension UIApplication {
         return base
     }
 }
+
+#endif
 
 extension String: LocalizedError {
     public var errorDescription: String? { self }

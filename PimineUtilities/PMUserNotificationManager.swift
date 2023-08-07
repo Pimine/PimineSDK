@@ -23,6 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#if(!os(watchOS))
 import UIKit
 import UserNotifications
 
@@ -166,3 +167,5 @@ final public class PMUserNotificationManager {
         UIApplication.shared.topViewController?.present(alert, animated: true)
     }
 }
+
+#endif
