@@ -56,9 +56,10 @@ public final class PMLocalNotificationManager {
     
     public static func scheduleNotifications(
         _ notifications: [PMLocalNotification],
-        result: ((Result<Void, Error>) -> Void)? = nil
+        result: ((Result<Set<String>, Error>) -> Void)? = nil
     ) {
         let worker = DispatchGroup()
+        var identifiers = Set<String>()
         var requestError: Error?
         
         for notification in notifications {
@@ -74,6 +75,7 @@ public final class PMLocalNotificationManager {
             
             let identifier = UUID().uuidString
             pendingNotificationRequestIdentifiers.insert(identifier)
+            identifiers.insert(identifier)
             
             let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
             notificationCenter.add(request) { error in
@@ -86,7 +88,7 @@ public final class PMLocalNotificationManager {
         
         worker.notify(queue: .main) {
             requestError.isNil ?
-                result?(.success(())) :
+                result?(.success(identifiers)) :
                 result?(.failure(requestError!))
         }
     }
