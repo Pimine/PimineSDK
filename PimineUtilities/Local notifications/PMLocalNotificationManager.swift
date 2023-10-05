@@ -35,15 +35,23 @@ public final class PMLocalNotificationManager {
     // MARK: Properties
     
     @UserDefaultsBacked(key: Keys.pendingNotificationRequestIdentifiers, defaultValue: [])
-    public private(set) static var pendingNotificationRequestIdentifiers: [String]
+    public private(set) static var pendingNotificationRequestIdentifiers: Set<String>
     
     private static let notificationCenter = UNUserNotificationCenter.current()
     
     // MARK: Methods
     
     public static func cancelPendingNotificationRequests() {
-        notificationCenter.removePendingNotificationRequests(withIdentifiers: pendingNotificationRequestIdentifiers)
-        pendingNotificationRequestIdentifiers.removeAll()
+        cancelPendingNotificationRequests(with: pendingNotificationRequestIdentifiers)
+    }
+    
+    public static func cancelPendingNotificationRequests(with identifiers: Set<String>) {
+        notificationCenter.removePendingNotificationRequests(
+            withIdentifiers: Array(identifiers)
+        )
+        identifiers.forEach {
+            pendingNotificationRequestIdentifiers.remove($0)
+        }
     }
     
     public static func scheduleNotifications(
@@ -65,7 +73,7 @@ public final class PMLocalNotificationManager {
             let trigger = notification.trigger.notificationTrigger
             
             let identifier = UUID().uuidString
-            pendingNotificationRequestIdentifiers.append(identifier)
+            pendingNotificationRequestIdentifiers.insert(identifier)
             
             let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
             notificationCenter.add(request) { error in
