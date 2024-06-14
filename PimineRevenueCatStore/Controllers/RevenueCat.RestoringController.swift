@@ -75,11 +75,11 @@ open class RestoringController: UIViewController, RevenueCatInterfaceDelegate {
         SVProgressHUD.dismiss()
         switch result {
         case .success(let products) where products.count > 0:
-            PMAlert.show(message: PMessages.restored)
+            PMAlert.show(title: PMessages.info, message: PMessages.restored)
         case .success:
-            PMAlert.show(message: PMessages.nothingToRestore)
+            PMAlert.show(title: PMessages.info, message: PMessages.nothingToRestore)
         case .failure(let error):
-            PMAlert.show(error: error)
+            PMAlert.show(title: PMessages.error, error: error)
         }
     }
     

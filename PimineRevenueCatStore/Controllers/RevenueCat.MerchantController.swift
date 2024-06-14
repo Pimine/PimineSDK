@@ -57,7 +57,7 @@ open class MerchantController: RestoringController {
         case .userCancelled:
             break
         case .genericProblem(let error), .revenueCatError(let error):
-            PMAlert.show(error: error)
+            PMAlert.show(title: PMessages.error, error: error)
         }
     }
 }}

@@ -72,19 +72,25 @@ open class MerchantController: RestoringController {
             case .paymentCancelled:
                 break
             case .storeProductNotAvailable:
-                PMAlert.show(message: messageProvider.storeProductNotAvailable)
+                PMAlert.show(title: messageProvider.error, message: messageProvider.storeProductNotAvailable)
             case .paymentNotAllowed:
-                PMAlert.show(message: messageProvider.paymentNotAllowed)
+                PMAlert.show(title: messageProvider.error, message: messageProvider.paymentNotAllowed)
             case .paymentInvalid:
-                PMAlert.show(message: messageProvider.paymentInvalid)
+                PMAlert.show(title: messageProvider.error, message: messageProvider.paymentInvalid)
             default:
                 let errorCode = skError.errorCode
-                PMAlert.show(message: "\(messageProvider.storeCommunicationError) (Error code: \(errorCode))")
+                PMAlert.show(
+                    title: messageProvider.error,
+                    message: "\(messageProvider.storeCommunicationError) (Error code: \(errorCode))"
+                )
             }
         case .receiptError(let error):
             handleReceiptError(error)
         case .genericProblem(let error):
-            PMAlert.show(message: "\(messageProvider.error). \(error.localizedDescription)")
+            PMAlert.show(
+                title: messageProvider.error,
+                message: "\(messageProvider.error). \(error.localizedDescription)"
+            )
         }
     }
     
@@ -93,11 +99,20 @@ open class MerchantController: RestoringController {
     private func handleReceiptError(_ error: ReceiptError) {
         switch error {
         case .noReceiptData:
-            PMAlert.show(message: messageProvider.noReceiptData)
+            PMAlert.show(
+                title: messageProvider.error,
+                message: messageProvider.noReceiptData
+            )
         case .networkError(error: let error):
-            PMAlert.show(message: "\(messageProvider.verificationNetworkProblem): \(error.localizedDescription)")
+            PMAlert.show(
+                title: messageProvider.error,
+                message: "\(messageProvider.verificationNetworkProblem): \(error.localizedDescription)"
+            )
         default:
-            PMAlert.show(message: "\(messageProvider.verificationFailed): \(error.localizedDescription)")
+            PMAlert.show(
+                title: messageProvider.error, 
+                message: "\(messageProvider.verificationFailed): \(error.localizedDescription)"
+            )
         }
     }
     

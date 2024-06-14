@@ -48,9 +48,9 @@ open class RestoringInterfaceController: SwiftyStoreInterfaceDelegate {
         case .success(let products) where products.count > 0:
             PMAlert.show(title: messageProvider.info, message: messageProvider.restored)
         case .success:
-            PMAlert.show(message: messageProvider.nothingToRestore)
+            PMAlert.show(title: messageProvider.info, message: messageProvider.nothingToRestore)
         case .failure(let error):
-            PMAlert.show(error: error)
+            PMAlert.show(title: messageProvider.error, error: error)
         }
     }
     
