@@ -71,6 +71,10 @@ public final class PMLocalNotificationManager {
             content.userInfo = notification.content.userInfo
             content.sound = .default
             
+            content.attachments = notification.content.attachments.compactMap {
+                try? UNNotificationAttachment(identifier: $0.identifier, url: $0.url)
+            }
+            
             let trigger = notification.trigger.notificationTrigger
             
             let identifier = UUID().uuidString

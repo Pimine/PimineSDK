@@ -26,20 +26,42 @@
 #if(canImport(NotificationCenter))
 import NotificationCenter
 
+public struct PMNotificationAttachment: Codable {
+    
+    // MARK: Properties
+    
+    public let identifier: String
+    public let url: URL
+    
+    // MARK: Initialization
+    
+    public init(identifier: String, url: URL) {
+        self.identifier = identifier
+        self.url = url
+    }
+}
+
 public struct PMLocalNotificationContent: Codable {
     
     // MARK: Properties
     
     public let title: String
     public let body: String
+    public let attachments: [PMNotificationAttachment]
     public let userInfo: [String: String]
     
     // MARK: Initialization
     
-    public init(title: String, body: String, userInfo: [String: String]) {
+    public init(
+        title: String,
+        body: String,
+        userInfo: [String: String],
+        attachments: [PMNotificationAttachment] = []
+    ) {
         self.title = title
         self.body = body
         self.userInfo = userInfo
+        self.attachments = attachments
     }
 }
 
