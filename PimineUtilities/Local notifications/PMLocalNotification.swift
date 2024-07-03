@@ -55,13 +55,13 @@ public struct PMLocalNotificationContent: Codable {
     public init(
         title: String,
         body: String,
-        userInfo: [String: String],
-        attachments: [PMNotificationAttachment] = []
+        attachments: [PMNotificationAttachment] = [],
+        userInfo: [String: String] = [:]
     ) {
         self.title = title
         self.body = body
-        self.userInfo = userInfo
         self.attachments = attachments
+        self.userInfo = userInfo
     }
 }
 
