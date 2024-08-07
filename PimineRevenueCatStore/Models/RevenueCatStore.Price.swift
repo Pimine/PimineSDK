@@ -1,5 +1,5 @@
 //
-//  RevenueCat.swift
+//  RevenueCat.Price.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -25,5 +25,30 @@
 
 import Foundation
 
-/// Namespace
-public struct RevenueCat { }
+extension RevenueCatStore {
+public struct Price {
+    
+    // MARK: - Properties
+    
+    public var price: NSDecimalNumber
+    public var locale: Locale
+    
+    // MARK: - Initialization
+    
+    public init(price: NSDecimalNumber, locale: Locale) {
+        self.price = price
+        self.locale = locale
+    }
+}}
+
+// MARK: - CustomStringConvertible
+
+extension RevenueCatStore.Price: CustomStringConvertible {
+    
+    public var description: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = locale
+        return formatter.string(from: price) ?? ""
+    }
+}

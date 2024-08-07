@@ -26,7 +26,6 @@
 import Foundation
 import PimineUtilities
 import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 public final class PMFirebaseUtilities {
     

@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Pimine",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "Pimine",
@@ -53,12 +53,11 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", .upToNextMajor(from: "5.2.0")),
-        .package(url: "https://github.com/Pimine/SVProgressHUD", .branch("master")),
-        .package(url: "https://github.com/bizz84/SwiftyStoreKit.git", .upToNextMajor(from: "0.16.1")),
-        .package(name: "Purchases", url: "https://github.com/RevenueCat/purchases-ios.git", .upToNextMajor(from: "3.10.3")),
-        .package(name: "Realm", url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "10.6.0")),
-        .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "8.0.0"))
+        .package(url: "https://github.com/Pimine/SVProgressHUD", branch: "master"),
+        .package(url: "https://github.com/bizz84/SwiftyStoreKit.git", .upToNextMajor(from: "0.16.0")),
+        .package(url: "https://github.com/RevenueCat/purchases-ios.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "10.0.0")),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk", .upToNextMajor(from: "11.0.0"))
     ],
     targets: [
         
@@ -86,10 +85,7 @@ let package = Package(
         
         .target(
             name: "PimineHandyExtensions",
-            dependencies: [
-                "PimineUtilities",
-                "SwifterSwift"
-            ],
+            dependencies: ["PimineUtilities"],
             path: "PimineHandyExtensions",
             exclude: ["Support files/Info.plist"]
         ),
@@ -101,7 +97,7 @@ let package = Package(
             dependencies: [
                 "PimineUtilities",
                 "SVProgressHUD",
-                "Purchases"
+                .product(name: "RevenueCat", package: "purchases-ios")
             ],
             path: "PimineRevenueCatStore",
             exclude: ["Support files/Info.plist"]
@@ -133,7 +129,7 @@ let package = Package(
         .target(
             name: "PimineDatabase",
             dependencies: [
-                .product(name: "RealmSwift", package: "Realm")
+                .product(name: "RealmSwift", package: "realm-cocoa")
             ],
             path: "PimineDatabase",
             exclude: ["Support files/Info.plist"]
@@ -153,8 +149,7 @@ let package = Package(
             name: "PimineFirebase",
             dependencies: [
                 "PimineUtilities",
-                .product(name: "FirebaseFirestore", package: "Firebase"),
-                .product(name: "FirebaseFirestoreSwift-Beta", package: "Firebase")
+                .product(name: "FirebaseFirestore", package: "firebase-ios-sdk")
             ],
             path: "PimineFirebase",
             exclude: ["Support files/Info.plist"]

@@ -23,19 +23,20 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
+import RevenueCat
 import PimineUtilities
+import StoreKit
 
-extension RevenueCat {
+extension RevenueCatStore {
 final public class SubscriptionInterfaceController {
     
     // MARK: - Public properties
     
-    public weak var delegate: RevenueCatInterfaceDelegate?
+    public weak var delegate: RevenueCatStoreInterfaceDelegate?
     
-    public var offering: Purchases.Offering?
+    public var offering: Offering?
     
-    public var availablePackages: [Purchases.Package] {
+    public var availablePackages: [Package] {
         offering?.availablePackages ?? []
     }
 
@@ -47,7 +48,7 @@ final public class SubscriptionInterfaceController {
     
     public func fetchOffering() {
         changeFetchingState(to: .loading)
-        Purchases.shared.offerings { (offerings, error) in
+        Purchases.shared.getOfferings { (offerings, error) in
             if let error = error {
                 self.changeFetchingState(to: .failed(.revenueCatError(error)))
             }
@@ -62,7 +63,7 @@ final public class SubscriptionInterfaceController {
     }
     
     public func restorePurchases() {
-        Purchases.shared.restoreTransactions { (purchaserInfo, error) in
+        Purchases.shared.restorePurchases { (purchaserInfo, error) in
             if let error = error {
                 self.resolveRestoreTask(with: .failure(error))
             }
@@ -71,7 +72,7 @@ final public class SubscriptionInterfaceController {
         }
     }
     
-    public func purchasePackage(type: Purchases.PackageType) {
+    public func purchasePackage(type: PackageType) {
         switch packageState(for: type) {
         case .unknown:
             let error = PMGeneralError(message: PMessages.unknownProductState)
@@ -86,13 +87,13 @@ final public class SubscriptionInterfaceController {
     
     // MARK: - Private API
     
-    private func purchasePackage(_ package: Purchases.Package) {
-        Purchases.shared.purchasePackage(package) { (transaction, purchaserInfo, error, userCanceled) in
+    private func purchasePackage(_ package: Package) {
+        Purchases.shared.purchase(package: package) { transaction, purchaserInfo, error, userCanceled in
             if userCanceled {
                 self.resolvePurchaseTask(with: .failure(.userCancelled))
                 return
             }
-            guard let transaction = transaction else { return }
+            guard let transaction = transaction?.sk1Transaction else { return }
             let result = CommitPurchaseSuccess(transaction: transaction, package: package)
             self.resolvePurchaseTask(with: .success(result))
         }
@@ -100,7 +101,7 @@ final public class SubscriptionInterfaceController {
     
     // MARK: - Helpers
     
-    public func packageState(for packageType: Purchases.PackageType) -> PackageState {
+    public func packageState(for packageType: PackageType) -> PackageState {
         if offering.isNil { return .unknown }
         
         guard let package = availablePackages.first(where: { $0.packageType == packageType }) else {
@@ -109,15 +110,13 @@ final public class SubscriptionInterfaceController {
         return .purchasable(package)
     }
     
-    public func packagePrice(for packageType: Purchases.PackageType) -> Price? {
+    public func packagePrice(for packageType: PackageType) -> String? {
         switch packageState(for: packageType) {
         case .unknown, .packageUnavailable:
             return nil
         case .purchasable(let purchasablePackage):
-            let product = purchasablePackage.product
-            let price = product.price
-            let locale = product.priceLocale
-            return Price(price: price, locale: locale)
+            let product = purchasablePackage.storeProduct
+            return product.localizedPriceString
         }
     }
     
@@ -136,16 +135,16 @@ final public class SubscriptionInterfaceController {
 
 // MARK: - RestorePurchases
 
-public extension RevenueCat.SubscriptionInterfaceController {
+public extension RevenueCatStore.SubscriptionInterfaceController {
     
     typealias RestorePurchasesResult = Swift.Result<Set<String>, Error>
 }
 
 // MARK: - CommitPurchase
 
-public extension RevenueCat.SubscriptionInterfaceController {
+public extension RevenueCatStore.SubscriptionInterfaceController {
     
-    typealias CommitPurchaseSuccess = (transaction: SKPaymentTransaction, package: Purchases.Package)
+    typealias CommitPurchaseSuccess = (transaction: SKPaymentTransaction, package: Package)
     
     typealias CommitPurchaseResult = Swift.Result<CommitPurchaseSuccess, CommitPurchaseError>
     
@@ -158,18 +157,18 @@ public extension RevenueCat.SubscriptionInterfaceController {
 
 // MARK: - ProductState
 
-public extension RevenueCat.SubscriptionInterfaceController {
+public extension RevenueCatStore.SubscriptionInterfaceController {
     
     enum PackageState : Equatable {
         case unknown
-        case purchasable(Purchases.Package)
+        case purchasable(RevenueCat.Package)
         case packageUnavailable
     }
 }
 
 // MARK: - FetchingState
 
-public extension RevenueCat.SubscriptionInterfaceController {
+public extension RevenueCatStore.SubscriptionInterfaceController {
     
     enum FetchingState {
         case loading

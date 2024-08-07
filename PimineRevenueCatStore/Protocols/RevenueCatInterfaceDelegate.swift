@@ -23,34 +23,34 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
+import RevenueCat
 
-public protocol RevenueCatInterfaceDelegate: class {
+public protocol RevenueCatStoreInterfaceDelegate: AnyObject {
     
     func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didRestorePurchasesWith result: RevenueCat.SubscriptionInterfaceController.RestorePurchasesResult
+        _ controller: RevenueCatStore.SubscriptionInterfaceController,
+        didRestorePurchasesWith result: RevenueCatStore.SubscriptionInterfaceController.RestorePurchasesResult
     )
     
     func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+        _ controller: RevenueCatStore.SubscriptionInterfaceController,
+        didChangeFetchingStateTo state: RevenueCatStore.SubscriptionInterfaceController.FetchingState
     )
     
     func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
+        _ controller: RevenueCatStore.SubscriptionInterfaceController,
+        didCommitPurchaseWith result:  RevenueCatStore.SubscriptionInterfaceController.CommitPurchaseResult
     )
 }
 
-public extension RevenueCatInterfaceDelegate {
+public extension RevenueCatStoreInterfaceDelegate {
     func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didChangeFetchingStateTo state: RevenueCat.SubscriptionInterfaceController.FetchingState
+        _ controller: RevenueCatStore.SubscriptionInterfaceController,
+        didChangeFetchingStateTo state: RevenueCatStore.SubscriptionInterfaceController.FetchingState
     ) { }
     
     func subscriptionInterfaceController(
-        _ controller: RevenueCat.SubscriptionInterfaceController,
-        didCommitPurchaseWith result:  RevenueCat.SubscriptionInterfaceController.CommitPurchaseResult
+        _ controller: RevenueCatStore.SubscriptionInterfaceController,
+        didCommitPurchaseWith result:  RevenueCatStore.SubscriptionInterfaceController.CommitPurchaseResult
     ) { }
 }

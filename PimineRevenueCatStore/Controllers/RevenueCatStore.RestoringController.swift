@@ -23,21 +23,21 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Purchases
+import RevenueCat
 import SVProgressHUD
 import PimineUtilities
 
-extension RevenueCat {
-open class RestoringController: UIViewController, RevenueCatInterfaceDelegate {
+extension RevenueCatStore {
+open class RestoringController: UIViewController, RevenueCatStoreInterfaceDelegate {
         
     // MARK: - Properties
     
-    public let subscriptionInterfaceController: RevenueCat.SubscriptionInterfaceController
+    public let subscriptionInterfaceController: SubscriptionInterfaceController
     
     // MARK: - Initialization
     
     public init() {
-        self.subscriptionInterfaceController = RevenueCat.SubscriptionInterfaceController()
+        self.subscriptionInterfaceController = SubscriptionInterfaceController()
         super.init(nibName: nil, bundle: nil)
         self.subscriptionInterfaceController.delegate = self
     }
@@ -62,7 +62,7 @@ open class RestoringController: UIViewController, RevenueCatInterfaceDelegate {
     
     // MARK: - Helpers
     
-    public func packagePrice(for packageType: Purchases.PackageType) -> Price? {
+    public func packagePrice(for packageType: PackageType) -> String? {
         subscriptionInterfaceController.packagePrice(for: packageType)
     }
     

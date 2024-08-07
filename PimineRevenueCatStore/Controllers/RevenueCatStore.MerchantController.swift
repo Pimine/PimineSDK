@@ -1,5 +1,5 @@
 //
-//  RevenueCat.Price.swift
+//  RevenueCat.MerchantController.swift
 //  https://github.com/Pimine/PimineSDK
 //
 //  This code is distributed under the terms and conditions of the MIT license.
@@ -23,32 +23,41 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+import RevenueCat
+import SVProgressHUD
+import PimineUtilities
 
-extension RevenueCat {
-public struct Price {
+extension RevenueCatStore {
+open class MerchantController: RestoringController {
     
-    // MARK: - Properties
+    // MARK: - View controller lifecycle
     
-    public var price: NSDecimalNumber
-    public var locale: Locale
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        subscriptionInterfaceController.fetchOffering()
+    }
     
-    // MARK: - Initialization
+    // MARK: - Public API
     
-    public init(price: NSDecimalNumber, locale: Locale) {
-        self.price = price
-        self.locale = locale
+    public func purchasePackage(type packageType: PackageType) {
+        SVProgressHUD.show()
+        subscriptionInterfaceController.purchasePackage(type: packageType)
+    }
+    
+    // MARK: - RevenueCatDelegate
+
+    override open func subscriptionInterfaceController(
+        _ controller: SubscriptionInterfaceController,
+        didCommitPurchaseWith result: SubscriptionInterfaceController.CommitPurchaseResult
+    ) {
+        SVProgressHUD.dismiss()
+        guard case let .failure(error) = result else { return }
+        
+        switch error {
+        case .userCancelled:
+            break
+        case .genericProblem(let error), .revenueCatError(let error):
+            PMAlert.show(title: PMessages.error, error: error)
+        }
     }
 }}
-
-// MARK: - CustomStringConvertible
-
-extension RevenueCat.Price: CustomStringConvertible {
-    
-    public var description: String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.locale = locale
-        return formatter.string(from: price) ?? ""
-    }
-}
