@@ -49,6 +49,10 @@ import UIKit
         self
     }
     
+    var exists: Bool {
+        storage.value(forKey: key) != nil
+    }
+    
     public init(key: String, defaultValue: Value, storage: UserDefaults = .standard) {
         self.key = key
         self.defaultValue = defaultValue
@@ -59,10 +63,6 @@ import UIKit
 // MARK: - ExpressibleByNilLiteral
 
 public extension UserDefaultsBacked where Value: ExpressibleByNilLiteral {
-    
-    var exists: Bool {
-        storage.value(forKey: key) != nil
-    }
     
     convenience init(key: String, storage: UserDefaults = .standard) {
         self.init(key: key, defaultValue: nil, storage: storage)
