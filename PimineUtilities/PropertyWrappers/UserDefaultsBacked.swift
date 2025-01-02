@@ -49,7 +49,7 @@ import UIKit
         self
     }
     
-    var exists: Bool {
+    public var exists: Bool {
         storage.value(forKey: key) != nil
     }
     
