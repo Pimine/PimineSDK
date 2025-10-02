@@ -38,6 +38,7 @@ final public class PMUserNotificationManager {
     struct Keys {
         static let inAppEnabled = "inAppEnabled"
         static let permissionGranted = "permissionGranted"
+        static let provisionalAccess = "provisionalAccess"
     }
     
     public struct Configuration {
@@ -75,7 +76,10 @@ final public class PMUserNotificationManager {
     public private(set) static var permissionGranted: Bool {
         didSet { NotificationCenter.default.post(name: .userNotificationPreferencesChanged, object: nil) }
     }
-    
+
+    @UserDefaultsBacked(key: Keys.provisionalAccess, defaultValue: false, storage: storage)
+    public private(set) static var provisionalAccess: Bool
+
     public static var notificationsEnabled: Bool {
         inAppEnabled && permissionGranted
     }
@@ -121,9 +125,12 @@ final public class PMUserNotificationManager {
     private static func updateNotificationPreferences(silently: Bool = true, result: ((Bool) -> Void)? = nil) {
         userNotificationCenter.getNotificationSettings { (settings) in
             DispatchQueue.main.async {
+                let isProvisionalAccessRequested = self.configuration.authorizationOptions.contains(.provisional)
+                self.provisionalAccess = (isProvisionalAccessRequested && settings.authorizationStatus == .provisional)
+
                 switch settings.authorizationStatus {
                 case .provisional:
-                    guard self.configuration.authorizationOptions.contains(.provisional) else { break }
+                    guard isProvisionalAccessRequested else { break }
                     fallthrough
                 case .authorized:
                     self.permissionGranted = true
