@@ -69,8 +69,13 @@ public final class PMLocalNotificationManager {
             content.title = notification.content.title
             content.body = notification.content.body
             content.userInfo = notification.content.userInfo
-            content.sound = .default
-            
+
+            if let soundName = notification.content.soundName {
+                content.sound = .init(named: .init(rawValue: soundName))
+            } else {
+                content.sound = .default
+            }
+
             content.attachments = notification.content.attachments.compactMap {
                 try? UNNotificationAttachment(identifier: $0.identifier, url: $0.url)
             }

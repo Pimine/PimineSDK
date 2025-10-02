@@ -47,19 +47,24 @@ public struct PMLocalNotificationContent: Codable {
     
     public let title: String
     public let body: String
+    public let soundName: String?
     public let attachments: [PMNotificationAttachment]
     public let userInfo: [String: String]
     
     // MARK: Initialization
     
+    /// - Parameters:
+    ///   - soundName: Sound file name, e.g. `"reminder.mp3"`. If `nil`, default sound will be used. Default is `nil`.
     public init(
         title: String,
         body: String,
+        soundName: String? = nil,
         attachments: [PMNotificationAttachment] = [],
         userInfo: [String: String] = [:]
     ) {
         self.title = title
         self.body = body
+        self.soundName = soundName
         self.attachments = attachments
         self.userInfo = userInfo
     }
