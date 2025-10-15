@@ -82,7 +82,7 @@ public final class PMLocalNotificationManager {
             
             let trigger = notification.trigger.notificationTrigger
             
-            let identifier = UUID().uuidString
+            let identifier = notification.identifier
             pendingNotificationRequestIdentifiers.append(identifier)
             identifiers.insert(identifier)
             

@@ -106,6 +106,7 @@ public struct PMLocalNotificationTimeIntervalTrigger: PMLocalNotificationTrigger
 public struct PMLocalNotification: Decodable {
     
     enum CodingKeys: String, CodingKey {
+        case identifier
         case type
         case content
         case trigger
@@ -117,29 +118,38 @@ public struct PMLocalNotification: Decodable {
     }
 
     // MARK: Properties
-    
+
+    public let identifier: String
     public let content: PMLocalNotificationContent
     public let trigger: PMLocalNotificationTrigger
     
     // MARK: Initialization
-    
-    public init(content: PMLocalNotificationContent, trigger: PMLocalNotificationTrigger) {
+
+    /// - Parameters:
+    ///   - identifier: Notification identifier. Default is `UUID` string.
+    public init(
+        identifier: String = UUID().uuidString,
+        content: PMLocalNotificationContent,
+        trigger: PMLocalNotificationTrigger
+    ) {
+        self.identifier = identifier
         self.content = content
         self.trigger = trigger
     }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let type = try container.decode(NotificationType.self, forKey: .type)
+
+        self.identifier = (try? container.decodeIfPresent(String.self, forKey: .identifier)) ?? UUID().uuidString
         self.content = try container.decode(PMLocalNotificationContent.self, forKey: .content)
-        
+
+        let type = try container.decode(NotificationType.self, forKey: .type)
         switch type {
         case .calendar:
             self.trigger = try container.decode(PMLocalNotificationCalendarTrigger.self, forKey: .trigger)
         case .timeInterval:
             self.trigger = try container.decode(PMLocalNotificationTimeIntervalTrigger.self, forKey: .trigger)
         }
-        
     }
 }
 
